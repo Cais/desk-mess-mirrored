@@ -4,6 +4,8 @@ Changelog as of November 28, 2011:
 * modified `.widget h2` CSS to better allow for long titles in the sidebar
 * moved "You must be logged in to post a comment." to be more clearly readable
 * added CSS optimizations
+* drop direct support for Internet Explorer 6 or order
+* moved enqueued `comment-reply` call from 'header.php' to 'functions.php'
 
 /**
  * Internet Browsers Reviewed

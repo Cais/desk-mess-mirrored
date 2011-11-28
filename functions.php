@@ -1,6 +1,21 @@
 <?php
 global $wp_version;
 
+/**
+ * Enqueue Comment Reply Script
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   1.9.1
+ *
+ * @return  void
+ */
+function dmm_enqueue_comment_reply() {
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'dmm_enqueue_comment_reply' );
+
 // Get the page number
 if ( ! function_exists( 'dmm_get_page_number' ) ) {
   function dmm_get_page_number() {
