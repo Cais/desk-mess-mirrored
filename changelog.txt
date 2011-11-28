@@ -1,8 +1,9 @@
-Changelog as of November 27, 2011:
+Changelog as of November 28, 2011:
 == Version 1.9.1 ==
 * corrected comment reply style
 * modified `.widget h2` CSS to better allow for long titles in the sidebar
 * moved "You must be logged in to post a comment." to be more clearly readable
+* added CSS optimizations
 
 /**
  * Internet Browsers Reviewed
