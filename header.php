@@ -17,9 +17,6 @@
     </title>
 
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
-	<!--[if lte IE 6]>
-		<link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/ie60-2.css" type="text/css" media="screen" />
-	<![endif]-->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
