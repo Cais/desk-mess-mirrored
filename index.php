@@ -1,3 +1,45 @@
+<?php
+/**
+ * Desk Mess Mirrored
+ *
+ * Theme Description: Marble desktop covered with a mix of old and new items,
+ * such as some vintage papers, a stainless steel pen, and, a hot cup of coffee!
+ * Now with drop-down menu support! Please read the included changelog.txt,
+ * readme.txt, and support.txt files for details of the latest changes and
+ * important notices.
+ *
+ * @package     Desk_Mess_Mirrored
+ * @link        http://buynowshop.com/themes/desk-mess-mirrored/
+ * @link        https://github.com/Cais/desk-mess-mirrored/
+ * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
+ * @version     1.9.1
+ * @author      Edward Caissie <edward.caissie@gmail.com>
+ * @copyright   Copyright (c) 2009-2011, Edward Caissie
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 2, as published by the
+ * Free Software Foundation.
+ *
+ * You may NOT assume that you can use any other version of the GPL.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to:
+ *
+ *      Free Software Foundation, Inc.
+ *      51 Franklin St, Fifth Floor
+ *      Boston, MA  02110-1301  USA
+ *
+ * The license for this software can also likely be found here:
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Last revised November 27, 2011
+ */
+?>
+
 <?php get_header(); ?>
 <div id="maintop"></div>
 <div id="wrapper">
