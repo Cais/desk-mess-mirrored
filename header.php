@@ -2,14 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-	<title><?php
-		if ( is_single() ) { single_post_title(); _e( ' | ', 'desk-mess-mirrored' ); bloginfo( 'name' ); }
-		elseif ( is_home() || is_front_page() ) { bloginfo( 'name' ); _e( ' | ', 'desk-mess-mirrored' ); bloginfo( 'description' ); dmm_get_page_number(); }
-		elseif ( is_page() ) { single_post_title( '' ); _e( ' | ', 'desk-mess-mirrored' ); bloginfo( 'name' ); }
-		elseif ( is_search() ) { bloginfo( 'name' ); print __( ' | Search results for ', 'desk-mess-mirrored' ) . esc_html( $s ); dmm_get_page_number(); }
-		elseif ( is_404() ) { bloginfo( 'name' ); _e( ' | Not Found', 'desk-mess-mirrored' ); }
-		else { bloginfo( 'name' ); wp_title( __( ' | ', 'desk-mess-mirrored' )); dmm_get_page_number(); }
-	?></title>
+    <title><?php /* ... as influenced by Twenty Ten and Twenty Eleven */
+        global $page, $paged;
+        wp_title( '|', true, 'right' ); bloginfo( 'name' );
+
+        // Add the blog description (tagline) for the home/front page.
+        $site_tagline = get_bloginfo( 'description', 'display' );
+        if ( $site_tagline && ( is_home() || is_front_page() ) )
+          echo " | $site_tagline";
+
+        // Add a page number if necessary:
+        if ( $paged >= 2 || $page >= 2 )
+          echo ' | ' . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) ); ?>
+    </title>
 
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
 	<!--[if lte IE 6]>
