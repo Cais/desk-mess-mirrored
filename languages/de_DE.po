@@ -1,0 +1,370 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: desk-mess-mirrored\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-12-05 15:48+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Hno2 <hno2@gmx.net>\n"
+"Language-Team: Hno2 <hno2@gmx.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive.php:13
+#: author.php:39
+#: category.php:12
+#: index.php:11
+#: desk-mess-mirrored-multi/author.php:39
+msgid "0"
+msgstr "0"
+
+#: archive.php:13
+#: author.php:39
+#: category.php:12
+#: index.php:11
+#: desk-mess-mirrored-multi/author.php:39
+msgid "1"
+msgstr "1"
+
+#: archive.php:13
+#: author.php:39
+#: category.php:12
+#: index.php:11
+#: desk-mess-mirrored-multi/author.php:39
+msgid "%"
+msgstr "%"
+
+#: archive.php:13
+#: author.php:39
+#: category.php:12
+#: index.php:11
+#: desk-mess-mirrored-multi/author.php:39
+msgid "-"
+msgstr "-"
+
+#: archive.php:15
+#: author.php:41
+#: index.php:13
+#: single.php:14
+#: desk-mess-mirrored-multi/author.php:41
+msgid "Permanent Link to"
+msgstr "Permanter Link zu"
+
+#: archive.php:17
+#: category.php:16
+#: index.php:15
+#: single.php:16
+msgid "Posted by "
+msgstr "Geschreiben von "
+
+#: archive.php:17
+#: author.php:43
+#: category.php:16
+#: index.php:15
+#: single.php:16
+#: desk-mess-mirrored-multi/author.php:43
+msgid " on "
+msgstr "auf"
+
+#: archive.php:17
+#: author.php:43
+#: category.php:16
+#: index.php:15
+#: single.php:16
+#: desk-mess-mirrored-multi/author.php:43
+msgid " in "
+msgstr " in "
+
+#: archive.php:17
+#: author.php:43
+#: index.php:15
+#: single.php:16
+#: desk-mess-mirrored-multi/author.php:43
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: archive.php:17
+#: author.php:43
+#: index.php:15
+#: single.php:16
+#: desk-mess-mirrored-multi/author.php:43
+msgid "&#124; "
+msgstr "&#124; "
+
+#: archive.php:19
+#: index.php:17
+msgid "Read more... "
+msgstr "Weiterlesen..."
+
+#: archive.php:28
+#: author.php:57
+#: index.php:24
+#: desk-mess-mirrored-multi/author.php:57
+msgid "&laquo; Previous entries"
+msgstr "&laquo; Vorherige einträge"
+
+#: archive.php:30
+#: author.php:59
+#: index.php:26
+#: desk-mess-mirrored-multi/author.php:59
+msgid "Next entries &raquo;"
+msgstr "Nächste Einträge &raquo;"
+
+#: archive.php:37
+#: author.php:64
+#: category.php:32
+#: index.php:31
+#: page.php:21
+#: single.php:27
+#: desk-mess-mirrored-multi/author.php:64
+msgid "Not Found"
+msgstr "Nichts gefunden"
+
+#: archive.php:38
+#: category.php:33
+#: index.php:32
+#: page.php:22
+#: single.php:28
+msgid "Sorry, but you are looking for something that is not here."
+msgstr "Entschuldigung, aber du schaust nach etwas was nicht vorhanden ist"
+
+#: author.php:21
+#: desk-mess-mirrored-multi/author.php:21
+msgid "About "
+msgstr "Über mich"
+
+#: author.php:23
+#: comments.php:88
+#: desk-mess-mirrored-multi/author.php:23
+#: desk-mess-mirrored-multi/comments.php:88
+msgid "Website"
+msgstr "Website"
+
+#: author.php:23
+#: desk-mess-mirrored-multi/author.php:23
+msgid "or"
+msgstr "oder"
+
+#: author.php:23
+#: desk-mess-mirrored-multi/author.php:23
+msgid "email"
+msgstr "E-Mail"
+
+#: author.php:24
+#: desk-mess-mirrored-multi/author.php:24
+msgid "Biography"
+msgstr "Biographie"
+
+#: author.php:28
+#: desk-mess-mirrored-multi/author.php:28
+msgid "Posts by "
+msgstr "Beiträge von"
+
+#: author.php:49
+#: desk-mess-mirrored-multi/author.php:49
+msgid "Read more ..."
+msgstr "Weiterlesen..."
+
+#: author.php:65
+#: desk-mess-mirrored-multi/author.php:65
+msgid "Sorry, there are no posts by this author."
+msgstr "Entschuldigung, aber es gibt keine Beiträge von diesem Autor"
+
+#: comments.php:3
+#: desk-mess-mirrored-multi/comments.php:3
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Bitte lade diese Seite nicht direkt. Danke!"
+
+#: comments.php:5
+#: desk-mess-mirrored-multi/comments.php:5
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Dieser Beitrag ist passwortgeschütz. Bitte gib das passwort ein um zu kommentieren"
+
+#: comments.php:40
+#: desk-mess-mirrored-multi/comments.php:40
+msgid "No Comments"
+msgstr "Keine Kommentare"
+
+#: comments.php:40
+#: desk-mess-mirrored-multi/comments.php:40
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: comments.php:40
+#: desk-mess-mirrored-multi/comments.php:40
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: comments.php:42
+#: desk-mess-mirrored-multi/comments.php:42
+msgid "&raquo; Reply to this Comment &laquo;"
+msgstr "&raquo; Antworte auf diesen Kommentar"
+
+#: comments.php:70
+#: desk-mess-mirrored-multi/comments.php:70
+msgid "You must be "
+msgstr "Du musst "
+
+#: comments.php:70
+#: desk-mess-mirrored-multi/comments.php:70
+msgid "logged in"
+msgstr "eingeloggt sein"
+
+#: comments.php:70
+#: desk-mess-mirrored-multi/comments.php:70
+msgid "to post a comment."
+msgstr "um einen Kommentar zu schreiben"
+
+#: comments.php:78
+#: desk-mess-mirrored-multi/comments.php:78
+msgid "Logged in as"
+msgstr "Eingeloggt als"
+
+#: comments.php:79
+#: desk-mess-mirrored-multi/comments.php:79
+msgid "Log out of this account"
+msgstr " Aus deisem Account ausloggen "
+
+#: comments.php:79
+#: desk-mess-mirrored-multi/comments.php:79
+msgid "Logout &raquo;"
+msgstr "Ausloggen &raquo;"
+
+#: comments.php:84
+#: desk-mess-mirrored-multi/comments.php:84
+msgid "Name"
+msgstr "Name"
+
+#: comments.php:84
+#: comments.php:86
+#: desk-mess-mirrored-multi/comments.php:84
+#: desk-mess-mirrored-multi/comments.php:86
+msgid "(required)"
+msgstr "(benötigt)"
+
+#: comments.php:86
+#: desk-mess-mirrored-multi/comments.php:86
+msgid "Email"
+msgstr "E-Mail"
+
+#: comments.php:97
+#: desk-mess-mirrored-multi/comments.php:97
+msgid "You can use these tags:"
+msgstr "Du kannst folgende Tags benutzen:"
+
+#: comments.php:102
+#: desk-mess-mirrored-multi/comments.php:102
+msgid "Please note:"
+msgstr "Bitte beachte:"
+
+#: comments.php:102
+#: desk-mess-mirrored-multi/comments.php:102
+msgid "Comment moderation is enabled and may delay your comment. There is no need to resubmit your comment."
+msgstr "Kommentarmoderation ist eingeschaltet und verzögert vielleicht deinen Kommentar auf. Du brauchst ihn nicht erneut zu senden"
+
+#: footer.php:3
+msgid "Copyright"
+msgstr "Copyright"
+
+#: footer.php:3
+msgid "All rights reserved"
+msgstr "Rechte vorbehalten"
+
+#: footer.php:13
+msgid " a child of the "
+msgstr "ein Kind von"
+
+#: footer.php:17
+msgid "theme from"
+msgstr "Theme von"
+
+#: functions.php:16
+msgid "Page "
+msgstr "Seite"
+
+#: header.php:7
+#: header.php:8
+#: header.php:9
+#: header.php:12
+#: desk-mess-mirrored-multi/header.php:7
+#: desk-mess-mirrored-multi/header.php:8
+#: desk-mess-mirrored-multi/header.php:9
+#: desk-mess-mirrored-multi/header.php:12
+msgid " | "
+msgstr " | "
+
+#: header.php:10
+#: desk-mess-mirrored-multi/header.php:10
+msgid " | Search results for "
+msgstr "| Suchergebnisse für"
+
+#: header.php:11
+#: desk-mess-mirrored-multi/header.php:11
+msgid " | Not Found"
+msgstr "| Nichts Gefunden"
+
+#: header.php:50
+#: desk-mess-mirrored-multi/header.php:49
+msgid "Home"
+msgstr "Home"
+
+#: page.php:14
+msgid "&raquo; Edit this page &laquo;"
+msgstr "&raquo; Bearbeite diese Seite  &laquo;"
+
+#: page.php:15
+msgid "Read more..."
+msgstr "Weiterlesen..."
+
+#: searchform.php:3
+#: sidebar.php:9
+msgid "Enter keyword(s) and hit enter"
+msgstr "Gib deine(n) Suchbegriff(e) ein"
+
+#: searchform.php:4
+#: sidebar.php:10
+msgid "Search"
+msgstr "Suchen"
+
+#: sidebar.php:19
+msgid "Calendar"
+msgstr "Kalender"
+
+#: sidebar.php:30
+msgid "Categories"
+msgstr "Kategorien"
+
+#: sidebar.php:37
+msgid "Archives"
+msgstr "Archive"
+
+#: sidebar.php:48
+msgid "Meta"
+msgstr "Meta"
+
+#: single.php:16
+msgid "Subscribe to my feed"
+msgstr "Abonniere meinen Feed"
+
+#: single.php:16
+msgid "Subscribe"
+msgstr "Abonniere"
+
+#: single.php:18
+msgid " Read more..."
+msgstr "Weiterlese..."
+
+#: single.php:20
+msgid "... other posts by "
+msgstr "...andere Beiträge von"
+
+#: desk-mess-mirrored-multi/header.php:42
+msgid "Add this blog to any reader"
+msgstr "Füge diesen Blog zu irgendeinem irgendeinem Leser hinzu"
+
