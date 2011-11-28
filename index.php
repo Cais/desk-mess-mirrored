@@ -37,6 +37,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Last revised November 27, 2011
+ * @todo move this doc-block to header.php?
  */
 ?>
 
