@@ -6,6 +6,7 @@ Changelog as of November 28, 2011:
 * added CSS optimizations
 * drop direct support for Internet Explorer 6 or order
 * moved enqueued `comment-reply` call from 'header.php' to 'functions.php'
+* removed `get_page_number` function as no longer needed
 
 /**
  * Internet Browsers Reviewed

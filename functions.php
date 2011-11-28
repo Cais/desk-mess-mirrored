@@ -16,16 +16,6 @@ function dmm_enqueue_comment_reply() {
 }
 add_action( 'wp_enqueue_scripts', 'dmm_enqueue_comment_reply' );
 
-// Get the page number
-if ( ! function_exists( 'dmm_get_page_number' ) ) {
-  function dmm_get_page_number() {
-      if ( get_query_var( 'paged' ) ) {
-        print ' | ' . __( 'Page ' , 'desk-mess-mirrored' ) . get_query_var( 'paged' );
-      }
-    }
-}
-// end get_page_number
-
 // Start Register Widgets
 register_sidebars( 3, array(
                            'description' => '',
