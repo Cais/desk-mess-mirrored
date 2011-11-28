@@ -45,12 +45,13 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 *[x] Clean up new functionality of `bns_dynamic_copyright`
 *[ ] Review / Update 404.php page
 *[ ] Review obviousness of comment link (read: balloon)
-*[ ] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
+*[x] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
+*[ ] Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
 
 = Long Term Goals =
 *[-] Correct widget no title / no image issue ... may not have a solution; use a `space` in the title as a work-around.
 *[ ] Review second "Home" page scenarios for possible solutions
-*[ ] Clean up i18n strings for better translatability ... or remove internationalization altogether?!
+*[ ] Clean up i18n strings for better translation ... or, remove internationalization altogether?!
 *[-] Theme Options? (Not likely.)
 
 == Changelog.txt ==
