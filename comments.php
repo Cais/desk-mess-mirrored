@@ -1,36 +1,42 @@
 <?php // Do not delete these lines
 if ( !empty( $_SERVER['SCRIPT_FILENAME'] ) && 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) )
-	die ( __( 'Please do not load this page directly. Thanks!', 'desk-mess-mirrored' ) );
+    die ( __( 'Please do not load this page directly. Thanks!', 'desk-mess-mirrored' ) );
 if ( post_password_required() ) { ?>
-	<p class="nocomments"><?php _e( 'This post is password protected. Enter the password to view comments.', 'desk-mess-mirrored' ); ?></p>
-<?php
-	return;
+    <p class="nocomments"><?php _e( 'This post is password protected. Enter the password to view comments.', 'desk-mess-mirrored' ); ?></p>
+<?php return;
 }
 
-// add a microid to all the comments
-function dmm_comment_add_microid( $classes ) {
-	$c_email=get_comment_author_email();
-	$c_url=get_comment_author_url();
-	if ( !empty( $c_email ) && !empty( $c_url ) ) {
-		$microid = 'microid-mailto+http:sha1:' . sha1( sha1( 'mailto:'.$c_email ) . sha1( $c_url ) );
-		$classes[] = $microid;
-	}
-	return $classes;	
-}
-add_filter( 'comment_class', 'dmm_comment_add_microid' );
+/**
+ * Add Comment Classes
+ *
+ * @package Desk_Mess_Mirrored
+ *
+ * @param $classes
+ * @return array
+ */
+function dmm_add_comment_classes( $classes ) {
+        global $comment;
+        /** Add user ID based classes */
+        if ( $comment->user_id == 1 ) {
+            /** Administrator */
+            $userid = "administrator user-id-1";
+        } else {
+            /** All other users - NB: user-id-0 -> non-registered user */
+            $userid = "user-id-" . ( $comment->user_id );
+        }
+        $classes[] = $userid;
 
-/* add a userid (if exists) to all the comments */
-function dmm_comment_add_userid( $classes ) {
-	global $comment;
-	if ( $comment->user_id == 1 ) { /* Administrator */
-		$userid = "administrator user-id-1";
-	} else { /* All other users - NB: user-id-0 -> non-registered user */
-		$userid = "user-id-" . ( $comment->user_id );
-	}
-	$classes[] = $userid;
-	return $classes;	
+        /** Add microid */
+        $c_email=get_comment_author_email();
+        $c_url=get_comment_author_url();
+        if ( ! empty( $c_email ) && !empty( $c_url ) ) {
+            $microid = 'microid-mailto+http:sha1:' . sha1( sha1( 'mailto:'.$c_email ) . sha1( $c_url ) );
+            $classes[] = $microid;
+        }
+        return $classes;
 }
-add_filter( 'comment_class', 'dmm_comment_add_userid' );
+add_filter( 'comment_class', 'dmm_add_comment_classes' );
+// End Add Comment Classes
 ?>
 
 <div id="comments-main">

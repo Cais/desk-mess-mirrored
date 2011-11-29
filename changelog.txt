@@ -9,6 +9,7 @@ Changelog as of November 28, 2011:
 * removed `get_page_number` function as no longer needed
 * added PHPDoc style documentation
 * removed 'category.php' template file as not used
+* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes`
 
 /**
  * Internet Browsers Reviewed
