@@ -1,65 +1,44 @@
 /*
 Editor-Style CSS for ...
-	Theme Name: Desk Mess Mirrored
-	Theme URI: http://buynowshop.com/themes/desk-mess-mirrored/
-	Version: 1.7
-	Author: Edward Caissie
-	Author URI: http://edwardcaissie.com/
-	License: GPL2
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Theme Name: Desk Mess Mirrored
+    Theme URI: http://buynowshop.com/themes/desk-mess-mirrored/
+    Version: 1.9.1
+    Author: Edward Caissie
+    Author URI: http://edwardcaissie.com/
+    License: GNU General Public License v2
+    License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
-/* Last Revision: Nov 7, 2010 v1.8 */
-
-/*  Copyright 2009-2010  Edward Caissie  (email : edward.caissie@gmail.com)
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License version 2,
-    as published by the Free Software Foundation.
-
-    You may NOT assume that you can use any other version of the GPL.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
-    The license for this software can also likely be found here:
-    http://www.gnu.org/licenses/gpl-2.0.html
-*/
+/* Last revised November 29, 2011 v1.9.1 */
 
 /*-- YUI Reset: Start --*/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
-table {border-collapse:collapse;border-spacing:0;}
-fieldset,img {border:0;}
-address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
-ol,ul {list-style:none;}
-caption,th {text-align:left;}
-h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
-q:before,q:after {content:'';}
-abbr,acronym { border:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style: normal; font-weight: normal; }
+ol,ul { list-style: none; }
+caption,th { text-align: left; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal; }
+q:before,q:after { content: ''; }
+abbr,acronym { border:0; }
 /*-- YUI Reset: End --*/
 
 /*-- WordPress Rules --*/
-div.aligncenter, .aligncenter, .center {margin: 0 auto;}
-.alignleft, .left {float: left;text-align: left;}
-.alignright, .right {float: right;text-align: right;}
-img.aligncenter, img.center {display: block;}
-img.alignleft, img.left {display: inline;margin:0 8px 8px 0;}
-img.alignright, img.right {display: inline;margin:0 0 8px 8px;}
-.wp-caption {border: 1px solid #ddd;text-align: center;background-color: #f3f3f3;padding-top: 4px;margin: 10px;
+div.aligncenter, .aligncenter, .center { margin: 0 auto; }
+.alignleft, .left { float: left; text-align: left; }
+.alignright, .right { float: right; text-align: right; }
+img.aligncenter, img.center { display: block; }
+img.alignleft, img.left { display: inline; margin: 0 8px 8px 0; }
+img.alignright, img.right { display: inline; margin: 0 0 8px 8px; }
+.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px;
 /* optional rounded corners for browsers that support it */
 	-moz-border-radius: 3px;
 	-khtml-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-border-radius: 3px;
 }
-.wp-caption img {margin: 0;padding: 0;border: 0 none;}
-.wp-caption p.wp-caption-text {font-size: 11px;line-height: 17px;padding: 0 4px 5px;margin: 0;}
+.wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
 /*-- End WordPress Rules --*/
 
 /*-- Begin TinyMCE --*/
@@ -69,97 +48,95 @@ html .mceContentBody {
 	padding: 0;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	font-size: 14px;
-	line-height:21px;	
+	line-height: 21px;
 }
 
-a:link, a:visited {color: #d21600; text-decoration: none;}
-a:hover {text-decoration: underline;}
-a:focus, a:active {color: #d21600; text-decoration: none;}
+a:link, a:visited { color: #d21600; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus, a:active { color: #d21600; text-decoration: none; }
 
-a img {border: none;}
+a img { border: none; }
 
-em {font-style: italic;}
+em { font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-weight:normal;
-	line-height:normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	line-height: normal;
 }
 
 h1 {
-	font-size:25px;
-	padding-bottom:2px;
+	font-size: 25px;
+	padding-bottom: 2px;
 }
 h2 {
-	font-size:20px;
-	padding-bottom:11px;
-	padding-top:15px;
+	font-size: 20px;
+	padding-bottom: 11px;
+	padding-top: 15px;
 }
 h3 {
-	font-size:17px;
-	padding-bottom:10px;
-	padding-top:14px;
+	font-size: 17px;
+	padding-bottom: 10px;
+	padding-top: 14px;
 }
 h4 {
-	font-size:15px;
-	padding-bottom:10px;
-	padding-top:12px;
+	font-size: 15px;
+	padding-bottom: 10px;
+	padding-top: 12px;
 }
 h5 {
-	font-size:13px;
-	padding-bottom:10px;
-	padding-top:11px;
+	font-size: 13px;
+	padding-bottom: 10px;
+	padding-top: 11px;
 }
 h6 {
-	font-size:11px;
-	padding-bottom:10px;
-	padding-top:10px;
+	font-size: 11px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .hr, .desk-mess-mirrored {
 	border: none;
-	background: none;
-	background-image: url(images/hr-img.png);
-	height: 40px;
-	width:560px;
-	margin:0 auto;
+    background: url(images/hr-img.png);
+    height: 40px;
+	width: 560px;
+	margin: 0 auto;
 }
 
-ol li {list-style: decimal;}
-ol li li {list-style: lower-roman;}
-ol li li li {list-style: lower-alpha;}
+ol li { list-style: decimal; }
+ol li li { list-style: lower-roman; }
+ol li li li { list-style: lower-alpha; }
 
-strong {font-weight: bold;}
+strong { font-weight: bold; }
 
-sup {font-size: 75%;}
-sub {font-size: 75%;}
+sub, sup { font-size: 75%; }
 
-table {margin: 0 auto; width: 90%;}
-table caption {text-align: center;}
+table { margin: 0 auto; width: 90%; }
+table caption { text-align: center; }
 tr.even {
 	border: none;
 	border-bottom: 1px solid #b2b0a4;
 	border-top: 1px solid #b2b0a4;
 }
-th {font-weight: bold;}
-td {padding-left: 5px;}
+th { font-weight: bold; }
+td { padding-left: 5px; }
 
 h1 a,
 h1 a:visited,
 h1 a:active{
-	color:#4a4131;
-	text-decoration:none;
-	border-bottom:1px solid #b2b0a4;
+	color: #4a4131;
+	text-decoration: none;
+	border-bottom: 1px solid #b2b0a4;
 }
 h1 a:hover{
-	color:#d21600;
-	text-decoration:none;
-	border-bottom:1px solid #d21600;
+	color: #d21600;
+	text-decoration: none;
+	border-bottom: 1px solid #d21600;
 }
 
 p {
-	margin:0;
-	padding:0 0 10px;
+	margin: 0;
+	padding: 0 0 10px;
 }
 
 ul li {
@@ -168,55 +145,45 @@ ul li {
 }
 
 ol {
-	list-style-image:none;
-	list-style-position:inside;
-	padding-left:10px;
+    list-style: inside none;
+    padding-left: 10px;
 }
 
 ul {
-	list-style-image:none;
-	list-style-position:inside;
-	padding-left:10px;
+    list-style: inside none;
+    padding-left: 10px;
 }
 
-li {padding-left: 10px;}
+li { padding-left: 10px; }
 
 
 ol, ul {
-	margin-left:35px;
-	margin-bottom:15px;
+	margin-left: 35px;
+	margin-bottom: 15px;
 }
 
 dl {
-	margin-left:5px;
-	margin-bottom:10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
 	border-right: 1px inset;
 	border-bottom: 1px inset;
 }
-dl dt {font-weight: bold;}
-dl dd {margin-left:10px;}
+dl dt { font-weight: bold; }
+dl dd { margin-left:10px; }
 
 .sticky {
 	border: medium double Black;
-	font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
+	font-family: "Trebuchet MS", Helvetica, Jamrul, sans-serif;
 	font-size: 14px;
 	padding: 5px;
 }
 
 blockquote {
 	clear: both;
-	margin-top: 10px;
-	margin-right: 35px;
-	margin-bottom: 0px;
-	margin-left: 5px;
-	padding-top: 10px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 40px;
-	background-image: url(images/quotes.png);
-	background-repeat: no-repeat;
-	background-position: left 2px;
-	font-family: "Times New Roman", Times, serif;
+    margin: 10px 35px 0 5px;
+    padding: 10px 0 0 40px;
+    background: url(images/quotes.png) no-repeat left 2px;
+    font-family: "Times New Roman", Times, serif;
 	font-style: italic;
 	font-size: 14px;
 	color: #606060;
@@ -228,7 +195,7 @@ blockquote cite {
 }
 
 pre { /* Use for "Code" text styling */
-	margin: 0px;
+	margin: 0;
 	padding: 5px;
 	background-image: url(images/pre-bg.png);	
 	border: 1px inset;
@@ -248,10 +215,10 @@ p img {
 	max-width: 100%;
 }
 
-p a img {border:none;}
+p a img { border: none; }
 
-.alignleft, .left {float: left}
-.alignright, .right {float: right;}
+.alignleft, .left { float: left; }
+.alignright, .right { float: right; }
 
 .wp-caption {
 	border: 1px solid #59350b;
@@ -266,7 +233,7 @@ p a img {border:none;}
 	-border-radius: 3px;
 }
 
-.wp-caption.aligncenter {margin: 10px auto;}
+.wp-caption.aligncenter { margin: 10px auto; }
 
 .wp-caption img {
 	margin: 0;
@@ -294,7 +261,7 @@ p a img {border:none;}
 }
 
 code {
-	margin: 0px;
+	margin: 0;
 	background-color: Silver;
 	font-style: italic;
 	font-size: 14px;
