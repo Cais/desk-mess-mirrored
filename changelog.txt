@@ -10,6 +10,7 @@ Changelog as of November 28, 2011:
 * added PHPDoc style documentation
 * removed 'category.php' template file as not used
 * combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes`
+* reviewed and correct old changelog entries for spelling and other minor typos
 
 /**
  * Internet Browsers Reviewed
@@ -89,7 +90,7 @@ Changelog as of November 28, 2011:
   - published: November 8, 2010
   - added drop down menu functionality, finally!
   - moved all default sidebar content into widget area 'Sidebar 1'
-  - removed text from printing in comment ballon when password is required
+  - removed text from printing in comment balloon when password is required
   - changed to using get_search_form()
   - added '.gallery-caption' and '.bypostauthor' style classes (as empty elements)
   - updated editor-style.css
@@ -129,7 +130,7 @@ Changelog as of November 28, 2011:
   - CSS: increased default font size to 14px
   - CSS: minor adjustment for BNS Plugin styles and 'ul.children li' property
   - CSS: add "YUI Reset" and "WordPress Rules" (and necessary adjustments)
-  - Removed unused graphics: comh2.png; flickr.png; footer-mozliia.png; footer-wp.png; socialbck.png; and, twitter.png. This will not affect existing installations as updating will not remove any existing files.
+  - Removed unused graphics: comh2.png; flickr.png; footer-mozilla.png; footer-wp.png; socialbck.png; and, twitter.png. This will not affect existing installations as updating will not remove any existing files.
 
 -- Version 1.5.1
   - released: Apr 23, 2010
@@ -181,13 +182,13 @@ Changelog as of November 28, 2011:
 -- Version 1.4.4
   - added body_class() function
   - added clearing div at the end of the_Loop
-  - German language transation by Hno2 hno2@gmx.net added
+  - German language translation by Hno2 hno2@gmx.net added
 
 -- Version 1.4.3.1
   - corrected child theme file structures
 
 -- Version 1.4.3
-  - Updated Multi child theme to use corrent comments.php template for threaded/nested fucntionality.
+  - Updated Multi child theme to use correct comments.php template for threaded/nested fucntionality.
   - CSS (new): added '.wp-caption.aligncenter {margin: 10px auto;}'
   - CSS (new): added 'sup' and 'sub' elements
   - added the signature HR image (finally) ... just use an 'hr' or 'desk-mess-mirrored' class
@@ -236,7 +237,7 @@ NB: Version 1.2 will be the last version to maintain the legacy files:
   - added "comments" to page.php
   - added child theme: Multi in folder "desk-mess-mirrored-multi"
   - added "child-theme-readme.txt" to help with installation  
-  - editted "footer.php" to wrap wp_footer call in its own <div id="bottom-extended">
+  - edited "footer.php" to wrap wp_footer call in its own <div id="bottom-extended">
   - CSS: added styles for #bottom-extended
   
 -- Version 1.1.1
