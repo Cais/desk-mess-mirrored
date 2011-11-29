@@ -2,7 +2,7 @@
 Theme Name: Desk Mess Mirrored
 Theme URI: http://buynowshop.com/themes/desk-mess-mirrored/
 Description: Marble desktop covered with a mix of old and new items, such as some vintage papers, a stainless steel pen, and, a hot cup of coffee! <em>Now with drop-down menu support!</em> <strong>Please read the included changelog.txt and readme.txt files for details of the latest changes and important notices.</strong> The child theme Multi is available for download at http://buynowshop.com/themes/desk-mess-mirrored/
-Version: 1.9.1 (NOT PUBLISHED)
+Version: 1.9.1
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
 WordPress Version Required: 3.0
@@ -135,8 +135,8 @@ h6 {
 	border: none;
     background: url(images/hr-img.png);
     height: 40px;
-	width:560px;
-	margin:0 auto;
+	width: 560px;
+	margin: 0 auto;
 }
 
 ol li { list-style: decimal inside none; }
@@ -265,9 +265,7 @@ div#top-navigation-menu {clear: both;}
  *
  * found @link: http://www.lwis.net/
  * @copyright 2006-2008 Live Web Institute. All Rights Reserved.
- *
  */
-
 ul.nav-menu,
 ul.nav-menu li,
 ul.nav-menu ul {
@@ -325,23 +323,15 @@ ul.nav-menu ul.children li {
 }
 /* End: Horizontal CSS Drop-Down Menu Module */
 
-/* = Custom Menu = */
-
-
-
-/* = End: Custom Menu = */
-
 /* WordPress 3.0 Navigation Menu default widget */
 .widget_nav_menu ul.sub-menu li {
   background: none;
   list-style: disc inside none;  
   padding: 0 0 0 15px;
 }
-
 /* === End: Menu === */
 
 /* === MAIN AREA == */
-
 #wrapper {
     background: url(images/main-page-middle.png) repeat-y;
 	margin: 0 auto;
@@ -578,10 +568,7 @@ dl.gallery-item { margin: 0; }
 
 #subcolumn { width: 255px; }
 
-#subcolumn ul {
-	list-style-image: none;
-	list-style-type: none;
-}
+#subcolumn ul { list-style: none none; }
 
 label.hidden { display: none; }
 

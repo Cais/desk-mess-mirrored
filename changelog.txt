@@ -1,29 +1,29 @@
-Changelog as of November 28, 2011:
+Changelog as of November 29, 2011:
 == Version 1.9.1 ==
+* added CSS optimizations
+* added PHPDoc style documentation
+* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes` in 'comments.php'
 * corrected comment reply style
+* drop direct support for Internet Explorer 6 or order
 * modified `.widget h2` CSS to better allow for long titles in the sidebar
 * moved "You must be logged in to post a comment." to be more clearly readable
-* added CSS optimizations
-* drop direct support for Internet Explorer 6 or order
 * moved enqueued `comment-reply` call from 'header.php' to 'functions.php'
 * removed `get_page_number` function as no longer needed
-* added PHPDoc style documentation
 * removed 'category.php' template file as not used
-* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes` in 'comments.php'
-* reviewed and correct old changelog entries for spelling and other minor typos
+* reviewed and corrected old changelog entries for spelling and other minor typos
+* updated 'readme.txt' (minor changes)
 
 /**
  * Internet Browsers Reviewed
  * ==========================
  *
- * Apple Safari v5.0.5 (Mac)
- * Apple Safari v5.0.5 (PC)
- * Firefox v5.0 (Mac)
- * Firefox v5.0 (PC)
- * Google Chrome v12.0
+ * Apple Safari v5.1.1 (Mac)
+ * Apple Safari v5.1.1 (PC)
+ * Firefox v8.0 (Mac)
+ * Firefox v8.0 (PC)
+ * Google Chrome v15.0
  * Internet Explorer v9.0
- * Opera v11.11
- *
+ * Opera v11.52
  */
 
 /** ------------------------------------------------------------------------- */
