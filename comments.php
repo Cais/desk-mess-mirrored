@@ -13,6 +13,7 @@ if ( post_password_required() ) { ?>
  * add_filter action.
  *
  * @package Desk_Mess_Mirrored
+ * @since 1.0.2
  *
  * @param $classes
  * @return array

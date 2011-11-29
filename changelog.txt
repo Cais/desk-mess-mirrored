@@ -9,7 +9,7 @@ Changelog as of November 28, 2011:
 * removed `get_page_number` function as no longer needed
 * added PHPDoc style documentation
 * removed 'category.php' template file as not used
-* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes`
+* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes` in 'comments.php'
 * reviewed and correct old changelog entries for spelling and other minor typos
 
 /**
@@ -115,7 +115,7 @@ Changelog as of November 28, 2011:
   - minor change to `the_content` "more" text
   - css form fine-tuning
   - code clean up to meet WP Standards
-  - moved default search into `sidebar-1` (a popular requested in end-user feedback)
+  - moved default search into `sidebar-1` (a popular end-user feedback request)
   - add `custom menu` support
   - add `custom background` support
   - add `post-thumbnail` support to posts and pages
@@ -164,7 +164,7 @@ Changelog as of November 28, 2011:
   - corrected positioning of 'logged-in' message for comments
   - added query reset to correct for possible is_home() issue?!
   - corrected deprecated parameter 'siteurl' to 'url' in header.php
-  - editted footer.php template file to better handle possible lengthy text fields
+  - edited footer.php template file to better handle possible lengthy text fields
   - CSS: cleaned out empty elements  
   - CSS: added #bottom-container within #bottom-extended
   - CSS: reviewed IE6 conditional style sheet -> reduced theme elements being displayed; please upgrade!
@@ -188,7 +188,7 @@ Changelog as of November 28, 2011:
   - corrected child theme file structures
 
 -- Version 1.4.3
-  - Updated Multi child theme to use correct comments.php template for threaded/nested fucntionality.
+  - Updated Multi child theme to use correct comments.php template for threaded/nested functionality.
   - CSS (new): added '.wp-caption.aligncenter {margin: 10px auto;}'
   - CSS (new): added 'sup' and 'sub' elements
   - added the signature HR image (finally) ... just use an 'hr' or 'desk-mess-mirrored' class
@@ -248,7 +248,7 @@ NB: Version 1.2 will be the last version to maintain the legacy files:
   - removed the files ~header-home.php and ~home.php from the theme package
   
 -- Version 1.0.9
-  - deprecated the header-home.php and home.php files by adding a tilde (~) character to the beginning of the file name. The functionality was merged into the index.php file with additonal PHP code, specifically an IF statement to test for the displayed page being the "home page", or the "front page". This will reduce maintenance and potential errors that cropped up due to the extra files.
+  - deprecated the header-home.php and home.php files by adding a tilde (~) character to the beginning of the file name. The functionality was merged into the index.php file with additional PHP code, specifically an IF statement to test for the displayed page being the "home page", or the "front page". This will reduce maintenance and potential errors that cropped up due to the extra files.
   -- copies of header-home.php and home.php from version 1.0.8 are still included (prefixed with the tilde character) but will be removed in 1.1.0
   - re-coded footer to programmatically write the theme name in the credit line, including recognition of child themes.
   - added additional internationalization code
