@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="maintop"></div><!--end maintop-->
+<div id="maintop"></div>
 <div id="wrapper">
     <div id="content">
         <div id="main-blog">
