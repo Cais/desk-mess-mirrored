@@ -1,20 +1,29 @@
 <?php
-global $wp_version;
-
 /**
  * Enqueue Comment Reply Script
+ *
+ * If the page being viewed is a single post/page; and, comments are open; and,
+ * threaded comments are turned on then enqueue the built-in comment-reply
+ * script.
  *
  * @package Desk_Mess_Mirrored
  * @since   1.9.1
  *
  * @return  void
+ *
+ * @version 2.0
+ * Last revised November 30, 2011
+ * Added `function_exists` conditional check
  */
-function dmm_enqueue_comment_reply() {
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
+    function dmm_enqueue_comment_reply() {
+            if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+                wp_enqueue_script( 'comment-reply' );
+            }
+    }
 }
 add_action( 'wp_enqueue_scripts', 'dmm_enqueue_comment_reply' );
+// End Enqueue Comment Reply Script
 
 /** Start Register Widgets */
 register_sidebars( 3, array(
@@ -104,7 +113,7 @@ if ( ! function_exists( 'bns_theme_version' ) ) {
 /** Tell WordPress to run desk_mess_mirrored_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' );
 
-if ( ! function_exists( 'desk_mess_mirrored_setup' ) ):
+if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
     function desk_mess_mirrored_setup(){
             // This theme uses post thumbnails
             add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
@@ -156,9 +165,10 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ):
             $locale = get_locale();
             $locale_file = TEMPLATEPATH . "/languages/$locale.php";
             if ( is_readable( $locale_file ) )
+                /** @noinspection PhpIncludeInspection */
                 require_once( $locale_file );
     }
-endif;
+}
 
 /**
  * BNS Modified Post
@@ -176,4 +186,4 @@ if ( ! function_exists( 'bns_modified_post' ) ) {
 // Set the content width based on the theme's design and stylesheet, see #main-blog element in style.css
 if ( ! isset( $content_width ) ) $content_width = 580;
 ?>
-<?php /* Last Revised November 28, 2011 v1.9.1 */ ?>
+<?php /* Last revised November 30, 2011 v2.0 */ ?>

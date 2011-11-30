@@ -12,7 +12,7 @@
  * @link        http://buynowshop.com/themes/desk-mess-mirrored/
  * @link        https://github.com/Cais/desk-mess-mirrored/
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
- * @version     1.9.1
+ * @version     2.0
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
