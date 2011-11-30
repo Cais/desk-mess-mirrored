@@ -25,6 +25,37 @@ if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
 add_action( 'wp_enqueue_scripts', 'dmm_enqueue_comment_reply' );
 // End Enqueue Comment Reply Script
 
+/**
+ * DMM WP Title
+ *
+ * Utilizes the `wp_title` filter to add text to the default output
+ * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/wp_title
+ *
+ * @package Desk_Mess_Mirrored
+ * @since 2.0
+ */
+if ( ! function_exists( 'dmm_wp_title' ) ) {
+    function dmm_wp_title() {
+            global $page, $paged;
+            // Default title
+            $dmm_title_text = wp_title( '|', false, 'right' ) . get_bloginfo( 'name' );
+
+            // Add the blog description (tagline) for the home/front page.
+            $site_tagline = get_bloginfo( 'description', 'display' );
+            if ( $site_tagline && ( is_home() || is_front_page() ) )
+                $dmm_title_text .= " | $site_tagline";
+
+            // Add a page number if necessary:
+            if ( $paged >= 2 || $page >= 2 )
+                $dmm_title_text .= ' | ' . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
+
+            // Use `apply_filters` on `wp_title` and echo
+            $dmm_wp_title = apply_filters( 'wp_title', $dmm_title_text );
+            echo $dmm_wp_title;
+    }
+}
+// End DMM WP Title
+
 /** Start Register Widgets */
 register_sidebars( 3, array(
                            'description'    => '',

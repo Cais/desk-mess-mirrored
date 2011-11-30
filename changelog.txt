@@ -1,17 +1,6 @@
-Changelog as of November 29, 2011:
-== Version 1.9.1 ==
-* added CSS optimizations
-* added PHPDoc style documentation
-* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes` in 'comments.php'
-* corrected comment reply style
-* drop direct support for Internet Explorer 6 or order
-* modified `.widget h2` CSS to better allow for long titles in the sidebar
-* moved "You must be logged in to post a comment." to be more clearly readable
-* moved enqueued `comment-reply` call from 'header.php' to 'functions.php'
-* removed `get_page_number` function as no longer needed
-* removed 'category.php' template file as not used
-* reviewed and corrected old changelog entries for spelling and other minor typos
-* updated 'readme.txt' (minor changes)
+Changelog as of November 30, 2011:
+== Version 2.0 ==
+* Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
 
 /**
  * Internet Browsers Reviewed
@@ -29,6 +18,21 @@ Changelog as of November 29, 2011:
 /** ------------------------------------------------------------------------- */
 ----
 
+== Version 1.9.1 ==
+* added CSS optimizations
+* added PHPDoc style documentation
+* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes` in 'comments.php'
+* corrected comment reply style
+* drop direct support for Internet Explorer 6 or order
+* modified `.widget h2` CSS to better allow for long titles in the sidebar
+* moved "You must be logged in to post a comment." to be more clearly readable
+* moved enqueued `comment-reply` call from 'header.php' to 'functions.php'
+* removed `get_page_number` function as no longer needed
+* removed 'category.php' template file as not used
+* reviewed and corrected old changelog entries for spelling and other minor typos
+* updated 'readme.txt' (minor changes)
+
+----
 -- Version 1.9
   - corrects issues with custom menus and brings forward all other changes added at 1.8.7
   
