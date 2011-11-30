@@ -56,15 +56,37 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
 }
 // End DMM WP Title
 
-/** Start Register Widgets */
-register_sidebars( 3, array(
-                           'description'    => '',
-                           'before_widget'  => '<li id="%1$s" class="widget %2$s">',
-                           'after_widget'   => "</li>\n",
-                           'before_title'   => '<h2 class="widgettitle">',
-                           'after_title'    => "</h2>\n",
-                            ) );
-// End Register Widgets
+/**
+ * Register Widget Areas
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   1.0
+ *
+ * @version 2.0
+ * Re-define each widget area separately to allow for descriptions to show end-user more details about each area
+ */
+register_sidebar( array(
+    'description'    => __( 'Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme sidebar content is placed here. If you drag and drop a new widget into this area you will replace *all* of the default sidebar content.', 'desk-mess-mirrored' ),
+    'before_widget'  => '<li id="%1$s" class="widget %2$s">',
+    'after_widget'   => "</li>\n",
+    'before_title'   => '<h2 class="widgettitle">',
+    'after_title'    => "</h2>\n",
+    ) );
+register_sidebar( array(
+    'description'    => __( 'Widget area 2 located in right sidebar, empty by default', 'desk-mess-mirrored' ),
+    'before_widget'  => '<li id="%1$s" class="widget %2$s">',
+    'after_widget'   => "</li>\n",
+    'before_title'   => '<h2 class="widgettitle">',
+    'after_title'    => "</h2>\n",
+    ) );
+register_sidebar( array(
+    'description'    => __( 'Widget area 3 located in right sidebar, empty by default', 'desk-mess-mirrored' ),
+    'before_widget'  => '<li id="%1$s" class="widget %2$s">',
+    'after_widget'   => "</li>\n",
+    'before_title'   => '<h2 class="widgettitle">',
+    'after_title'    => "</h2>\n",
+    ) );
+// End Register Widget Areas
 
 /**
  * BNS Dynamic Copyright
