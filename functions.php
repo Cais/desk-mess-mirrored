@@ -73,14 +73,14 @@ register_sidebar( array(
     'after_title'    => "</h2>\n",
     ) );
 register_sidebar( array(
-    'description'    => __( 'Widget area 2 located in right sidebar, empty by default', 'desk-mess-mirrored' ),
+    'description'    => __( 'Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. This area is empty by default', 'desk-mess-mirrored' ),
     'before_widget'  => '<li id="%1$s" class="widget %2$s">',
     'after_widget'   => "</li>\n",
     'before_title'   => '<h2 class="widgettitle">',
     'after_title'    => "</h2>\n",
     ) );
 register_sidebar( array(
-    'description'    => __( 'Widget area 3 located in right sidebar, empty by default', 'desk-mess-mirrored' ),
+    'description'    => __( 'Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. This are is empty by default', 'desk-mess-mirrored' ),
     'before_widget'  => '<li id="%1$s" class="widget %2$s">',
     'after_widget'   => "</li>\n",
     'before_title'   => '<h2 class="widgettitle">',
