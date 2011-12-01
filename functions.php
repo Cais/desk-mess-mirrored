@@ -88,10 +88,26 @@ register_sidebar( array(
     ) );
 // End Register Widget Areas
 
-/**
- * BNS Dynamic Copyright
- */
 if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
+    /**
+     * BNS Dynamic Copyright
+     *
+     * Displays a generic copyright statement (found in the theme footer) with
+     * parameters usable for customization.
+     *
+     * @package Desk_Mess_Mirrored
+     * @since 1.4.6
+     *
+     * @param string $args - start|copy_years|url|end
+     * @internal @param start       => default: Copyright
+     * @internal @param copy_years  => default: from the first publicly viewable post year to the most current publicly viewable post year
+     * @internal @param url         => default: value associated with the `home_url` function
+     * @internal @param end         => default: All rights reserved.
+     *
+     * Last revised December 1, 2011
+     * @version 2.0
+     * Updated documentation to clarify function parameters
+     */
     function bns_dynamic_copyright( $args = '' ) {
             $initialize_values = array( 'start' => '', 'copy_years' => '', 'url' => '', 'end' => '' );
             $args = wp_parse_args( $args, $initialize_values );
@@ -99,10 +115,16 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
             /* Initialize the output variable to empty */
             $output = '';
 
-            /* Start common copyright notice */
+            /**
+             * Start common copyright notice
+             * @example Copyright
+             */
             empty( $args['start'] ) ? $output .= sprintf( __( 'Copyright', 'desk-mess-mirrored' ) ) : $output .= $args['start'];
 
-            /** Calculate Copyright Years; and, prefix with Copyright Symbol */
+            /**
+             * Calculate Copyright Years; and, prefix with Copyright Symbol
+             * @example © 2009-2011
+             */
             if ( empty( $args['copy_years'] ) ) {
                 /** Get all posts */
                 $all_posts = get_posts( 'post_status=publish&order=ASC' );
@@ -128,10 +150,16 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
                 $output .= ' &copy; ' . $args['copy_years'];
             }
 
-            /** Create URL to link back to home of website */
+            /**
+             * Create URL to link back to home of website using the site name for the anchor text
+             * @example <a href="http://example.com" title="Your Blog Name">Your Blog Name</a>
+             */
             empty( $args['url'] ) ? $output .= ' <a href="' . home_url( '/' ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">' . get_bloginfo( 'name', 'display' ) .'</a>  ' : $output .= ' ' . $args['url'];
 
-            /** End common copyright notice */
+            /**
+             * End common copyright notice
+             * @example All rights reserved.
+             */
             empty( $args['end'] ) ? $output .= ' ' . sprintf( __( 'All rights reserved.', 'desk-mess-mirrored' ) ) : $output .= ' ' . $args['end'];
 
             /** Construct and sprintf the copyright notice */
