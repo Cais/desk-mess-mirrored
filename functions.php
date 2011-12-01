@@ -261,12 +261,18 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
     }
 }
 
-/**
- * BNS Modified Post
- */
 if ( ! function_exists( 'bns_modified_post' ) ) {
+    /**
+     * BNS Modified Post
+     *
+     * Checks if the last modification made to the post/page is different than
+     * the date the post/page was written; if so, it displays a message showing
+     * the modifying author and the date the post/page was modified
+     *
+     * @package Desk_Mess_Mirrored
+     * @since   1.8.5
+     */
     function bns_modified_post(){
-            /** If the post date and the last modified date are different display modified date */
             if ( get_the_date() <> get_the_modified_date() ) {
                 printf( __( '<div class="bns-modified-post">Last modified by %1$s on %2$s.</div>', 'desk-mess-mirrored' ), get_the_modified_author(), get_the_modified_date() );
             }
@@ -277,4 +283,3 @@ if ( ! function_exists( 'bns_modified_post' ) ) {
 // Set the content width based on the theme's design and stylesheet, see #main-blog element in style.css
 if ( ! isset( $content_width ) ) $content_width = 580;
 ?>
-<?php /* Last revised November 30, 2011 v2.0 */ ?>
