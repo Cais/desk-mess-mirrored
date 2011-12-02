@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-= Last Updated July 16, 2011 =
+= Last revised December 2, 2011 =
 * This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases. The following information may be found and/or updated as needed:
 * This file was renamed to the more standard readme.txt 2010 August 27.
 
@@ -14,13 +14,9 @@
 = Q: Does the theme support multi-level, or drop-down menus? =
 A: Yes, as of version 1.8; with significant improvements in version 1.8.7!
 
-= Q: Why does a second "Home" tab appear in the menu? =
-A: The theme programmatically creates a "Home" link in the default menu if the reader goes to a page that is not considered the 'home' or 'front page' of the site as set under: Settings | Reading > Front page displays > A static page: Front page.
-It is recommended to not use a page titled "Home" due to this (see TODO below).
-
 = Q: Why does the tack above the widget not appear sometimes? =
 A: The easiest solution to this issue is to either insure there is always a title used for every widget; if you wish to not have any text in that particular widget using a `space` (`&nbsp;`) will work very well.
-Also to note, if you use the escape sequence `&nbsp;` you may notice the widget title is empty afterward. `&nbsp;` (without the backticks) is a `non-breaking space` and appears as such.
+Also to note, if you use the escape sequence `&nbsp;` you may notice the widget title is empty afterward. `&nbsp;` is a `non-breaking space` and appears as such.
 
 = Q: How do I use the new BNS Dynamic Copyright function? =
 A: The function now accepts four (4) parameters. Leaving the function as is will produce the copyright statement as it was produced in version prior to 1.8.5
@@ -50,7 +46,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 
 = Long Term Goals =
 *[-] Correct widget no title / no image issue ... may not have a solution; use a `space` in the title as a work-around.
-*[ ] Review second "Home" page scenarios for possible solutions
+*[x] Review second "Home" page scenarios for possible solutions
 *[ ] Clean up i18n strings for better translation ... or, remove internationalization altogether?!
 *[-] Theme Options? (Not likely.)
 
