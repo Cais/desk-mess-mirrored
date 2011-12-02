@@ -5,6 +5,7 @@ Changelog as of December 1, 2011:
 * Changed `my_theme_data` to `active_theme_data` to be more descriptive in `BNS Theme Version`
 * Re-defined each widget area separately to allow for descriptions to show end-user more details about each area
 * Removed 'Home" link code from `dmm_list_pages`
+* Replaced TEMPLATEPATH constant with `get_template_directory_uri`
 * Updated documentation to clarify `BNS Dynamic Copyright` parameters
 
 /**

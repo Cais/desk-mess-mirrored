@@ -253,13 +253,22 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             add_action( 'init', 'register_dmm_menu' );
             // End wp_nav_menu() custom menu support
 
-            // Make theme available for translation
-            // Translations can be filed in the /languages/ directory
-            load_theme_textdomain( 'desk-mess-mirrored', TEMPLATEPATH . '/languages' );
+            /**
+             * Make theme available for translation
+             *
+             * Translations can be filed in the /languages/ directory
+             *
+             * @package Desk_Mess_Mirrored
+             * @since 1.0.7
+             *
+             * Last revised December 2, 2011
+             * @version 2.0
+             * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
+             */
+            load_theme_textdomain( 'desk-mess-mirrored', get_template_directory_uri() . '/languages' );
             $locale = get_locale();
-            $locale_file = TEMPLATEPATH . "/languages/$locale.php";
+            $locale_file = get_template_directory_uri() . "/languages/$locale.php";
             if ( is_readable( $locale_file ) )
-                /** @noinspection PhpIncludeInspection */
                 require_once( $locale_file );
     }
 }
