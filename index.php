@@ -37,6 +37,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Last revised November 28, 2011
+ * @todo review all changes for their effect on the Multi Child-Theme
  * @todo move this doc-block to header.php?
  */
 ?>

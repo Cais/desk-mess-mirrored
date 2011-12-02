@@ -162,7 +162,7 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
              */
             empty( $args['end'] ) ? $output .= ' ' . sprintf( __( 'All rights reserved.', 'desk-mess-mirrored' ) ) : $output .= ' ' . $args['end'];
 
-            /** Construct and sprintf the copyright notice */
+            /** Display the copyright notice */
             $output = sprintf( __( '<span id="bns-dynamic-copyright"> %1$s </span><!-- #bns-dynamic-copyright -->', 'desk-mess-mirrored' ), $output );
             $output = apply_filters( 'bns_dynamic_copyright', $output, $args );
 
@@ -215,7 +215,16 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             // This theme allows users to set a custom background
             add_custom_background();
 
-            /** Add wp_nav_menu() custom menu support */
+            /**
+             * Add wp_nav_menu() custom menu support
+             *
+             * @package Desk_Mess_Mirrored
+             * @since 1.5
+             *
+             * Last revised December 2, 2011
+             * @version 2.0
+             * Removed 'Home" link code from `dmm_list_pages`
+             */
             if ( ! function_exists( 'dmm_nav_menu' ) ) {
                 function dmm_nav_menu() {
                         if ( function_exists( 'wp_nav_menu' ) )
@@ -229,26 +238,20 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                 }
             }
             if ( ! function_exists( 'dmm_list_pages' ) ) {
-                function dmm_list_pages() {
-                        if ( is_home() || is_front_page() ) { ?>
-                            <ul class="nav-menu">
-                                <?php wp_list_pages( 'title_li=' ); ?>
-                            </ul>
-                        <?php } else { ?>
-                            <ul class="nav-menu">
-                                <li><a href="<?php echo home_url( '/' ); ?>"><?php _e( 'Home', 'desk-mess-mirrored' ) ?></a></li>
-                                <?php wp_list_pages( 'title_li=' ); ?>
-                            </ul>
-                        <?php }
-                }
+                function dmm_list_pages() { ?>
+                        <ul class="nav-menu">
+                            <?php wp_list_pages( 'title_li=' ); ?>
+                        </ul>
+                <?php }
             }
+
             if ( ! function_exists( 'register_dmm_menu' ) ) {
                 function register_dmm_menu() {
                         register_nav_menu( 'top-menu', __( 'Top Menu', 'desk-mess-mirrored' ) );
                 }
             }
             add_action( 'init', 'register_dmm_menu' );
-            // End wp_nav_menu()
+            // End wp_nav_menu() custom menu support
 
             // Make theme available for translation
             // Translations can be filed in the /languages/ directory
