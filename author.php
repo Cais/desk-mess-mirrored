@@ -1,14 +1,25 @@
-<?php get_header(); ?>
-<?php /** Set the $curauth variable */
-    $curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var( 'author_name' ) ) : get_userdata( get_query_var( 'author' ) );
+<?php
+/**
+ * @package Multi
+ *
+ * @version 1.9.1
+ * Last revised December 1, 2011
+ */
+
+get_header();
+/** Set the $curauth variable */
+$curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var( 'author_name' ) ) : get_userdata( get_query_var( 'author' ) );
 ?>
 <div id="maintop"></div>
 <div id="wrapper">
     <div id="content">
         <div id="main-blog">
-            <div id="author" class="<?php if ( ( get_userdata( intval( $author ) )->ID ) == '1' ) echo 'administrator';
-                    /* elseif ( ( get_userdata( intval( $author ) )->ID ) == '2' ) echo 'jellybeen'; */ /* sample */
-                    /* add additional user_id following above example, echo the 'CSS element' you want to use for styling */ ?>">
+            <div id="author" class="<?php
+                    /** @var $author string */ if ( ( get_userdata( intval( $author ) )->ID ) == '1' ) echo 'administrator';
+                    /** elseif ( ( get_userdata( intval( $author ) )->ID ) == '2' ) echo 'jellybeen'; */ /* sample */
+                    /** add additional user_id following above example, echo the 'CSS element' you want to use for styling
+                     * @todo re-write this ... preferably remove the whole thing, but for backward compatibility it probably needs to be re-written
+                     */ ?>">
                 <h2><?php _e( 'About ', 'desk-mess-mirrored' ); echo $curauth->display_name; ?></h2>
                 <ul>
                     <li><?php _e( 'Website', 'desk-mess-mirrored' ); ?>: <a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a> <?php _e( 'or', 'desk-mess-mirrored' ); ?> <a href="mailto:<?php echo $curauth->user_email; ?>"><?php _e( 'email', 'desk-mess-mirrored' ); ?></a></li>
@@ -30,7 +41,13 @@
                         </div>
                         <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'desk-mess-mirrored' ); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                         <div class="postdata">
-                            <?php if ( get_the_title() == "" ) { /** for posts without titles - creates a permalink using the post date referencing the post ID */
+                            <?php
+                            /**
+                             * for posts without titles - creates a permalink using the post date referencing the post ID
+                             * @todo review - use the word Posted in place of the date?
+                             * @todo make more i18n compatible ... `sprintf` or `printf`?
+                             */
+                            if ( get_the_title() == "" ) {
                                 _e( 'On ', 'desk-mess-mirrored' ); ?><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to post ', 'desk-mess-mirrored' ); the_id(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
                             <?php } else {
                                 _e( 'On ', 'desk-mess-mirrored' ); the_time( get_option( 'date_format' ) );
@@ -68,4 +85,3 @@
     </div><!--end content-->
 </div><!--end wrapper-->
 <?php get_footer();?>
-<?php /* Last revised November 28, 2011 v1.9.1 */ ?>
