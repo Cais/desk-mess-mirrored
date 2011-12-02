@@ -1,8 +1,8 @@
 <?php
 /**
- * @package Multi
+ * @package Desk Mess Mirrored
  *
- * @version 1.9.1
+ * @version 2.0
  * Last revised December 1, 2011
  */
 
