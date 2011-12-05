@@ -3,6 +3,7 @@ Changelog as of December 5, 2011:
 * Added additional PHPDoc style documentation
 * Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
 * Added `DMM Use Posted` function for posts without titles
+* Added minimal doc-block to each file as relevant
 * Changed `my_theme_data` to `active_theme_data` to be more descriptive in `BNS Theme Version`
 * Re-defined each widget area separately to allow for descriptions to show end-user more details about each area
 * Removed 'Home" link code from `dmm_list_pages`
