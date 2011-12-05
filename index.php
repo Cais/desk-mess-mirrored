@@ -38,7 +38,6 @@
  *
  * Last revised December 5, 2011
  * @todo review all changes for their effect on the Multi Child-Theme
- * @todo move this doc-block to header.php?
  */
 ?>
 

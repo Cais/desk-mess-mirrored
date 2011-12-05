@@ -6,6 +6,7 @@ Changelog as of December 5, 2011:
 * Added minimal doc-block to each file as relevant
 * Added 'desk-mess-mirrored' loop template
 * Changed `my_theme_data` to `active_theme_data` to be more descriptive in `BNS Theme Version`
+* Implemented 'desk-mess-mirrored' loop in 404, archive, author, index (home, front-page), page, single templates
 * Re-defined each widget area separately to allow for descriptions to show end-user more details about each area
 * Removed 'Home" link code from `dmm_list_pages`
 * Removed unused images (from IE6 support)
