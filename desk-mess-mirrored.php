@@ -11,13 +11,12 @@
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
+ *
+ * @internal for 404, archive, author, index (home, front-page), page, single templates
  */
 
 /**
  * Default Loop
- *
- * @since   2.0
- * @internal for 404, archive, author, index (home, front-page), page, single templates
  */
 global $count;
 $count++; ?>
@@ -43,9 +42,9 @@ $count++; ?>
     <?php if ( has_post_thumbnail() )
         the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
     if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {
-        the_content( __( 'Read more... ', 'shades' ) ); ?>
+        the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
         <div class="clear"><!-- For inserted media at the end of the post --></div>
-        <?php wp_link_pages( array( 'before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
+        <?php wp_link_pages( array( 'before' => '<p><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
     } else {
         the_excerpt(); ?>
         <div class="clear"><!-- For inserted media at the end of the post --></div>
@@ -55,4 +54,4 @@ $count++; ?>
     <?php } ?>
     <p class="single-meta"><?php the_tags(); ?></p>
 </div> <!-- .post #post-ID -->
-<?php comments_template(); ?>
+<?php comments_template(); // End Default Loop ?>
