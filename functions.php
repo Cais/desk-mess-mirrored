@@ -88,26 +88,26 @@ register_sidebar( array(
     ) );
 // End Register Widget Areas
 
+/**
+ * BNS Dynamic Copyright
+ *
+ * Displays a generic copyright statement in the theme footer area with
+ * parameters usable for customization.
+ *
+ * @package Desk_Mess_Mirrored
+ * @since 1.4.6
+ *
+ * @param string $args - start|copy_years|url|end
+ * @internal @param start       => default: Copyright
+ * @internal @param copy_years  => default: from the first publicly viewable post year to the most current publicly viewable post year
+ * @internal @param url         => default: value associated with the `home_url` function
+ * @internal @param end         => default: All rights reserved.
+ *
+ * Last revised December 1, 2011
+ * @version 2.0
+ * Updated documentation to clarify function parameters
+ */
 if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
-    /**
-     * BNS Dynamic Copyright
-     *
-     * Displays a generic copyright statement in the theme footer area with
-     * parameters usable for customization.
-     *
-     * @package Desk_Mess_Mirrored
-     * @since 1.4.6
-     *
-     * @param string $args - start|copy_years|url|end
-     * @internal @param start       => default: Copyright
-     * @internal @param copy_years  => default: from the first publicly viewable post year to the most current publicly viewable post year
-     * @internal @param url         => default: value associated with the `home_url` function
-     * @internal @param end         => default: All rights reserved.
-     *
-     * Last revised December 1, 2011
-     * @version 2.0
-     * Updated documentation to clarify function parameters
-     */
     function bns_dynamic_copyright( $args = '' ) {
             $initialize_values = array( 'start' => '', 'copy_years' => '', 'url' => '', 'end' => '' );
             $args = wp_parse_args( $args, $initialize_values );
@@ -171,20 +171,20 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
 }
 // End BNS Dynamic Copyright
 
+/**
+ * BNS Theme Version
+ *
+ * Displays the theme version including the Child-Theme version (if properly
+ * noted in the Child-Theme details) in the footer area of the theme.
+ *
+ * @package Desk_Mess_Mirrored
+ * @since 1.4.5
+ *
+ * Last revised December 1, 2011
+ * @version 2.0
+ * Changed `my_theme_data` to `active_theme_data` to be more descriptive
+ */
 if ( ! function_exists( 'bns_theme_version' ) ) {
-    /**
-     * BNS Theme Version
-     *
-     * Displays the theme version including the Child-Theme version (if properly
-     * noted in the Child-Theme details) in the footer area of the theme.
-     *
-     * @package Desk_Mess_Mirrored
-     * @since 1.4.5
-     *
-     * Last revised December 1, 2011
-     * @version 2.0
-     * Changed `my_theme_data` to `active_theme_data` to be more descriptive
-     */
     function bns_theme_version () {
             /** Get details of the theme / child theme */
             $blog_css_url = get_stylesheet_directory() . '/style.css';
@@ -297,17 +297,17 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
 }
 // End: DMM Use Posted
 
+/**
+ * BNS Modified Post
+ *
+ * Checks if the last modification made to the post/page is different than
+ * the date the post/page was written; if so, it displays a message showing
+ * the modifying author and the date the post/page was modified
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   1.8.5
+ */
 if ( ! function_exists( 'bns_modified_post' ) ) {
-    /**
-     * BNS Modified Post
-     *
-     * Checks if the last modification made to the post/page is different than
-     * the date the post/page was written; if so, it displays a message showing
-     * the modifying author and the date the post/page was modified
-     *
-     * @package Desk_Mess_Mirrored
-     * @since   1.8.5
-     */
     function bns_modified_post(){
             if ( get_the_date() <> get_the_modified_date() ) {
                 printf( __( '<div class="bns-modified-post">Last modified by %1$s on %2$s.</div>', 'desk-mess-mirrored' ), get_the_modified_author(), get_the_modified_date() );
@@ -316,6 +316,10 @@ if ( ! function_exists( 'bns_modified_post' ) ) {
 }
 // End BNS Modified Post
 
-// Set the content width based on the theme's design and stylesheet, see #main-blog element in style.css
+/**
+ * Set the content width based on the theme's design and stylesheet
+ *
+ * @internal see #main-blog element in style.css
+ */
 if ( ! isset( $content_width ) ) $content_width = 580;
 ?>
