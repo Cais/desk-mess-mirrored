@@ -38,16 +38,9 @@ $curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var
                 $count = 0;
                 while ( have_posts() ) : the_post();
                     get_template_part( 'desk-mess-mirrored', get_post_format() );
-                endwhile; ?>
-                <div id="nav-global" class="navigation">
-                    <div class="left">
-                        <?php next_posts_link( __( '&laquo; Previous entries', 'desk-mess-mirrored' ) ); ?>
-                    </div>
-                    <div class="right">
-                        <?php previous_posts_link( __( 'Next entries &raquo;', 'desk-mess-mirrored' ) ); ?>
-                    </div>
-                </div> <!-- .navigation -->
-            <?php else : ?>
+                endwhile;
+                get_template_part( 'dmm-navigation' );
+            else : ?>
                 <h2><?php printf( __( 'Search Results for: %s' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
                 <p class="center"><?php _e( 'Sorry, there are no posts by this author.', 'desk-mess-mirrored' ); ?></p>
                 <?php get_search_form();
