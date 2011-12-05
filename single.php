@@ -30,4 +30,3 @@
     </div><!--end content-->
 </div><!--end wrapper-->
 <?php get_footer();?>
-<?php /* Last revised November 29, 2011 v1.9.1 */ ?>

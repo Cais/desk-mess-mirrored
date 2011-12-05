@@ -15,14 +15,10 @@
                         </div>
                         <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'desk-mess-mirrored' ); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                         <div class="postdata">
-                            <?php printf( __( 'Posted by %1$s on ', 'desk-mess-mirrored' ), get_the_author() );
-                                if ( get_the_title() == "" ) { /* for posts without titles - creates a permalink using the post date referencing the post ID */ ?>
-                                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to post ', 'desk-mess-mirrored' ); the_id(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
-                                <?php } else {
-                                    the_time( get_option( 'date_format' ) );
-                                }
+                            <?php printf( __( '%1$s by %2$s on ', 'desk-mess-mirrored' ), dmm_use_posted(), get_the_author() );
+                            the_time( get_option( 'date_format' ) );
                             _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' &#124; ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
-                        </div>
+                        </div><!-- .postdata -->
                         <?php if ( has_post_thumbnail() ) {
                             the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
                         }
@@ -51,4 +47,3 @@
     </div><!--end content-->
 </div><!--end wrapper-->
 <?php get_footer(); ?>
-<?php /* Last revised November 28, 2011 v1.9.1 */ ?>

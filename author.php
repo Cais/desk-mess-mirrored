@@ -3,7 +3,7 @@
  * @package Desk Mess Mirrored
  *
  * @version 2.0
- * Last revised December 1, 2011
+ * Last revised December 5, 2011
  */
 
 get_header();
@@ -41,17 +41,8 @@ $curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var
                         </div>
                         <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'desk-mess-mirrored' ); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                         <div class="postdata">
-                            <?php
-                            /**
-                             * for posts without titles - creates a permalink using the post date referencing the post ID
-                             * @todo review - use the word Posted in place of the date?
-                             * @todo make more i18n compatible ... `sprintf` or `printf`?
-                             */
-                            if ( get_the_title() == "" ) {
-                                _e( 'On ', 'desk-mess-mirrored' ); ?><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to post ', 'desk-mess-mirrored' ); the_id(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
-                            <?php } else {
-                                _e( 'On ', 'desk-mess-mirrored' ); the_time( get_option( 'date_format' ) );
-                            }
+                            <?php printf( __( '%1$s by %2$s on ', 'desk-mess-mirrored' ), dmm_use_posted(), get_the_author() );
+                            the_time( get_option( 'date_format' ) );
                             _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' &#124; ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
                         </div><!-- .postdata -->
                         <?php if ( $count == 1 ) :
