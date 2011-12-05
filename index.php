@@ -62,7 +62,7 @@
                             <?php printf( __( 'Posted by %1$s on ', 'desk-mess-mirrored' ), get_the_author() );
                             /**
                              * for posts without titles - creates a permalink using the post date referencing the post ID
-                             * @todo look at using the word 'Posted' instead of the date
+                             * @todo Use the word 'Posted' instead of the date?
                              **/
                             if ( get_the_title() == "" ) { ?>
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to post ', 'desk-mess-mirrored' ); the_id(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
