@@ -2,6 +2,8 @@
 /**
  * Desk Mess Mirrored loops
  *
+ * Displays the default loop content.
+ *
  * @package     Desk_Mess_Mirrored
  * @since       2.0
  *
@@ -12,7 +14,8 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
- * @internal for 404, archive, author, index (home, front-page), page, single templates
+ * @internal    for 404, archive, author, index (home, front-page), page, single templates
+ * @internal    called with `get_template_part( 'desk-mess-mirrored', get_post_format() )`
  */
 
 /**

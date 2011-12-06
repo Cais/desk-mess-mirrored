@@ -15,6 +15,7 @@
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
  * @internal    used in 404, index, archive, and author
+ * @internal    called with `get_template_part( 'dmm-navigation' )`
  */
 ?>
 <div id="nav-global" class="navigation">

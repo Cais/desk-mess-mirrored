@@ -1,14 +1,23 @@
 <?php
 /**
+ * Comments Template
+ *
+ * Displays list of comments
+ *
  * @package     Desk_Mess_Mirrored
+ * @since       1.0
+ *
  * @link        http://buynowshop.com/themes/desk-mess-mirrored/
  * @link        https://github.com/Cais/desk-mess-mirrored/
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
+ *
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
- * Last revised December 5, 2011
- * @version 2.0
+ * @internal    called `comment_form()`
+ *
+ * Last revised December 6, 2011
+ * @version     2.0
  */
 
 // Do not delete these lines

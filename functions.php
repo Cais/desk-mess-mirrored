@@ -1,14 +1,21 @@
 <?php
 /**
+ * Functions
+ *
+ * The secret sauce and other funky flavors
+ *
  * @package     Desk_Mess_Mirrored
+ * @since       1.0
+ *
  * @link        http://buynowshop.com/themes/desk-mess-mirrored/
  * @link        https://github.com/Cais/desk-mess-mirrored/
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
+ *
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
- * Last revised December 5, 2011
- * @version 2.0
+ * Last revised December 6, 2011
+ * @version     2.0
  */
 
 /**
