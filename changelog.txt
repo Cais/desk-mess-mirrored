@@ -7,7 +7,8 @@ Changelog as of December 5, 2011:
 * Added minimal doc-block to each file as relevant
 * Added 'desk-mess-mirrored' loop template
 * Added 'dmm-navigation' and implemented in 404, index, archive, and author template files
-* Changed `my_theme_data` to `active_theme_data` to be more descriptive in `BNS Theme Version`
+* Changed `BNS Theme Version` to `DMM Theme Version` with extensive re-writes to text displayed
+* Changed `my_theme_data` to `active_theme_data` in `DMM Theme Version`
 * Implemented 'desk-mess-mirrored' loop in 404, archive, author, index (home, front-page), page, single templates
 * Re-defined each widget area separately to allow for descriptions to show end-user more details about each area
 * Removed 'Home" link code from `dmm_list_pages`

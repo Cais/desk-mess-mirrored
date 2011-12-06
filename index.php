@@ -41,6 +41,7 @@
  *
  * Last revised December 6, 2011
  * @todo review all changes for their effect on the Multi Child-Theme
+ * @todo update Internet browser versions used for testing before releasing
  */
 ?>
 

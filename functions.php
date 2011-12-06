@@ -191,7 +191,7 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
 // End BNS Dynamic Copyright
 
 /**
- * BNS Theme Version
+ * DMM Theme Version
  *
  * Displays the theme version including the Child-Theme version (if properly
  * noted in the Child-Theme details) in the footer area of the theme.
@@ -199,12 +199,14 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
  * @package Desk_Mess_Mirrored
  * @since 1.4.5
  *
- * Last revised December 1, 2011
+ * Last revised December 6, 2011
  * @version 2.0
  * Changed `my_theme_data` to `active_theme_data` to be more descriptive
+ * Changed `BNS Theme Version` to `DMM Theme Version` and changed all relevant references
+ * Changed text to better indicate reference is to theme and not content
  */
-if ( ! function_exists( 'bns_theme_version' ) ) {
-    function bns_theme_version () {
+if ( ! function_exists( 'dmm_theme_version' ) ) {
+    function dmm_theme_version () {
             /** Get details of the theme / child theme */
             $blog_css_url = get_stylesheet_directory() . '/style.css';
             $active_theme_data = get_theme_data( $blog_css_url );
@@ -212,9 +214,9 @@ if ( ! function_exists( 'bns_theme_version' ) ) {
             $parent_theme_data = get_theme_data( $parent_blog_css_url );
 
             if ( is_child_theme() ) {
-                printf( __( '<br /><span id="bns-theme-version">%1$s version %2$s a child of the %3$s version %4$s theme from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), $active_theme_data['Name'], $active_theme_data['Version'], $parent_theme_data['Name'], $parent_theme_data['Version'] );
+                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), '<a href="' . $active_theme_data['URI'] . '">' . $active_theme_data['Name'] . '</a>' , $active_theme_data['Version'], $parent_theme_data['Name'], $parent_theme_data['Version'] );
             } else {
-                printf( __( '<br /><span id="bns-theme-version">%1$s version %2$s theme from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), $active_theme_data['Name'], $active_theme_data['Version'] );
+                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), $active_theme_data['Name'], $active_theme_data['Version'] );
             }
     }
 }
