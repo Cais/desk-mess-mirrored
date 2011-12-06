@@ -1,5 +1,6 @@
 Changelog as of December 5, 2011:
 == Version 2.0 ==
+= Code =
 * Added additional PHPDoc style documentation
 * Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
 * Added `DMM Use Posted` function for posts without titles
@@ -13,6 +14,8 @@ Changelog as of December 5, 2011:
 * Removed unused images (from IE6 support)
 * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
 * Updated documentation to clarify `BNS Dynamic Copyright` parameters
+= CSS =
+* Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
 
 /**
  * Internet Browsers Reviewed

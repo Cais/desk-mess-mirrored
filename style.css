@@ -403,7 +403,10 @@ div#main-blog .page li { padding-left: 10px; }
 	font-style: italic;
     margin-bottom: 20px;
 }
-.post { margin-bottom: 60px; }
+.post {
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
 
 .post p {
 	margin: 0;
