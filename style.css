@@ -510,6 +510,10 @@ blockquote {
     padding: 10px 0 0 40px;
 }
 
+blockquote > blockquote {
+    margin: 0;
+}
+
 blockquote cite {
 	font-weight: bold;
 	padding-left: 10px;

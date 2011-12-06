@@ -18,6 +18,7 @@ Changelog as of December 5, 2011:
 * Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
 * Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
 * Removed (using comments) `background property` from `code` element
+* Removed margins from a blockquote if it is within another blockquote
 
 /**
  * Internet Browsers Reviewed
