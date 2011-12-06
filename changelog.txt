@@ -1,5 +1,6 @@
-Changelog as of December 5, 2011:
+=== Desk Mess Mirrored ===
 == Version 2.0 ==
+Changelog: December 6, 2011
 = Code =
 * Added additional PHPDoc style documentation
 * Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
@@ -13,29 +14,26 @@ Changelog as of December 5, 2011:
 * Re-defined each widget area separately to allow for descriptions to show end-user more details about each area
 * Removed 'Home" link code from `dmm_list_pages`
 * Removed unused images (from IE6 support)
+* Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright`
 * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
-* Updated documentation to clarify `BNS Dynamic Copyright` parameters
+* Updated documentation to clarify `DMM Dynamic Copyright` parameters
+
 = CSS =
 * Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
 * Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
 * Removed (using comments) `background property` from `code` element
 * Removed margins from a blockquote if it is within another blockquote
 
-/**
- * Internet Browsers Reviewed
- * ==========================
- *
- * Apple Safari v5.1.1 (Mac)
- * Apple Safari v5.1.1 (PC)
- * Firefox v8.0 (Mac)
- * Firefox v8.0 (PC)
- * Google Chrome v15.0
- * Internet Explorer v9.0
- * Opera v11.52
- */
+= Internet Browsers Reviewed =
+* Apple Safari v5.1.1 (Mac)
+* Apple Safari v5.1.1 (PC)
+* Firefox v8.0 (Mac)
+* Firefox v8.0 (PC)
+* Google Chrome v15.0
+* Internet Explorer v9.0
+* Opera v11.52
 
 /** ------------------------------------------------------------------------- */
-----
 
 == Version 1.9.1 ==
 * added CSS optimizations
@@ -68,25 +66,25 @@ Changelog as of December 5, 2011:
   - re-worked "sticky note" image to handle longer menu item names before repeating the image
 
 -- Version 1.8.6.1
-  - corrected readme.txt file FAQ re: `bns_dynamic_copyright`
+  - corrected readme.txt file FAQ re: `dmm_dynamic_copyright`
 
 -- Version 1.8.6
   - released June 19, 2011
   - tested compatible up to WordPress 3.2-RC1
-  - re-worked `bns_dynamic_copyright` to be more easily defined by the end-user
+  - re-worked `dmm_dynamic_copyright` to be more easily defined by the end-user
   - re-worked `desk_mess_mirrored_setup` to add additional `if ( ! function_exists() )` checks
   - re-worked `bns_theme_version` and `bns_modified_post` to better handle internationalization
   
 -- Version 1.8.5
-  - added function_exists check for `dmm_get_page_number`, `bns_dynamic_copyright` and `bns_theme_version`
+  - added function_exists check for `dmm_get_page_number`, `dmm_dynamic_copyright` and `bns_theme_version`
   - added function_exists check for `bns_modified_post` (still not implemented fully in theme)
 
 -- Version 1.8.4
   - released May 30, 2011
   - add 'WordPress Required Version: 3.0' and 'Tested Up To: 3.2' - see http://core.trac.wordpress.org/ticket/16868
   - added (temporary) Jetpack plugin CSS to resolve clearing issue; see http://tinyurl.com/jetpack-clear-issue
-  - modify `bns_dynamic_copyright` to include link to home page
-  - modify `bns_dynamic_copyright` and `bns_theme_version` to have unique `span` wrappers for styling
+  - modify `dmm_dynamic_copyright` to include link to home page
+  - modify `dmm_dynamic_copyright` and `bns_theme_version` to have unique `span` wrappers for styling
   - adjust comment styles: `p`
 
 -- Version 1.8.3
@@ -179,7 +177,7 @@ Changelog as of December 5, 2011:
 -- Version 1.4.6
   - added "GPL2" license statement to style.css
   - CSS: added 'p a img' element to remove linked image borders
-  - WP: added bns_dynamic_copyright() function to footer.php
+  - WP: added dmm_dynamic_copyright() function to footer.php
   - WP: Modified navigation links at bottom of pages
 
 -- Version 1.4.5

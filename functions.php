@@ -108,26 +108,27 @@ register_sidebar( array(
 // End Register Widget Areas
 
 /**
- * BNS Dynamic Copyright
+ * DMM Dynamic Copyright
  *
  * Displays a generic copyright statement in the theme footer area with
  * parameters usable for customization.
  *
- * @package Desk_Mess_Mirrored
- * @since 1.4.6
+ * @package             Desk_Mess_Mirrored
+ * @since               1.4.6
  *
- * @param string $args - start|copy_years|url|end
- * @internal @param start       => default: Copyright
- * @internal @param copy_years  => default: from the first publicly viewable post year to the most current publicly viewable post year
- * @internal @param url         => default: value associated with the `home_url` function
- * @internal @param end         => default: All rights reserved.
+ * @param               string $args - start|copy_years|url|end
+ * @internal    @param  start       => default: Copyright
+ * @internal    @param  copy_years  => default: from the first publicly viewable post year to the most current publicly viewable post year
+ * @internal    @param  url         => default: value associated with the `home_url` function
+ * @internal    @param  end         => default: All rights reserved.
  *
- * Last revised December 1, 2011
- * @version 2.0
+ * Last revised December 6, 2011
+ * @version             2.0
  * Updated documentation to clarify function parameters
+ * Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright`
  */
-if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
-    function bns_dynamic_copyright( $args = '' ) {
+if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
+    function dmm_dynamic_copyright( $args = '' ) {
             $initialize_values = array( 'start' => '', 'copy_years' => '', 'url' => '', 'end' => '' );
             $args = wp_parse_args( $args, $initialize_values );
 
@@ -182,13 +183,13 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
             empty( $args['end'] ) ? $output .= ' ' . sprintf( __( 'All rights reserved.', 'desk-mess-mirrored' ) ) : $output .= ' ' . $args['end'];
 
             /** Display the copyright notice */
-            $output = sprintf( __( '<span id="bns-dynamic-copyright"> %1$s </span><!-- #bns-dynamic-copyright -->', 'desk-mess-mirrored' ), $output );
-            $output = apply_filters( 'bns_dynamic_copyright', $output, $args );
+            $output = sprintf( __( '<span id="dmm-dynamic-copyright"> %1$s </span><!-- #bns-dynamic-copyright -->', 'desk-mess-mirrored' ), $output );
+            $output = apply_filters( 'dmm_dynamic_copyright', $output, $args );
 
             echo $output;
     }
 }
-// End BNS Dynamic Copyright
+// End DMM Dynamic Copyright
 
 /**
  * DMM Theme Version

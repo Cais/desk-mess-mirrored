@@ -38,7 +38,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 *[x] Ticket 418: sticky tab menu bar not handling children or grandchildren
 *[x] Ticket 418: Review and re-work graphics use for menu items to display drop-down or multi-level menus (long-term)
 *[x] Review `editor-style.css` file, address image alignments
-*[x] Clean up new functionality of `bns_dynamic_copyright`
+*[x] Clean up new functionality of `dmm_dynamic_copyright`
 *[x] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
 *[ ] Review / Update 404.php page
 *[ ] Review obviousness of comment link (read: balloon)
