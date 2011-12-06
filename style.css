@@ -1001,15 +1001,15 @@ a.comment-reply-link {
 	margin-top: 3px;
 }
 
-code {
-	background-color: Silver;
+code { /* Use for inline code references such as parameters, functions, short one-line code snippets, etc. */
+	/* background-color: Silver; */
 	font-style: italic;
 	font-size: 14px;
 	margin: 0;
 	overflow: auto;
 	text-align: left;
 
-	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+	overflow-x: auto; /* Use horizontal scroll if needed; for Firefox 2, not needed in Firefox 3 */
 	white-space: pre-wrap; /* css-3 */
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
