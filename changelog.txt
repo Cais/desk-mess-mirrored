@@ -16,6 +16,7 @@ Changelog as of December 5, 2011:
 * Updated documentation to clarify `BNS Dynamic Copyright` parameters
 = CSS =
 * Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
+* Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
 
 /**
  * Internet Browsers Reviewed

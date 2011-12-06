@@ -546,7 +546,22 @@ td { padding-left: 5px; }
 
 /* Gallery */
 .gallery-caption {}
-dl.gallery-item { margin: 0; }
+dl.gallery-item {
+    border: none;
+    margin: 0;
+}
+
+/* Gallery columns up to three (3) are handled by default in the theme.
+ * Four (4) or more columns requires a maximum width be set for the image
+ * thumbnail; also note the height is set to 'auto' to maintain a square shape.
+ **/
+.gallery-columns-4 img { height: auto; max-width: 139px; }
+.gallery-columns-5 img { height: auto; max-width: 110px; }
+.gallery-columns-6 img { height: auto; max-width: 89px; }
+.gallery-columns-7 img { height: auto; max-width: 77px; }
+.gallery-columns-8 img { height: auto; max-width: 66px; }
+.gallery-columns-9 img { height: auto; max-width: 59px; }
+.gallery-columns-10 img { height: auto; max-width: 55px; }
 
 /* === SIDEBAR == */
 /* Organized by general layout of sidebar template */
