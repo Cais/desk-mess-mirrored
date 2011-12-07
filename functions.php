@@ -249,6 +249,54 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             // This theme allows users to set a custom background
             add_custom_background();
 
+            // Add post-formats support for aside, quote, and status
+            add_theme_support( 'post-formats', array( 'aside', 'quote', 'status' ) );
+            /**
+             * Assign unique aside glyph that can be over-written
+             *
+             * @package Desk_Mess_Mirrored
+             * @since   2.0
+             *
+             * @param   $aside_glyph    string - constructed
+             */
+            if ( !function_exists( 'dmm_aside_glyph' ) ) {
+                function dmm_aside_glyph() {
+                        $aside_glyph = '<span class="aside-glyph">';
+                        $aside_glyph .= __( '!', 'desk-mess-mirrored' ); /** default: exclamation mark */
+                        $aside_glyph .= '</span>';
+                        echo apply_filters( 'dmm_aside_glyph', $aside_glyph );
+                }
+            }
+            /**
+             * Assign unique quote glyph that can be over-written
+             *
+             * @package Desk_Mess_Mirrored
+             * @since   2.0
+             */
+            if ( !function_exists( 'dmm_quote_glyph' ) ) {
+                function dmm_quote_glyph() {
+                        $quote_glyph = '<span class="quote-glyph">';
+                        $quote_glyph .= __( '"', 'desk-mess-mirrored' ); /** default: double-quote */
+                        $quote_glyph .= '</span>';
+                        echo apply_filters( 'dmm_quote_glyph', $quote_glyph );
+                }
+            }
+            /**
+             * Assign unique status glyph that can be over-written
+             *
+             * @package Desk_Mess_Mirrored
+             * @since   2.0
+             */
+            if ( !function_exists( 'dmm_status_glyph' ) ) {
+                function dmm_status_glyph() {
+                        $status_glyph = '<span class="status-glyph">';
+                        $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
+                        $status_glyph .= '</span>';
+                        echo apply_filters( 'dmm_status_glyph', $status_glyph );
+                }
+            }
+            // End Add post-formats support
+
             /**
              * Add wp_nav_menu() custom menu support
              *
@@ -261,21 +309,20 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
              */
             if ( ! function_exists( 'dmm_nav_menu' ) ) {
                 function dmm_nav_menu() {
-                        if ( function_exists( 'wp_nav_menu' ) )
+                        if ( function_exists( 'wp_nav_menu' ) ) {
                             wp_nav_menu( array(
                                               'menu_class'      => 'nav-menu',
                                               'theme_location'  => 'top-menu',
                                               'fallback_cb'     => 'dmm_list_pages'
                                                 ) );
-                        else
+                        } else {
                             dmm_list_pages();
+                        }
                 }
             }
             if ( ! function_exists( 'dmm_list_pages' ) ) {
                 function dmm_list_pages() { ?>
-                        <ul class="nav-menu">
-                            <?php wp_list_pages( 'title_li=' ); ?>
-                        </ul>
+                        <ul class="nav-menu"><?php wp_list_pages( 'title_li=' ); ?></ul>
                 <?php }
             }
 
@@ -362,7 +409,5 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  *
  * @internal see #main-blog element in style.css
  */
-if ( ! isset( $content_width ) ) {
-    $content_width = 580;
-}
+if ( ! isset( $content_width ) ) $content_width = 580;
 ?>

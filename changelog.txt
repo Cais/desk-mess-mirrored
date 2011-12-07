@@ -8,6 +8,7 @@ Changelog: December 6, 2011
 * Added minimal doc-block to each template file as relevant
 * Added 'desk-mess-mirrored' loop template
 * Added 'dmm-navigation' and implemented in 404, index, archive, and author template files
+* Added post-formats: aside, quote, and status
 * Changed `BNS Theme Version` to `DMM Theme Version` with extensive re-writes to text displayed
 * Changed `my_theme_data` to `active_theme_data` in `DMM Theme Version`
 * Implemented 'desk-mess-mirrored' loop in 404, archive, author, index (home, front-page), page, single templates
