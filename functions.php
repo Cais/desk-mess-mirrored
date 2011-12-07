@@ -358,7 +358,7 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
 // End BNS Modified Post
 
 /**
- * Set the content width based on the theme's design and stylesheet
+ * Set `content_width` based on the theme design and stylesheet
  *
  * @internal see #main-blog element in style.css
  */
