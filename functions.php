@@ -223,9 +223,21 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
 }
 // End BNS Theme Version
 
-/** Tell WordPress to run desk_mess_mirrored_setup() when the 'after_setup_theme' hook is run. */
-add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' );
-
+/**
+ * Desk Mess Mirrored Setup
+ *
+ * Tell WordPress to run desk_mess_mirrored_setup() when the 'after_setup_theme'
+ * hook is run.
+ *
+ * @package     Desk_Mess_Mirrored
+ * @since       1.5
+ *
+ * @internal    called with `add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' )`
+ *
+ * Last revised December 2, 2011
+ * @version     2.0
+ * See additional documentation within function for specific changes
+ */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
     function desk_mess_mirrored_setup(){
             // This theme uses post thumbnails
@@ -291,9 +303,12 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             $locale = get_locale();
             $locale_file = get_template_directory_uri() . "/languages/$locale.php";
             if ( is_readable( $locale_file ) )
+                /** @noinspection PhpIncludeInspection */
                 require_once( $locale_file );
     }
 }
+add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' );
+// End Desk Mess Mirrored Setup
 
 /**
  * DMM Use Posted
@@ -347,5 +362,7 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  *
  * @internal see #main-blog element in style.css
  */
-if ( ! isset( $content_width ) ) $content_width = 580;
+if ( ! isset( $content_width ) ) {
+    $content_width = 580;
+}
 ?>

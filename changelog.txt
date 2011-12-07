@@ -5,7 +5,7 @@ Changelog: December 6, 2011
 * Added additional PHPDoc style documentation
 * Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
 * Added `DMM Use Posted` function for posts without titles
-* Added minimal doc-block to each file as relevant
+* Added minimal doc-block to each template file as relevant
 * Added 'desk-mess-mirrored' loop template
 * Added 'dmm-navigation' and implemented in 404, index, archive, and author template files
 * Changed `BNS Theme Version` to `DMM Theme Version` with extensive re-writes to text displayed
