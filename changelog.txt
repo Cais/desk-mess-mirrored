@@ -14,7 +14,8 @@ Changelog: December 6, 2011
 * Re-defined each widget area separately to allow for descriptions to show end-user more details about each area
 * Removed 'Home" link code from `dmm_list_pages`
 * Removed unused images (from IE6 support)
-* Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright`
+* Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright` (refactored changelog)
+* Renamed `BNS Modified Post` to `DMM Modified Post` (refactored changelog)
 * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
 * Updated documentation to clarify `DMM Dynamic Copyright` parameters
 
@@ -73,11 +74,11 @@ Changelog: December 6, 2011
   - tested compatible up to WordPress 3.2-RC1
   - re-worked `dmm_dynamic_copyright` to be more easily defined by the end-user
   - re-worked `desk_mess_mirrored_setup` to add additional `if ( ! function_exists() )` checks
-  - re-worked `bns_theme_version` and `bns_modified_post` to better handle internationalization
+  - re-worked `bns_theme_version` and `dmm_modified_post` to better handle internationalization
   
 -- Version 1.8.5
   - added function_exists check for `dmm_get_page_number`, `dmm_dynamic_copyright` and `bns_theme_version`
-  - added function_exists check for `bns_modified_post` (still not implemented fully in theme)
+  - added function_exists check for `dmm_modified_post` (still not implemented fully in theme)
 
 -- Version 1.8.4
   - released May 30, 2011

@@ -320,7 +320,7 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
 // End: DMM Use Posted
 
 /**
- * BNS Modified Post
+ * DMM Modified Post
  *
  * Checks if the last modification made to the post/page is different than
  * the date the post/page was written; if so, it displays a message showing
@@ -328,9 +328,13 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
  *
  * @package Desk_Mess_Mirrored
  * @since   1.8.5
+ *
+ * Last modified December 6, 2011
+ * @version 2.0
+ * Renamed `BNS Modified Post` to `DMM Modified Post`
  */
-if ( ! function_exists( 'bns_modified_post' ) ) {
-    function bns_modified_post(){
+if ( ! function_exists( 'dmm_modified_post' ) ) {
+    function dmm_modified_post(){
             if ( get_the_date() <> get_the_modified_date() ) {
                 printf( __( '<div class="bns-modified-post">Last modified by %1$s on %2$s.</div>', 'desk-mess-mirrored' ), get_the_modified_author(), get_the_modified_date() );
             }
