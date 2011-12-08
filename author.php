@@ -27,6 +27,8 @@ $curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var
 <div id="wrapper">
     <div id="content">
         <div id="main-blog">
+            <div class="clear">&nbsp;</div>
+            <!-- Hack: the non-breaking space keeps the content below the menu when menus contain many top-level items -->
             <div id="author" class="<?php
                     /**
                      * Add class as related to the user role (see 'Role:' drop-down in User options)

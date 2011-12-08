@@ -9,7 +9,7 @@ Changelog: December 8, 2011
 * Added 'desk-mess-mirrored' loop template
 * Added 'dmm-navigation' and implemented in 404, index, archive, and author template files
 * Added post-formats: aside, quote, and status
-* Added 'Order of Contents' reference to the stylesheet with minor re-organization
+* Added clearing `<div>` at top of page to 'author' and 'page' templates
 * Changed `BNS Theme Version` to `DMM Theme Version` with extensive re-writes to text displayed
 * Changed `my_theme_data` to `active_theme_data` in `DMM Theme Version`
 * Implemented 'desk-mess-mirrored' loop in 404, archive, author, index (home, front-page), page, single templates
@@ -24,6 +24,7 @@ Changelog: December 8, 2011
 
 = CSS =
 * Added some minor style to forms
+* Added 'Order of Contents' reference to the stylesheet with minor re-organization
 * Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
 * Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
 * Removed (using comments) `background property` from `code` element
