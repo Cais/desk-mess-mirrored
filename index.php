@@ -15,6 +15,8 @@
  * @link        https://github.com/Cais/desk-mess-mirrored/
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
+ * @internal    REQUIRES WordPress version 3.1.0
+ *
  * @version     2.0
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
@@ -39,7 +41,7 @@
  * The license for this software can also likely be found here:
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
- * Last revised December 6, 2011
+ * Last revised December 8, 2011
  * @todo review all changes for their effect on the Multi Child-Theme
  * @todo update Internet browser versions used for testing before releasing
  */

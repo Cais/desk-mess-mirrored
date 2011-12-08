@@ -5,7 +5,7 @@ Description: Marble desktop covered with a mix of old and new items, such as som
 Version: 2.0
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
-WordPress Version Required: 3.0
+WordPress Version Required: 3.1.0
 Tested Up To: 3.3
 Tags: brown, orange, silver, tan, light, two-columns, right-sidebar, fixed-width, threaded-comments, sticky-post, custom-menu, custom-background
 WordPress Version: 3.2.1
@@ -13,30 +13,65 @@ License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
-/* See index.php for main program documentation block */
+/**
+ * Copyright 2009-2011  Edward Caissie  (email : edward.caissie@gmail.com)
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 2, as published by the
+ * Free Software Foundation.
+ *
+ * You may NOT assume that you can use any other version of the GPL.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to:
+ *
+ *      Free Software Foundation, Inc.
+ *      51 Franklin St, Fifth Floor
+ *      Boston, MA  02110-1301  USA
+ *
+ * The license for this software can also likely be found here:
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ */
 
-/*  Copyright 2009-2011  Edward Caissie  (email : edward.caissie@gmail.com)
+/**
+ * See index.php for additional program documentation and license information
+ * references.
+ */
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License version 2,
-    as published by the Free Software Foundation.
+/** ------------------------------------------------------------------------- */
+/** Order of Contents
+- editing tip: highlight section and use find to locate in body of stylesheet */
 
-    You may NOT assume that you can use any other version of the GPL.
+/*-- YUI Reset --*/
+/*-- WordPress Rules --*/
+/*-- GLOBAL --*/
+/* === HEADER === */
+/* === MENU === */
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+/* === MAIN AREA === */
+/* === MAIN BLOG === */
+/*-- Tables --*/
+/*-- Gallery --*/
+/*-- Post Formats --*/
+/*-- Images --*/
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+/* === COMMENTS === */
+/* === Forms === */
 
-    The license for this software can also likely be found here:
-    http://www.gnu.org/licenses/gpl-2.0.html
-*/
+/* === SIDEBAR === */
+/*-- Calendar --*/
+/*-- Search --*/
 
-/*-- YUI Reset: Start --*/
+/* === FOOTER === */
+
+/* === Miscellaneous Plugin Styles === */
+/** ------------------------------------------------------------------------- */
+
+/*-- YUI Reset --*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
 table { border-collapse: collapse; border-spacing: 0; }
 fieldset,img { border: 0; }
@@ -66,7 +101,7 @@ img.alignright, img.right { display: inline; margin: 0 0 8px 8px; }
 .wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
 /*-- End WordPress Rules --*/
 
-/* = GLOBAL = */
+/*-- GLOBAL --*/
 * { margin: 0; padding: 0; }
 *:focus { outline: none; }
 
@@ -536,7 +571,7 @@ pre { /* Use for "Code" text styling */
 
 pre code { background-image: url(images/pre-bg.png); }
 
-/*-- Tables: Start --*/
+/*-- Tables --*/
 table { margin: 0 auto; width: 90%; }
 table caption { text-align: center; }
 tr.even {
@@ -548,7 +583,7 @@ th { font-weight: bold; }
 td { padding-left: 5px; }
 /*-- Tables: End --*/
 
-/* Gallery */
+/*-- Gallery --*/
 .gallery-caption {}
 dl.gallery-item {
     border: none;
@@ -567,7 +602,7 @@ dl.gallery-item {
 .gallery-columns-9 img { height: auto; max-width: 59px; }
 .gallery-columns-10 img { height: auto; max-width: 55px; }
 
-/* --- Post Formats --- */
+/*-- Post Formats --*/
 .format-aside { margin: 0 0 0 60px; }
 .format-aside .glyph { float: left; margin: 50px 0 0 -60px; }
 .format-aside h1, .format-aside .postdata { text-align: right; }
@@ -588,190 +623,9 @@ span.status-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size
   filter: alpha(opacity=25);
   opacity: 0.25;
 }
-/* --- End: Post Formats --- */
+/*-- End: Post Formats --*/
 
-/* === SIDEBAR == */
-/* Organized by general layout of sidebar template */
-
-#sidebar {
-	width: 305px;
-	position: relative;
-	float: left;
-	margin: -20px 0 0 -8px;
-}
-
-#sidebar-top {
-	background: url(images/sidebartop1.png) no-repeat;
-	height: 90px;
-	min-height: 90px;
-}
-
-#sidebar-content {
-	background: url(images/sidebarmid1.png) repeat-y;
-	padding: 9px 30px 30px 30px;
-}
-
-#subcolumn { width: 255px; }
-
-#subcolumn ul { list-style: none none; }
-
-label.hidden { display: none; }
-
-#search{
-    background: url(images/searchbck.png) no-repeat;
-    margin-left: 4px;
-	width: 252px;
-}
-
-.form-input {
-    background: #faf6f6;
-    border: 1px solid #e3dccb;
-    color: #666;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-	margin: 65px 10px 10px 37px;
-	padding: 2px;
-	width: 173px;
-}
-
-.form-input:focus {
-	background: #f2f0f0;
-	border: 1px solid #b5b4b2;
-}
-
-li.widget #search-submit,
-.search-submit {
-	background: #faf6f6;
-	border: 1px solid #e3dccb;
-	color: #666;
-	font-size: 0.85em;
-    margin: 0 0 0 84px;
-    width: 85px;
-}
-
-li.widget div#search-container input#s {
-	background: #faf6f6;
-	border: 1px solid #e3dccb;
-	color: #666;
-	font-family: Arial, Helvetica, sans-serif;
-    margin: 0 0 5px 30px;
-    width: 190px;
-}
-
-li.widget input#search-submit,
-input.search-submit {
-	/* optional rounded corners for browsers that support it */
-	-moz-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-border-radius: 5px;
-}
-
-#calendar_wrap { margin-left: 55px; }
-
-.widget {
-	background: url(images/widgetbck.png) repeat-y;
-	border-bottom: 1px solid #e3dccb;
-    margin: 10px 0 20px 4px;
-	padding-bottom: 10px;	
-	width: 252px;	
-}
-
-.widget h2 {
-	background: url(images/widgeth2.png) no-repeat;
-	color: #4a4131;
-	font-size: 20px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: normal;
-    height: auto;
-	line-height: 30px;
-	margin: 0;
-	padding: 22px 0 0 0;
-	text-align: center;	
-	width: 252px;	
-}
-
-.widget ul {
-	border: none ;
-	list-style: none;
-	padding: 5px 0;
-}
-
-.widget ol {
-	border: none ;
-	list-style: none;
-    margin: 0 0 15px 0;
-    padding: 5px 0;
-}
-
-.widget li { list-style-image: none; }
-
-.widget ul li {
-	background: url(images/listseparator.png) no-repeat 25% 100%;
-	margin: 0;
-	padding: 5px 15px 10px 15px;
-}
-
-.widget ol li {
-	background: url(images/listseparator.png) no-repeat 25% 100%;
-	margin: 0;
-	padding: 5px 15px 10px 15px;
-}
-
-.widget ul li a {
-	color: #d21600;
-	text-decoration: none;
-}
-
-.widget ol li a {
-	color: #d21600;
-	text-decoration: none;
-}
-
-.widget ul li a:hover {
-	color: #635537;
-	text-decoration: none;
-}
-
-.widget ol li a:hover {
-	color: #635537;
-	text-decoration: none;
-}
-
-.widget p { padding-left: 5px; }
-
-.widget select {
-	left: 10px;
-	position: relative;
-	width: 230px;
-}
-
-.textwidget { padding:0 8px 0 8px; }
-
-.widget #wp-calendar {
-	empty-cells: show;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	text-decoration: none;
-	width: 200px;
-}
-
-.widget table#wp-calendar { margin: 0 auto; }
-.widget #calendar_wrap { margin: 0 auto; }
-
-#sidebar-bottom {
-	background: url(images/sidebarbottom1.png) no-repeat;
-	height: 37px;
-	margin-left: -1px;
-	min-height: 37px;
-	text-align: right;
-}
-
-/* --- IMAGES --- */
-
+/*-- Images --*/
 .wp-caption img.size-full { max-width: 570px; height: auto; }
 
 p img {
@@ -815,34 +669,7 @@ p a img { border: none; }
 	padding: 0 4px 5px;
 }
 
-/* == FOOTER == */
-#bottom{
-	background: url(images/footer.png) no-repeat;
-	height: 100px;
-}
-
-#bottom p{
-	clear: both;
-	padding-top: 100px;
-	text-align: center;
-}
-
-#bottom-extended {
-    background: url(images/main-page-middle.png) repeat-y;
-	left: -2px;
-	margin: 0 auto;
-    position: relative;
-	text-align: center;
-	width: 977px;
-}
-
-#bottom-container {
-	left: 25px;
-	position: relative;
-	width: 910px;
-}
-
-/* == COMMENTS (Threaded) == */
+/* === COMMENTS === */
 .comment p { margin: 5px 0; }
 
 #comments-main { margin-top: 10px; }
@@ -1077,6 +904,7 @@ code { /* Use for inline code references such as parameters, functions, short on
 	padding: 30px 0 0 25px;	
 }
 
+/* === Forms === */
 form#commentform p.form-submit { text-align: right; }
 
 form#commentform p.form-submit input#submit {
@@ -1086,8 +914,6 @@ form#commentform p.form-submit input#submit {
 	-webkit-border-radius: 10px;
 	-border-radius: 10px;
 }
-
-/* === Forms === */
 
 fieldset {
 	border: 1px solid #b2b0a4;
@@ -1142,8 +968,46 @@ textarea {
 	width: 98%;
 }
 
-/* === Calendar === */
+.form-input {
+    background: #faf6f6;
+    border: 1px solid #e3dccb;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+	margin: 65px 10px 10px 37px;
+	padding: 2px;
+	width: 173px;
+}
 
+.form-input:focus {
+	background: #f2f0f0;
+	border: 1px solid #b5b4b2;
+}
+
+/* === SIDEBAR === */
+#sidebar {
+	width: 305px;
+	position: relative;
+	float: left;
+	margin: -20px 0 0 -8px;
+}
+
+#sidebar-top {
+	background: url(images/sidebartop1.png) no-repeat;
+	height: 90px;
+	min-height: 90px;
+}
+
+#sidebar-content {
+	background: url(images/sidebarmid1.png) repeat-y;
+	padding: 9px 30px 30px 30px;
+}
+
+#subcolumn { width: 255px; }
+
+#subcolumn ul { list-style: none none; }
+
+/*-- Calendar --*/
 #wp-calendar {
 	empty-cells: show;
 	font-size: 12px;
@@ -1155,7 +1019,174 @@ textarea {
 	width: 200px;
 }
 
-/* Miscellaneous Plugin Styles */
+/*-- Search --*/
+label.hidden { display: none; }
+
+#search{
+    background: url(images/searchbck.png) no-repeat;
+    margin-left: 4px;
+	width: 252px;
+}
+
+li.widget #search-submit,
+.search-submit {
+	background: #faf6f6;
+	border: 1px solid #e3dccb;
+	color: #666;
+	font-size: 0.85em;
+    margin: 0 0 0 84px;
+    width: 85px;
+}
+
+li.widget div#search-container input#s {
+	background: #faf6f6;
+	border: 1px solid #e3dccb;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 5px 30px;
+    width: 190px;
+}
+
+li.widget input#search-submit,
+input.search-submit {
+	/* optional rounded corners for browsers that support it */
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-border-radius: 5px;
+}
+
+#calendar_wrap { margin-left: 55px; }
+
+.widget {
+	background: url(images/widgetbck.png) repeat-y;
+	border-bottom: 1px solid #e3dccb;
+    margin: 10px 0 20px 4px;
+	padding-bottom: 10px;
+	width: 252px;
+}
+
+.widget h2 {
+	background: url(images/widgeth2.png) no-repeat;
+	color: #4a4131;
+	font-size: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+    height: auto;
+	line-height: 30px;
+	margin: 0;
+	padding: 22px 0 0 0;
+	text-align: center;
+	width: 252px;
+}
+
+.widget ul {
+	border: none ;
+	list-style: none;
+	padding: 5px 0;
+}
+
+.widget ol {
+	border: none ;
+	list-style: none;
+    margin: 0 0 15px 0;
+    padding: 5px 0;
+}
+
+.widget li { list-style-image: none; }
+
+.widget ul li {
+	background: url(images/listseparator.png) no-repeat 25% 100%;
+	margin: 0;
+	padding: 5px 15px 10px 15px;
+}
+
+.widget ol li {
+	background: url(images/listseparator.png) no-repeat 25% 100%;
+	margin: 0;
+	padding: 5px 15px 10px 15px;
+}
+
+.widget ul li a {
+	color: #d21600;
+	text-decoration: none;
+}
+
+.widget ol li a {
+	color: #d21600;
+	text-decoration: none;
+}
+
+.widget ul li a:hover {
+	color: #635537;
+	text-decoration: none;
+}
+
+.widget ol li a:hover {
+	color: #635537;
+	text-decoration: none;
+}
+
+.widget p { padding-left: 5px; }
+
+.widget select {
+	left: 10px;
+	position: relative;
+	width: 230px;
+}
+
+.textwidget { padding:0 8px 0 8px; }
+
+.widget #wp-calendar {
+	empty-cells: show;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+}
+
+.widget table#wp-calendar { margin: 0 auto; }
+.widget #calendar_wrap { margin: 0 auto; }
+
+#sidebar-bottom {
+	background: url(images/sidebarbottom1.png) no-repeat;
+	height: 37px;
+	margin-left: -1px;
+	min-height: 37px;
+	text-align: right;
+}
+
+/* === FOOTER === */
+#bottom{
+	background: url(images/footer.png) no-repeat;
+	height: 100px;
+}
+
+#bottom p{
+	clear: both;
+	padding-top: 100px;
+	text-align: center;
+}
+
+#bottom-extended {
+    background: url(images/main-page-middle.png) repeat-y;
+	left: -2px;
+	margin: 0 auto;
+    position: relative;
+	text-align: center;
+	width: 977px;
+}
+
+#bottom-container {
+	left: 25px;
+	position: relative;
+	width: 910px;
+}
+
+/* === Miscellaneous Plugin Styles === */
 /* Twitter Tools */
 ul.aktt_tweet_digest li { padding-bottom: 5px; }
 
