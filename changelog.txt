@@ -21,6 +21,7 @@ Changelog: December 6, 2011
 * Updated documentation to clarify `DMM Dynamic Copyright` parameters
 
 = CSS =
+* Added some minor style to forms
 * Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
 * Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
 * Removed (using comments) `background property` from `code` element

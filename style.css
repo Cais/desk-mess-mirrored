@@ -937,6 +937,11 @@ p.comment-form-url label {
 	margin-top: 3px;
 	padding: 5px;
 	width: 200px;
+    /* optional rounded corners for browsers that support it */
+   	-moz-border-radius: 5px;
+   	-khtml-border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   	-border-radius: 5px;
 }
 #commentform textarea {
 	background: #fff;
@@ -946,6 +951,11 @@ p.comment-form-url label {
 	padding: 5px;
 	overflow-x: hidden;
 	overflow-y: auto;
+    /* optional rounded corners for browsers that support it */
+   	-moz-border-radius: 5px;
+   	-khtml-border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   	-border-radius: 5px;
 }
 #commentform #submit { cursor:pointer; }
 
@@ -1098,7 +1108,14 @@ label {
 	padding-top: 4px;
 }
 
-input, textarea { border: 1px solid #b2b0a4; }
+input, textarea {
+    border: 1px solid #b2b0a4;
+    /* optional rounded corners for browsers that support it */
+   	-moz-border-radius: 5px;
+   	-khtml-border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   	-border-radius: 5px;
+}
 
 input#s.form-input { text-align: center; }
 
