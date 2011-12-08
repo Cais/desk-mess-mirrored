@@ -32,6 +32,7 @@ $curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var
             <div id="author" class="<?php
                     /**
                      * Add class as related to the user role (see 'Role:' drop-down in User options)
+                     * @todo add additional CSS to reflect the new classes being used for authors
                      */
                     if ( user_can( $curauth->ID, 'administrator' ) ) {
                         echo 'administrator';
