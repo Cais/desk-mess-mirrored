@@ -1,6 +1,6 @@
 === Desk Mess Mirrored ===
 == Version 2.0 ==
-Changelog: December 6, 2011
+Changelog: December 8, 2011
 = Code =
 * Added additional PHPDoc style documentation
 * Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
@@ -18,6 +18,7 @@ Changelog: December 6, 2011
 * Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright` (refactored changelog)
 * Renamed `BNS Modified Post` to `DMM Modified Post` (refactored changelog)
 * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
+* Rewrote the class assigned to the #author box by adding the author role as a class name
 * Updated documentation to clarify `DMM Dynamic Copyright` parameters
 
 = CSS =

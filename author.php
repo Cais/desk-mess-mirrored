@@ -14,8 +14,9 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
- * Last revised December 6, 2011
+ * Last revised December 8, 2011
  * @version     2.0
+ * Rewrote the class assigned to the #author box by adding the author role as a class name.
  */
 
 get_header();
@@ -27,11 +28,24 @@ $curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var
     <div id="content">
         <div id="main-blog">
             <div id="author" class="<?php
-                    /** @var $author string */ if ( ( get_userdata( intval( $author ) )->ID ) == '1' ) echo 'administrator';
-                    /** elseif ( ( get_userdata( intval( $author ) )->ID ) == '2' ) echo 'jellybeen'; */ /* sample */
-                    /** add additional user_id following above example, echo the 'CSS element' you want to use for styling
-                     * @todo re-write this ... preferably remove the whole thing, but for backward compatibility it probably needs to be re-written
-                     */ ?>">
+                    /**
+                     * Add class as related to the user role (see 'Role:' drop-down in User options)
+                     */
+                    if ( user_can( $curauth->ID, 'administrator' ) ) {
+                        echo 'administrator';
+                    } elseif ( user_can( $curauth->ID, 'editor' ) ) {
+                        echo 'editor';
+                    } elseif ( user_can( $curauth->ID, 'contributor' ) ) {
+                        echo 'contributor';
+                    } elseif ( user_can( $curauth->ID, 'subscriber' ) ) {
+                        echo 'subscriber';
+                    } else {
+                        echo 'guest';
+                    }
+                    if ( ( $curauth->ID ) == '1' ) echo ' administrator-prime'; /* sample */
+                    // elseif ( ( $curauth->ID ) == '2' ) echo ' jellybeen'; /* sample */
+                    // add user classes by ID following the above samples
+                    ?>">
                 <h2><?php _e( 'About ', 'desk-mess-mirrored' ); echo $curauth->display_name; ?></h2>
                 <ul>
                     <li><?php _e( 'Website', 'desk-mess-mirrored' ); ?>: <a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a> <?php _e( 'or', 'desk-mess-mirrored' ); ?> <a href="mailto:<?php echo $curauth->user_email; ?>"><?php _e( 'email', 'desk-mess-mirrored' ); ?></a></li>
