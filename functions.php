@@ -262,7 +262,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             if ( !function_exists( 'dmm_aside_glyph' ) ) {
                 function dmm_aside_glyph() {
                         $aside_glyph = '<span class="aside-glyph">';
-                        $aside_glyph .= __( '!', 'desk-mess-mirrored' ); /** default: exclamation mark */
+                        $aside_glyph .= __( '*', 'desk-mess-mirrored' ); /** default: asterisk */
                         $aside_glyph .= '</span>';
                         echo apply_filters( 'dmm_aside_glyph', $aside_glyph );
                 }
@@ -272,6 +272,8 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
              *
              * @package Desk_Mess_Mirrored
              * @since   2.0
+             *
+             * @param   $quote_glyph    string - constructed
              */
             if ( !function_exists( 'dmm_quote_glyph' ) ) {
                 function dmm_quote_glyph() {
@@ -286,6 +288,8 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
              *
              * @package Desk_Mess_Mirrored
              * @since   2.0
+             *
+             * @param   $status_glyph    string - constructed
              */
             if ( !function_exists( 'dmm_status_glyph' ) ) {
                 function dmm_status_glyph() {
