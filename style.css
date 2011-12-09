@@ -584,18 +584,30 @@ td { padding-left: 5px; }
 /*-- Tables: End --*/
 
 /*-- Post Formats --*/
-.format-aside { margin: 0 0 0 60px; }
-.format-aside .glyph { float: left; margin: 50px 0 0 -60px; }
+.format-aside {}
+.format-aside .glyph {
+    float: left;
+    position: relative;
+    top: 21px;
+}
 .format-aside h1, .format-aside .postdata { text-align: right; }
 span.aside-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size: 1000% }
 
-.format-quote { margin: 0 0 0 60px; }
-.format-quote .glyph { float: left; margin: 50px 0 0 -60px; }
+.format-quote {}
+.format-quote .glyph {
+    float: left;
+    position: relative;
+    top: 21px;
+}
 .format-quote h1, .format-quote .postdata { text-align: right; }
 span.quote-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size: 1000% }
 
-.format-status { margin: 0 0 0 60px; }
-.format-status .glyph { float: left; margin: 50px 0 0 -60px; }
+.format-status {}
+.format-status .glyph {
+    float: left;
+    position: relative;
+    top: 6px;
+}
 .format-status h1, .format-status .postdata { text-align: right; }
 span.status-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size: 500%; }
 
