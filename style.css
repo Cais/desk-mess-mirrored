@@ -44,7 +44,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 /** ------------------------------------------------------------------------- */
 /** Order of Contents
-- editing tip: highlight section and use find to locate in body of stylesheet */
+- editing tip: highlight section title then use find to locate in stylesheet */
 
 /*-- YUI Reset --*/
 /*-- WordPress Rules --*/
@@ -55,9 +55,9 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 /* === MAIN AREA === */
 /* === MAIN BLOG === */
 /*-- Tables --*/
-/*-- Gallery --*/
 /*-- Post Formats --*/
 /*-- Images --*/
+/*-- Gallery --*/
 
 /* === COMMENTS === */
 /* === Forms === */
@@ -583,25 +583,6 @@ th { font-weight: bold; }
 td { padding-left: 5px; }
 /*-- Tables: End --*/
 
-/*-- Gallery --*/
-.gallery-caption {}
-dl.gallery-item {
-    border: none;
-    margin: 0;
-}
-
-/* Gallery columns up to three (3) are handled by default in the theme.
- * Four (4) or more columns requires a maximum width be set for the image
- * thumbnail; also note the height is set to 'auto' to maintain a square shape.
- **/
-.gallery-columns-4 img { height: auto; max-width: 139px; }
-.gallery-columns-5 img { height: auto; max-width: 110px; }
-.gallery-columns-6 img { height: auto; max-width: 89px; }
-.gallery-columns-7 img { height: auto; max-width: 77px; }
-.gallery-columns-8 img { height: auto; max-width: 66px; }
-.gallery-columns-9 img { height: auto; max-width: 59px; }
-.gallery-columns-10 img { height: auto; max-width: 55px; }
-
 /*-- Post Formats --*/
 .format-aside { margin: 0 0 0 60px; }
 .format-aside .glyph { float: left; margin: 50px 0 0 -60px; }
@@ -668,6 +649,25 @@ p a img { border: none; }
 	margin: 0;
 	padding: 0 4px 5px;
 }
+
+/*-- Gallery --*/
+.gallery-caption {}
+dl.gallery-item {
+    border: none;
+    margin: 0;
+}
+
+/* Gallery columns up to three (3) are handled by default in the theme.
+ * Four (4) or more columns requires a maximum width be set for the image
+ * thumbnail; also note the height is set to 'auto' to maintain a square shape.
+ **/
+.gallery-columns-4 img { height: auto; max-width: 139px; }
+.gallery-columns-5 img { height: auto; max-width: 110px; }
+.gallery-columns-6 img { height: auto; max-width: 89px; }
+.gallery-columns-7 img { height: auto; max-width: 77px; }
+.gallery-columns-8 img { height: auto; max-width: 66px; }
+.gallery-columns-9 img { height: auto; max-width: 59px; }
+.gallery-columns-10 img { height: auto; max-width: 55px; }
 
 /* === COMMENTS === */
 .comment p { margin: 5px 0; }
