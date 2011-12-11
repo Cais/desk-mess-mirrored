@@ -14,8 +14,9 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
+ * @uses        get_template_part( 'desk-mess-mirrored', get_post_format() )
+ *
  * @internal    for 404, archive, author, index (home, front-page), page, single templates
- * @internal    called with `get_template_part( 'desk-mess-mirrored', get_post_format() )`
  */
 
 /**
@@ -23,8 +24,6 @@
  */
 global $count;
 $count++; ?>
-<div class="clear">&nbsp;</div>
-<!-- Hack: the non-breaking space keeps the content below the menu when menus contain many top-level items -->
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <?php if ( is_page() ) { ?>
         <h1><?php the_title(); ?></h1>

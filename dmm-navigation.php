@@ -14,15 +14,15 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
+ * @uses        get_template_part( 'dmm-navigation' )
  * @internal    used in 404, index, archive, and author
- * @internal    called with `get_template_part( 'dmm-navigation' )`
  */
 ?>
 <div id="nav-global" class="navigation">
     <div class="left">
-        <?php next_posts_link( __( '&laquo; Previous entries', 'desk-mess-mirrored' ) ); ?>
+        <?php next_posts_link( __( '&laquo; Older posts', 'desk-mess-mirrored' ) ); ?>
     </div>
     <div class="right">
-        <?php previous_posts_link( __( 'Next entries &raquo;', 'desk-mess-mirrored' ) ); ?>
+        <?php previous_posts_link( __( 'Newer posts &raquo;', 'desk-mess-mirrored' ) ); ?>
     </div>
 </div>
