@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-= Last revised December 2, 2011 =
+= Last revised December 11, 2011 =
 * This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases. The following information may be found and/or updated as needed:
 * This file was renamed to the more standard readme.txt 2010 August 27.
 
@@ -40,15 +40,11 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 *[x] Review `editor-style.css` file, address image alignments
 *[x] Clean up new functionality of `dmm_dynamic_copyright`
 *[x] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
-*[ ] Review / Update 404.php page
-*[ ] Review obviousness of comment link (read: balloon)
-*[ ] Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
 
 = Long Term Goals =
-*[-] Correct widget no title / no image issue ... may not have a solution; use a `space` in the title as a work-around.
+*[-] Correct widget no title / no image issue ... may not have a solution; use a `space` in the title as a work-around - see `No Widget Title` in functions.php
 *[x] Review second "Home" page scenarios for possible solutions
-*[ ] Clean up i18n strings for better translation ... or, remove internationalization altogether?!
-*[-] Theme Options? (Not likely.)
+*[-] Theme Options? Not likely.
 
 == Changelog.txt ==
 * see changelog.txt for brief details

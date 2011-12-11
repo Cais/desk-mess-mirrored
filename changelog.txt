@@ -10,6 +10,7 @@ Changelog: December 10, 2011
 * Added 'dmm-navigation' and implemented in 404, index, archive, and author template files
 * Added post-formats: aside, quote, and status
 * Added clearing `div` at top of 'author' and 'page' templates
+* Added project TODO section to 'index.php'
 * Changed `BNS Theme Version` to `DMM Theme Version` with extensive re-writes to text displayed
 * Changed `my_theme_data` to `active_theme_data` in `DMM Theme Version`
 * Implemented 'desk-mess-mirrored' loop in 404, archive, author, index (home, front-page), page, single templates
@@ -21,6 +22,7 @@ Changelog: December 10, 2011
 * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
 * Rewrote class used in 'author' template to add author role as a class element
 * Updated documentation to clarify `DMM Dynamic Copyright` parameters
+* Updated 'readme.txt' information - NB: All open and new TODO items will be found in their appropriate file going forward from this version
 
 = CSS =
 * Added some minor style to forms
