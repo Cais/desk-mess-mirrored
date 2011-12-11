@@ -30,6 +30,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 == Notes ==
 * Always use a title in every widget or the push-pin top of the widget box will not resolve correctly, even a single space will work.
 * add_custom_image_header() is not implemented as it will not handle multiple header images; in the case of this theme, there are three (3) being used in the header.
+* An excessive quantity of menu items, for example a quantity causing the top menu to exceed two lines, may obscure the post title in some views
 
 == TODO ==
 = Short Term Goals =

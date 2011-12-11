@@ -43,11 +43,12 @@
  *
  * @internal Project To-do List (PTL)
  * @internal see readme.txt for pre-2.0 PTL
+ * @todo Clean up i18n strings for better translation ... or, remove internationalization altogether?!
+ * @todo Consider how best to document completed 'Project To-do List' et al.
  * @todo Review / Update 404.php page
  * @todo Review obviousness of comment link (read: balloon)
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
- * @todo Clean up i18n strings for better translation ... or, remove internationalization altogether?!
- * @todo Consider how best to document completed 'Project To-do List' et al.
+ * @todo Review post layouts when top menu exceeds two lines
  *
  * Last revised December 11, 2011
  * @todo review all changes for their effect on the Multi Child-Theme
