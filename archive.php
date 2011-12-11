@@ -14,7 +14,7 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
- * Last revised December 6, 2011
+ * Last revised December 11, 2011
  * @version     2.0
  */
 
@@ -29,7 +29,7 @@ get_header(); ?>
                 endwhile;
                 get_template_part( 'dmm-navigation' );
             else : ?>
-                <h2><?php printf( __( 'Search Results for: %s' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
+                <h2><?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
                 <p class="center"><?php _e( 'Sorry, but you are looking for something that is not here.', 'desk-mess-mirrored' ); ?></p>
                 <?php get_search_form();
             endif; ?>

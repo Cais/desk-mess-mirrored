@@ -14,7 +14,7 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
- * Last revised December 8, 2011
+ * Last revised December 11, 2011
  * @version     2.0
  * Rewrote the class assigned to the #author box by adding the author role as a class name.
  */
@@ -65,7 +65,7 @@ $curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var
                 endwhile;
                 get_template_part( 'dmm-navigation' );
             else : ?>
-                <h2><?php printf( __( 'Search Results for: %s' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
+                <h2><?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
                 <p class="center"><?php _e( 'Sorry, there are no posts by this author.', 'desk-mess-mirrored' ); ?></p>
                 <?php get_search_form();
             endif; ?>
