@@ -24,7 +24,7 @@
     </h1>
     <div class="postdata">
         <?php if ( is_home() || is_front_page() ) {
-            printf( __( '%1$s by %2$s on %3$s in ', 'desk-mess-mirrored' ), dmm_use_posted(), get_the_author(), get_the_time( get_option( 'date_format' ) ) ); the_category( ', ' );
+            printf( __( 'Posted by %1$s on %2$s in ', 'desk-mess-mirrored' ), get_the_author(), get_the_time( get_option( 'date_format' ) ) ); the_category( ', ' );
             if ( ! post_password_required() ) { ?>
                 <br /><?php comments_popup_link( __( 'with No Comments', 'desk-mess-mirrored' ), __( 'with 1 Comment', 'desk-mess-mirrored' ), __( 'with % Comments', 'desk-mess-mirrored' ), '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
             }

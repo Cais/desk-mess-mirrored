@@ -619,6 +619,10 @@ span.status-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size
   filter: alpha(opacity=25);
   opacity: 0.25;
 }
+
+.glyph a:hover {
+    text-decoration: none;
+}
 /*-- End: Post Formats --*/
 
 /*-- Images --*/

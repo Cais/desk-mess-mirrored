@@ -267,7 +267,8 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             // Add post-formats support for aside, quote, and status
             add_theme_support( 'post-formats', array( 'aside', 'quote', 'status' ) );
             /**
-             * Assign unique aside glyph that can be over-written
+             * Assign unique aside glyph that can be over-written; also will be
+             * used as the anchor text if no title exists for the post
              *
              * @package Desk_Mess_Mirrored
              * @since   2.0
@@ -276,14 +277,18 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
              */
             if ( !function_exists( 'dmm_aside_glyph' ) ) {
                 function dmm_aside_glyph() {
+                        $dmm_no_title = get_the_title();
                         $aside_glyph = '<span class="aside-glyph">';
-                        $aside_glyph .= __( '*', 'desk-mess-mirrored' ); /** default: asterisk */
+                        empty( $dmm_no_title )
+                                ? $aside_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '*', 'desk-mess-mirrored' ) /** default: asterisk */ . '</span></a>'
+                                : $aside_glyph .= __( '*', 'desk-mess-mirrored' ); /** default: asterisk */
                         $aside_glyph .= '</span>';
                         echo apply_filters( 'dmm_aside_glyph', $aside_glyph );
                 }
             }
             /**
-             * Assign unique quote glyph that can be over-written
+             * Assign unique quote glyph that can be over-written; also will be
+             * used as the anchor text if no title exists for the post
              *
              * @package Desk_Mess_Mirrored
              * @since   2.0
@@ -292,14 +297,18 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
              */
             if ( !function_exists( 'dmm_quote_glyph' ) ) {
                 function dmm_quote_glyph() {
+                        $dmm_no_title = get_the_title();
                         $quote_glyph = '<span class="quote-glyph">';
-                        $quote_glyph .= __( '"', 'desk-mess-mirrored' ); /** default: double-quote */
+                        empty( $dmm_no_title )
+                                ? $quote_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '"', 'desk-mess-mirrored' ) /** default: double-quote */ . '</span></a>'
+                                : $quote_glyph .= __( '"', 'desk-mess-mirrored' ); /** default: double-quote */
                         $quote_glyph .= '</span>';
                         echo apply_filters( 'dmm_quote_glyph', $quote_glyph );
                 }
             }
             /**
-             * Assign unique status glyph that can be over-written
+             * Assign unique status glyph that can be over-written; also will be
+             * used as the anchor text if no title exists for the post
              *
              * @package Desk_Mess_Mirrored
              * @since   2.0
@@ -308,8 +317,11 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
              */
             if ( !function_exists( 'dmm_status_glyph' ) ) {
                 function dmm_status_glyph() {
+                        $dmm_no_title = get_the_title();
                         $status_glyph = '<span class="status-glyph">';
-                        $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
+                        empty( $dmm_no_title )
+                                ? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . $status_glyph .= __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
+                                : $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
                         $status_glyph .= '</span>';
                         echo apply_filters( 'dmm_status_glyph', $status_glyph );
                 }
@@ -393,7 +405,7 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
     function dmm_use_posted() {
             $dmm_no_title = get_the_title();
             empty( $dmm_no_title )
-                    ? $dmm_no_title = '<a href="' . get_permalink() . '" title="' . the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '', 'echo' => '1' ) ) . '"><span class="no-title">' . __( 'Posted', 'desk-mess-mirrored' ) . '</span></a>'
+                    ? $dmm_no_title = '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( 'Posted', 'desk-mess-mirrored' ) . '</span></a>'
                     : $dmm_no_title = __( 'Posted', 'desk-mess-mirrored' );
             return $dmm_no_title;
     }
