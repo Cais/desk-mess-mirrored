@@ -4,9 +4,8 @@
  *
  * Theme Description: Marble desktop covered with a mix of old and new items,
  * such as some vintage papers, a stainless steel pen, and, a hot cup of coffee!
- * Now with drop-down menu support! Please read the included changelog.txt,
- * readme.txt, and support.txt files for details of the latest changes and
- * important notices.
+ * Now with more documentation and post-format support for the following types:
+ * asides, quotes and status!
  *
  * @package     Desk_Mess_Mirrored
  * @since       1.0
@@ -43,7 +42,6 @@
  *
  * @internal Project To-do List (PTL)
  * @internal see readme.txt for pre-2.0 PTL
- * @todo Clean up i18n strings for better translation ... or, remove internationalization altogether?!
  * @todo Consider how best to document completed 'Project To-do List' et al.
  * @todo Review / Update 404.php page
  * @todo Review obviousness of comment link (read: balloon)

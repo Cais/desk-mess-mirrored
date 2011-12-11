@@ -34,7 +34,7 @@ Changelog: December 10, 2011
 * Removed margins from a blockquote if it is within another blockquote
 
 = Internet Browsers Reviewed =
-* Apple Safari v5.1.1 (Mac)
+* Apple Safari v5.1.2 (Mac)
 * Apple Safari v5.1.2 (PC)
 * Firefox v8.0.1 (Mac)
 * Firefox v8.0.1 (PC)

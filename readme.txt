@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-= Last revised December 11, 2011 =
+* Last revised December 11, 2011
 * This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases. The following information may be found and/or updated as needed:
 * This file was renamed to the more standard readme.txt 2010 August 27.
 
@@ -11,6 +11,7 @@
 * Review Tickets
 
 == Basic FAQ ==
+
 = Q: Does the theme support multi-level, or drop-down menus? =
 A: Yes, as of version 1.8; with significant improvements in version 1.8.7!
 
@@ -34,18 +35,18 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 
 == TODO ==
 = Short Term Goals =
-*[x] Ticket 418: meta information generator is handled by wordpress this should be removed in the header.php
-*[x] Address spacing issue for comment from fields (user not logged in)
-*[x] Ticket 418: sticky tab menu bar not handling children or grandchildren
-*[x] Ticket 418: Review and re-work graphics use for menu items to display drop-down or multi-level menus (long-term)
-*[x] Review `editor-style.css` file, address image alignments
-*[x] Clean up new functionality of `dmm_dynamic_copyright`
-*[x] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
+* [x] Ticket 418: meta information generator is handled by wordpress this should be removed in the header.php
+* [x] Address spacing issue for comment from fields (user not logged in)
+* [x] Ticket 418: sticky tab menu bar not handling children or grandchildren
+* [x] Ticket 418: Review and re-work graphics use for menu items to display drop-down or multi-level menus (long-term)
+* [x] Review `editor-style.css` file, address image alignments
+* [x] Clean up new functionality of `dmm_dynamic_copyright`
+* [x] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
 
 = Long Term Goals =
-*[-] Correct widget no title / no image issue ... may not have a solution; use a `space` in the title as a work-around - see `No Widget Title` in functions.php
-*[x] Review second "Home" page scenarios for possible solutions
-*[-] Theme Options? Not likely.
+* [-] Correct widget no title / no image issue ... may not have a solution; use a `space` in the title as a work-around - see `No Widget Title` in functions.php
+* [x] Review second "Home" page scenarios for possible solutions
+* [-] Theme Options? Not likely.
 
 == Changelog.txt ==
 * see changelog.txt for brief details
