@@ -834,7 +834,7 @@ p.must-log-in, a#cancel-comment-reply-link {
 
 .bypostauthor {}
 
-.administrator, .user-id-1 {
+.administrator-prime, .user-id-1 {
 	background: #e5dfcf url(images/bns-author.png);
 	border: 1px solid #7e7d75;
 	margin-top: 1px;

@@ -16,7 +16,7 @@
  *
  * @internal    called `comment_form()`
  *
- * Last revised December 6, 2011
+ * Last revised December 11, 2011
  * @version     2.0
  */
 
@@ -35,22 +35,34 @@ if ( post_password_required() ) { ?>
  * add_filter action.
  *
  * @package Desk_Mess_Mirrored
- * @since 1.0.2
+ * @since   1.0.2
  *
- * @param $classes
- * @return array
+ * @param   $classes
+ * @return  array
  *
- * @version 1.9.1
- * Last revised November 29, 2011
- * Combined user_ID class and microid class generation functions into a single function.
- * @todo Review user_ID class to be changed to user_capability class, or add user_capability class
+ * @version 2.0
+ * Last revised December 11, 2011
+ * Add class as related to the user role (see 'Role:' drop-down in User options)
+ * @todo add additional CSS to reflect the new classes being used for authors
  */
 function dmm_add_comment_classes( $classes ) {
         global $comment;
+        /** Add classes based on user role */
+        if ( user_can( $comment->user_id, 'administrator' ) ) {
+            $classes[] = 'administrator';
+        } elseif ( user_can( $comment->user_id, 'editor' ) ) {
+            $classes[] = 'editor';
+        } elseif ( user_can( $comment->user_id, 'contributor' ) ) {
+            $classes[] = 'contributor';
+        } elseif ( user_can( $comment->user_id, 'subscriber' ) ) {
+            $classes[] = 'subscriber';
+        } else {
+            $classes[] = 'guest';
+        }
         /** Add user ID based classes */
         if ( $comment->user_id == 1 ) {
-            /** Administrator */
-            $userid = "administrator user-id-1";
+            /** Administrator 'Prime' => first registered user ID */
+            $userid = "administrator-prime user-id-1";
         } else {
             /** All other users - NB: user-id-0 -> non-registered user */
             $userid = "user-id-" . ( $comment->user_id );
