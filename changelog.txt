@@ -1,6 +1,6 @@
 === Desk Mess Mirrored ===
 == Version 2.0 ==
-Changelog: December 8, 2011
+Changelog: December 10, 2011
 = Code =
 * Added additional PHPDoc style documentation
 * Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
@@ -32,12 +32,12 @@ Changelog: December 8, 2011
 
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.1 (Mac)
-* Apple Safari v5.1.1 (PC)
-* Firefox v8.0 (Mac)
-* Firefox v8.0 (PC)
+* Apple Safari v5.1.2 (PC)
+* Firefox v8.0.1 (Mac)
+* Firefox v8.0.1 (PC)
 * Google Chrome v15.0
 * Internet Explorer v9.0
-* Opera v11.52
+* Opera v11.60
 
 /** ------------------------------------------------------------------------- */
 

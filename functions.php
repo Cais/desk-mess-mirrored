@@ -428,7 +428,6 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  *
  * @internal see #main-blog element in style.css
  */
-if ( ! isset( $content_width ) ) {
+if ( ! isset( $content_width ) )
     $content_width = 580;
-}
 ?>
