@@ -108,6 +108,21 @@ register_sidebar( array(
 // End Register Widget Areas
 
 /**
+ * No Widget Title
+ *
+ * Fixes the issue of widget_title being empty
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   2.0
+ *
+ * @todo Still needs to be fixed; this replaces *all* widget_title instances with a space
+ */
+/* add_filter( 'widget_title', 'no_widget_title', 10, 1 );
+function no_widget_title() {
+        return ' ';
+} */
+
+/**
  * DMM Dynamic Copyright
  *
  * Displays a generic copyright statement in the theme footer area with
@@ -413,5 +428,7 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  *
  * @internal see #main-blog element in style.css
  */
-if ( ! isset( $content_width ) ) $content_width = 580;
+if ( ! isset( $content_width ) ) {
+    $content_width = 580;
+}
 ?>
