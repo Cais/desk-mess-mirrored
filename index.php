@@ -49,7 +49,6 @@
  * @todo Review post layouts when top menu exceeds two lines
  *
  * Last revised December 11, 2011
- * @todo review all changes for their effect on the Multi Child-Theme
  */
 ?>
 
