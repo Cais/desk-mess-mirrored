@@ -134,7 +134,7 @@ Changelog: December 12, 2011
 -- Version 1.7.1
   - released: Sept 2, 2010
   - corrected issue with `searchform.php` template file
-  - changed `<ul id="menu">` to `<ul class="menu">`
+  - changed `ul id="menu"` to `ul class="menu"`
   - meta information generator handled by WordPress removed from `header.php`
   - CSS: for use with the default 'Search' widget  
   - CSS: address spacing issue for comment form fields (user not logged in)
@@ -268,7 +268,7 @@ NB: Version 1.2 will be the last version to maintain the legacy files:
   - added "comments" to page.php
   - added child theme: Multi in folder "desk-mess-mirrored-multi"
   - added "child-theme-readme.txt" to help with installation  
-  - edited "footer.php" to wrap wp_footer call in its own <div id="bottom-extended">
+  - edited "footer.php" to wrap wp_footer call in its own `div id="bottom-extended"`
   - CSS: added styles for #bottom-extended
   
 -- Version 1.1.1
@@ -312,7 +312,7 @@ NB: Version 1.2 will be the last version to maintain the legacy files:
   
 -- Version 1.0.5 (Jun 9, 2009)
   - Corrected RSS feed URL in single.php (correction as noted by Bill Girimonti pipeline_intl@orcon.net.nz - Thank You!)
-  - Added comment <code> styles
+  - Added comment `code` styles
   - Added author template page
   - Author posts displayed with "Mullet Loop" as inspired by http://perishablepress.com/
   - Added link to author page in single.php at end of post
@@ -321,7 +321,7 @@ NB: Version 1.2 will be the last version to maintain the legacy files:
 -- Version 1.0.4
   - additional localization added
   - slight theme detail changes
-  - added Ordered List <ol> styles
+  - added Ordered List `ol` styles
   
 -- Version 1.0.3
   - removed jbLogo.php from theme and all references
