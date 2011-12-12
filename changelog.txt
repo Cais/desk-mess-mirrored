@@ -1,6 +1,6 @@
 === Desk Mess Mirrored ===
 == Version 2.0 ==
-Changelog: December 10, 2011
+Changelog: December 12, 2011
 = Code =
 * Added additional PHPDoc style documentation
 * Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
@@ -32,6 +32,7 @@ Changelog: December 10, 2011
 * Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
 * Removed (using comments) `background property` from `code` element
 * Removed margins from a blockquote if it is within another blockquote
+* Reorganized stylesheet and added 'Order of Contents' section for reference
 
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.2 (Mac)
