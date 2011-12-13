@@ -53,12 +53,12 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 /* === MAIN AREA === */
 /* === MAIN BLOG === */
-/*-- Tables --*/
 /*-- Post Formats --*/
 /*-- Images --*/
 /*-- Gallery --*/
 
 /* === COMMENTS === */
+/*- Author Classes -*/
 /* === Forms === */
 
 /* === SIDEBAR === */
@@ -127,6 +127,26 @@ abbr, acronym { cursor: help; }
 
 address { margin: 10px; }
 
+blockquote {
+	clear: both;
+    color: #606060;
+    background: url(images/quotes.png) no-repeat left 2px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    margin: 10px 35px 0 5px;
+    padding: 10px 0 0 40px;
+}
+
+blockquote > blockquote {
+    margin: 0;
+}
+
+blockquote cite {
+	font-weight: bold;
+	padding-left: 10px;
+}
+
 em { font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -177,9 +197,40 @@ ol li { list-style: decimal inside none; }
 ol li li { list-style: lower-roman inside none; }
 ol li li li { list-style: lower-alpha inside none; }
 
+p { margin: 0; padding: 0 0 10px; }
+
+pre { /* Use for "Code" text styling */
+	background-image: url(images/pre-bg.png);
+	border: 1px inset;
+	font-style: italic;
+	font-size: 14px;
+    margin: 0;
+	overflow: auto;
+    padding: 5px;
+	text-align: left;
+
+	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+	white-space: pre-wrap; /* css-3 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+pre code { background-image: url(images/pre-bg.png); }
+
+q:before,q:after { content: '"'; }
+
 strong { font-weight: bold; }
 
 sub, sup { font-size: 75%; }
+
+table { margin: 0 auto; width: 90%; }
+table caption { text-align: center; }
+tr.even {
+	border: none;
+	border-bottom: 1px solid #b2b0a4;
+	border-top: 1px solid #b2b0a4;
+}
+th { font-weight: bold; }
+td { padding-left: 5px; }
 
 /* === HEADER === */
 #header-container {
@@ -392,7 +443,6 @@ ul.nav-menu ul.children li {
 }
 
 /* === MAIN BLOG === */
-
 #main-blog {
 	float: left;
 	padding: 15px 10px 10px 10px;
@@ -423,11 +473,6 @@ div#main-blog ul li.page_item, div#main-blog div#contact-us ul li {
 
 div#main-blog .page ul li { list-style:disc inside none; }
 
-.page p {
-	margin: 0;
-	padding: 0 0 10px;
-}
-
 div#main-blog .page li { padding-left: 10px; }
 
 .postdata {
@@ -440,11 +485,6 @@ div#main-blog .page li { padding-left: 10px; }
 .post {
     border-bottom: 1px solid;
     margin-bottom: 10px;
-}
-
-.post p {
-	margin: 0;
-	padding: 0 0 10px;
 }
 
 .post ul {
@@ -519,68 +559,11 @@ p.single-meta {
 	text-decoration: none;
 }
 
-.post-social {
-	float: right;
-	width: 78px;
-	height: 74px;
-	margin: -22px 30px 0 0;
-	background: url(images/socialbck.png) no-repeat;
-}
-
 .rss {
 	background: url(images/rssicon.png) no-repeat 0 50%;
 	padding-left: 20px;
 	padding-top: 1px;
 }
-
-blockquote {
-	clear: both;
-    color: #606060;
-    background: url(images/quotes.png) no-repeat left 2px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
-    font-style: italic;
-    margin: 10px 35px 0 5px;
-    padding: 10px 0 0 40px;
-}
-
-blockquote > blockquote {
-    margin: 0;
-}
-
-blockquote cite {
-	font-weight: bold;
-	padding-left: 10px;
-}
-
-pre { /* Use for "Code" text styling */
-	background-image: url(images/pre-bg.png);
-	border: 1px inset;
-	font-style: italic;
-	font-size: 14px;
-    margin: 0;
-	overflow: auto;
-    padding: 5px;
-	text-align: left;
-
-	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
-	white-space: pre-wrap; /* css-3 */
-	word-wrap: break-word; /* Internet Explorer 5.5+ */
-}
-
-pre code { background-image: url(images/pre-bg.png); }
-
-/*-- Tables --*/
-table { margin: 0 auto; width: 90%; }
-table caption { text-align: center; }
-tr.even {
-	border: none;
-	border-bottom: 1px solid #b2b0a4;
-	border-top: 1px solid #b2b0a4;
-}
-th { font-weight: bold; }
-td { padding-left: 5px; }
-/*-- Tables: End --*/
 
 /*-- Post Formats --*/
 .format-aside {}
@@ -743,12 +726,6 @@ ul.children li.cat-item { margin-bottom: -10px; }
 .comment-body ol li li { list-style: lower-roman inside none; }
 .comment-body ol li li li { list-style: lower-alpha inside none; }
 
-.avatar {
-	display: inline;
-	float: left;
-	margin:0 10px 10px 0;
-}
-
 .comment-meta, .commentmetadata {
 	font-size: 75%;
 	padding-top: 2px;
@@ -834,11 +811,18 @@ p.must-log-in, a#cancel-comment-reply-link {
 
 .bypostauthor {}
 
+/*- Author Classes -*/
 .administrator-prime, .user-id-1 {
 	background: #e5dfcf url(images/bns-author.png);
 	border: 1px solid #7e7d75;
 	margin-top: 1px;
 }
+
+.administrator {}
+.editor {}
+.contributor {}
+.subscriber {}
+.guest {}
 
 .jellybeen, .user-id-2 {
 	background:#e5dfcf url(images/jb-author.png) center; /* Rainbow */
