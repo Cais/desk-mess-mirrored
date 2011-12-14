@@ -425,6 +425,7 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
  * Last modified December 6, 2011
  * @version 2.0
  * Renamed `BNS Modified Post` to `DMM Modified Post`
+ * @todo Link modified author name to their archive, if it exists
  */
 if ( ! function_exists( 'dmm_modified_post' ) ) {
     function dmm_modified_post(){

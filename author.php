@@ -21,7 +21,7 @@
 
 get_header();
 /** Set the $curauth variable */
-$curauth = ( get_query_var( 'author_name ') ) ? get_user_by( 'id', get_query_var( 'author_name' ) ) : get_userdata( get_query_var( 'author' ) );
+$curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_var( 'author_name' ) ) : get_userdata( get_query_var( 'author' ) );
 ?>
 <div id="maintop"></div>
 <div id="wrapper">
