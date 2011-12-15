@@ -46,7 +46,6 @@
  * @todo Review / Update 404.php page
  * @todo Review obviousness of comment link (read: balloon)
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
- * @todo Review post layouts when top menu exceeds two lines
  *
  * Last revised December 11, 2011
  */

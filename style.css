@@ -454,6 +454,8 @@ ul.nav-menu ul.children li {
 	font-weight: normal;
 	line-height: normal;
 	padding-bottom: 2px;
+    position: relative;
+    z-index: 2000;
 }
 #main-blog h1 a, #main-blog h1 a:visited, #main-blog h1 a:active{
 	border-bottom: 1px solid #b2b0a4;
@@ -566,10 +568,12 @@ p.single-meta {
 }
 
 /*-- Post Formats --*/
+.glyph { position: relative; z-index: 2000; }
+.glyph a:hover { text-decoration: none; }
+
 .format-aside {}
 .format-aside .glyph {
     float: left;
-    position: relative;
     top: 31px;
 }
 .format-aside.sticky .glyph { top: 47px; }
@@ -579,7 +583,6 @@ span.aside-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size:
 .format-quote {}
 .format-quote .glyph {
     float: left;
-    position: relative;
     top: 31px;
 }
 .format-quote.sticky .glyph { top: 47px; }
@@ -589,7 +592,6 @@ span.quote-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size:
 .format-status {}
 .format-status .glyph {
     float: left;
-    position: relative;
     top: 16px;
 }
 .format-status.sticky .glyph { right: 3px; top: 16px; }
@@ -600,10 +602,6 @@ span.status-glyph { font-family: "Times New Roman", Arial, sans-serif; font-size
   zoom: 1;
   filter: alpha(opacity=25);
   opacity: 0.25;
-}
-
-.glyph a:hover {
-    text-decoration: none;
 }
 /*-- End: Post Formats --*/
 
