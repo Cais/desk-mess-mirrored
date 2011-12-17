@@ -40,14 +40,14 @@
  * The license for this software can also likely be found here:
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
- * @internal Project To-do List (PTL)
- * @internal see readme.txt for pre-2.0 PTL
+ * @internal Project To-do List - see readme.txt for pre-2.0 PTL
  * @todo Consider how best to document completed 'Project To-do List' et al.
  * @todo Review / Update 404.php page
  * @todo Review obviousness of comment link (read: balloon)
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
+ * @todo Review impact on client Child-Themes
  *
- * Last revised December 11, 2011
+ * Last revised December 17, 2011
  */
 ?>
 
