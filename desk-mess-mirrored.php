@@ -19,9 +19,7 @@
  * @internal    for 404, archive, author, index (home, front-page), page, single templates
  */
 
-/**
- * Default Loop
- */
+/** Set count variable for author 'mullet' loop */
 global $count;
 $count++; ?>
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -56,4 +54,4 @@ $count++; ?>
     <?php } ?>
     <p class="single-meta"><?php the_tags(); ?></p>
 </div> <!-- .post #post-ID -->
-<?php comments_template(); // End Default Loop ?>
+<?php comments_template();

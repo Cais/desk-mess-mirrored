@@ -14,7 +14,7 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2011, Edward Caissie
  *
- * Last revised December 6, 2011
+ * Last revised December 18, 2011
  * @version     2.0
  */
 
@@ -247,8 +247,6 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  * @package     Desk_Mess_Mirrored
  * @since       1.5
  *
- * @internal    called with `add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' )`
- *
  * Last revised December 2, 2011
  * @version     2.0
  * See additional documentation within function for specific changes
@@ -391,22 +389,22 @@ add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' );
 /**
  * DMM Use Posted
  *
- * This returns a URL to the post using the anchor text posted in the meta
- * details, or returns the word posted if the post title exists
+ * This returns a URL to the post using the anchor text 'Posted' in the meta
+ * details with the post excerpt as the URL title; or, returns the word 'Posted'
+ * if the post title exists
  *
- * @package Desk_Mess_Mirrored
- * @since   2.0
+ * @package     Desk_Mess_Mirrored
+ * @since       2.0
  *
- * @internal If no title exists, the CSS wrapper class `no-title` is used on the returned string text
- *
- * @return string
+ * @return      string - URL|Posted
  */
 if ( ! function_exists( 'dmm_use_posted' ) ) {
     function dmm_use_posted() {
             $dmm_no_title = get_the_title();
             empty( $dmm_no_title )
-                    ? $dmm_no_title = '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( 'Posted', 'desk-mess-mirrored' ) . '</span></a>'
+                    ? $dmm_no_title = '<span class="no-title"><a href="' . get_permalink() . '" title="' . get_the_excerpt() . '">' . __( 'Posted', 'desk-mess-mirrored' ) . '</span></a>'
                     : $dmm_no_title = __( 'Posted', 'desk-mess-mirrored' );
+            $dmm_no_title = apply_filters( 'dmm_use_posted', $dmm_no_title );
             return $dmm_no_title;
     }
 }
@@ -422,10 +420,16 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
  * @package Desk_Mess_Mirrored
  * @since   1.8.5
  *
+ * @internal    used in 'desk-mess-mirrored-status'
+ *
  * Last modified December 6, 2011
  * @version 2.0
  * Renamed `BNS Modified Post` to `DMM Modified Post`
- * @todo Link modified author name to their archive, if it exists
+ * @todo Test if `modified author` is the same as the post author
+ * @todo If modified author exists link to their archive; else return Bio || nothing?
+ * @todo If using author bio from above, slide out/down to show; see BNS Bio plugin (WIP)
+ * @todo Add parameters and use `apply_filters` on output
+ * @todo Implement in other template files, such as, single and page?
  */
 if ( ! function_exists( 'dmm_modified_post' ) ) {
     function dmm_modified_post(){
@@ -437,7 +441,8 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
 // End BNS Modified Post
 
 /**
- * Set `content_width` based on the theme design and stylesheet
+ * Set `content_width` based on the theme design and stylesheet to keep images,
+ * videos, etc. within the confines of the post block.
  *
  * @internal see #main-blog element in style.css
  */
