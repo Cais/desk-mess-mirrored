@@ -27,6 +27,7 @@ Changelog: December 20, 2011
 
 = CSS =
 * Added 'Order of Contents' reference to the stylesheet with minor re-organization
+* Added id `wp-link-pages` wrapper to `wp_link_pages` output
 * Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
 * Changed base font-size to 100% and adjust all other font-sizes to be at a comparable percentage.
 * Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide

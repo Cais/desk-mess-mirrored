@@ -503,6 +503,8 @@ p.single-meta {
     text-align: right;
 }
 
+p#wp-link-pages { font-size: 90%; }
+
 .sticky {
 	border: medium double Black;
 	padding: 5px;

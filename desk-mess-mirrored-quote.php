@@ -37,7 +37,7 @@
     }
     the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
     <div class="clear"><!-- For inserted media at the end of the post --></div>
-    <?php wp_link_pages( array( 'before' => '<p><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
+    <?php wp_link_pages( array( 'before' => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
     if ( is_single() ) { ?>
         <div id="author_link"><?php _e( '... other posts by ', 'desk-mess-mirrored' ); ?><?php the_author_posts_link(); ?></div>
     <?php } ?>

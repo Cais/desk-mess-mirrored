@@ -44,7 +44,7 @@ $count++; ?>
     if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {
         the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
         <div class="clear"><!-- For inserted media at the end of the post --></div>
-        <?php wp_link_pages( array( 'before' => '<p><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
+        <?php wp_link_pages( array( 'before' => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
     } else {
         the_excerpt(); ?>
         <div class="clear"><!-- For inserted media at the end of the post --></div>
