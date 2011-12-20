@@ -957,7 +957,11 @@ input, textarea {
    	-border-radius: 5px;
 }
 
-input#s.form-input { text-align: center; }
+input#s.form-input {
+    margin-left: 10px;
+    text-align: center;
+    width: 224px;
+}
 
 #main-blog input#s.form-input { margin: 0 auto; }
 
@@ -992,7 +996,8 @@ textarea {
     font-size: 90%;
 	margin: 65px 10px 10px 37px;
 	padding: 2px;
-	width: 173px;
+	/* width: 173px; */
+    width: 100%;
 }
 
 .form-input:focus {
@@ -1039,10 +1044,10 @@ textarea {
 /*-- Search --*/
 label.hidden { display: none; }
 
-#search{
-    background: url(images/searchbck.png) no-repeat;
-    margin-left: 4px;
-	width: 252px;
+li#search.widget {
+    background: url("images/searchbck.png") no-repeat scroll 0 5px transparent;
+    /* margin-left: 4px; */
+	/* width: 252px; */
 }
 
 li.widget #search-submit,
