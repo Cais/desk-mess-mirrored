@@ -112,7 +112,8 @@ body {
 	padding: 0;
 	background: #848484 url(images/marble-bg.png) repeat top left;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	font-size: 14px;
+	/* font-size: 14px; */
+    font-size: 100%;
 	line-height: 21px;
 	color: #635537;
 }
@@ -132,7 +133,7 @@ blockquote {
     color: #606060;
     background: url(images/quotes.png) no-repeat left 2px;
     font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-style: italic;
     margin: 10px 35px 0 5px;
     padding: 10px 0 0 40px;
@@ -156,31 +157,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 25px;
+	/* font-size: 25px; */
+    font-szie: 180%;
 	padding-bottom: 2px;
 }
 h2 {
-	font-size: 20px;
+	/* font-size: 20px; */
+    font-size: 143%;
 	padding-bottom: 11px;
 	padding-top: 15px;
 }
 h3 {
-	font-size: 17px;
+	/* font-size: 17px; */
+    font-size: 120%;
 	padding-bottom: 10px;
 	padding-top: 14px;
 }
 h4 {
-	font-size: 15px;
+	/* font-size: 15px; */
+    font-size: 107%;
 	padding-bottom: 10px;
 	padding-top: 12px;
 }
 h5 {
-	font-size: 13px;
+	/* font-size: 13px; */
+    font-size: 93%;
 	padding-bottom: 10px;
 	padding-top: 11px;
 }
 h6 {
-	font-size: 11px;
+	/* font-size: 11px; */
+    font-size: 79%;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
@@ -203,7 +210,7 @@ pre { /* Use for "Code" text styling */
 	background-image: url(images/pre-bg.png);
 	border: 1px inset;
 	font-style: italic;
-	font-size: 14px;
+	/* font-size: 14px; */
     margin: 0;
 	overflow: auto;
     padding: 5px;
@@ -220,7 +227,7 @@ q:before,q:after { content: '"'; }
 
 strong { font-weight: bold; }
 
-sub, sup { font-size: 75%; }
+sub, sup { /* font-size: 75%; */ font-size: 65%; }
 
 table { margin: 0 auto; width: 90%; }
 table caption { text-align: center; }
@@ -276,7 +283,8 @@ td { padding-left: 5px; }
 #logo h2 {
 	color: #d21600;
 	font-family: "Copperplate Gothic Bold", Arial, sans-serif;
-	font-size: 30px;
+	/* font-size: 30px; */
+    font-size: 215%;
 	margin: 50px 0 0 24px;
 	min-width: 280px;
 	text-align: center;
@@ -284,7 +292,8 @@ td { padding-left: 5px; }
 
 #logo p { /* Tagline */
 	color: #e95f00;
-	font-size: 18px;
+	/* font-size: 18px; */
+    font-size: 130%;
 	margin-left: 50px;
 	max-height: 75px;
 	max-width: 300px;
@@ -449,7 +458,8 @@ ul.nav-menu ul.children li {
 	width: 580px;
 }
 #main-blog h1 {
-	font-size: 22px;
+	/* font-size: 22px; */
+    font-size: 157%;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 	line-height: normal;
@@ -479,7 +489,8 @@ div#main-blog .page li { padding-left: 10px; }
 
 .postdata {
 	color: #4a4131;
-	font-size: 12px;
+	/* font-size: 12px; */
+    font-size: 85%;
 	font-weight: normal;
 	font-style: italic;
     margin-bottom: 20px;
@@ -511,15 +522,16 @@ div#main-blog .page li { padding-left: 10px; }
 .post dl dd { margin-left: 10px; }
 
 p.single-meta {
-  font-size: 11px;
-  padding: 0;  
-  text-align: right;
+    /* font-size: 11px; */
+    font-size: 79%;
+    padding: 0;
+    text-align: right;
 }
 
 .sticky {
 	border: medium double Black;
 	font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
-	font-size: 14px;
+	/* font-size: 14px; */
 	padding: 5px;
 }
 
@@ -531,7 +543,7 @@ p.single-meta {
 
 #author { /* add additional styling to the author's taste */
 	font-style: italic;
-	font-size: 14px;
+	/* font-size: 14px; */
 	padding: 5px;
 	text-align: left;
 }
@@ -543,7 +555,8 @@ p.single-meta {
 .post-comments {
 	background: url(images/commentbck.png) no-repeat;
 	float: right;
-	font-size: 18px;
+	/* font-size: 18px; */
+    font-size: 130%;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 	height: 40px;	
@@ -642,13 +655,6 @@ p a img { border: none; }
 	padding: 0;
 }
 
-.wp-caption p.wp-caption-text {
-	font-size: 11px;
-	line-height: 17px;
-	margin: 0;
-	padding: 0 4px 5px;
-}
-
 /*-- Gallery --*/
 .gallery-caption {}
 dl.gallery-item {
@@ -725,7 +731,8 @@ ul.children li.cat-item { margin-bottom: -10px; }
 .comment-body ol li li li { list-style: lower-alpha inside none; }
 
 .comment-meta, .commentmetadata {
-	font-size: 75%;
+	/* font-size: 75%; */
+    font-size: 65%;
 	padding-top: 2px;
 }
 
@@ -829,18 +836,21 @@ p.must-log-in, a#cancel-comment-reply-link {
 }
 
 .reply {
-	font-size: 85%;
+	/* font-size: 85%; */
+    font-size: 75%;
 	padding-bottom: 5px;
 }
 
 a.comment-reply-link {
-	font-size: 12px;
+	/* font-size: 12px; */
+    font-size: 85%;
 	font-weight: bold;
 }
 
 .comment-author {
 	color: #2b2d2f;
-	font-size: 120%;
+	/* font-size: 120%; */
+    font-size: 138%;
 	font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
@@ -860,7 +870,8 @@ a.comment-reply-link {
 
 .comment-date {
 	color: #888;
-	font-size: 0.75em;
+	/* font-size: 0.75em; */
+    font-size: 65%;
 	margin-left: 2px;
 	margin-top: 3px;
 }
@@ -868,7 +879,7 @@ a.comment-reply-link {
 code { /* Use for inline code references such as parameters, functions, short one-line code snippets, etc. */
 	/* background-color: Silver; */
 	font-style: italic;
-	font-size: 14px;
+	/* font-size: 14px; */
 	margin: 0;
 	overflow: auto;
 	text-align: left;
@@ -881,7 +892,8 @@ code { /* Use for inline code references such as parameters, functions, short on
 #comments {
 	background: url(images/comment-h3.png) no-repeat;
 	color: #271b03;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 143%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	height: 88px;
@@ -898,7 +910,8 @@ code { /* Use for inline code references such as parameters, functions, short on
 }
 
 #respond h3 {
-	font-size: 20px;
+	/* font-size: 20px; */
+    font-size: 143%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	padding: 30px 0 0 25px;	
@@ -923,7 +936,8 @@ fieldset {
 
 legend {
 	color: #635537;
-	font-size: 1.1em;
+	/* font-size: 1.1em; */
+    font-size: 125%;
 	font-weight: normal;
 }
 
@@ -953,7 +967,8 @@ input#s.form-input { text-align: center; }
 
 #main-blog .search-submit {
 	font-family: Arial,Helvetica,sans-serif;
-	font-size: 0.8em;
+	/* font-size: 0.8em; */
+    font-size: 90%;
 	margin: 1px 0 0 0;
 	padding: 2px;
 }
@@ -973,7 +988,8 @@ textarea {
     border: 1px solid #e3dccb;
     color: #666;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
+    font-size: 90%;
 	margin: 65px 10px 10px 37px;
 	padding: 2px;
 	width: 173px;
@@ -1010,7 +1026,8 @@ textarea {
 /*-- Calendar --*/
 #wp-calendar {
 	empty-cells: show;
-	font-size: 12px;
+	/* font-size: 12px; */
+    font-size: 85%;
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
@@ -1033,7 +1050,8 @@ li.widget #search-submit,
 	background: #faf6f6;
 	border: 1px solid #e3dccb;
 	color: #666;
-	font-size: 0.85em;
+	/* font-size: 0.85em; */
+    font-size: 75%;
     margin: 0 0 0 84px;
     width: 85px;
 }
@@ -1069,7 +1087,8 @@ input.search-submit {
 .widget h2 {
 	background: url(images/widgeth2.png) no-repeat;
 	color: #4a4131;
-	font-size: 20px;
+	/* font-size: 20px; */
+    font-size: 143%;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
     height: auto;
@@ -1147,7 +1166,8 @@ input.search-submit {
 
 .widget #wp-calendar {
 	empty-cells: show;
-	font-size: 12px;
+	/* font-size: 12px; */
+    font-size: 85%;
 	font-weight: bold;
 	margin: 0 auto;
 	padding: 0;
