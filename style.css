@@ -124,9 +124,15 @@ a:focus, a:active { color: #d21600; text-decoration: none; }
 
 a img { border: none; }
 
-abbr, acronym { cursor: help; }
+abbr, acronym {
+    border-bottom: dashed #000000 1px;
+    cursor: help;
+}
 
-address { margin: 10px; }
+address {
+    font-family: monospace;
+    margin: 0 10px 10px;
+}
 
 blockquote {
 	clear: both;
@@ -655,8 +661,6 @@ dl.gallery-item {
 .gallery-columns-10 img { height: auto; max-width: 55px; }
 
 /* === COMMENTS === */
-.comment p { margin: 5px 0; }
-
 #comments-main { margin-top: 10px; }
 
 #comments-main div#respond p.not-logged-in {
@@ -715,21 +719,9 @@ ul.children li.cat-item { margin-bottom: -10px; }
 	padding-top: 2px;
 }
 
-span.required {
-	padding: 0 10px;
-}
-
-p.comment-form-author span.required {
-	padding: 0 9px 0 10px;
-}
-
-p.comment-form-url label {
-	padding-right: 13px;
-}
-
 #commentform {
-	font: 110% Arial, Helvetica, sans-serif;
-	padding-top: 30px;
+    font-size: 110%;
+    padding-top: 30px;
 }
 
 #commentform p {
@@ -871,17 +863,24 @@ code { /* Use for inline code references such as parameters, functions, short on
 	width: 175px;
 }
 
+h4#comments {
+    font-size: 120%;
+    font-weight: normal;
+    padding: 25px 0 0 20px;
+}
+
 #respond {
 	background: url(images/comment-h3.png) no-repeat;
 	color: #271b03;
 	clear: both;
+    font-family: Verdana, Trebuchet, Helvetica, Arial, Jamrul, sans-serif;
 	margin-top: 35px;	
 }
 
 #respond h3 {
-    font-size: 143%;
-	font-weight: normal;
-	padding: 30px 0 0 25px;	
+    font-size: 120%;
+    font-weight: normal;
+    padding: 25px 0 0 20px;
 }
 
 /* === Forms === */
@@ -965,6 +964,27 @@ textarea {
 .form-input:focus {
 	background: #f2f0f0;
 	border: 1px solid #b5b4b2;
+}
+
+p.comment-notes {
+    font-size: 95%;
+}
+
+p.comment-form-author span.required {
+    padding: 0 10px 0 12px;
+}
+
+p.comment-form-email span.required {
+    padding: 0 10px 0 15px;
+}
+
+p.comment-form-url label {
+    padding-right: 21px;
+}
+
+p.form-allowed-tags {
+    font-size: 90%;
+    font-style: italic;
 }
 
 /* === SIDEBAR === */
