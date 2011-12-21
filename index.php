@@ -45,7 +45,8 @@
  * @todo Review / Update 404.php page
  * @todo Review obviousness of comment link (read: balloon)
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
- * @todo Review impact on client Child-Themes
+ * @todo Review impact on Child-Themes (advise clients/end-users as needed)
+ * @todo Add Post-Format: Link
  *
  * Last revised December 17, 2011
  */

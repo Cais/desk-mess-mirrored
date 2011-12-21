@@ -434,7 +434,7 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
 if ( ! function_exists( 'dmm_modified_post' ) ) {
     function dmm_modified_post(){
             if ( get_the_date() <> get_the_modified_date() ) {
-                printf( __( '<div class="bns-modified-post">Last modified by %1$s on %2$s.</div>', 'desk-mess-mirrored' ), get_the_modified_author(), get_the_modified_date() );
+                printf( __( '<h5 class="bns-modified-post">Last modified by %1$s on %2$s.</h5>', 'desk-mess-mirrored' ), get_the_modified_author(), get_the_modified_date() );
             }
     }
 }

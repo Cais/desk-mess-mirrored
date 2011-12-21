@@ -141,6 +141,11 @@ blockquote cite { font-style: italic; }
 blockquote cite:after { content: ' ~'; font-weight: bold; }
 blockquote cite:before { content: '~ '; font-weight: bold; }
 
+dl { margin: 10px; }
+dl > dl { margin: 10px 10px 0; }
+dt { font-weight: bold; }
+dd { text-indent: 10px; }
+
 em { font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -190,7 +195,10 @@ ol li { list-style: decimal inside none; }
 ol li li { list-style: lower-roman inside none; }
 ol li li li { list-style: lower-alpha inside none; }
 
-p { margin: 0; padding: 0 0 10px; }
+p {
+    margin: 0;
+    padding: 0 0 10px;
+}
 
 pre { /* Use for "Code" text styling */
 	background-image: url(images/pre-bg.png);
