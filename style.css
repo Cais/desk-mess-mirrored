@@ -357,8 +357,8 @@ ul.nav-menu {
 
 ul.nav-menu li {
   float: left;
-  line-height: 1.3em;
-  vertical-align: middle;
+  /* line-height: 1.3em; */
+  /* vertical-align: middle; */
   zoom: 1;
 }
 
