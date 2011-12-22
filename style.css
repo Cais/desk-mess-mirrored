@@ -147,6 +147,16 @@ blockquote cite { font-style: italic; }
 blockquote cite:after { content: ' ~'; font-weight: bold; }
 blockquote cite:before { content: '~ '; font-weight: bold; }
 
+code { /* Use for inline code references such as parameters, functions, short one-line code snippets, etc. */
+	font-style: italic;
+	margin: 0;
+	overflow: auto;
+	text-align: left;
+	overflow-x: auto; /* Use horizontal scroll if needed; for Firefox 2, not needed in Firefox 3 */
+	white-space: pre-wrap; /* css-3 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
 dl { margin: 10px; }
 dl > dl { margin: 10px 10px 0; }
 dt { font-weight: bold; }
@@ -835,21 +845,20 @@ a.comment-reply-link {
 	text-decoration: none;
 }
 
+.pingback .comment-author,
+.pingback .comment-meta {
+    text-align: right;
+}
+
+.pingback .comment-author {
+    font-size: 100%;
+}
+
 .comment-date {
 	color: #888;
     font-size: 65%;
 	margin-left: 2px;
 	margin-top: 3px;
-}
-
-code { /* Use for inline code references such as parameters, functions, short one-line code snippets, etc. */
-	font-style: italic;
-	margin: 0;
-	overflow: auto;
-	text-align: left;
-	overflow-x: auto; /* Use horizontal scroll if needed; for Firefox 2, not needed in Firefox 3 */
-	white-space: pre-wrap; /* css-3 */
-	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 #comments {

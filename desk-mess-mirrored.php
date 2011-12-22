@@ -25,8 +25,9 @@ $count++; ?>
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <?php if ( is_page() ) { ?>
         <h1><?php the_title(); ?></h1>
+        <?php edit_post_link( __( 'Edit This Page', 'desk-mess-mirrored' ), __( '&raquo;', 'desk-mess-mirrored' ), __( '&laquo;', 'desk-mess-mirrored' ) ); ?>
     <?php } ?>
-    <?php if ( ! post_password_required() ) { ?>
+    <?php if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) { ?>
         <div class="post-comments">
             <?php comments_popup_link( __( '0', 'desk-mess-mirrored' ), __( '1', 'desk-mess-mirrored' ), __( '%', 'desk-mess-mirrored' ), '',__( '-', 'desk-mess-mirrored' ) ); ?>
         </div>
