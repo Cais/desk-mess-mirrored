@@ -1012,6 +1012,7 @@ p.form-allowed-tags {
 
 #sidebar-content {
 	background: url(images/sidebarmid1.png) repeat-y;
+    font-size: 90%;
 	padding: 9px 30px 30px 30px;
 }
 
@@ -1158,7 +1159,10 @@ input.search-submit {
 	width: 230px;
 }
 
-.textwidget { padding:0 8px 0 8px; }
+.textwidget {
+    font-size: 90%;
+    padding:0 8px 0 8px;
+}
 
 .widget #wp-calendar {
 	empty-cells: show;
