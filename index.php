@@ -48,8 +48,10 @@
  * @todo Review impact on Child-Themes (advise clients/end-users as needed)
  * @todo Add Post-Format: Link
  * @todo Add 'search.php' template? see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191
+ * @todo Add "conversation bubble" into post-format templates
+ * @todo Review the addition of `the_shortlink` in all post meta details
  *
- * Last revised December 17, 2011
+ * Last revised December 27, 2011
  */
 ?>
 
