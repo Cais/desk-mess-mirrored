@@ -2,7 +2,7 @@
 Theme Name: Desk Mess Mirrored
 Theme URI: http://buynowshop.com/themes/desk-mess-mirrored/
 Description: Marble desktop covered with a mix of old and new items, such as some vintage papers, a stainless steel pen, and, a hot cup of coffee! Now with more documentation and post-format support for the following types: asides, quotes and status! <strong>Please read the included changelog.txt, readme.txt, and support.txt files for details of the latest changes and important notices.</strong> Please note <strong>WordPress 3.1.0 is required</strong> for some functionality; also note the latest version of the Multi Child-Theme is available for download at http://buynowshop.com/themes/desk-mess-mirrored/multi too!
-Version: 2.0-RC1
+Version: 2.0-RC2
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
 Version Required: 3.1.0
@@ -162,7 +162,7 @@ dl > dl { margin: 10px 10px 0; }
 dt { font-weight: bold; }
 dd { text-indent: 10px; }
 
-em { font-style: italic; }
+em, em strong { font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
@@ -213,7 +213,7 @@ ol li li li { list-style: lower-alpha inside none; }
 
 p {
     margin: 0;
-    padding: 0 0 10px;
+    padding: 10px 0;
 }
 
 pre { /* Use for "Code" text styling */
@@ -233,7 +233,7 @@ pre code { background-image: url(images/pre-bg.png); }
 
 q:before,q:after { content: '"'; }
 
-strong { font-weight: bold; }
+strong, strong em { font-weight: bold; }
 
 sub, sup { font-size: 65%; }
 
@@ -482,13 +482,16 @@ div#main-blog ul li.page_item, div#main-blog div#contact-us ul li {
 	padding-left: 10px;
 }
 
-div#main-blog .page ul li { list-style:disc inside none; }
+/* div#main-blog .page ul li { list-style:disc inside none; } */
+.page div#content div#main-blog ul { list-style: disc inside none; }
+.page div#content div#main-blog ul li ol { padding-left: 20px; }
+.page div#content div#main-blog ul li ul { padding-left: 20px; }
 
-div#main-blog .page li { padding-left: 10px; }
+.page div#content div#main-blog ol { list-style: decimal inside none; }
+.page div#content div#main-blog ol li ol { padding-left: 20px; }
+.page div#content div#main-blog ol li ul { padding-left: 20px; }
 
-.page-shortlink {
-    float: right;
-}
+.page-shortlink { float: right; }
 
 .postdata {
 	color: #4a4131;
