@@ -486,6 +486,10 @@ div#main-blog .page ul li { list-style:disc inside none; }
 
 div#main-blog .page li { padding-left: 10px; }
 
+.page-shortlink {
+    float: right;
+}
+
 .postdata {
 	color: #4a4131;
     font-size: 80%;
@@ -578,7 +582,7 @@ p#wp-link-pages { font-size: 90%; }
 }
 
 /*-- Post Formats --*/
-.glyph { position: relative; z-index: 2000; }
+.glyph { position: relative; /* z-index: 2000; */ }
 .glyph a:hover { text-decoration: none; }
 
 .format-aside {}

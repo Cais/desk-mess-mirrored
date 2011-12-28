@@ -25,8 +25,7 @@ $count++; ?>
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <?php if ( is_page() ) { ?>
         <h1><?php the_title(); ?></h1>
-        <?php the_shortlink( __( 'Short Link', 'desk-mess-mirrored' ), '', ' | ', '' );
-        edit_post_link( __( 'Edit This Page', 'desk-mess-mirrored' ), __( '&raquo;', 'desk-mess-mirrored' ), __( '&laquo;', 'desk-mess-mirrored' ) ); ?>
+        <?php edit_post_link( __( 'Edit This Page', 'desk-mess-mirrored' ), __( '&raquo;', 'desk-mess-mirrored' ), __( '&laquo;', 'desk-mess-mirrored' ) ); ?>
     <?php } ?>
     <?php if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) { ?>
         <div class="post-comments">
@@ -38,7 +37,7 @@ $count++; ?>
         <div class="postdata">
             <?php printf( __( '%1$s by %2$s on ', 'desk-mess-mirrored' ), dmm_use_posted(), get_the_author() );
             the_time( get_option( 'date_format' ) );
-            _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
+            _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' ); the_shortlink( __( 'Short Link', 'desk-mess-mirrored' ), '', ' | ', '' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
         </div><!-- .postdata -->
     <?php } ?>
     <?php if ( has_post_thumbnail() )
@@ -53,7 +52,11 @@ $count++; ?>
     <?php }
     if ( is_single() ) { ?>
         <div id="author_link"><?php _e( '... other posts by ', 'desk-mess-mirrored' ); ?><?php the_author_posts_link(); ?></div>
-    <?php } ?>
+    <?php }
+    if ( is_page() ) {
+        the_shortlink( __( 'Page Link', 'desk-mess-mirrored' ), '', '<div class="page-shortlink">&raquo', '&laquo</div>' );
+    }
+    ?>
     <p class="single-meta"><?php the_tags(); ?></p>
 </div> <!-- .post #post-ID -->
 <?php comments_template();
