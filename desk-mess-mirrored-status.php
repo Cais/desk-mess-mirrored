@@ -13,12 +13,15 @@
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
- *
- * @uses        get_template_part( 'desk-mess-mirrored', get_post_format() )
  */
 ?>
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <div class="transparent glyph"><?php dmm_status_glyph(); ?></div>
+    <?php if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) { ?>
+        <div class="post-comments">
+            <?php comments_popup_link( __( '0', 'desk-mess-mirrored' ), __( '1', 'desk-mess-mirrored' ), __( '%', 'desk-mess-mirrored' ), '',__( '-', 'desk-mess-mirrored' ) ); ?>
+        </div>
+    <?php } ?>
     <h1>
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => __( 'Permalink to: ', 'desk-mess-mirrored' ), 'after' => '' ) ); ?>"><?php the_title(); ?></a>
     </h1>

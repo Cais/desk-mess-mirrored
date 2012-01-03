@@ -17,6 +17,8 @@ A: The conversation balloons now only show based on the following criteria:
 1. The post is not password protected; and,
 2. Comments are open *or* at least one (1) comment has been made on the post.
 
+Also to note, post meta text has been added to indicate the post comment status.
+
 = Q: Does the theme support multi-level, or drop-down menus? =
 A: Yes, as of version 1.8; with significant improvements in version 1.8.7!
 

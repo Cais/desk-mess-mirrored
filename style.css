@@ -292,7 +292,7 @@ td { padding-left: 5px; }
 	color: #d21600;
 	font-family: "Copperplate Gothic Bold", "Times New Roman", Georgia, serif;
     font-size: 215%;
-	margin: 50px 0 0 24px;
+	margin: 40px 0 0 24px;
 	min-width: 280px;
 	text-align: center;
 }
@@ -303,6 +303,7 @@ td { padding-left: 5px; }
 	margin-left: 45px;
 	max-height: 75px;
 	max-width: 300px;
+    padding: 0;
 	text-align: center;
 }
 
@@ -585,9 +586,21 @@ p#wp-link-pages { font-size: 90%; }
 }
 
 /*-- Post Formats --*/
+.transparent {
+  zoom: 1;
+  filter: alpha(opacity=25);
+  opacity: 0.25;
+}
+
 .glyph { position: relative; /* z-index: 2000; */ }
 .glyph a:hover { text-decoration: none; }
 
+.glyph + .post-comments + h1,
+.glyph + .post-comments + h1 + .postdata {
+    padding-right: 65px;
+}
+
+/* Post Format - Aside */
 .format-aside {}
 .format-aside .glyph {
     float: left;
@@ -597,6 +610,7 @@ p#wp-link-pages { font-size: 90%; }
 .format-aside h1, .format-aside .postdata { text-align: right; }
 span.aside-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-size: 1000% }
 
+/* Post Format - Quote */
 .format-quote {}
 .format-quote .glyph {
     float: left;
@@ -606,6 +620,10 @@ span.aside-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-s
 .format-quote h1, .format-quote .postdata { text-align: right; }
 span.quote-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-size: 1000% }
 
+span.quote-glyph a span.no-title { position: relative; top: 10px; }
+.sticky span.quote-glyph a span.no-title { top: 0; }
+
+/* Post Format - Status */
 .format-status {}
 .format-status .glyph {
     float: left;
@@ -614,12 +632,6 @@ span.quote-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-s
 .format-status.sticky .glyph { right: 3px; top: 16px; }
 .format-status h1, .format-status .postdata { text-align: right; }
 span.status-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-size: 500%; }
-
-.transparent {
-  zoom: 1;
-  filter: alpha(opacity=25);
-  opacity: 0.25;
-}
 /*-- End: Post Formats --*/
 
 /*-- Images --*/
