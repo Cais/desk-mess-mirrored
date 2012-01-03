@@ -604,7 +604,7 @@ p#wp-link-pages { font-size: 90%; }
 .format-aside {}
 .format-aside .glyph {
     float: left;
-    top: 31px;
+    top: 41px;
 }
 .format-aside.sticky .glyph { top: 47px; }
 .format-aside h1, .format-aside .postdata { text-align: right; }
