@@ -50,3 +50,4 @@
     } ?>
     <p class="single-meta"><?php the_tags(); ?></p>
 </div> <!-- .post #post-ID -->
+<?php comments_template(); ?>
