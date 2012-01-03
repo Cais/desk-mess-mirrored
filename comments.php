@@ -43,7 +43,6 @@ if ( post_password_required() ) { ?>
  * @version 2.0
  * Last revised December 11, 2011
  * Add class as related to the user role (see 'Role:' drop-down in User options)
- * @todo add additional CSS to reflect the new classes being used for authors
  */
 function dmm_add_comment_classes( $classes ) {
         global $comment;

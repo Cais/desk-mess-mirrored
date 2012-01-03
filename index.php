@@ -43,15 +43,13 @@
  * @internal Project To-do List - see readme.txt for pre-2.0 PTL
  * @todo Consider how best to document completed 'Project To-do List' et al.
  * @todo Review / Update 404.php page
- * @todo Review obviousness of comment link (read: balloon)
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
- * @todo Review impact on Child-Themes (advise clients/end-users as needed)
  * @todo Add Post-Format: Link
  * @todo Add 'search.php' template? see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191
- * @todo Add "conversation bubble" into post-format templates
  * @todo Review the addition of `the_shortlink` in all post meta details
+ * @todo add additional CSS to reflect the new classes being used for authors
  *
- * Last revised January 2, 2012
+ * Last revised January 3, 2012
  */
 ?>
 

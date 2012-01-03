@@ -28,6 +28,7 @@ Changelog: December 20, 2011
 = CSS =
 * Added 'Order of Contents' reference to the stylesheet with minor re-organization
 * Added id `wp-link-pages` wrapper to `wp_link_pages` output
+* Added CSS placeholder elements (.administrator, .editor, .contributor, .subscriber, and .guest) for new comment author classes
 * Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
 * Changed base font-size to 100% and adjusted typography as needed/required
 * Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
