@@ -18,7 +18,7 @@
  *
  * @version     2.0
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2011, Edward Caissie
+ * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 2, as published by the
@@ -51,7 +51,7 @@
  * @todo Add "conversation bubble" into post-format templates
  * @todo Review the addition of `the_shortlink` in all post meta details
  *
- * Last revised December 27, 2011
+ * Last revised January 2, 2012
  */
 ?>
 

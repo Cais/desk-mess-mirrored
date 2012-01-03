@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised December 11, 2011
+* Last revised January 2, 2012
 * This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases. The following information may be found and/or updated as needed:
 * This file was renamed to the more standard readme.txt 2010 August 27.
 

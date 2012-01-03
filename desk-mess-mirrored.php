@@ -12,7 +12,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2011, Edward Caissie
+ * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
  * @uses        get_template_part( 'desk-mess-mirrored', get_post_format() )
  *
@@ -25,9 +25,9 @@ $count++; ?>
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <?php if ( is_page() ) { ?>
         <h1><?php the_title(); ?></h1>
-        <?php edit_post_link( __( 'Edit This Page', 'desk-mess-mirrored' ), __( '&raquo;', 'desk-mess-mirrored' ), __( '&laquo;', 'desk-mess-mirrored' ) ); ?>
-    <?php } ?>
-    <?php if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) { ?>
+        <?php edit_post_link( __( 'Edit This Page', 'desk-mess-mirrored' ), __( '&raquo;', 'desk-mess-mirrored' ), __( '&laquo;', 'desk-mess-mirrored' ) );
+    }
+    if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) { ?>
         <div class="post-comments">
             <?php comments_popup_link( __( '0', 'desk-mess-mirrored' ), __( '1', 'desk-mess-mirrored' ), __( '%', 'desk-mess-mirrored' ), '',__( '-', 'desk-mess-mirrored' ) ); ?>
         </div>
@@ -39,8 +39,8 @@ $count++; ?>
             the_time( get_option( 'date_format' ) );
             _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' ); the_shortlink( __( 'Short Link', 'desk-mess-mirrored' ), '', ' | ', '' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
         </div><!-- .postdata -->
-    <?php } ?>
-    <?php if ( has_post_thumbnail() )
+    <?php }
+    if ( has_post_thumbnail() )
         the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
     if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {
         the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
@@ -59,4 +59,4 @@ $count++; ?>
     ?>
     <p class="single-meta"><?php the_tags(); ?></p>
 </div> <!-- .post #post-ID -->
-<?php comments_template();
+<?php comments_template(); ?>

@@ -12,7 +12,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2011, Edward Caissie
+ * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
  * Last revised December 11, 2011
  * @version     2.0
