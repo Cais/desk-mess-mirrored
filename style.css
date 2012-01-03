@@ -911,6 +911,12 @@ h4#comments {
     padding: 25px 0 0 20px;
 }
 
+.comment-body div.comment-author img.avatar + cite.fn,
+.comment-body div.comment-author img.avatar + cite.fn + span.says {
+    position: relative;
+    top: -25px;
+}
+
 /* === Forms === */
 form#commentform p.form-submit { text-align: right; }
 
