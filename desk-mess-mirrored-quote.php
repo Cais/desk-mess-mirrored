@@ -31,7 +31,7 @@
             /** Only displays when comments are closed */
             echo '<br />'; comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
         }
-        the_shortlink( __( 'Short Link', 'desk-mess-mirrored' ), '', ' | ', '' );
+        the_shortlink( __( '&#8734;', 'desk-mess-mirrored' ), '', ' | ', '' );
         edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
     </div>
     <?php if ( ( is_home() || is_front_page() ) && has_post_thumbnail() ) {

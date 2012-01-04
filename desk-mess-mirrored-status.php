@@ -36,7 +36,7 @@
             printf( __( 'Posted by %1$s on %2$s @ %3$s', 'desk-mess-mirrored' ), get_the_author(), get_the_time( get_option( 'date_format' ) ), get_the_time( get_option( 'time_format' ) ) );
             _e( '<br />in ', 'desk-mess-mirrored' ); the_category( ', ' );
         }
-        the_shortlink( __( 'Short Link', 'desk-mess-mirrored' ), '', ' &#124; ', '' );
+        the_shortlink( __( '&#8734;', 'desk-mess-mirrored' ), '', ' | ', '' );
         edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' &#124; ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
     </div>
     <?php if ( is_home() || is_front_page() && has_post_thumbnail() ) {
