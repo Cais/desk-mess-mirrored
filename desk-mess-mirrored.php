@@ -38,6 +38,7 @@ $count++; ?>
             <?php printf( __( '%1$s by %2$s on ', 'desk-mess-mirrored' ), dmm_use_posted(), get_the_author() ); the_time( get_option( 'date_format' ) );
             _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' );
             if ( ! post_password_required() && ! comments_open() && ( is_home() || is_front_page() ) ) {
+                /** Only displays when comments are closed */
                 echo ' '; comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
             }
             the_shortlink( __( 'Short Link', 'desk-mess-mirrored' ), '', ' | ', '' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>

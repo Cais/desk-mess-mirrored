@@ -28,8 +28,9 @@
     <div class="postdata">
         <?php if ( is_home() || is_front_page() ) {
             printf( __( 'Posted by %1$s on %2$s in ', 'desk-mess-mirrored' ), get_the_author(), get_the_time( get_option( 'date_format' ) ) ); the_category( ', ' );
-            if ( ! post_password_required() && ! comments_open() && ( is_home() || is_front_page() ) ) { ?>
-                <br /><?php echo ' '; comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
+            if ( ! post_password_required() && ! comments_open() && ( is_home() || is_front_page() ) ) {
+                /** Only displays when comments are closed */
+                echo '<br />'; comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
             }
         } else {
             printf( __( 'Posted by %1$s on %2$s @ %3$s', 'desk-mess-mirrored' ), get_the_author(), get_the_time( get_option( 'date_format' ) ), get_the_time( get_option( 'time_format' ) ) );

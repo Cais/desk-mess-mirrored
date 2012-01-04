@@ -45,6 +45,7 @@
  * @todo Review / Update 404.php page
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php', etc.)
  * @todo Review `the_shortlink` in post meta being displayed
+ * @todo Review post meta comment text - sort out how to show amount of comments if they exist when comments are closed
  * @todo Add Post-Format: Link
  * @todo Add 'search.php' template? (see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191)
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
