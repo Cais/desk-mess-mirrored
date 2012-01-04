@@ -37,10 +37,8 @@ $count++; ?>
         <div class="postdata">
             <?php printf( __( '%1$s by %2$s on ', 'desk-mess-mirrored' ), dmm_use_posted(), get_the_author() ); the_time( get_option( 'date_format' ) );
             _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' );
-            if ( ! post_password_required() ) {
-                if ( is_home() || is_front_page() ) { ?>
-                    <?php _e( ' with ', 'desk-mess-mirrored' ); comments_popup_link( __( 'No Comments', 'desk-mess-mirrored' ), __( '1 Comment', 'desk-mess-mirrored' ), __( '% Comments', 'desk-mess-mirrored' ), '', __( 'Comments closed', 'desk-mess-mirrored' ) );
-                }
+            if ( ! post_password_required() && ! comments_open() && ( is_home() || is_front_page() ) ) {
+                echo ' '; comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
             }
             the_shortlink( __( 'Short Link', 'desk-mess-mirrored' ), '', ' | ', '' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
         </div><!-- .postdata -->
