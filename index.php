@@ -15,6 +15,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @internal    REQUIRES WordPress version 3.1.0
+ * @internal    Tested up to WordPress version 3.3.1
  *
  * @version     2.0
  * @author      Edward Caissie <edward.caissie@gmail.com>
@@ -41,13 +42,12 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * @internal Project To-do List - see readme.txt for pre-2.0 PTL
- * @todo Consider how best to document completed 'Project To-do List' et al.
  * @todo Review / Update 404.php page
- * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php' etc.)
+ * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php', etc.)
+ * @todo Review `the_shortlink` in post meta being displayed
  * @todo Add Post-Format: Link
- * @todo Add 'search.php' template? see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191
- * @todo Review the addition of `the_shortlink` in all post meta details
- * @todo add additional CSS to reflect the new classes being used for authors
+ * @todo Add 'search.php' template? (see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191)
+ * @todo Add specific CSS to the placeholders used by the new (comment) author classes
  *
  * Last revised January 3, 2012
  */
