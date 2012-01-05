@@ -14,7 +14,7 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
- * Last revised December 18, 2011
+ * Last revised January 5, 2012
  * @version     2.0
  */
 
@@ -461,7 +461,7 @@ if ( ! isset( $content_width ) ) {
  * @param       $classes
  * @internal    Conditional check for BNS Body Classes plugin is made before function is called
  *
- * @return  array - $classes, an array of classes to be added to `body_class`
+ * @return      array - $classes, an array of classes to be added to `body_class`
  */
 if ( ! function_exists( 'bns_body_classes' ) ) {
     add_filter( 'body_class', 'dmm_add_body_classes' );
@@ -473,6 +473,7 @@ if ( ! function_exists( 'bns_body_classes' ) ) {
 
             /** Add theme-<Name> to default body classes */
             $classes[] = 'theme-' . sanitize_html_class( get_option( 'template' ) );
+            $classes = apply_filters( 'dmm_add_body_classes', $classes );
             return $classes;
     }
 }

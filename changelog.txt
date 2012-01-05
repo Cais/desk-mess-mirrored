@@ -11,6 +11,7 @@ Changelog: December 20, 2011
 * Added post-formats: aside, quote, and status
 * Added clearing `div` at top of 'author' and 'page' templates
 * Added project TODO section to 'index.php'
+* Added `DMM Add Body Classes` - Adds additional classes to the core `body_class` function
 * Changed `BNS Theme Version` to `DMM Theme Version` with extensive re-writes to text displayed
 * Changed `my_theme_data` to `active_theme_data` in `DMM Theme Version`
 * Changed post navigation test to 'Older posts' and 'Newer posts' replacing 'Previous entries' and 'Next entries' respectively
