@@ -449,4 +449,31 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
 if ( ! isset( $content_width ) ) {
     $content_width = 580;
 }
+
+/**
+ * DMM Add Body Classes
+ *
+ * Add additional classes to the core `body_class` function
+ *
+ * @package Desk_Mess_Mirrored
+ * @since       2.0
+ *
+ * @param       $classes
+ * @internal    Conditional check for BNS Body Classes plugin is made before function is called
+ *
+ * @return  array - $classes, an array of classes to be added to `body_class`
+ */
+if ( ! function_exists( 'bns_body_classes' ) ) {
+    add_filter( 'body_class', 'dmm_add_body_classes' );
+    function dmm_add_body_classes( $classes ) {
+            /** Add child-theme-<Name> to default body classes */
+            if ( is_child_theme() ) {
+                $classes[] = 'child-theme-' . sanitize_html_class( get_option( 'stylesheet' ) );
+            }
+
+            /** Add theme-<Name> to default body classes */
+            $classes[] = 'theme-' . sanitize_html_class( get_option( 'template' ) );
+            return $classes;
+    }
+}
 ?>
