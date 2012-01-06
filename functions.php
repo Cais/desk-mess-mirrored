@@ -318,7 +318,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                         $dmm_no_title = get_the_title();
                         $status_glyph = '<span class="status-glyph">';
                         empty( $dmm_no_title )
-                                ? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . $status_glyph .= __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
+                                ? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
                                 : $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
                         $status_glyph .= '</span>';
                         echo apply_filters( 'dmm_status_glyph', $status_glyph );
