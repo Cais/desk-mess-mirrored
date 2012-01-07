@@ -14,7 +14,7 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
- * Last revised December 18, 2011
+ * Last revised January 5, 2012
  * @version     2.0
  */
 
@@ -318,7 +318,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                         $dmm_no_title = get_the_title();
                         $status_glyph = '<span class="status-glyph">';
                         empty( $dmm_no_title )
-                                ? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . $status_glyph .= __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
+                                ? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
                                 : $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
                         $status_glyph .= '</span>';
                         echo apply_filters( 'dmm_status_glyph', $status_glyph );
@@ -448,5 +448,33 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  */
 if ( ! isset( $content_width ) ) {
     $content_width = 580;
+}
+
+/**
+ * DMM Add Body Classes
+ *
+ * Add additional classes to the core `body_class` function
+ *
+ * @package Desk_Mess_Mirrored
+ * @since       2.0
+ *
+ * @param       $classes
+ * @internal    Conditional check for BNS Body Classes plugin is made before function is called
+ *
+ * @return      array - $classes, an array of classes to be added to `body_class`
+ */
+if ( ! function_exists( 'bns_body_classes' ) ) {
+    add_filter( 'body_class', 'dmm_add_body_classes' );
+    function dmm_add_body_classes( $classes ) {
+            /** Add child-theme-<Name> to default body classes */
+            if ( is_child_theme() ) {
+                $classes[] = 'child-theme-' . sanitize_html_class( get_option( 'stylesheet' ) );
+            }
+
+            /** Add theme-<Name> to default body classes */
+            $classes[] = 'theme-' . sanitize_html_class( get_option( 'template' ) );
+            $classes = apply_filters( 'dmm_add_body_classes', $classes );
+            return $classes;
+    }
 }
 ?>
