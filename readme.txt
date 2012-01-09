@@ -71,3 +71,4 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * http://themes.trac.wordpress.org/ticket/4549
 * http://themes.trac.wordpress.org/ticket/4556 - version 1.9
 * http://themes.trac.wordpress.org/ticket/5877 - version 1.9.1
+* http://themes.trac.wordpress.org/ticket/6174 - version 2.0
