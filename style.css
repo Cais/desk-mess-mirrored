@@ -483,14 +483,10 @@ div#main-blog ul li.page_item, div#main-blog div#contact-us ul li {
 	padding-left: 10px;
 }
 
-/* div#main-blog .page ul li { list-style:disc inside none; } */
-.page div#content div#main-blog ul { list-style: disc inside none; }
-.page div#content div#main-blog ul li ol { padding-left: 20px; }
-.page div#content div#main-blog ul li ul { padding-left: 20px; }
-
-.page div#content div#main-blog ol { list-style: decimal inside none; }
 .page div#content div#main-blog ol li ol { padding-left: 20px; }
 .page div#content div#main-blog ol li ul { padding-left: 20px; }
+.page div#content div#main-blog ul li ol { padding-left: 20px; }
+.page div#content div#main-blog ul li ul { padding-left: 20px; }
 
 .page-shortlink { float: right; }
 
