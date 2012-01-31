@@ -52,8 +52,9 @@
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
  * @todo Add documentation explaining the relevance and possibly usage of the 'Page Link' shortlink found on pages.
  *
- * Last revised January 16, 2012
+ * Last revised January 31, 2012
  * Added more to-do items regarding the 'Page Link' shortlink implementation
+ * Fixed display issue when widget title was empty - see `dmm_widget_title`
  */
 ?>
 

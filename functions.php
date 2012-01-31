@@ -108,19 +108,26 @@ register_sidebar( array(
 // End Register Widget Areas
 
 /**
- * No Widget Title
+ * DMM Widget Title
  *
- * Fixes the issue of widget_title being empty
+ * Fixes display issue when widget_title is empty by adding a space if it is.
  *
  * @package Desk_Mess_Mirrored
- * @since   2.0
+ * @since   2.0.1
  *
- * @todo Still needs to be fixed; this replaces *all* widget_title instances with a space
+ * @param $title
+ *
+ * @return string
  */
-/* add_filter( 'widget_title', 'no_widget_title', 10, 1 );
-function no_widget_title() {
-        return ' ';
-} */
+function dmm_widget_title( $title ) {
+        if ( '' == $title ) {
+            return ' ';
+        } else {
+            return $title;
+        }
+}
+add_filter( 'widget_title', 'dmm_widget_title', 10, 1 );
+// DMM Widget Title
 
 /**
  * DMM Dynamic Copyright

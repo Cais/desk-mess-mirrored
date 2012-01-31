@@ -1,4 +1,18 @@
 === Desk Mess Mirrored ===
+== Version 2.0.1 ==
+Changelog: January 31, 2012
+= Code =
+* Fixed display issue when widget title was empty - see `dmm_widget_title`
+
+= Internet Browsers Reviewed =
+* Apple Safari v5.1.2
+* Firefox v9.0.1
+* Google Chrome v15.0
+* Internet Explorer v9.0
+* Opera v11.60
+
+/** ------------------------------------------------------------------------- */
+
 == Version 2.0 ==
 Changelog: January 9, 2012
 = Code =
@@ -37,13 +51,6 @@ Changelog: January 9, 2012
 * Removed margins from a blockquote if it is within another blockquote
 * Reorganized stylesheet and added 'Order of Contents' section for reference
 * Updated forms and search widget styles
-
-= Internet Browsers Reviewed =
-* Apple Safari v5.1.2
-* Firefox v9.0.1
-* Google Chrome v15.0
-* Internet Explorer v9.0
-* Opera v11.60
 
 /** ------------------------------------------------------------------------- */
 
