@@ -103,4 +103,3 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' );
     endif;
     comment_form(); ?>
 </div> <!-- #comments-main -->
-<?php /* Last revised November 28, 2011 v1.9.1 */ ?>

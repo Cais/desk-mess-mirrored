@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised January 2, 2012
+* Last revised January 31, 2012
 * This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases. The following information may be found and/or updated as needed:
 * This file was renamed to the more standard readme.txt 2010 August 27.
 
@@ -23,10 +23,11 @@ Also to note, post meta text has been added to indicate the post comment status.
 A: Yes, as of version 1.8; with significant improvements in version 1.8.7!
 
 = Q: Why does the tack above the widget not appear sometimes? =
+RESOLVED: As of version 2.0.1 this issue has been corrected. If the widget title is empty the `dmm_widget_title` function will automagically use a space for the title and the tack will be displayed.
 A: The easiest solution to this issue is to either insure there is always a title used for every widget; if you wish to not have any text in that particular widget using a `space` (`&nbsp;`) will work very well.
 Also to note, if you use the escape sequence `&nbsp;` you may notice the widget title is empty afterward. `&nbsp;` is a `non-breaking space` and appears as such.
 
-= Q: How do I use the new BNS Dynamic Copyright function? =
+= Q: How do I use the new DMM Dynamic Copyright function? =
 A: The function now accepts four (4) parameters. Leaving the function as is will produce the copyright statement as it was produced in version prior to 1.8.5
 Using the following parameters you can change the copyright statement accordingly:
 - start: This is generally the primary statement of copyright including whatever license you may choose to use
@@ -36,7 +37,7 @@ Using the following parameters you can change the copyright statement accordingl
 It is also recommended to use this functionality in a Child-Theme versus modifying the original Theme template file(s).
 
 == Notes ==
-* Always use a title in every widget or the push-pin top of the widget box will not resolve correctly, even a single space will work.
+* Resolved in v2.0.1 - Always use a title in every widget or the push-pin top of the widget box will not resolve correctly, even a single space will work.
 * add_custom_image_header() is not implemented as it will not handle multiple header images; in the case of this theme, there are three (3) being used in the header.
 * It is recommended to not have an excessive quantity of menu items, for example a quantity causing the top menu to exceed two lines, may obscure the post title in some views
 
@@ -51,7 +52,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * [x] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
 
 = Long Term Goals =
-* [-] Correct widget no title / no image issue ... may not have a solution; use a `space` in the title as a work-around - see `No Widget Title` in functions.php
+* [x] Corrected widget title empty issue - see `DMM Widget Title` in functions.php
 * [x] Review second "Home" page scenarios for possible solutions
 * [-] Theme Options? Not likely.
 
