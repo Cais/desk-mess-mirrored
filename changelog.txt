@@ -1,8 +1,11 @@
 === Desk Mess Mirrored ===
 == Version 2.0.1 ==
-Changelog: January 31, 2012
+Changelog: February 2, 2012
 = Code =
 * Fixed display issue when widget title was empty - see `dmm_widget_title`
+
+= CSS =
+* Added z-index to "cup" to keep it on top of "sticky notes"
 
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.2
