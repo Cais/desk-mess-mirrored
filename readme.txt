@@ -1,14 +1,19 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised January 31, 2012
-* This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases. The following information may be found and/or updated as needed:
-* This file was renamed to the more standard readme.txt 2010 August 27.
+* Last revised February 12, 2012
+* This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases.
+* This file was renamed to the more standard readme.txt August 27, 2010.
 
 == Contents ==
+* Licensing
 * Basic FAQ
 * Notes
 * TODO items
-* changelog.txt extended details
+* Changelog
 * Review Tickets
+
+== Licensing ==
+All theme items are licensed under the GNU General Public License v2; or, as the case may be, individually noted.
+This may not be construed as overriding any item with a previously applied license, stated or not, which will take precedence.
 
 == Basic FAQ ==
 = Q: Where did my conversation balloons go? =
@@ -56,8 +61,8 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * [x] Review second "Home" page scenarios for possible solutions
 * [-] Theme Options? Not likely.
 
-== Changelog.txt ==
-* see changelog.txt for brief details
+== Changelog ==
+* see changelog.txt for additional details
 
 == Review Tickets ==
 * http://themes.trac.wordpress.org/ticket/418

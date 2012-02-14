@@ -1,18 +1,22 @@
 === Desk Mess Mirrored ===
 == Version 2.0.1 ==
-Changelog: February 2, 2012
+Changelog: February 14, 2012
 = Code =
 * Fixed display issue when widget title was empty - see `dmm_widget_title`
 
 = CSS =
 * Added z-index to "cup" to keep it on top of "sticky notes"
+* Adjusted `#logo h2` element text position higher for better cross-browser compatibility
+
+= Miscellaneous =
+* Updated 'readme.txt' with a "Licensing" section
 
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.2
-* Firefox v9.0.1
-* Google Chrome v15.0
+* Firefox v10.0.1
+* Google Chrome v17.0
 * Internet Explorer v9.0
-* Opera v11.60
+* Opera v11.61
 
 /** ------------------------------------------------------------------------- */
 

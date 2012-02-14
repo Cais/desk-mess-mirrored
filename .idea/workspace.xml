@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +26,35 @@
     <favorites_list name="desk-mess-mirrored" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changelog.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.15813954">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="294" column="13" selection-start="8272" selection-end="8272" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -47,15 +78,15 @@
         <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/editor-style.css" />
         <option value="$PROJECT_DIR$/support.txt" />
-        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-status.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
   </component>
@@ -92,7 +123,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -127,6 +157,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
@@ -253,7 +284,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -261,7 +292,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23397435" sideWeight="0.6703786" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23931624" sideWeight="0.6703786" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -313,7 +344,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added z-index to &quot;cup&quot; to keep it on top of &quot;sticky notes&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update IDE workspace (no code changes)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -326,7 +357,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Added @todo in index.php ... move doc-block to header.php? (First &quot;real&quot; commit&quot;)" />
     <MESSAGE value="Updates to author template file ... more review needed" />
     <MESSAGE value="Clean up in post-format templates" />
     <MESSAGE value="Documentation Updates" />
@@ -351,6 +381,7 @@
     <MESSAGE value="Tweak to post bottom border (doubled); updated to PTL @todo list" />
     <MESSAGE value="Update browser version reference in changelog; set and tag as version 2.0 - ready for release" />
     <MESSAGE value="Added z-index to &quot;cup&quot; to keep it on top of &quot;sticky notes&quot;" />
+    <MESSAGE value="Update IDE workspace (no code changes)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -391,11 +422,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-status.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="5" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.70956314" />
@@ -406,19 +432,9 @@
         <state line="47" column="9" selection-start="2407" selection-end="2407" vertical-scroll-proportion="-17.384615" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-quote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="5" selection-start="2026" selection-end="2026" vertical-scroll-proportion="-23.76923" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="5" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.74734354" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="68" selection-end="68" vertical-scroll-proportion="0.019767443" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
@@ -426,16 +442,33 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-quote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="294" column="13" selection-start="8272" selection-end="8272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="17" selection-start="11849" selection-end="11849" vertical-scroll-proportion="0.020383693">
+        <state line="8" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.15813954">
           <folding />
         </state>
       </provider>
