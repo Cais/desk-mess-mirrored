@@ -2,7 +2,7 @@
 Theme Name: Desk Mess Mirrored
 Theme URI: http://buynowshop.com/themes/desk-mess-mirrored/
 Description: Marble desktop covered with a mix of old and new items, such as some vintage papers, a stainless steel pen, and, a hot cup of coffee! Now with more documentation and post-format support for the following types: asides, quotes and status! <strong>Please read the included changelog.txt, readme.txt, and support.txt files for details of the latest changes and important notices.</strong> Please note <strong>WordPress 3.1.0 is required</strong> for some functionality; also note the latest version of the Multi Child-Theme is available for download at http://buynowshop.com/themes/desk-mess-mirrored/multi too!
-Version: 2.0.1-beta
+Version: 2.0.1
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
 Version Required: 3.1.0
@@ -111,7 +111,6 @@ body {
     margin: 0;
 	padding: 0;
 	background: #848484 url(images/marble-bg.png) repeat top left;
-	/* font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; */
     font-family: Verdana, Trebuchet, Helvetica, Arial, Jamrul, sans-serif;
     font-size: 100%;
 	line-height: 21px;

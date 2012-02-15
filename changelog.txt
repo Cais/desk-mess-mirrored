@@ -1,6 +1,6 @@
 === Desk Mess Mirrored ===
 == Version 2.0.1 ==
-Changelog: February 14, 2012
+Changelog: February 15, 2012
 = Code =
 * Fixed display issue when widget title was empty - see `dmm_widget_title`
 
@@ -10,6 +10,7 @@ Changelog: February 14, 2012
 
 = Miscellaneous =
 * Updated 'readme.txt' with a "Licensing" section
+* Updated 'readme.txt' explaining the relevance and possible usage of the 'Page Link' shortlink found on pages.
 
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.2

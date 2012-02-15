@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised February 12, 2012
+* Last revised February 15, 2012
 * This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases.
 * This file was renamed to the more standard readme.txt August 27, 2010.
 
@@ -16,6 +16,9 @@ All theme items are licensed under the GNU General Public License v2; or, as the
 This may not be construed as overriding any item with a previously applied license, stated or not, which will take precedence.
 
 == Basic FAQ ==
+= Q: Why is there a >>Page Link<< at the bottom of my pages? Can I hide it?
+A: The idea is to provide an easy to copy permalink for the article so readers can more easily share the page with others. You can hide this text by adding `div.page-shortlink{ display:none; }` to your stylesheet.
+
 = Q: Where did my conversation balloons go? =
 A: The conversation balloons now only show based on the following criteria:
 
