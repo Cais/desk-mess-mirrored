@@ -49,6 +49,7 @@
  * @todo Add Post-Format: Link - use infinity symbol (2.1-early)
  * @todo Add 'search.php' template? (see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191)
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
+ * @todo Add more i18n support, for example: create and include a current '.pot' file
  *
  * Last revised February 15, 2012
  * Updated to-do list
