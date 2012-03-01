@@ -1,4 +1,15 @@
 === Desk Mess Mirrored ===
+== Version 2.0.2 ==
+Changelog: March 1, 2012
+= Code =
+* Un-wrapped the `register_nav_menu` call
+
+= Miscellaneous =
+* Added additional screenshots
+* Updated 'readme.txt' with a Screenshot section and relevant descriptions
+
+/** ------------------------------------------------------------------------- */
+
 == Version 2.0.1 ==
 Changelog: February 15, 2012
 = Code =

@@ -14,8 +14,9 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
- * Last revised January 5, 2012
- * @version     2.0
+ * Last revised March 1, 2012
+ * @version     2.0.2
+ * Updated code wrapping `register_nav_menu` to meet WordPress 3.4 changes
  */
 
 /**
@@ -339,9 +340,9 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
              * @package Desk_Mess_Mirrored
              * @since 1.5
              *
-             * Last revised December 2, 2011
-             * @version 2.0
-             * Removed 'Home" link code from `dmm_list_pages`
+             * Last revised March 1, 2012
+             * @version 2.0.2
+             * Un-wrapped the `register_nav_menu` call
              */
             if ( ! function_exists( 'dmm_nav_menu' ) ) {
                 function dmm_nav_menu() {
@@ -361,13 +362,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                         <ul class="nav-menu"><?php wp_list_pages( 'title_li=' ); ?></ul>
                 <?php }
             }
-
-            if ( ! function_exists( 'register_dmm_menu' ) ) {
-                function register_dmm_menu() {
-                        register_nav_menu( 'top-menu', __( 'Top Menu', 'desk-mess-mirrored' ) );
-                }
-            }
-            add_action( 'init', 'register_dmm_menu' );
+            register_nav_menu( 'top-menu', __( 'Top Menu', 'desk-mess-mirrored' ) );
             // End wp_nav_menu() custom menu support
 
             /**

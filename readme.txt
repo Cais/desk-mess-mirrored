@@ -1,10 +1,11 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised February 15, 2012
+* Last revised March 1, 2012
 * This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases.
 * This file was renamed to the more standard readme.txt August 27, 2010.
 
 == Contents ==
 * Licensing
+* Screenshots
 * Basic FAQ
 * Notes
 * TODO items
@@ -14,6 +15,11 @@
 == Licensing ==
 All theme items are licensed under the GNU General Public License v2; or, as the case may be, individually noted.
 This may not be construed as overriding any item with a previously applied license, stated or not, which will take precedence.
+
+== Screenshots ==
+2. screenshot-2.png - Description: No Menu
+3. screenshot-3.png - Description: Live at BuyNowShop.com
+4. screenshot-4.png - Description: Showcasing the drop-down menu with mutliple levels
 
 == Basic FAQ ==
 = Q: Why is there a >>Page Link<< at the bottom of my pages? Can I hide it?
