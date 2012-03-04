@@ -1,4 +1,11 @@
 === Desk Mess Mirrored ===
+== Version 2.0.3 ==
+Changelog: March 4, 2012
+= CSS =
+* Corrected issue with comments meta showing list bullet
+
+/** ------------------------------------------------------------------------- */
+
 == Version 2.0.2 ==
 Changelog: March 1, 2012
 = Code =
