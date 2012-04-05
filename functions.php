@@ -231,12 +231,10 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
     function dmm_theme_version () {
             /** Get details of the theme / child theme */
             $blog_css_url = get_stylesheet_directory() . '/style.css';
-            // $active_theme_data = get_theme_data( $blog_css_url );
-            $active_theme_data = wp_get_theme( get_stylesheet_directory() );
+            $active_theme_data = get_theme_data( $blog_css_url );
 
             $parent_blog_css_url = get_template_directory() . '/style.css';
-            // $parent_theme_data = get_theme_data( $parent_blog_css_url );
-            $parent_theme_data = wp_get_theme( $parent_blog_css_url );
+            $parent_theme_data = get_theme_data( $parent_blog_css_url );
 
             if ( is_child_theme() ) {
                 printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of
