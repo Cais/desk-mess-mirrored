@@ -223,24 +223,32 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
  * @package Desk_Mess_Mirrored
  * @since 1.4.5
  *
- * Last revised December 6, 2011
- * @version 2.0
- * Changed `my_theme_data` to `active_theme_data` to be more descriptive
- * Changed `BNS Theme Version` to `DMM Theme Version` and changed all relevant references
- * Changed text to better indicate reference is to theme and not content
+ * Last revised April 5, 2012
+ * @version 2.0.3
+ * @todo fix get_theme_data deprecations
  */
 if ( ! function_exists( 'dmm_theme_version' ) ) {
     function dmm_theme_version () {
             /** Get details of the theme / child theme */
             $blog_css_url = get_stylesheet_directory() . '/style.css';
-            $active_theme_data = get_theme_data( $blog_css_url );
+            // $active_theme_data = get_theme_data( $blog_css_url );
+            $active_theme_data = wp_get_theme( get_stylesheet_directory() );
+
             $parent_blog_css_url = get_template_directory() . '/style.css';
-            $parent_theme_data = get_theme_data( $parent_blog_css_url );
+            // $parent_theme_data = get_theme_data( $parent_blog_css_url );
+            $parent_theme_data = wp_get_theme( $parent_blog_css_url );
 
             if ( is_child_theme() ) {
-                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), '<a href="' . $active_theme_data['URI'] . '">' . $active_theme_data['Name'] . '</a>' , $active_theme_data['Version'], $parent_theme_data['Name'], $parent_theme_data['Version'] );
+                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of
+                <br />the Parent-Theme %3$s, v%4$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
+                    '<a href="' . $active_theme_data['URI'] . '">' . $active_theme_data['Name'] . '</a>',
+                    $active_theme_data['Version'],
+                    $parent_theme_data['Name'],
+                    $parent_theme_data['Version'] );
             } else {
-                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), $active_theme_data['Name'], $active_theme_data['Version'] );
+                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
+                    $active_theme_data['Name'],
+                    $active_theme_data['Version'] );
             }
     }
 }
