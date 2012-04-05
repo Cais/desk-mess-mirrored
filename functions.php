@@ -268,7 +268,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             // Add theme support for editor-style
             add_editor_style();
             // This theme allows users to set a custom background
-            add_custom_background();
+            add_theme_support( 'custom-background' );
 
             // Add post-formats support for aside, quote, and status
             add_theme_support( 'post-formats', array( 'aside', 'quote', 'status' ) );
