@@ -17,7 +17,7 @@
  * @internal    REQUIRES WordPress version 3.1.0
  * @internal    Tested up to WordPress version 3.4-alpha
  *
- * @version     2.0.3-alpha
+ * @version     2.0.3
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
@@ -51,9 +51,10 @@
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
  * @todo Add more i18n support, for example: create and include a current '.pot' file
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
+ * @todo Review About box in the 'author.php' template
  *
- * Last revised March 1, 2012
- * This is a quick fix to address theme customization issues and add multiple screenshots for testing with core Trac ticket #19816
+ * Last revised April 5, 2012
+ * Minor updates for WordPress 3.4-beta1 deprecated functions
  */
 ?>
 

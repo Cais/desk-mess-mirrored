@@ -3,6 +3,8 @@
 Changelog: March 4, 2012
 = CSS =
 * Corrected issue with comments meta showing list bullet
+* Replaced deprecated `get_theme_data`
+* Replaced deprecated `add_custom_background`
 
 /** ------------------------------------------------------------------------- */
 
