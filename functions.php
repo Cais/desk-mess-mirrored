@@ -14,9 +14,10 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
- * Last revised March 1, 2012
- * @version     2.0.2
- * Updated code wrapping `register_nav_menu` to meet WordPress 3.4 changes
+ * Last revised April 6, 2012
+ * @version     2.0.3
+ * Address functions deprecated at WordPress 3.4-beta1
+ * @todo Remove backward compatibility code as appropriate
  */
 
 /**
@@ -223,12 +224,28 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
  * @package Desk_Mess_Mirrored
  * @since   1.4.5
  *
- * Last revised April 5, 2012
+ * Last revised April 6, 2012
  * @version 2.0.3
  * Replaced deprecated `get_theme_data` at WordPress version 3.4-beta1
+ * @todo At the appropriate time remove the backward compatibility conditional ...
  */
 if ( ! function_exists( 'dmm_theme_version' ) ) {
     function dmm_theme_version () {
+        global $wp_version;
+        /** Check WordPress version before using `wp_get_theme` for collecting theme data */
+        if ( version_compare( $wp_version, "3.4-alpha", "<" ) ) {
+            /** Get details of the theme / child theme */
+            $blog_css_url = get_stylesheet_directory() . '/style.css';
+            $active_theme_data = get_theme_data( $blog_css_url );
+            $parent_blog_css_url = get_template_directory() . '/style.css';
+            $parent_theme_data = get_theme_data( $parent_blog_css_url );
+
+            if ( is_child_theme() ) {
+                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), '<a href="' . $active_theme_data['URI'] . '">' . $active_theme_data['Name'] . '</a>' , $active_theme_data['Version'], $parent_theme_data['Name'], $parent_theme_data['Version'] );
+            } else {
+                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), $active_theme_data['Name'], $active_theme_data['Version'] );
+            }
+        } else {
             /** @var $active_theme_data - array object containing the current theme's data */
             $active_theme_data = wp_get_theme();
             if ( is_child_theme() ) {
@@ -245,6 +262,7 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
                     $active_theme_data->get( 'Name' ),
                     $active_theme_data->get( 'Version' ) );
             }
+        }
     }
 }
 // End BNS Theme Version
@@ -264,128 +282,143 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
     function desk_mess_mirrored_setup(){
-            // This theme uses post thumbnails
-            add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
-            // Add default posts and comments RSS feed links to head
-            add_theme_support( 'automatic-feed-links' );
-            // Add theme support for editor-style
-            add_editor_style();
-            // This theme allows users to set a custom background
-            add_theme_support( 'custom-background' );
+        global $wp_version;
+        /** This theme uses post thumbnails */
+        add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+        /** Add default posts and comments RSS feed links to head */
+        add_theme_support( 'automatic-feed-links' );
+        /** Add theme support for editor-style */
+        add_editor_style();
 
-            // Add post-formats support for aside, quote, and status
-            add_theme_support( 'post-formats', array( 'aside', 'quote', 'status' ) );
-            /**
-             * Assign unique aside glyph that can be over-written; also will be
-             * used as the anchor text if no title exists for the post
-             *
-             * @package Desk_Mess_Mirrored
-             * @since   2.0
-             *
-             * @param   $aside_glyph    string - constructed
-             */
-            if ( !function_exists( 'dmm_aside_glyph' ) ) {
-                function dmm_aside_glyph() {
-                        $dmm_no_title = get_the_title();
-                        $aside_glyph = '<span class="aside-glyph">';
-                        empty( $dmm_no_title )
-                                ? $aside_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '*', 'desk-mess-mirrored' ) /** default: asterisk */ . '</span></a>'
-                                : $aside_glyph .= __( '*', 'desk-mess-mirrored' ); /** default: asterisk */
-                        $aside_glyph .= '</span>';
-                        echo apply_filters( 'dmm_aside_glyph', $aside_glyph );
-                }
-            }
-            /**
-             * Assign unique quote glyph that can be over-written; also will be
-             * used as the anchor text if no title exists for the post
-             *
-             * @package Desk_Mess_Mirrored
-             * @since   2.0
-             *
-             * @param   $quote_glyph    string - constructed
-             */
-            if ( !function_exists( 'dmm_quote_glyph' ) ) {
-                function dmm_quote_glyph() {
-                        $dmm_no_title = get_the_title();
-                        $quote_glyph = '<span class="quote-glyph">';
-                        empty( $dmm_no_title )
-                                ? $quote_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '"', 'desk-mess-mirrored' ) /** default: double-quote */ . '</span></a>'
-                                : $quote_glyph .= __( '"', 'desk-mess-mirrored' ); /** default: double-quote */
-                        $quote_glyph .= '</span>';
-                        echo apply_filters( 'dmm_quote_glyph', $quote_glyph );
-                }
-            }
-            /**
-             * Assign unique status glyph that can be over-written; also will be
-             * used as the anchor text if no title exists for the post
-             *
-             * @package Desk_Mess_Mirrored
-             * @since   2.0
-             *
-             * @param   $status_glyph    string - constructed
-             */
-            if ( !function_exists( 'dmm_status_glyph' ) ) {
-                function dmm_status_glyph() {
-                        $dmm_no_title = get_the_title();
-                        $status_glyph = '<span class="status-glyph">';
-                        empty( $dmm_no_title )
-                                ? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
-                                : $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
-                        $status_glyph .= '</span>';
-                        echo apply_filters( 'dmm_status_glyph', $status_glyph );
-                }
-            }
-            // End Add post-formats support
+        /**
+         * This theme allows users to set a custom background
+         * @todo Remove backward compatibility code
+         */
+        if ( version_compare( $wp_version, "3.4-alpha", "<" ) ) {
+            add_custom_background();
+        } else {
+            add_theme_support( 'custom-background' /*, array(
+                'default-color' => '848484',
+                'default-image' => get_stylesheet_directory_uri() . '/images/marble-bg.png'
+            )*/ );
+        }
 
-            /**
-             * Add wp_nav_menu() custom menu support
-             *
-             * @package Desk_Mess_Mirrored
-             * @since 1.5
-             *
-             * Last revised March 1, 2012
-             * @version 2.0.2
-             * Un-wrapped the `register_nav_menu` call
-             */
-            if ( ! function_exists( 'dmm_nav_menu' ) ) {
-                function dmm_nav_menu() {
-                        if ( function_exists( 'wp_nav_menu' ) ) {
-                            wp_nav_menu( array(
-                                              'menu_class'      => 'nav-menu',
-                                              'theme_location'  => 'top-menu',
-                                              'fallback_cb'     => 'dmm_list_pages'
-                                                ) );
-                        } else {
-                            dmm_list_pages();
-                        }
-                }
-            }
-            if ( ! function_exists( 'dmm_list_pages' ) ) {
-                function dmm_list_pages() { ?>
-                        <ul class="nav-menu"><?php wp_list_pages( 'title_li=' ); ?></ul>
-                <?php }
-            }
-            register_nav_menu( 'top-menu', __( 'Top Menu', 'desk-mess-mirrored' ) );
-            // End wp_nav_menu() custom menu support
+        /** Add post-formats support for aside, quote, and status */
+        add_theme_support( 'post-formats', array( 'aside', 'quote', 'status' ) );
 
-            /**
-             * Make theme available for translation
-             *
-             * Translations can be filed in the /languages/ directory
-             *
-             * @package Desk_Mess_Mirrored
-             * @since 1.0.7
-             *
-             * Last revised December 2, 2011
-             * @version 2.0
-             * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
-             */
-            load_theme_textdomain( 'desk-mess-mirrored', get_template_directory_uri() . '/languages' );
-            $locale = get_locale();
-            $locale_file = get_template_directory_uri() . "/languages/$locale.php";
-            if ( is_readable( $locale_file ) )
-                /** @noinspection PhpIncludeInspection */
-                require_once( $locale_file );
+        /**
+         * Assign unique aside glyph that can be over-written; also will be
+         * used as the anchor text if no title exists for the post
+         *
+         * @package Desk_Mess_Mirrored
+         * @since   2.0
+         *
+         * @param   $aside_glyph    string - constructed
+         */
+        if ( !function_exists( 'dmm_aside_glyph' ) ) {
+            function dmm_aside_glyph() {
+                    $dmm_no_title = get_the_title();
+                    $aside_glyph = '<span class="aside-glyph">';
+                    empty( $dmm_no_title )
+                            ? $aside_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '*', 'desk-mess-mirrored' ) /** default: asterisk */ . '</span></a>'
+                            : $aside_glyph .= __( '*', 'desk-mess-mirrored' ); /** default: asterisk */
+                    $aside_glyph .= '</span>';
+                    echo apply_filters( 'dmm_aside_glyph', $aside_glyph );
+            }
+        }
+
+        /**
+         * Assign unique quote glyph that can be over-written; also will be
+         * used as the anchor text if no title exists for the post
+         *
+         * @package Desk_Mess_Mirrored
+         * @since   2.0
+         *
+         * @param   $quote_glyph    string - constructed
+         */
+        if ( !function_exists( 'dmm_quote_glyph' ) ) {
+            function dmm_quote_glyph() {
+                    $dmm_no_title = get_the_title();
+                    $quote_glyph = '<span class="quote-glyph">';
+                    empty( $dmm_no_title )
+                            ? $quote_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '"', 'desk-mess-mirrored' ) /** default: double-quote */ . '</span></a>'
+                            : $quote_glyph .= __( '"', 'desk-mess-mirrored' ); /** default: double-quote */
+                    $quote_glyph .= '</span>';
+                    echo apply_filters( 'dmm_quote_glyph', $quote_glyph );
+            }
+        }
+
+        /**
+         * Assign unique status glyph that can be over-written; also will be
+         * used as the anchor text if no title exists for the post
+         *
+         * @package Desk_Mess_Mirrored
+         * @since   2.0
+         *
+         * @param   $status_glyph    string - constructed
+         */
+        if ( !function_exists( 'dmm_status_glyph' ) ) {
+            function dmm_status_glyph() {
+                    $dmm_no_title = get_the_title();
+                    $status_glyph = '<span class="status-glyph">';
+                    empty( $dmm_no_title )
+                            ? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
+                            : $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
+                    $status_glyph .= '</span>';
+                    echo apply_filters( 'dmm_status_glyph', $status_glyph );
+            }
+        }
+        // End Add post-formats support
+
+        /**
+         * Add wp_nav_menu() custom menu support
+         *
+         * @package Desk_Mess_Mirrored
+         * @since 1.5
+         *
+         * Last revised March 1, 2012
+         * @version 2.0.2
+         * Un-wrapped the `register_nav_menu` call
+         */
+        if ( ! function_exists( 'dmm_nav_menu' ) ) {
+            function dmm_nav_menu() {
+                    if ( function_exists( 'wp_nav_menu' ) ) {
+                        wp_nav_menu( array(
+                                          'menu_class'      => 'nav-menu',
+                                          'theme_location'  => 'top-menu',
+                                          'fallback_cb'     => 'dmm_list_pages'
+                                            ) );
+                    } else {
+                        dmm_list_pages();
+                    }
+            }
+        }
+        if ( ! function_exists( 'dmm_list_pages' ) ) {
+            function dmm_list_pages() { ?>
+                    <ul class="nav-menu"><?php wp_list_pages( 'title_li=' ); ?></ul>
+            <?php }
+        }
+        register_nav_menu( 'top-menu', __( 'Top Menu', 'desk-mess-mirrored' ) );
+        // End wp_nav_menu() custom menu support
+
+        /**
+         * Make theme available for translation
+         *
+         * Translations can be filed in the /languages/ directory
+         *
+         * @package Desk_Mess_Mirrored
+         * @since 1.0.7
+         *
+         * Last revised December 2, 2011
+         * @version 2.0
+         * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
+         */
+        load_theme_textdomain( 'desk-mess-mirrored', get_template_directory_uri() . '/languages' );
+        $locale = get_locale();
+        $locale_file = get_template_directory_uri() . "/languages/$locale.php";
+        if ( is_readable( $locale_file ) )
+            /** @noinspection PhpIncludeInspection */
+            require_once( $locale_file );
     }
 }
 add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' );
@@ -482,4 +515,3 @@ if ( ! function_exists( 'bns_body_classes' ) ) {
             return $classes;
     }
 }
-?>
