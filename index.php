@@ -52,6 +52,7 @@
  * @todo Add more i18n support, for example: create and include a current '.pot' file
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
+ * @todo Review wp-title implementation for improvements
  *
  * Last revised April 5, 2012
  * Minor updates for WordPress 3.4-beta1 deprecated functions
