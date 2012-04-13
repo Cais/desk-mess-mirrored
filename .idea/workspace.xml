@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-    </list>
+    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="" />
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -338,7 +335,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-wrote updates to be backward compatible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added todo" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -351,7 +348,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Updated 'readme.txt' to better &quot;validate&quot; as markdown" />
     <MESSAGE value="Added 'support.txt' to project" />
     <MESSAGE value="Added CSS classes to comments to reflect similar added author classes" />
     <MESSAGE value="Documentation update" />
@@ -376,6 +372,7 @@
     <MESSAGE value="Revert wp_get_theme calls" />
     <MESSAGE value="Minor updates for WordPress 3.4-beta1 deprecated functions" />
     <MESSAGE value="Re-wrote updates to be backward compatible" />
+    <MESSAGE value="Added todo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
