@@ -493,7 +493,7 @@ if ( ! isset( $content_width ) ) {
  *
  * Add additional classes to the core `body_class` function
  *
- * @package Desk_Mess_Mirrored
+ * @package     Desk_Mess_Mirrored
  * @since       2.0
  *
  * @param       $classes
