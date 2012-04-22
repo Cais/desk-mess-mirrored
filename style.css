@@ -484,7 +484,7 @@ div#main-blog ul li.page_item, div#main-blog div#contact-us ul li {
 }
 
 .page div#main-blog ul li { list-style: disc inside none; }
-.page div#main-blog ul.commentlist li { list-style: disc inside none; }
+.page div#main-blog ul.commentlist li { list-style: none inside none; }
 .page div#main-blog ul li.comment { list-style: none inside none; }
 
 .page div#content div#main-blog ol li ol { padding-left: 20px; }
