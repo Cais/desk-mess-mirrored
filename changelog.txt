@@ -1,10 +1,20 @@
 === Desk Mess Mirrored ===
 == Version 2.0.3 ==
-Changelog: March 4, 2012
+Changelog: April 26, 2012
+= Code =
+* Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
+
 = CSS =
 * Corrected issue with comments meta showing list bullet
 * Replaced deprecated `get_theme_data`
 * Replaced deprecated `add_custom_background`
+
+= Internet Browsers Reviewed =
+* Apple Safari v5.1.2
+* Firefox v10.0.1
+* Google Chrome v17.0
+* Internet Explorer v9.0
+* Opera v11.61
 
 /** ------------------------------------------------------------------------- */
 
@@ -31,13 +41,6 @@ Changelog: February 15, 2012
 = Miscellaneous =
 * Updated 'readme.txt' with a "Licensing" section
 * Updated 'readme.txt' explaining the relevance and possible usage of the 'Page Link' shortlink found on pages.
-
-= Internet Browsers Reviewed =
-* Apple Safari v5.1.2
-* Firefox v10.0.1
-* Google Chrome v17.0
-* Internet Explorer v9.0
-* Opera v11.61
 
 /** ------------------------------------------------------------------------- */
 

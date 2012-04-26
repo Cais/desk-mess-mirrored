@@ -14,8 +14,8 @@
  * @link        https://github.com/Cais/desk-mess-mirrored/
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
- * @internal    REQUIRES WordPress version 3.1.0
- * @internal    Tested up to WordPress version 3.4-alpha
+ * @internal    REQUIRES WordPress version 3.4-beta1
+ * @internal    Tested up to WordPress version 3.4
  *
  * @version     2.0.3
  * @author      Edward Caissie <edward.caissie@gmail.com>
@@ -52,10 +52,10 @@
  * @todo Add more i18n support, for example: create and include a current '.pot' file
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
- * @todo Review wp-title implementation for improvements
  *
- * Last revised April 5, 2012
- * Minor updates for WordPress 3.4-beta1 deprecated functions
+ * Last revised April 26, 2012
+ * @version 2.0.3
+ * Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
  */
 ?>
 

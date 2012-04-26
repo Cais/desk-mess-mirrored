@@ -46,36 +46,75 @@ if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
 add_action( 'wp_enqueue_scripts', 'dmm_enqueue_comment_reply' );
 // End Enqueue Comment Reply Script
 
-/**
- * DMM WP Title
- *
- * Utilizes the `wp_title` filter to add text to the default output
- * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/wp_title
- *
- * @package Desk_Mess_Mirrored
- * @since 2.0
- */
 if ( ! function_exists( 'dmm_wp_title' ) ) {
-    function dmm_wp_title() {
-            global $page, $paged;
-            // Default title
-            $dmm_title_text = wp_title( '|', false, 'right' ) . get_bloginfo( 'name' );
+    /**
+     * DMM WP Title
+     *
+     * Utilizes the `wp_title` filter to add text to the default output
+     *
+     * @link    http://codex.wordpress.org/Plugin_API/Filter_Reference/wp_title
+     *
+     * @package Desk_Mess_Mirrored
+     * @since   2.0
+     *
+     * Last revised April 26, 2012
+     * @version 2.0.3
+     * Refactor to more correctly use filter while maintaining backward-compatibility
+     */
+    if ( ( ! function_exists( 'wp_get_theme' ) ) || wp_get_theme('version') < '2.1' ) {
+        /**
+         * Test version to maintain backward-compatibility with Child-Themes using `dmm_wp_title` echo
+         * @todo Remove once all (client) Child-Themes have been updated / advised of change
+         */
+        function dmm_wp_title() {
+                global $page, $paged;
+                // Default title
+                $dmm_title_text = wp_title( '|', false, 'right' ) . get_bloginfo( 'name' );
 
-            // Add the blog description (tagline) for the home/front page.
+                // Add the blog description (tagline) for the home/front page.
+                $site_tagline = get_bloginfo( 'description', 'display' );
+                if ( $site_tagline && ( is_home() || is_front_page() ) )
+                    $dmm_title_text .= " | $site_tagline";
+
+                // Add a page number if necessary:
+                if ( $paged >= 2 || $page >= 2 )
+                    $dmm_title_text .= ' | ' . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
+
+                // Use `apply_filters` on `wp_title` and echo
+                $dmm_wp_title = apply_filters( 'wp_title', $dmm_title_text );
+                echo $dmm_wp_title;
+        }
+    } else {
+        /**
+         * Use as filter input
+         *
+         * @param   string $old_title - default title text
+         * @param   string $sep - separator character
+         * @param   string $sep_location - left|right - separator placement in relationship to title
+         *
+         * @return  string - new title text
+         */
+        function dmm_wp_title( $old_title, $sep, $sep_location ) {
+            global $page, $paged;
+            /** Set initial title text */
+            $dmm_title_text = $old_title . get_bloginfo( 'name' );
+            /** Add wrapping spaces to separator character */
+            $sep = ' ' . $sep . ' ';
+
+            /** Add the blog description (tagline) for the home/front page */
             $site_tagline = get_bloginfo( 'description', 'display' );
             if ( $site_tagline && ( is_home() || is_front_page() ) )
-                $dmm_title_text .= " | $site_tagline";
+                $dmm_title_text .= "$sep$site_tagline";
 
-            // Add a page number if necessary:
+            /** Add a page number if necessary */
             if ( $paged >= 2 || $page >= 2 )
-                $dmm_title_text .= ' | ' . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
+                $dmm_title_text .= $sep . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
 
-            // Use `apply_filters` on `wp_title` and echo
-            $dmm_wp_title = apply_filters( 'wp_title', $dmm_title_text );
-            echo $dmm_wp_title;
+            return $dmm_title_text;
+        }
+    add_filter( 'wp_title', 'dmm_wp_title', 10, 3 );
     }
 }
-// End DMM WP Title
 
 /**
  * Register Widget Areas
