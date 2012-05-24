@@ -236,7 +236,7 @@ strong, strong em { font-weight: bold; }
 
 sub, sup { font-size: 65%; }
 
-table { margin: 0 auto; width: 90%; }
+table { /* margin: 0 auto; width: 90%; */ }
 table caption { text-align: center; }
 tr.even {
 	border: none;
@@ -454,7 +454,8 @@ ul.nav-menu ul.children li {
 #content {
 	clear: both;
 	width: 940px; /* reduced from 950px - corrects IE6 horizontal scroll */
-	margin: 0 0 0 45px;
+	/* margin: 0 0 0 45px; */
+    margin: 0 0 0 35px;
 }
 
 /* === MAIN BLOG === */

@@ -17,10 +17,14 @@
  * @uses        get_template_part( 'desk-mess-mirrored', get_post_format() )
  *
  * @internal    for 404, archive, author, index (home, front-page), page, single templates
+ *
+ * @version     2.0.3
+ * @date        May 24, 2012
+ * Added conditional check for custom post types
  */
 
 /** Set count variable for author 'mullet' loop */
-global $count;
+global $count, $post;
 $count++; ?>
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <?php if ( is_page() ) { ?>
@@ -44,7 +48,7 @@ $count++; ?>
             the_shortlink( __( '&#8734;', 'desk-mess-mirrored' ), '', ' | ', '' ); edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
         </div><!-- .postdata -->
     <?php }
-    if ( has_post_thumbnail() )
+    if ( has_post_thumbnail() && ( $post->post_type == 'post' ) )
         the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
     if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {
         the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
