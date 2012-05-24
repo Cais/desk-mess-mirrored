@@ -1,0 +1,15 @@
+/** Extra CSS */
+
+.nav-menu a:hover, .nav-menu a:active {
+    color: #D21600;
+    background: #ffffc0;
+    text-decoration: none;
+    -moz-box-shadow: 1px 2px 10px #000;
+    -webkit-box-shadow: 1px 2px 10px #000;
+    -khtml-box-shadow: 1px 2px 10px #000;
+    box-shadow: 1px 2px 10px #000;
+}
+
+.nav-menu ul.sub-menu a {
+    margin-top: 1px;
+}
