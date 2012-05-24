@@ -7,6 +7,7 @@ Changelog: May 24, 2012
 
 = CSS =
 * Adjusted #content left margin
+* Adjusted menu link padding
 * Corrected issue with comments meta showing list bullet
 * Removed `table` element properties
 * Replaced deprecated `get_theme_data`
