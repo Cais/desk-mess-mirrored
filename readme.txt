@@ -1,7 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised March 1, 2012
-* This file was introduced with version 1.7 of Desk Mess Mirrored and will be maintained with future releases.
-* This file was renamed to the more standard readme.txt August 27, 2010.
+* This file last revised March 1, 2012
 
 == Contents ==
 * Licensing
@@ -19,7 +17,7 @@ This may not be construed as overriding any item with a previously applied licen
 == Screenshots ==
 2. screenshot-2.png - Description: No Menu
 3. screenshot-3.png - Description: Live at BuyNowShop.com
-4. screenshot-4.png - Description: Showcasing the drop-down menu with mutliple levels
+4. screenshot-4.png - Description: Showcasing the drop-down menu with multiple levels
 
 == Basic FAQ ==
 = Q: Why is there a >>Page Link<< at the bottom of my pages? Can I hide it?
