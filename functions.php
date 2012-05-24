@@ -14,7 +14,7 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
- * Last revised April 6, 2012
+ * Last revised May 24, 2012
  * @version     2.0.3
  * Address functions deprecated at WordPress 3.4-beta1
  * @todo Remove backward compatibility code as appropriate
@@ -45,6 +45,25 @@ if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
 }
 add_action( 'wp_enqueue_scripts', 'dmm_enqueue_comment_reply' );
 // End Enqueue Comment Reply Script
+
+/**
+ * DMM Scripts and Styles
+ *
+ * Add extra style sheet (to animate menu notes)
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   2.0.3
+ *
+ * @uses    get_template_directory
+ * @uses    wp_enqueue_style
+ *
+ * @todo Consider for theme options?
+ */
+function dmm_scripts_and_styles() {
+    wp_enqueue_style( 'DMM-Extra-Style', get_template_directory_uri() . '/wip/extra.css', array(), '2.0.3', 'screen' );
+}
+/** To enable the menu animation uncomment the `add_action` call below. */
+/** add_action( 'wp_enqueue_scripts', 'dmm_scripts_and_styles' ); */
 
 if ( ! function_exists( 'dmm_wp_title' ) ) {
     /**

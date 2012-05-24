@@ -2,10 +2,12 @@
 == Version 2.0.3 ==
 Changelog: May 24, 2012
 = Code =
-* Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
 * Added conditional check for custom post types
+* Added `dmm_scripts_and_styles` to enqueue additional scripts and styles such as menu animation
+* Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
 
 = CSS =
+* Added 'extra.css' for menu animation (`add_action` call to enqueue this file has been commented out)
 * Adjusted #content left margin
 * Adjusted menu link padding
 * Corrected issue with comments meta showing list bullet
