@@ -338,7 +338,7 @@ div#top-navigation-menu {clear: both;}
 }
 
 .nav-menu li {
-	background: transparent url(images/menu_button.png) repeat scroll 0 0;
+    background: transparent url(images/menu_button.png) top left no-repeat;
 	float: left;
 	height: 61px;
     list-style: none outside none;

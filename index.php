@@ -53,11 +53,12 @@
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
  * @todo Review and update browser version compatibility
+ * @todo Add enqueued stylesheet to animate menu items (commented out by default to preserve Child-Theme compatibilities)
  *
  * @version 2.0.3
  * @date    May 24, 2012
  * Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
- * More To-Do items added - thanks to Phil @ Frumph.net
+ * Added 'wip' folder for works-in-progress and demonstration code
  */
 ?>
 

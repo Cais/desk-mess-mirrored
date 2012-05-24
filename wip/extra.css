@@ -1,5 +1,9 @@
 /** Extra CSS */
 
+/**
+ * Add the following CSS to create an animation effect to the menu notes
+ * Compliments of Philip M. Hofer of http://frumph.net
+ */
 .nav-menu a:hover, .nav-menu a:active {
     color: #D21600;
     background: #ffffc0;
