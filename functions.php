@@ -76,11 +76,11 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
      * @package Desk_Mess_Mirrored
      * @since   2.0
      *
-     * Last revised April 26, 2012
      * @version 2.0.3
+     * @date    June 1, 2012
      * Refactor to more correctly use filter while maintaining backward-compatibility
      */
-    if ( ( ! function_exists( 'wp_get_theme' ) ) || wp_get_theme('version') < '2.1' ) {
+    if ( ( ! function_exists( 'wp_get_theme' ) ) || wp_get_theme()->get('Version') < '2.1' ) {
         /**
          * Test version to maintain backward-compatibility with Child-Themes using `dmm_wp_title` echo
          * @todo Remove once all (client) Child-Themes have been updated / advised of change
