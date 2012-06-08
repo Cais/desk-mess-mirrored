@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* This file last revised March 1, 2012
+* Last revised June 8, 2012.
 
 == Contents ==
 * Licensing
@@ -49,6 +49,7 @@ Using the following parameters you can change the copyright statement accordingl
 It is also recommended to use this functionality in a Child-Theme versus modifying the original Theme template file(s).
 
 == Notes ==
+* Look in the "wip" folder for some interesting ideas, tips, tricks, and possible upcoming functions and features.
 * Resolved in v2.0.1 - Always use a title in every widget or the push-pin top of the widget box will not resolve correctly, even a single space will work.
 * add_custom_image_header() is not implemented as it will not handle multiple header images; in the case of this theme, there are three (3) being used in the header.
 * It is recommended to not have an excessive quantity of menu items, for example a quantity causing the top menu to exceed two lines, may obscure the post title in some views
