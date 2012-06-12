@@ -355,10 +355,10 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
         if ( version_compare( $wp_version, "3.4-alpha", "<" ) ) {
             add_custom_background();
         } else {
-            add_theme_support( 'custom-background' /*, array(
+            add_theme_support( 'custom-background' , array(
                 'default-color' => '848484',
                 'default-image' => get_stylesheet_directory_uri() . '/images/marble-bg.png'
-            )*/ );
+            ) );
         }
 
         /** Add post-formats support for aside, quote, and status */

@@ -110,7 +110,7 @@ img.alignright, img.right { display: inline; margin: 0 0 8px 8px; }
 body {
     margin: 0;
 	padding: 0;
-	background: #848484 url(images/marble-bg.png) repeat top left;
+	/* background: #848484 url(images/marble-bg.png) repeat top left; */
     font-family: Verdana, Trebuchet, Helvetica, Arial, Jamrul, sans-serif;
     font-size: 100%;
 	line-height: 21px;

@@ -1,10 +1,11 @@
 === Desk Mess Mirrored ===
 == Version 2.0.3 ==
-Changelog: May 24, 2012
+Changelog: June 12, 2012
 = Code =
 * Added conditional check for custom post types
 * Added `dmm_scripts_and_styles` to enqueue additional scripts and styles such as menu animation
 * Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
+* Updated `custom-background` parameters to use default image and color
 
 = CSS =
 * Added 'extra.css' for menu animation (`add_action` call to enqueue this file has been commented out)
