@@ -562,14 +562,21 @@ if ( ! isset( $content_width ) ) {
 if ( ! function_exists( 'bns_body_classes' ) ) {
     add_filter( 'body_class', 'dmm_add_body_classes' );
     function dmm_add_body_classes( $classes ) {
-            /** Add child-theme-<Name> to default body classes */
-            if ( is_child_theme() ) {
-                $classes[] = 'child-theme-' . sanitize_html_class( get_option( 'stylesheet' ) );
-            }
+        /** Add child-theme-<Name> to default body classes */
+        if ( is_child_theme() ) {
+            $classes[] = 'child-theme-' . sanitize_html_class( get_option( 'stylesheet' ) );
+        }
 
-            /** Add theme-<Name> to default body classes */
-            $classes[] = 'theme-' . sanitize_html_class( get_option( 'template' ) );
-            $classes = apply_filters( 'dmm_add_body_classes', $classes );
-            return $classes;
+        /** Add theme-<Name> to default body classes */
+        $classes[] = 'theme-' . sanitize_html_class( get_option( 'template' ) );
+        $classes = apply_filters( 'dmm_add_body_classes', $classes );
+
+        include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+        if ( is_plugin_active( 'jetpack/jetpack.php' ) ) {
+            $classes[]='jetpack';
+        }
+
+
+        return $classes;
     }
 }
