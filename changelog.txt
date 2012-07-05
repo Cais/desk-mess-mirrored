@@ -1,14 +1,16 @@
 === Desk Mess Mirrored ===
 == Version 2.0.3 ==
-Changelog: June 12, 2012
+Changelog: July 5, 2012
 = Code =
 * Added conditional check for custom post types
 * Added `dmm_scripts_and_styles` to enqueue additional scripts and styles such as menu animation
+* Refactor `dmm_modified_post` to add link to modified author posts if they exist
 * Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
 * Updated `custom-background` parameters to use default image and color
 
 = CSS =
 * Added 'extra.css' for menu animation (`add_action` call to enqueue this file has been commented out)
+* Add jetpack class to HTML body tag if plugin is active
 * Adjusted #content left margin
 * Adjusted menu link padding
 * Corrected issue with comments meta showing list bullet
@@ -17,11 +19,11 @@ Changelog: June 12, 2012
 * Replaced deprecated `add_custom_background`
 
 = Internet Browsers Reviewed =
-* Apple Safari v5.1.2 -x
-* Firefox v10.0.1 -x
-* Google Chrome v17.0 -x
-* Internet Explorer v9.0 -x
-* Opera v11.61 -x
+* Apple Safari v5.1.7
+* Firefox v13.0.1
+* Google Chrome v20.0
+* Internet Explorer v9.0
+* Opera v12.0
 
 /** ------------------------------------------------------------------------- */
 

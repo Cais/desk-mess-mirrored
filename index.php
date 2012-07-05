@@ -52,13 +52,10 @@
  * @todo Add more i18n support, for example: create and include a current '.pot' file
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
- * @todo Review and update browser version compatibility
- * @todo Add enqueued stylesheet to animate menu items (commented out by default to preserve Child-Theme compatibilities)
  *
  * @version 2.0.3
- * @date    May 24, 2012
- * Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
- * Added 'wip' folder for works-in-progress and demonstration code
+ * @date    July 5, 2012
+ * see changelog.txt for details of theme updates / modifications
  */
 ?>
 
@@ -82,4 +79,4 @@
         <div class="clear"></div>
     </div><!--end content-->
 </div><!--end wrapper-->
-<?php get_footer(); ?>
+<?php get_footer();
