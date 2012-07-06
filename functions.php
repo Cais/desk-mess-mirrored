@@ -438,21 +438,17 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
          * @package Desk_Mess_Mirrored
          * @since 1.5
          *
-         * Last revised March 1, 2012
-         * @version 2.0.2
-         * Un-wrapped the `register_nav_menu` call
+         * @version 2.0.4
+         * @date    July 6, 2012
+         * Removed backward compatibility check for wp_nav_menu
          */
         if ( ! function_exists( 'dmm_nav_menu' ) ) {
             function dmm_nav_menu() {
-                if ( function_exists( 'wp_nav_menu' ) ) {
-                    wp_nav_menu( array(
-                                      'menu_class'      => 'nav-menu',
-                                      'theme_location'  => 'top-menu',
-                                      'fallback_cb'     => 'dmm_list_pages'
-                                        ) );
-                } else {
-                    dmm_list_pages();
-                }
+                wp_nav_menu( array(
+                    'menu_class'      => 'nav-menu',
+                    'theme_location'  => 'top-menu',
+                    'fallback_cb'     => 'dmm_list_pages'
+                ) );
             }
         }
         if ( ! function_exists( 'dmm_list_pages' ) ) {

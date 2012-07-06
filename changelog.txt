@@ -1,4 +1,17 @@
 === Desk Mess Mirrored ===
+== Version 2.0.4 ==
+Changelog: July 6, 2012
+= Code =
+* Removed backward compatibility check for wp_nav_menu
+
+= Internet Browsers Reviewed =
+* Apple Safari v5.1.7
+* Firefox v13.0.1
+* Google Chrome v20.0
+* Internet Explorer v9.0
+* Opera v12.0
+
+/** ------------------------------------------------------------------------- */
 == Version 2.0.3 ==
 Changelog: July 5, 2012
 = Code =
@@ -18,15 +31,7 @@ Changelog: July 5, 2012
 * Replaced deprecated `get_theme_data`
 * Replaced deprecated `add_custom_background`
 
-= Internet Browsers Reviewed =
-* Apple Safari v5.1.7
-* Firefox v13.0.1
-* Google Chrome v20.0
-* Internet Explorer v9.0
-* Opera v12.0
-
 /** ------------------------------------------------------------------------- */
-
 == Version 2.0.2 ==
 Changelog: March 1, 2012
 = Code =
