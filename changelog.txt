@@ -4,6 +4,9 @@ Changelog: July 6, 2012
 = Code =
 * Removed backward compatibility check for wp_nav_menu
 
+= CSS =
+* Reduce z-index of #cup to put under menu
+
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.7
 * Firefox v13.0.1
