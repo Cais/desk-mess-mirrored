@@ -461,17 +461,16 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 
         /**
          * Make theme available for translation
-         *
          * Translations can be filed in the /languages/ directory
          *
          * @package Desk_Mess_Mirrored
-         * @since 1.0.7
+         * @since   1.0.7
          *
-         * Last revised December 2, 2011
-         * @version 2.0
-         * Replaced TEMPLATEPATH constant with `get_template_directory_uri`
+         * @version 2.0.4
+         * @date    July 18, 2012
+         * Corrected parameter to use `get_template_directory`
          */
-        load_theme_textdomain( 'desk-mess-mirrored', get_template_directory_uri() . '/languages' );
+        load_theme_textdomain( 'desk-mess-mirrored', get_template_directory() . '/languages' );
         $locale = get_locale();
         $locale_file = get_template_directory_uri() . "/languages/$locale.php";
         if ( is_readable( $locale_file ) )

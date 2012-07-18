@@ -14,10 +14,10 @@
  * @link        https://github.com/Cais/desk-mess-mirrored/
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
- * @internal    REQUIRES WordPress version 3.4-beta1
+ * @internal    REQUIRES WordPress version 3.4
  * @internal    Tested up to WordPress version 3.4
  *
- * @version     2.0.3
+ * @version     2.0.4
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *

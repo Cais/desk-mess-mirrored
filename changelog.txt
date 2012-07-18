@@ -1,7 +1,8 @@
 === Desk Mess Mirrored ===
 == Version 2.0.4 ==
-Changelog: July 6, 2012
+Changelog: July 18, 2012
 = Code =
+* Corrected use of `get_template_directory` in `load_theme_textdomain` parameters
 * Removed backward compatibility check for wp_nav_menu
 
 = CSS =
