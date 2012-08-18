@@ -467,12 +467,12 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
          * @since   1.0.7
          *
          * @version 2.0.4
-         * @date    July 18, 2012
+         * @date    August 18, 2012
          * Corrected parameter to use `get_template_directory`
          */
         load_theme_textdomain( 'desk-mess-mirrored', get_template_directory() . '/languages' );
         $locale = get_locale();
-        $locale_file = get_template_directory_uri() . "/languages/$locale.php";
+        $locale_file = get_template_directory() . "/languages/$locale.php";
         if ( is_readable( $locale_file ) )
             /** @noinspection PhpIncludeInspection */
             require_once( $locale_file );
