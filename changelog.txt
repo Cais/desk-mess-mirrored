@@ -8,6 +8,10 @@ Changelog: August 18, 2012
 = CSS =
 * Reduce z-index of #cup to put under menu
 
+= Miscellaneous =
+* Removed German and Spanish translation files as too old.
+* Added French translation files, courtesy of Samy Rahib at http://lahaut.info
+
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.7
 * Firefox v13.0.1
