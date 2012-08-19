@@ -1,0 +1,327 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: desk-mess-mirrored\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-18 15:41+0100\n"
+"PO-Revision-Date: 2012-08-18 15:57+0100\n"
+"Last-Translator: Samy Rabih <contact@lahaut.info>\n"
+"Language-Team: Samy Rabih <desk-mess-mirrored>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:33
+#: ../archive.php:32
+#: ../author.php:67
+#: ../index.php:73
+#: ../page.php:33
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de votre recherche sur : %s"
+
+#: ../404.php:34
+#: ../archive.php:33
+#: ../index.php:74
+#: ../page.php:34
+msgid "Sorry, but you are looking for something that is not here."
+msgstr "Désolé, aucun résultat."
+
+#: ../author.php:51
+msgid "About "
+msgstr "A propos"
+
+#: ../author.php:53
+msgid "Website"
+msgstr "Site web"
+
+#: ../author.php:53
+msgid "or"
+msgstr "ou"
+
+#: ../author.php:53
+msgid "email"
+msgstr "e-mail"
+
+#: ../author.php:54
+msgid "Biography"
+msgstr "Biographie"
+
+#: ../author.php:57
+msgid "Posts by "
+msgstr "Articles de "
+
+#: ../author.php:68
+msgid "Sorry, there are no posts by this author."
+msgstr "Désolé, aucun article de cet auteur n'est disponible."
+
+#: ../comments.php:25
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Merci de ne pas charger cette page directement !"
+
+#: ../comments.php:27
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Cet article est protégé par un mot de passe. Vous devez le saisir pour consulter les commentaires."
+
+#: ../comments.php:88
+msgid "No Comments"
+msgstr "Aucun commentaire"
+
+#: ../comments.php:88
+msgid "1 Comment"
+msgstr "1 commentaire"
+
+#: ../comments.php:88
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: ../comments.php:90
+msgid "&raquo; Reply to this Comment &laquo;"
+msgstr "&raquo; Répondre à ce commentaire &laquo;"
+
+#: ../desk-mess-mirrored-aside.php:22
+#: ../desk-mess-mirrored-quote.php:22
+#: ../desk-mess-mirrored-status.php:22
+#: ../desk-mess-mirrored.php:36
+msgid "0"
+msgstr "0"
+
+#: ../desk-mess-mirrored-aside.php:22
+#: ../desk-mess-mirrored-quote.php:22
+#: ../desk-mess-mirrored-status.php:22
+#: ../desk-mess-mirrored.php:36
+msgid "1"
+msgstr "1"
+
+#: ../desk-mess-mirrored-aside.php:22
+#: ../desk-mess-mirrored-quote.php:22
+#: ../desk-mess-mirrored-status.php:22
+#: ../desk-mess-mirrored.php:36
+msgid "%"
+msgstr "%"
+
+#: ../desk-mess-mirrored-aside.php:22
+#: ../desk-mess-mirrored-quote.php:22
+#: ../desk-mess-mirrored-status.php:22
+#: ../desk-mess-mirrored.php:36
+msgid "-"
+msgstr "-"
+
+#: ../desk-mess-mirrored-aside.php:26
+#: ../desk-mess-mirrored-quote.php:26
+#: ../desk-mess-mirrored-status.php:26
+msgid "Permalink to: "
+msgstr "Lien permanent vers :"
+
+#: ../desk-mess-mirrored-aside.php:29
+#: ../desk-mess-mirrored-quote.php:29
+#: ../desk-mess-mirrored-status.php:30
+#, php-format
+msgid "Posted by %1$s on %2$s in "
+msgstr "Posté par %1$s le %2$s dans "
+
+#: ../desk-mess-mirrored-aside.php:32
+#: ../desk-mess-mirrored-quote.php:32
+#: ../desk-mess-mirrored-status.php:33
+#: ../desk-mess-mirrored.php:46
+msgid "with Comments closed"
+msgstr "Commentaires fermés"
+
+#: ../desk-mess-mirrored-aside.php:34
+#: ../desk-mess-mirrored-quote.php:34
+#: ../desk-mess-mirrored-status.php:39
+#: ../desk-mess-mirrored.php:48
+msgid "&#8734;"
+msgstr "&#8734;"
+
+#: ../desk-mess-mirrored-aside.php:35
+#: ../desk-mess-mirrored-quote.php:35
+#: ../desk-mess-mirrored-status.php:40
+#: ../desk-mess-mirrored.php:48
+msgid "Edit"
+msgstr "Modifier"
+
+#: ../desk-mess-mirrored-aside.php:35
+#: ../desk-mess-mirrored-quote.php:35
+#: ../desk-mess-mirrored.php:48
+msgid " | "
+msgstr " | "
+
+#: ../desk-mess-mirrored-aside.php:40
+#: ../desk-mess-mirrored-quote.php:40
+#: ../desk-mess-mirrored-status.php:45
+#: ../desk-mess-mirrored.php:54
+msgid "Read more... "
+msgstr "La suite ..."
+
+#: ../desk-mess-mirrored-aside.php:42
+#: ../desk-mess-mirrored-quote.php:42
+#: ../desk-mess-mirrored-status.php:47
+#: ../desk-mess-mirrored.php:56
+msgid "Pages:"
+msgstr "Pages :"
+
+#: ../desk-mess-mirrored-aside.php:44
+#: ../desk-mess-mirrored-quote.php:44
+#: ../desk-mess-mirrored-status.php:49
+#: ../desk-mess-mirrored.php:62
+msgid "... other posts by "
+msgstr "… autres articles par "
+
+#: ../desk-mess-mirrored-status.php:36
+#, php-format
+msgid "Posted by %1$s on %2$s @ %3$s"
+msgstr "Posté par %1$s le %2$s à %3$s"
+
+#: ../desk-mess-mirrored-status.php:37
+msgid "<br />in "
+msgstr "<br />dans "
+
+#: ../desk-mess-mirrored-status.php:40
+msgid " &#124; "
+msgstr " &#124; "
+
+#: ../desk-mess-mirrored.php:32
+msgid "Edit This Page"
+msgstr "Modifier cette page"
+
+#: ../desk-mess-mirrored.php:32
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: ../desk-mess-mirrored.php:32
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: ../desk-mess-mirrored.php:40
+msgid "Permanent Link to"
+msgstr "Lien permanent vers"
+
+#: ../desk-mess-mirrored.php:42
+#, php-format
+msgid "%1$s by %2$s on "
+msgstr "%1$s par %2$s le "
+
+#: ../desk-mess-mirrored.php:43
+msgid " in "
+msgstr " dans "
+
+#: ../desk-mess-mirrored.php:65
+msgid "Page Link"
+msgstr "Lien de la page"
+
+#: ../dmm-navigation.php:23
+msgid "&laquo; Older posts"
+msgstr "&laquo; Articles plus anciens"
+
+#: ../dmm-navigation.php:26
+msgid "Newer posts &raquo;"
+msgstr "Articles plus récents &raquo;"
+
+#: ../functions.php:102
+#: ../functions.php:132
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: ../functions.php:150
+msgid "Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme sidebar content is placed here. If you drag and drop a new widget into this area you will replace *all* of the default sidebar content."
+msgstr "La zone de widgets n° 1 située dans la barre latérale de droite. Tout le contenu par défaut du thème Desk Mess Mirrored est placé ici. Si vous déposez ici un nouveau widget, *tout* le contenu par défaut la barre latérale sera remplacé."
+
+#: ../functions.php:157
+msgid "Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. This area is empty by default"
+msgstr "La zone de widgets n° 2, située dans le milieu de la barre latérale de droite, sous la zone 1. Elle est vide par défaut"
+
+#: ../functions.php:164
+msgid "Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. This are is empty by default"
+msgstr "La zone de widgets n° 3, située dans le milieu de la barre latérale de droite, sous la zone 2. Elle est vide par défaut"
+
+#: ../functions.php:226
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../functions.php:267
+msgid "All rights reserved."
+msgstr "Tous droits réservés"
+
+#: ../functions.php:270
+#, php-format
+msgid "<span id=\"dmm-dynamic-copyright\"> %1$s </span><!-- #bns-dynamic-copyright -->"
+msgstr "<span id=\"dmm-dynamic-copyright\"> %1$s </span><!-- #bns-dynamic-copyright -->"
+
+#: ../functions.php:304
+#: ../functions.php:315
+#, php-format
+msgid "<br /><span id=\"dmm-theme-version\">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href=\"http://buynowshop.com/\" title=\"BuyNowShop.com\">BuyNowShop.com</a>.</span>"
+msgstr "<br /><span id=\"dmm-theme-version\">Ce site utilise v%2$s, le thème dérivé de %1$s, basé sur<br />le thème-parent %3$s, v%4$s, disponible sur <a href=\"http://buynowshop.com/\" title=\"BuyNowShop.com\">BuyNowShop.com</a>.</span>"
+
+#: ../functions.php:306
+#: ../functions.php:321
+#, php-format
+msgid "<br /><span id=\"dmm-theme-version\">This site is using the %1$s theme, v%2$s, from <a href=\"http://buynowshop.com/\" title=\"BuyNowShop.com\">BuyNowShop.com</a>.</span>"
+msgstr "<br /><span id=\"dmm-theme-version\">Ce site utilise le thème %1$s, v%2$s, de <a href=\"http://buynowshop.com/\" title=\"BuyNowShop.com\">BuyNowShop.com</a>.</span>"
+
+#: ../functions.php:385
+#: ../functions.php:386
+msgid "*"
+msgstr "*"
+
+#: ../functions.php:406
+#: ../functions.php:407
+msgid "\""
+msgstr "\""
+
+#: ../functions.php:427
+#: ../functions.php:428
+msgid "@"
+msgstr "@"
+
+#: ../functions.php:463
+msgid "Top Menu"
+msgstr "Menu du haut"
+
+#: ../functions.php:505
+#: ../functions.php:506
+msgid "Posted"
+msgstr "Posté"
+
+#: ../functions.php:551
+#, php-format
+msgid "Last modified by %1$s %2$s on %3$s at %4$s."
+msgstr "Dernière modification par %1$s %2$s le %3$s à %4$s."
+
+#: ../searchform.php:22
+msgid "Search for:"
+msgstr "Recherche sur :"
+
+#: ../searchform.php:24
+#: ../sidebar.php:28
+msgid "Enter keyword(s) and hit enter"
+msgstr "Entrez des mots-clés et tapez sur Entrée"
+
+#: ../searchform.php:25
+#: ../sidebar.php:29
+msgid "Search"
+msgstr "Rechercher"
+
+#: ../sidebar.php:34
+msgid "Calendar"
+msgstr "Calendrier"
+
+#: ../sidebar.php:43
+msgid "Categories"
+msgstr "Catégories"
+
+#: ../sidebar.php:49
+msgid "Archives"
+msgstr "Archives"
+
+#: ../sidebar.php:55
+msgid "Meta"
+msgstr "Meta"
+
