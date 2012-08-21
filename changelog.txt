@@ -1,9 +1,11 @@
 === Desk Mess Mirrored ===
 == Version 2.0.4 ==
-Changelog: August 18, 2012
+Changelog: August 21, 2012
 = Code =
 * Corrected use of `get_template_directory` in `load_theme_textdomain` parameters
 * Removed backward compatibility check for wp_nav_menu
+* Changed enqueued version to be dynamically taken from theme version
+* Change 'comment-reply' script hook to 'comment_form_before'
 
 = CSS =
 * Reduce z-index of #cup to put under menu
@@ -11,13 +13,14 @@ Changelog: August 18, 2012
 = Miscellaneous =
 * Removed German and Spanish translation files as too old.
 * Added French translation files, courtesy of Samy Rahib at http://lahaut.info
+* Minor typos in 'readme.txt'
 
 = Internet Browsers Reviewed =
 * Apple Safari v5.1.7
-* Firefox v13.0.1
-* Google Chrome v20.0
+* Firefox v14.0.1
+* Google Chrome v21.0
 * Internet Explorer v9.0
-* Opera v12.0
+* Opera v12.01
 
 /** ------------------------------------------------------------------------- */
 == Version 2.0.3 ==

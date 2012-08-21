@@ -34,9 +34,9 @@
  *
  * @return  void
  *
- * @version 2.0
- * Last revised November 30, 2011
- * Added `function_exists` conditional check
+ * @version 2.0.4
+ * @date    August 21, 2012
+ * No change to function code; changed related action hook to 'comment_form_before'
  */
 if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
     function dmm_enqueue_comment_reply() {
@@ -45,24 +45,26 @@ if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
         }
     }
 }
-add_action( 'wp_enqueue_scripts', 'dmm_enqueue_comment_reply' );
+add_action( 'comment_form_before', 'dmm_enqueue_comment_reply' );
 // End Enqueue Comment Reply Script
 
 /**
  * DMM Scripts and Styles
- *
  * Add extra style sheet (to animate menu notes)
  *
  * @package Desk_Mess_Mirrored
  * @since   2.0.3
  *
  * @uses    get_template_directory
+ * @uses    wp_get_theme
  * @uses    wp_enqueue_style
  *
- * @todo Consider for theme options?
+ * @version 2.0.4
+ * @date    August 21, 2012
+ * Changed enqueued version to be dynamically taken from theme version
  */
 function dmm_scripts_and_styles() {
-    wp_enqueue_style( 'DMM-Extra-Style', get_template_directory_uri() . '/wip/extra.css', array(), '2.0.3', 'screen' );
+    wp_enqueue_style( 'DMM-Extra-Style', get_template_directory_uri() . '/wip/extra.css', array(), wp_get_theme()->get( 'Version' ), 'screen' );
 }
 /** To enable the menu animation uncomment the `add_action` call below. */
 /** add_action( 'wp_enqueue_scripts', 'dmm_scripts_and_styles' ); */
