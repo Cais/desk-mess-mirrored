@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised August 21, 2012
+* Last revised December 3, 2012
 
 == Contents ==
 * Licensing
@@ -21,10 +21,10 @@ This may not be construed as overriding any item with a previously applied licen
 
 == Basic FAQ ==
 = Q: Why is there a >>Page Link<< at the bottom of my pages? Can I hide it? =
-A: The idea is to provide an easy to copy permalink for the article so readers can more easily share the page with others. You can hide this text by adding `div.page-shortlink{ display:none; }` to your stylesheet.
+The idea is to provide an easy to copy permalink for the article so readers can more easily share the page with others. You can hide this text by adding `div.page-shortlink{ display:none; }` to your stylesheet.
 
 = Q: Where did my conversation balloons go? =
-A: The conversation balloons now only show based on the following criteria:
+The conversation balloons now only show based on the following criteria:
 
 1. The post is not password protected; and,
 2. Comments are open *or* at least one (1) comment has been made on the post.
@@ -32,15 +32,15 @@ A: The conversation balloons now only show based on the following criteria:
 Also to note, post meta text has been added to indicate the post comment status.
 
 = Q: Does the theme support multi-level, or drop-down menus? =
-A: Yes, as of version 1.8; with significant improvements in version 1.8.7!
+Yes, as of version 1.8; with significant improvements in version 1.8.7!
 
 = Q: Why does the tack above the widget not appear sometimes? =
 RESOLVED: As of version 2.0.1 this issue has been corrected. If the widget title is empty the `dmm_widget_title` function will automagically use a space for the title and the tack will be displayed.
-A: The easiest solution to this issue is to either insure there is always a title used for every widget; if you wish to not have any text in that particular widget using a `space` (`&nbsp;`) will work very well.
+The easiest solution to this issue is to either insure there is always a title used for every widget; if you wish to not have any text in that particular widget using a `space` (`&nbsp;`) will work very well.
 Also to note, if you use the escape sequence `&nbsp;` you may notice the widget title is empty afterward. `&nbsp;` is a `non-breaking space` and appears as such.
 
 = Q: How do I use the new DMM Dynamic Copyright function? =
-A: The function now accepts four (4) parameters. Leaving the function as is will produce the copyright statement as it was produced in version prior to 1.8.5
+The function now accepts four (4) parameters. Leaving the function as is will produce the copyright statement as it was produced in version prior to 1.8.5
 Using the following parameters you can change the copyright statement accordingly:
 - start: This is generally the primary statement of copyright including whatever license you may choose to use
 - copy_years: This is the years dynamically calculated from published posts
