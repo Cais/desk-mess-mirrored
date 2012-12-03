@@ -19,8 +19,14 @@
  * Address functions deprecated at WordPress 3.4-beta1
  * Miscellaneous code structure updates
  *
- * @todo Remove backward compatibility code as appropriate ... scheduled for WordPress 3.5
+ * @version     2.1
+ * @date        December 3, 2012
+ * Add DMM_HOME_DOMAIN constant for better future proofing
+ * Removed DMM_Add_Body_Classes in favor of using BNS Body Classes
  */
+
+/** Define Desk Mess Mirrored "Home" domain */
+define( 'DMM_HOME_DOMAIN', 'http://buynowshop.com/' );
 
 /**
  * Enqueue Comment Reply Script
@@ -286,44 +292,31 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
  * @package Desk_Mess_Mirrored
  * @since   1.4.5
  *
- * Last revised April 6, 2012
  * @version 2.0.3
+ * @date    April 6, 2012
  * Replaced deprecated `get_theme_data` at WordPress version 3.4-beta1
- * @todo At the appropriate time remove the backward compatibility conditional ... scheduled for WordPress 3.5
+ *
+ * @version 2.1
+ * @date    December 3, 2012
+ * Make compatible with current WordPress versions (3.4+)
  */
 if ( ! function_exists( 'dmm_theme_version' ) ) {
     function dmm_theme_version () {
-        global $wp_version;
-        /** Check WordPress version before using `wp_get_theme` for collecting theme data */
-        if ( version_compare( $wp_version, "3.4-alpha", "<" ) ) {
-            /** Get details of the theme / child theme */
-            $blog_css_url = get_stylesheet_directory() . '/style.css';
-            $active_theme_data = get_theme_data( $blog_css_url );
-            $parent_blog_css_url = get_template_directory() . '/style.css';
-            $parent_theme_data = get_theme_data( $parent_blog_css_url );
-
-            if ( is_child_theme() ) {
-                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), '<a href="' . $active_theme_data['URI'] . '">' . $active_theme_data['Name'] . '</a>' , $active_theme_data['Version'], $parent_theme_data['Name'], $parent_theme_data['Version'] );
-            } else {
-                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ), $active_theme_data['Name'], $active_theme_data['Version'] );
-            }
+        /** @var $active_theme_data - array object containing the current theme's data */
+        $active_theme_data = wp_get_theme();
+        if ( is_child_theme() ) {
+            /** @var $parent_theme_data - array object containing the Parent Theme's data */
+            $parent_theme_data = $active_theme_data->parent();
+            /** @noinspection PhpUndefinedMethodInspection - IDE commentary */
+            printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="' . DMM_HOME_DOMAIN . '" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
+                '<a href="' . $active_theme_data->get( 'ThemeURI' ) . '">' . $active_theme_data->get( 'Name' ) . '</a>',
+                $active_theme_data->get( 'Version' ),
+                $parent_theme_data->get( 'Name' ),
+                $parent_theme_data->get( 'Version' ) );
         } else {
-            /** @var $active_theme_data - array object containing the current theme's data */
-            $active_theme_data = wp_get_theme();
-            if ( is_child_theme() ) {
-                /** @var $parent_theme_data - array object containing the Parent Theme's data */
-                $parent_theme_data = $active_theme_data->parent();
-                /** @noinspection PhpUndefinedMethodInspection - IDE commentary */
-                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
-                    '<a href="' . $active_theme_data->get( 'ThemeURI' ) . '">' . $active_theme_data->get( 'Name' ) . '</a>',
-                    $active_theme_data->get( 'Version' ),
-                    $parent_theme_data->get( 'Name' ),
-                    $parent_theme_data->get( 'Version' ) );
-            } else {
-                printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="http://buynowshop.com/" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
-                    $active_theme_data->get( 'Name' ),
-                    $active_theme_data->get( 'Version' ) );
-            }
+            printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="' . DMM_HOME_DOMAIN . '" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
+                $active_theme_data->get( 'Name' ),
+                $active_theme_data->get( 'Version' ) );
         }
     }
 }
@@ -341,6 +334,10 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  * @version 2.0.3
  * @date    July, 5, 2012
  * See additional documentation within function for specific changes
+ *
+ * @version 2.1
+ * @date    December 3, 2012
+ * Make 'custom-background' compatible with current WordPress versions (3.4+)
  */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
     function desk_mess_mirrored_setup(){
@@ -356,16 +353,11 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
          * This theme allows users to set a custom background
          * NB: Child-Themes will need to over-load this functionality to use a
          * different default background image.
-         * @todo Remove backward compatibility code ... scheduled for WordPress 3.5
          */
-        if ( version_compare( $wp_version, "3.4-alpha", "<" ) ) {
-            add_custom_background();
-        } else {
-            add_theme_support( 'custom-background' , array(
-                'default-color' => '848484',
-                'default-image' => get_template_directory_uri() . '/images/marble-bg.png'
-            ) );
-        }
+        add_theme_support( 'custom-background' , array(
+            'default-color' => '848484',
+            'default-image' => get_template_directory_uri() . '/images/marble-bg.png'
+        ) );
 
         /** Add post-formats support for aside, quote, and status */
         add_theme_support( 'post-formats', array( 'aside', 'quote', 'status' ) );
@@ -522,7 +514,7 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
  * @version 2.0.3
  * @date    July 5, 2012
  * If modified author exists link to their archive.
- * @todo Add parameters and use `apply_filters` on output
+ *
  * @todo Implement in other template files, such as, single and page?
  */
 if ( ! function_exists( 'dmm_modified_post' ) ) {
@@ -535,10 +527,7 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
             $last_user = get_userdata( $last_id );
         }
 
-        /**
-         * @var $line_height - set value for use with `get_avatar`
-         * @todo Review if this can be set programmatically
-         */
+        /** @var $line_height - set value for use with `get_avatar` */
         $line_height = 16;
 
         /** @var string $mod_author_phrase - create the "mod_author_phrase" */
@@ -551,7 +540,7 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
             if ( get_the_date() <> get_the_modified_date() ) {
                 printf( '<h5><span class="bns-modified-post">' . $mod_author_phrase . '</span></h5>',
                     $mod_author_avatar,
-                        '<a href="' . home_url( '?author=' . $last_user->ID ) . '">' . $last_user->display_name . '</a>',
+                    '<a href="' . home_url( '?author=' . $last_user->ID ) . '">' . $last_user->display_name . '</a>',
                     get_the_modified_date( get_option( 'date_format' ) ),
                     get_the_modified_time( get_option( 'time_format' ) ) );
             }
@@ -561,6 +550,25 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
 // End BNS Modified Post
 
 /**
+ * DMM No Posts Found
+ * Displayed if there are no posts found in the query
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   2.1
+ *
+ * @internal Used simply for "DRY" efficiency
+ *
+ * @uses    get_search_form
+ * @uses    get_search_query
+ */
+function dmm_no_posts_found() {
+    ?>
+    <h2><?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
+    <p class="center"><?php _e( 'Sorry, but you are looking for something that is not here.', 'desk-mess-mirrored' ); ?></p>
+    <?php get_search_form();
+}
+
+/**
  * Set `content_width` based on the theme design and stylesheet to keep images,
  * videos, etc. within the confines of the post block.
  *
@@ -568,46 +576,4 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  */
 if ( ! isset( $content_width ) ) {
     $content_width = 580;
-}
-
-/**
- * DMM Add Body Classes
- *
- * Add additional classes to the core `body_class` function
- *
- * @package     Desk_Mess_Mirrored
- * @since       2.0
- *
- * @param       $classes
- * @internal    Conditional check for BNS Body Classes plugin is made before function is called
- *
- * @return      array - $classes, an array of classes to be added to `body_class`
- *
- * @version     2.0.3
- * @date        July 5, 2012
- * Add jetpack class to HTML body tag if plugin is active
- */
-if ( ! function_exists( 'bns_body_classes' ) ) {
-    add_filter( 'body_class', 'dmm_add_body_classes' );
-    function dmm_add_body_classes( $classes ) {
-        /** Add child-theme-<Name> to default body classes */
-        if ( is_child_theme() ) {
-            $classes[] = 'child-theme-' . sanitize_html_class( get_option( 'stylesheet' ) );
-        }
-
-        /** Add theme-<Name> to default body classes */
-        $classes[] = 'theme-' . sanitize_html_class( get_option( 'template' ) );
-        $classes = apply_filters( 'dmm_add_body_classes', $classes );
-
-        /**
-         * Since the Jetpack plugin can cause numerous issues with display, add
-         * an explicit class to the body tag for reference and style needs.
-         */
-        include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-        if ( is_plugin_active( 'jetpack/jetpack.php' ) ) {
-            $classes[]='jetpack';
-        }
-
-        return $classes;
-    }
 }

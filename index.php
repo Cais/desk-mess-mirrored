@@ -56,6 +56,10 @@
  * @version 2.0.3
  * @date    July 5, 2012
  * see changelog.txt for details of theme updates / modifications
+ *
+ * @version     2.1
+ * @date        December 3, 2012
+ * Added 'DMM No Posts Found' function to replace repetitive code
  */
 ?>
 
@@ -69,10 +73,8 @@
                     get_template_part( 'desk-mess-mirrored', get_post_format() );
                 endwhile;
                 get_template_part( 'dmm-navigation' );
-            else : ?>
-                <h2><?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
-                <p class="center"><?php _e( 'Sorry, but you are looking for something that is not here.', 'desk-mess-mirrored' ); ?></p>
-                <?php get_search_form();
+            else :
+                dmm_no_posts_found();
             endif; ?>
         </div><!--end main blog-->
         <?php get_sidebar(); ?>

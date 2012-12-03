@@ -14,9 +14,13 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2012, Edward Caissie
  *
- * Last revised December 11, 2011
  * @version     2.0
+ * @date        December 11, 2012
  * Rewrote the class assigned to the #author box by adding the author role as a class name.
+ *
+ * @version     2.1
+ * @date        December 3, 2012
+ * Added 'DMM No Posts Found' function to replace repetitive code
  */
 
 get_header();
@@ -63,10 +67,8 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
                     get_template_part( 'desk-mess-mirrored', get_post_format() );
                 endwhile;
                 get_template_part( 'dmm-navigation' );
-            else : ?>
-                <h2><?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
-                <p class="center"><?php _e( 'Sorry, there are no posts by this author.', 'desk-mess-mirrored' ); ?></p>
-                <?php get_search_form();
+            else :
+                dmm_no_posts_found();
             endif; ?>
             <!-- end the Loop -->
         </div><!--end main blog-->

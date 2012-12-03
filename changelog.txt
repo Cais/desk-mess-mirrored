@@ -1,4 +1,20 @@
 === Desk Mess Mirrored ===
+== Version 2.1 ==
+Changelog: December 3, 2012
+= Code =
+* Added DMM_HOME_DOMAIN constant for better future proofing
+* Added 'DMM No Posts Found' function to replace repetitive code
+* Removed backward compatibility checks to bring in line with current WordPress versions (3.4+)
+* Removed DMM_Add_Body_Classes in favor of using BNS Body Classes at http://wordpress.org/extend/plugins/bns-body-classes/
+
+= Current Internet Browsers Reviewed =
+* Apple Safari
+* Firefox
+* Google Chrome
+* Internet Explorer
+* Opera
+
+/** ------------------------------------------------------------------------- */
 == Version 2.0.4 ==
 Changelog: August 21, 2012
 = Code =
@@ -14,13 +30,6 @@ Changelog: August 21, 2012
 * Removed German and Spanish translation files as too old.
 * Added French translation files, courtesy of Samy Rahib at http://lahaut.info
 * Minor typos in 'readme.txt'
-
-= Internet Browsers Reviewed =
-* Apple Safari v5.1.7
-* Firefox v14.0.1
-* Google Chrome v21.0
-* Internet Explorer v9.0
-* Opera v12.01
 
 /** ------------------------------------------------------------------------- */
 == Version 2.0.3 ==
