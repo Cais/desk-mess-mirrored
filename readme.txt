@@ -90,3 +90,4 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * http://themes.trac.wordpress.org/ticket/6735 - version 2.0.2
 * http://themes.trac.wordpress.org/ticket/8500 - version 2.0.3
 * http://themes.trac.wordpress.org/ticket/9144 - version 2.0.4
+* http://themes.trac.wordpress.org/ticket/10236 - version 2.1

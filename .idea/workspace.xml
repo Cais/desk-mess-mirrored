@@ -25,17 +25,7 @@
     <favorites_list name="desk-mess-mirrored" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="62" selection-start="5329" selection-end="5329" vertical-scroll-proportion="0.8811189">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -308,7 +298,11 @@
       <created>1354553130208</created>
       <updated>1354553130208</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Tagged as version 2.1; ready for release">
+      <created>1354553655514</created>
+      <updated>1354553655514</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -333,7 +327,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -341,7 +335,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2854856" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2854856" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -395,7 +389,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added DMM_HOME_DOMAIN constant for better future proofing&#10;* Added 'DMM No Posts Found' function to replace repetitive code&#10;* Removed backward compatibility checks to bring in line with current WordPress versions (3.4+)&#10;* Removed DMM_Add_Body_Classes in favor of using BNS Body Classes at http://wordpress.org/extend/plugins/bns-body-classes/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tagged as version 2.1; ready for release" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -408,7 +402,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Tagged 2.0.1-beta" />
     <MESSAGE value="Quick fix to address theme customization issues and add multiple screenshots for testing with core Trac ticket #19816" />
     <MESSAGE value="Moved project to mCais" />
     <MESSAGE value="Corrected issue with comments meta showing list bullet" />
@@ -433,6 +426,7 @@
     <MESSAGE value="Reduce z-index of #cup to put under menu" />
     <MESSAGE value="Changed enqueued version to be dynamically taken from theme version; Change 'comment-reply' script hook to 'comment_form_before'" />
     <MESSAGE value="* Added DMM_HOME_DOMAIN constant for better future proofing&#10;* Added 'DMM No Posts Found' function to replace repetitive code&#10;* Removed backward compatibility checks to bring in line with current WordPress versions (3.4+)&#10;* Removed DMM_Add_Body_Classes in favor of using BNS Body Classes at http://wordpress.org/extend/plugins/bns-body-classes/" />
+    <MESSAGE value="Tagged as version 2.1; ready for release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -549,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="62" selection-start="5329" selection-end="5329" vertical-scroll-proportion="0.8811189">
+        <state line="92" column="61" selection-start="5391" selection-end="5391" vertical-scroll-proportion="0.9009324">
           <folding />
         </state>
       </provider>
