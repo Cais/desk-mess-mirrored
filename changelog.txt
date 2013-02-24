@@ -1,4 +1,17 @@
 === Desk Mess Mirrored ===
+Changelog: February 23, 2013
+== Version 2.1.1 ==
+= Miscellaneous =
+* Updated 'style.css' header block to use labels as noted in core trac ticket #16868
+
+= Current Internet Browsers Reviewed =
+* Apple Safari
+* Firefox
+* Google Chrome
+* Internet Explorer
+* Opera
+
+/** ------------------------------------------------------------------------- */
 == Version 2.1 ==
 Changelog: December 3, 2012
 = Code =
