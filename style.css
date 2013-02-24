@@ -86,7 +86,7 @@ abbr,acronym { border: 0; }
 div.aligncenter, .aligncenter, .center { margin: 0 auto; }
 .alignleft, .left { float: left; text-align: left; }
 .alignright, .right { float: right; text-align: right; }
-img.aligncenter, img.center { display: block; }
+img.aligncenter, img.center { clear: both; display: block; }
 img.alignleft, img.left { display: inline; margin: 0 8px 8px 0; }
 img.alignright, img.right { display: inline; margin: 0 0 8px 8px; }
 .wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px;
