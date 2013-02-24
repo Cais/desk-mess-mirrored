@@ -16,8 +16,9 @@
  *
  * @internal    called `comment_form()`
  *
- * Last revised December 11, 2011
- * @version     2.0
+ * @version     2.2
+ * @date        February 24, 2013
+ * Added filtered text messages when comments are open/closed but none exist
  */
 
 // Do not delete these lines
@@ -95,11 +96,19 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' );
         </div>
     <?php else : // Display if there are no comments so far
         /** @var $post string */
-        if ( 'open' == $post->comment_status ) :
-            // If comments are open, but there are no comments.
-        else :
-            // comments are closed
-        endif;
+        if ( 'open' == $post->comment_status ) {
+            /** If comments are open, but there are no comments. */
+            printf( '<div class="nocomments open">%1$s</div>',
+                apply_filters( 'dmm_nocomments_open', __( 'Want to leave a note? Just fill in the form below.', 'desk-mess-mirrored' ) )
+            );
+        } else {
+            /** comments are closed and not on a page */
+            if ( ! is_page() ) {
+                printf( '<div class="nocomments closed">%1$s</div>',
+                    apply_filters( 'dmm_nocomments_closed', __( 'Comments are closed. Would you like to contact the author directly?', 'desk-mess-mirrored' ) )
+                );
+            } /** End if - not is page */
+        } /** End if - comments open */
     endif;
     comment_form(); ?>
 </div> <!-- #comments-main -->

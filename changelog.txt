@@ -1,6 +1,9 @@
 === Desk Mess Mirrored ===
-Changelog: February 23, 2013
-== Version 2.1.1 ==
+Changelog: February 24, 2013
+== Version 2.2 ==
+= Code =
+* Added filtered text messages when comments are open/closed but none exist
+
 = CSS =
 * Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image
 
