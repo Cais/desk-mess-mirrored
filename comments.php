@@ -19,6 +19,7 @@
  * @version     2.2
  * @date        February 24, 2013
  * Added filtered text messages when comments are open/closed but none exist
+ * Added link to author page when comments closed message is displayed
  */
 
 // Do not delete these lines
@@ -77,15 +78,14 @@ function dmm_add_comment_classes( $classes ) {
             $classes[] = $microid;
         }
         return $classes;
-}
-add_filter( 'comment_class', 'dmm_add_comment_classes' );
-// End Add Comment Classes
-?>
+} /** End function - Add Comment Classes */
+add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
 
 <div id="comments-main">
     <?php
     /** Show comments */
-	if ( have_comments() ) : ?>
+	if ( have_comments() ) { ?>
+
         <h4 id="comments"><?php comments_number( __( 'No Comments', 'desk-mess-mirrored' ), __( '1 Comment', 'desk-mess-mirrored' ), __( '% Comments', 'desk-mess-mirrored' ) );?></h4>
         <ul class="commentlist" id="singlecomments">
             <?php wp_list_comments( array( 'avatar_size' => 60, 'reply_text' => __( '&raquo; Reply to this Comment &laquo;', 'desk-mess-mirrored' ) ) ); ?>
@@ -94,21 +94,33 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' );
             <div class="alignleft"><?php previous_comments_link() ?></div>
             <div class="alignright"><?php next_comments_link() ?></div>
         </div>
-    <?php else : // Display if there are no comments so far
-        /** @var $post string */
+
+    <?php } else {
+
+        global $post;
+        var_dump($post);
         if ( 'open' == $post->comment_status ) {
             /** If comments are open, but there are no comments. */
             printf( '<div class="nocomments open">%1$s</div>',
                 apply_filters( 'dmm_nocomments_open', __( 'Want to leave a note? Just fill in the form below.', 'desk-mess-mirrored' ) )
             );
+
         } else {
-            /** comments are closed and not on a page */
+
+            /** If comments are closed and not on a page */
             if ( ! is_page() ) {
                 printf( '<div class="nocomments closed">%1$s</div>',
-                    apply_filters( 'dmm_nocomments_closed', __( 'Comments are closed. Would you like to contact the author directly?', 'desk-mess-mirrored' ) )
+                    apply_filters( 'dmm_nocomments_closed',
+                        sprintf( __( 'Comments are closed. Would you like to contact the %1$s directly?', 'desk-mess-mirrored' ),
+                            '<a href="' . home_url() . '/?author=' . $post->post_author . '">author</a>' )
+                    )
                 );
             } /** End if - not is page */
+
         } /** End if - comments open */
-    endif;
+
+    } /** Enf if - have comments */
+
     comment_form(); ?>
+
 </div> <!-- #comments-main -->
