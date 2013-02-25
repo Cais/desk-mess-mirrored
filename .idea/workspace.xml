@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page.php" afterPath="$PROJECT_DIR$/page.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,12 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="page.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#6#2945#0" expanded="true" />
+                <element signature="e#6#635#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/404.php" />
@@ -69,6 +68,7 @@
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/page.php" />
       </list>
     </option>
   </component>
@@ -361,7 +361,11 @@
       <created>1361808618565</created>
       <updated>1361808618565</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks">
+      <created>1361808944529</created>
+      <updated>1361808944529</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -448,7 +452,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks&#10;* Cleaned up 'head' section" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -484,18 +488,13 @@
     <MESSAGE value="* Added DMM_HOME_DOMAIN constant for better future proofing&#10;* Added 'DMM No Posts Found' function to replace repetitive code&#10;* Removed backward compatibility checks to bring in line with current WordPress versions (3.4+)&#10;* Removed DMM_Add_Body_Classes in favor of using BNS Body Classes at http://wordpress.org/extend/plugins/bns-body-classes/" />
     <MESSAGE value="Tagged as version 2.1; ready for release" />
     <MESSAGE value="'readme.txt' updated to show version 2.1 WordPress Trac ticket" />
-    <MESSAGE value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks" />
     <MESSAGE value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks&#10;* Cleaned up 'head' section" />
+    <MESSAGE value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/editor-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="82" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.019517796" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -621,6 +620,15 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#6#2945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#6#635#0" expanded="true" />
           </folding>
         </state>
       </provider>
