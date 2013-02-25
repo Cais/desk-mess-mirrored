@@ -12,7 +12,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2012, Edward Caissie
+ * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
  * @version     2.0
  * @date        December 11, 2012
@@ -25,12 +25,14 @@
 
 get_header();
 /** Set the $curauth variable */
-$curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_var( 'author_name' ) ) : get_userdata( get_query_var( 'author' ) );
-?>
+$curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_var( 'author_name' ) ) : get_userdata( get_query_var( 'author' ) ); ?>
+
 <div id="maintop"></div>
+
 <div id="wrapper">
     <div id="content">
         <div id="main-blog">
+
             <div class="clear">&nbsp;</div>
             <!-- Hack: the non-breaking space keeps the content below the menu when menus contain many top-level items -->
             <div id="author" class="<?php
@@ -47,10 +49,12 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
                         echo 'subscriber';
                     } else {
                         echo 'guest';
-                    }
-                    if ( ( $curauth->ID ) == '1' ) echo ' administrator-prime'; /* sample */
-                    // elseif ( ( $curauth->ID ) == '2' ) echo ' jellybeen'; /* sample */
-                    // add user classes by ID following the above samples
+                    } /** End if - user can */
+                    if ( ( $curauth->ID ) == '1' ) {
+                        echo ' administrator-prime';
+                    } /** End if - current author ID */
+                    /** elseif ( ( $curauth->ID ) == '2' ) { echo ' jellybeen'; } /** sample */
+                    /** add user classes by ID following the above samples */
                     ?>">
                 <h2><?php _e( 'About ', 'desk-mess-mirrored' ); echo $curauth->display_name; ?></h2>
                 <ul>
@@ -58,22 +62,29 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
                     <li><?php _e( 'Biography', 'desk-mess-mirrored' ); ?>: <?php echo $curauth->user_description; ?></li>
                 </ul>
             </div> <!-- #author -->
+
             <h2><?php _e( 'Posts by ', 'desk-mess-mirrored' ); echo $curauth->display_name; ?>:</h2>
+
             <!-- start the Loop -->
-            <?php if ( have_posts() ) :
+            <?php if ( have_posts() ) {
                 global $count;
                 $count = 0;
-                while ( have_posts() ) : the_post();
+                while ( have_posts() ) {
+                    the_post();
                     get_template_part( 'desk-mess-mirrored', get_post_format() );
-                endwhile;
+                } /** End while - have posts */
                 get_template_part( 'dmm-navigation' );
-            else :
+            } else {
                 dmm_no_posts_found();
-            endif; ?>
+            } /** End if - have posts */ ?>
             <!-- end the Loop -->
+
         </div><!--end main blog-->
+
         <?php get_sidebar(); ?>
+
         <div class="clear"></div>
     </div><!--end content-->
 </div><!--end wrapper-->
-<?php get_footer();?>
+
+<?php get_footer();
