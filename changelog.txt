@@ -6,6 +6,7 @@ Changelog: February 25, 2013
 * Added link to author page when comments closed message is displayed
 * Added code block termination comments
 * Minor code formatting / refactoring to use "braces" for code blocks
+* Refactor post meta details into a better string output
 
 = CSS =
 * Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image

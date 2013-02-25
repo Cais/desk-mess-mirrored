@@ -21,6 +21,10 @@
  * @version     2.0.3
  * @date        May 24, 2012
  * Added conditional check for custom post types
+ *
+ * @version     2.2
+ * @date        February 24, 2013
+ * Refactor post meta details into a better string output
  */
 
 /** Set count variable for author 'mullet' loop */
@@ -43,8 +47,13 @@ $count++; ?>
     if ( ! is_page() ) { ?>
         <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'desk-mess-mirrored' ); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
         <div class="postdata">
-            <?php printf( __( '%1$s by %2$s on ', 'desk-mess-mirrored' ), dmm_use_posted(), get_the_author() ); the_time( get_option( 'date_format' ) );
-            _e( ' in ', 'desk-mess-mirrored' ); the_category( ', ' );
+            <?php
+            printf( __( '%1$s by %2$s on %3$s in %4$s', 'desk-mess-mirrored' ),
+                dmm_use_posted(),
+                get_the_author(),
+                get_the_time( get_option( 'date_format' ) ),
+                get_the_category_list( ', ' )
+            );
             if ( ! post_password_required() && ! comments_open() && ( is_home() || is_front_page() ) ) {
                 /** Only displays when comments are closed */
                 echo ' '; comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
