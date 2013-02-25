@@ -52,6 +52,7 @@
  * @todo Add more i18n support, for example: create and include a current '.pot' file
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
+ * @todo Fix call to `the_category` in post meta details display code
  *
  * @version 2.0.3
  * @date    July 5, 2012
@@ -60,8 +61,7 @@
  * @version     2.1
  * @date        December 3, 2012
  * Added 'DMM No Posts Found' function to replace repetitive code
- */
-?>
+ */ ?>
 
 <?php get_header(); ?>
 <div id="maintop"></div>
