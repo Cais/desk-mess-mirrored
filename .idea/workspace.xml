@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,12 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/header.php">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="25" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.7585799">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#6#667#0" expanded="true" />
+                <element signature="e#6#2945#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,12 +63,12 @@
         <option value="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-status.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/dmm-navigation.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -357,7 +357,11 @@
       <created>1361808078972</created>
       <updated>1361808078972</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks&#10;* Cleaned up 'head' section">
+      <created>1361808618565</created>
+      <updated>1361808618565</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -444,7 +448,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks&#10;* Cleaned up 'head' section" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -457,7 +461,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Corrected issue with comments meta showing list bullet" />
     <MESSAGE value="Revert wp_get_theme calls" />
     <MESSAGE value="Minor updates for WordPress 3.4-beta1 deprecated functions" />
     <MESSAGE value="Re-wrote updates to be backward compatible" />
@@ -482,6 +485,7 @@
     <MESSAGE value="Tagged as version 2.1; ready for release" />
     <MESSAGE value="'readme.txt' updated to show version 2.1 WordPress Trac ticket" />
     <MESSAGE value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks" />
+    <MESSAGE value="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks&#10;* Cleaned up 'head' section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -558,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="69" selection-start="2707" selection-end="2707" vertical-scroll-proportion="0.48047337">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dmm-navigation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="6" selection-start="881" selection-end="881" vertical-scroll-proportion="0.54319525">
@@ -615,6 +612,15 @@
         <state line="44" column="25" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.7585799">
           <folding>
             <element signature="e#6#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#6#2945#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -61,24 +61,31 @@
  * @version     2.1
  * @date        December 3, 2012
  * Added 'DMM No Posts Found' function to replace repetitive code
- */ ?>
+ */
 
-<?php get_header(); ?>
+get_header(); ?>
+
 <div id="maintop"></div>
 <div id="wrapper">
     <div id="content">
+
         <div id="main-blog">
-            <?php if ( have_posts() ) :
-                while ( have_posts() ) : the_post();
+            <?php
+            if ( have_posts() ) {
+                while ( have_posts() ) {
+                    the_post();
                     get_template_part( 'desk-mess-mirrored', get_post_format() );
-                endwhile;
+                } /** End while - have posts */
                 get_template_part( 'dmm-navigation' );
-            else :
+            } else {
                 dmm_no_posts_found();
-            endif; ?>
+            } /** End if - have posts */ ?>
         </div><!--end main blog-->
+
         <?php get_sidebar(); ?>
+
         <div class="clear"></div>
+
     </div><!--end content-->
 </div><!--end wrapper-->
 <?php get_footer();
