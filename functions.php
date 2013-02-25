@@ -12,7 +12,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2012, Edward Caissie
+ * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
  * @version     2.0.3
  * @date        July 5, 2012
@@ -48,11 +48,11 @@ if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
     function dmm_enqueue_comment_reply() {
         if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
             wp_enqueue_script( 'comment-reply' );
-        }
-    }
-}
+        } /** End if - is singular */
+    } /** End function - enqueue comment reply */
+} /** End if - not function exists */
 add_action( 'comment_form_before', 'dmm_enqueue_comment_reply' );
-// End Enqueue Comment Reply Script
+
 
 /**
  * DMM Scripts and Styles
@@ -71,9 +71,10 @@ add_action( 'comment_form_before', 'dmm_enqueue_comment_reply' );
  */
 function dmm_scripts_and_styles() {
     wp_enqueue_style( 'DMM-Extra-Style', get_template_directory_uri() . '/wip/extra.css', array(), wp_get_theme()->get( 'Version' ), 'screen' );
-}
+} /** End function - scripts and styles */
 /** To enable the menu animation uncomment the `add_action` call below. */
 /** add_action( 'wp_enqueue_scripts', 'dmm_scripts_and_styles' ); */
+
 
 if ( ! function_exists( 'dmm_wp_title' ) ) {
     /**
@@ -97,22 +98,25 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
          */
         function dmm_wp_title() {
             global $page, $paged;
-            // Default title
+            /** Default title */
             $dmm_title_text = wp_title( '|', false, 'right' ) . get_bloginfo( 'name' );
 
-            // Add the blog description (tagline) for the home/front page.
+            /** Add the blog description (tagline) for the home/front page. */
             $site_tagline = get_bloginfo( 'description', 'display' );
-            if ( $site_tagline && ( is_home() || is_front_page() ) )
+            if ( $site_tagline && ( is_home() || is_front_page() ) ) {
                 $dmm_title_text .= " | $site_tagline";
+            } /** End if - site tagline */
 
-            // Add a page number if necessary:
-            if ( $paged >= 2 || $page >= 2 )
+            /** Add a page number if necessary: */
+            if ( $paged >= 2 || $page >= 2 ) {
                 $dmm_title_text .= ' | ' . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
+            } /** End if - paged */
 
-            // Use `apply_filters` on `wp_title` and echo
+            /** @var $dmm_wp_title string - title output */
             $dmm_wp_title = apply_filters( 'wp_title', $dmm_title_text );
             echo $dmm_wp_title;
-        }
+
+        } /** End function - dmm wp title */
     } else {
         /**
          * Use as filter input
@@ -132,18 +136,25 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
 
             /** Add the blog description (tagline) for the home/front page */
             $site_tagline = get_bloginfo( 'description', 'display' );
-            if ( $site_tagline && ( is_home() || is_front_page() ) )
+            if ( $site_tagline && ( is_home() || is_front_page() ) ) {
                 $dmm_title_text .= "$sep$site_tagline";
+            } /** End if - site tagline */
 
             /** Add a page number if necessary */
-            if ( $paged >= 2 || $page >= 2 )
+            if ( $paged >= 2 || $page >= 2 ) {
                 $dmm_title_text .= $sep . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
+            } /** End if - paged */
 
             return $dmm_title_text;
-        }
+
+        } /** End function - dmm wp title */
+
     add_filter( 'wp_title', 'dmm_wp_title', 10, 3 );
-    }
-}
+
+    } /** End if - function exists */
+
+} /** End if - function exists */
+
 
 /**
  * Register Widget Areas
@@ -175,7 +186,8 @@ register_sidebar( array(
     'before_title'   => '<h2 class="widgettitle">',
     'after_title'    => "</h2>\n",
     ) );
-// End Register Widget Areas
+/** End Register Widget Areas */
+
 
 /**
  * DMM Widget Title
@@ -194,10 +206,11 @@ function dmm_widget_title( $title ) {
         return ' ';
     } else {
         return $title;
-    }
-}
+    } /** End if - title is null */
+
+} /** End function - widget title */
 add_filter( 'widget_title', 'dmm_widget_title', 10, 1 );
-// DMM Widget Title
+
 
 /**
  * DMM Dynamic Copyright
@@ -238,6 +251,7 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
          * @example © 2009-2011
          */
         if ( empty( $args['copy_years'] ) ) {
+
             /** Get all posts */
             $all_posts = get_posts( 'post_status=publish&order=ASC' );
             /** Get first post */
@@ -249,7 +263,7 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
             $first_year = substr( $first_date, 0, 4 );
             if ( $first_year == '' ) {
                 $first_year = date( 'Y' );
-            }
+            } /** End if - first year */
 
             /** Add to output string */
             if ( $first_year == date( 'Y' ) ) {
@@ -257,31 +271,40 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
                 $output .= ' &copy; ' . date( 'Y' );
             } else {
                 $output .= ' &copy; ' . $first_year . "-" . date( 'Y' );
-            }
+            } /** End if - first year */
+
         } else {
+
             $output .= ' &copy; ' . $args['copy_years'];
-        }
+
+        } /** End if - empty copy years */
 
         /**
          * Create URL to link back to home of website using the site name for the anchor text
          * @example <a href="http://example.com" title="Your Blog Name">Your Blog Name</a>
          */
-        empty( $args['url'] ) ? $output .= ' <a href="' . home_url( '/' ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">' . get_bloginfo( 'name', 'display' ) .'</a>  ' : $output .= ' ' . $args['url'];
+        empty( $args['url'] )
+                ? $output .= ' <a href="' . home_url( '/' ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">' . get_bloginfo( 'name', 'display' ) .'</a>  '
+                : $output .= ' ' . $args['url'];
 
         /**
          * End common copyright notice
          * @example All rights reserved.
          */
-        empty( $args['end'] ) ? $output .= ' ' . sprintf( __( 'All rights reserved.', 'desk-mess-mirrored' ) ) : $output .= ' ' . $args['end'];
+        empty( $args['end'] )
+                ? $output .= ' ' . sprintf( __( 'All rights reserved.', 'desk-mess-mirrored' ) )
+                : $output .= ' ' . $args['end'];
 
         /** Display the copyright notice */
         $output = sprintf( __( '<span id="dmm-dynamic-copyright"> %1$s </span><!-- #bns-dynamic-copyright -->', 'desk-mess-mirrored' ), $output );
         $output = apply_filters( 'dmm_dynamic_copyright', $output, $args );
 
         echo $output;
-    }
-}
-// End DMM Dynamic Copyright
+
+    } /** End function - dynamic copyright */
+
+} /** End function - not function exists */
+
 
 /**
  * DMM Theme Version
@@ -305,6 +328,7 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
         /** @var $active_theme_data - array object containing the current theme's data */
         $active_theme_data = wp_get_theme();
         if ( is_child_theme() ) {
+
             /** @var $parent_theme_data - array object containing the Parent Theme's data */
             $parent_theme_data = $active_theme_data->parent();
             /** @noinspection PhpUndefinedMethodInspection - IDE commentary */
@@ -313,14 +337,19 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
                 $active_theme_data->get( 'Version' ),
                 $parent_theme_data->get( 'Name' ),
                 $parent_theme_data->get( 'Version' ) );
+
         } else {
+
             printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="' . DMM_HOME_DOMAIN . '" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
                 $active_theme_data->get( 'Name' ),
                 $active_theme_data->get( 'Version' ) );
-        }
-    }
-}
-// End BNS Theme Version
+
+        } /** End if - is child theme */
+
+    } /** End function - theme version */
+
+} /** End if - not function exists */
+
 
 /**
  * Desk Mess Mirrored Setup
@@ -371,7 +400,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
          *
          * @param   $aside_glyph    string - constructed
          */
-        if ( !function_exists( 'dmm_aside_glyph' ) ) {
+        if ( ! function_exists( 'dmm_aside_glyph' ) ) {
             function dmm_aside_glyph() {
                 $dmm_no_title = get_the_title();
                 $aside_glyph = '<span class="aside-glyph">';
@@ -380,8 +409,8 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                         : $aside_glyph .= __( '*', 'desk-mess-mirrored' ); /** default: asterisk */
                 $aside_glyph .= '</span>';
                 echo apply_filters( 'dmm_aside_glyph', $aside_glyph );
-            }
-        }
+            } /** End function - aside glyph */
+        } /** End if - not function exists */
 
         /**
          * Assign unique quote glyph that can be over-written; also will be
@@ -392,7 +421,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
          *
          * @param   $quote_glyph    string - constructed
          */
-        if ( !function_exists( 'dmm_quote_glyph' ) ) {
+        if ( ! function_exists( 'dmm_quote_glyph' ) ) {
             function dmm_quote_glyph() {
                 $dmm_no_title = get_the_title();
                 $quote_glyph = '<span class="quote-glyph">';
@@ -401,8 +430,8 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                         : $quote_glyph .= __( '"', 'desk-mess-mirrored' ); /** default: double-quote */
                 $quote_glyph .= '</span>';
                 echo apply_filters( 'dmm_quote_glyph', $quote_glyph );
-            }
-        }
+            } /** End function - quote glyph */
+        } /** End if - not function exists */
 
         /**
          * Assign unique status glyph that can be over-written; also will be
@@ -422,9 +451,9 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                         : $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
                 $status_glyph .= '</span>';
                 echo apply_filters( 'dmm_status_glyph', $status_glyph );
-            }
-        }
-        // End Add post-formats support
+            } /** End function - status glyph */
+        } /** End if - not function exists */
+
 
         /**
          * Add wp_nav_menu() custom menu support
@@ -443,15 +472,16 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                     'theme_location'  => 'top-menu',
                     'fallback_cb'     => 'dmm_list_pages'
                 ) );
-            }
-        }
+            } /** End function - nav menu */
+        } /** End if - not function exists */
+
         if ( ! function_exists( 'dmm_list_pages' ) ) {
             function dmm_list_pages() { ?>
                 <ul class="nav-menu"><?php wp_list_pages( 'title_li=' ); ?></ul>
-            <?php }
-        }
+            <?php } /** End function - list pages */
+        } /** End if - not function exists */
         register_nav_menu( 'top-menu', __( 'Top Menu', 'desk-mess-mirrored' ) );
-        // End wp_nav_menu() custom menu support
+
 
         /**
          * Make theme available for translation
@@ -467,13 +497,17 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
         load_theme_textdomain( 'desk-mess-mirrored', get_template_directory() . '/languages' );
         $locale = get_locale();
         $locale_file = get_template_directory() . "/languages/$locale.php";
-        if ( is_readable( $locale_file ) )
+        if ( is_readable( $locale_file ) ) {
             /** @noinspection PhpIncludeInspection */
             require_once( $locale_file );
-    }
-}
+        } /** End if - is readable */
+
+    } /** End function - theme setup */
+
+} /** End if - not function exists */
 add_action( 'after_setup_theme', 'desk_mess_mirrored_setup' );
-// End Desk Mess Mirrored Setup
+/** End Desk Mess Mirrored Setup */
+
 
 /**
  * DMM Use Posted
@@ -495,9 +529,9 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
             : $dmm_no_title = __( 'Posted', 'desk-mess-mirrored' );
         $dmm_no_title = apply_filters( 'dmm_use_posted', $dmm_no_title );
         return $dmm_no_title;
-    }
-}
-// End: DMM Use Posted
+    } /** End function - use posted */
+} /** End if - not function exists */
+
 
 /**
  * DMM Modified Post
@@ -525,7 +559,7 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
         $last_user = '';
         if ( $last_id = get_post_meta( $post->ID, '_edit_last', true ) ) {
             $last_user = get_userdata( $last_id );
-        }
+        } /** End if - last id */
 
         /** @var $line_height - set value for use with `get_avatar` */
         $line_height = 16;
@@ -543,11 +577,11 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
                     '<a href="' . home_url( '?author=' . $last_user->ID ) . '">' . $last_user->display_name . '</a>',
                     get_the_modified_date( get_option( 'date_format' ) ),
                     get_the_modified_time( get_option( 'time_format' ) ) );
-            }
-        }
-    }
-}
-// End BNS Modified Post
+            } /** End if - get the date */
+        } /** End if - not empty last user */
+    } /** End function - modified post */
+} /** End if - not function exists */
+
 
 /**
  * DMM No Posts Found
@@ -561,12 +595,14 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  * @uses    get_search_form
  * @uses    get_search_query
  */
-function dmm_no_posts_found() {
-    ?>
-    <h2><?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
+function dmm_no_posts_found() { ?>
+    <h2>
+        <?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?>
+    </h2>
     <p class="center"><?php _e( 'Sorry, but you are looking for something that is not here.', 'desk-mess-mirrored' ); ?></p>
     <?php get_search_form();
-}
+} /** End function - no posts found */
+
 
 /**
  * Set `content_width` based on the theme design and stylesheet to keep images,
@@ -576,4 +612,4 @@ function dmm_no_posts_found() {
  */
 if ( ! isset( $content_width ) ) {
     $content_width = 580;
-}
+} /** End if - not isset content width */
