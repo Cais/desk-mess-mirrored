@@ -4,6 +4,7 @@
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidebar.php" afterPath="$PROJECT_DIR$/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.php" afterPath="$PROJECT_DIR$/single.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +27,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sidebar.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sidebar.php">
+      <file leaf-file-name="single.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="459" selection-end="459" vertical-scroll-proportion="0.3064904">
-              <folding />
+            <state line="50" column="19" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.9597633">
+              <folding>
+                <element signature="e#6#612#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,7 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/author.php" />
         <option value="$PROJECT_DIR$/archive.php" />
         <option value="$PROJECT_DIR$/comments.php" />
@@ -67,6 +69,7 @@
         <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/searchform.php" />
         <option value="$PROJECT_DIR$/sidebar.php" />
+        <option value="$PROJECT_DIR$/single.php" />
       </list>
     </option>
   </component>
@@ -371,7 +374,11 @@
       <created>1361809183399</created>
       <updated>1361809183399</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks">
+      <created>1361810612599</created>
+      <updated>1361810612599</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -501,13 +508,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="443" selection-end="443" vertical-scroll-proportion="0.2816568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/author.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="19" selection-start="938" selection-end="938" vertical-scroll-proportion="0.6129808">
@@ -636,8 +636,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="459" selection-end="459" vertical-scroll-proportion="0.3064904">
-          <folding />
+        <state line="85" column="24" selection-start="3941" selection-end="3941" vertical-scroll-proportion="0.87740386">
+          <folding>
+            <element signature="e#6#585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="19" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.9597633">
+          <folding>
+            <element signature="e#6#612#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -12,8 +12,12 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
- * Last revised December 6, 2011
  * @version     2.0
+ * @date        December 6, 2011
+ *
+ * @version     2.2
+ * @date        February 25, 2013
+ * Added some semantic classes to the default widget area output
  */ ?>
 
 <div id="sidebar">
