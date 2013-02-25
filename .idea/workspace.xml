@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,12 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/functions.php">
+      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="614" column="41" selection-start="23704" selection-end="23704" vertical-scroll-proportion="0.95913464">
+            <state line="44" column="25" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.7585799">
               <folding>
-                <element signature="e#6#778#0" expanded="true" />
+                <element signature="e#6#667#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/changelog.txt" />
@@ -70,6 +68,7 @@
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/header.php" />
       </list>
     </option>
   </component>
@@ -354,7 +353,11 @@
       <created>1361806975228</created>
       <updated>1361806975228</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks">
+      <created>1361808078972</created>
+      <updated>1361808078972</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -484,11 +487,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="61" selection-start="5391" selection-end="5391" vertical-scroll-proportion="0.9009324" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editor-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="82" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.019517796" />
@@ -496,7 +494,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
@@ -606,6 +606,15 @@
         <state line="614" column="41" selection-start="23704" selection-end="23704" vertical-scroll-proportion="0.95913464">
           <folding>
             <element signature="e#6#778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="25" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.7585799">
+          <folding>
+            <element signature="e#6#667#0" expanded="true" />
           </folding>
         </state>
       </provider>
