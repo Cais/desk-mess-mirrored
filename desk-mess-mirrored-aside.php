@@ -12,37 +12,51 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2012, Edward Caissie
- */
-?>
+ * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ */ ?>
+
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
     <div class="transparent glyph"><?php dmm_aside_glyph(); ?></div>
+
     <?php if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) { ?>
+
         <div class="post-comments">
             <?php comments_popup_link( __( '0', 'desk-mess-mirrored' ), __( '1', 'desk-mess-mirrored' ), __( '%', 'desk-mess-mirrored' ), '',__( '-', 'desk-mess-mirrored' ) ); ?>
         </div>
-    <?php } ?>
+
+    <?php } /** End if - not post password required */ ?>
+
     <h1>
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => __( 'Permalink to: ', 'desk-mess-mirrored' ), 'after' => '' ) ); ?>"><?php the_title(); ?></a>
     </h1>
+
     <div class="postdata">
         <?php printf( __( 'Posted by %1$s on %2$s in ', 'desk-mess-mirrored' ), get_the_author(), get_the_time( get_option( 'date_format' ) ) ); the_category( ', ' );
         if ( ! post_password_required() && ! comments_open() && ( is_home() || is_front_page() ) ) {
             /** Only displays when comments are closed */
             echo '<br />'; comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
-        }
+        } /** End if - not post password required */
         the_shortlink( __( '&#8734;', 'desk-mess-mirrored' ), '', ' | ', '' );
         edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
     </div>
-    <?php if ( ( is_home() || is_front_page() ) && has_post_thumbnail() ) {
+
+    <?php
+    if ( ( is_home() || is_front_page() ) && has_post_thumbnail() ) {
         the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
-    }
+    } /** End if - is home */
     the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
+
     <div class="clear"><!-- For inserted media at the end of the post --></div>
-    <?php wp_link_pages( array( 'before' => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
+
+    <?php
+    wp_link_pages( array( 'before' => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number' ) );
     if ( is_single() ) { ?>
         <div id="author_link"><?php _e( '... other posts by ', 'desk-mess-mirrored' ); ?><?php the_author_posts_link(); ?></div>
-    <?php } ?>
+    <?php } /** End if - is single */ ?>
+
     <p class="single-meta"><?php the_tags(); ?></p>
+
 </div> <!-- .post #post-ID -->
-<?php comments_template(); ?>
+
+<?php comments_template();

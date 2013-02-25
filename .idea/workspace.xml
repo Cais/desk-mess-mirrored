@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comments.php" afterPath="$PROJECT_DIR$/comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,12 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="comments.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/comments.php">
+      <file leaf-file-name="desk-mess-mirrored-aside.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="29" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.9597633">
+            <state line="27" column="51" selection-start="981" selection-end="981" vertical-scroll-proportion="0.54319525">
               <folding>
-                <element signature="e#6#688#0" expanded="true" />
+                <element signature="e#6#459#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/temp.php" />
         <option value="$PROJECT_DIR$/wip/extra.css" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/my-custom-style.css" />
@@ -69,6 +68,7 @@
         <option value="$PROJECT_DIR$/author.php" />
         <option value="$PROJECT_DIR$/archive.php" />
         <option value="$PROJECT_DIR$/comments.php" />
+        <option value="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
       </list>
     </option>
   </component>
@@ -333,7 +333,11 @@
       <created>1361802509988</created>
       <updated>1361802509988</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks">
+      <created>1361802788722</created>
+      <updated>1361802788722</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -468,11 +472,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-quote.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -555,6 +554,15 @@
         <state line="135" column="29" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.9597633">
           <folding>
             <element signature="e#6#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="51" selection-start="981" selection-end="981" vertical-scroll-proportion="0.54319525">
+          <folding>
+            <element signature="e#6#459#0" expanded="true" />
           </folding>
         </state>
       </provider>
