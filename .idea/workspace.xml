@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchform.php" afterPath="$PROJECT_DIR$/searchform.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidebar.php" afterPath="$PROJECT_DIR$/sidebar.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,13 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchform.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/searchform.php">
+      <file leaf-file-name="sidebar.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="719" selection-end="719" vertical-scroll-proportion="0.5108173">
-              <folding>
-                <element signature="e#6#509#0" expanded="true" />
-              </folding>
+            <state line="15" column="19" selection-start="459" selection-end="459" vertical-scroll-proportion="0.3064904">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/author.php" />
         <option value="$PROJECT_DIR$/archive.php" />
@@ -69,6 +66,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/searchform.php" />
+        <option value="$PROJECT_DIR$/sidebar.php" />
       </list>
     </option>
   </component>
@@ -369,7 +367,11 @@
       <created>1361809106183</created>
       <updated>1361809106183</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks">
+      <created>1361809183399</created>
+      <updated>1361809183399</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -499,13 +501,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="49" selection-end="49" vertical-scroll-proportion="0.019813519">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/404.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="39" selection-start="443" selection-end="443" vertical-scroll-proportion="0.2816568">
@@ -636,6 +631,13 @@
           <folding>
             <element signature="e#6#509#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="459" selection-end="459" vertical-scroll-proportion="0.3064904">
+          <folding />
         </state>
       </provider>
     </entry>
