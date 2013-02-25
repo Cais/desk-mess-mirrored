@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/author.php" afterPath="$PROJECT_DIR$/author.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive.php" afterPath="$PROJECT_DIR$/archive.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="archive.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="archive.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/archive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="author.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/author.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="19" selection-start="938" selection-end="938" vertical-scroll-proportion="0.6129808">
+            <state line="32" column="12" selection-start="778" selection-end="778" vertical-scroll-proportion="0.6177515">
               <folding>
-                <element signature="e#6#714#0" expanded="true" />
+                <element signature="e#6#631#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +60,6 @@
         <option value="$PROJECT_DIR$/my-custom-style.css" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/archive.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/single.php" />
@@ -79,6 +68,7 @@
         <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/author.php" />
+        <option value="$PROJECT_DIR$/archive.php" />
       </list>
     </option>
   </component>
@@ -335,7 +325,11 @@
       <created>1361801722616</created>
       <updated>1361801722616</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="* Added code block termination comments&#10;* Minor code formatting / refactoring to use &quot;braces&quot; for code blocks">
+      <created>1361802354446</created>
+      <updated>1361802354446</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -539,18 +533,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/archive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/author.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="19" selection-start="938" selection-end="938" vertical-scroll-proportion="0.6129808">
           <folding>
             <element signature="e#6#714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="12" selection-start="778" selection-end="778" vertical-scroll-proportion="0.6177515">
+          <folding>
+            <element signature="e#6#631#0" expanded="true" />
           </folding>
         </state>
       </provider>
