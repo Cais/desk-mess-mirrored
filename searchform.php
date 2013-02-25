@@ -10,18 +10,21 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2012, Edward Caissie
+ * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
  * @internal    called with `get_search_form()`
  *
  * Last revised December 6, 2011
  * @version     2.0
- */
-?>
+ */ ?>
+
 <form method="get" id="searchform" action="<?php echo home_url( '/' ); ?>/">
+
     <label class="hidden" for="s"><?php _e( 'Search for:', 'desk-mess-mirrored' ); ?></label>
+
     <div id="search-container">
         <input type="text" value="<?php _e( 'Enter keyword(s) and hit enter', 'desk-mess-mirrored' ); ?>" onblur="if(this.value == '') {this.value = '<?php _e( 'Enter keyword(s) and hit enter', 'desk-mess-mirrored' ); ?>';}" onfocus="if(this.value == '<?php _e( 'Enter keyword(s) and hit enter', 'desk-mess-mirrored' ); ?>') {this.value = '';}" name="s" id="s" />
         <input type="submit" class="hidden" id="search-submit" value="<?php _e( 'Search' , 'desk-mess-mirrored' ); ?>" />
-    </div> <!-- #search-container -->
+    </div><!-- #search-container -->
+
 </form>
