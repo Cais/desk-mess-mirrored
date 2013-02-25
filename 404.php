@@ -23,22 +23,31 @@
  */
 
 get_header(); ?>
+
 <div id="maintop"></div>
+
 <div id="wrapper">
     <div id="content">
         <div id="main-blog">
+
             <h1>You have arrived at the 404 page!!!</h1>
-            <?php if ( have_posts() ) :
-                while ( have_posts() ) : the_post();
+
+            <?php if ( have_posts() ) {
+                while ( have_posts() ) {
+                    the_post();
                     get_template_part( 'desk-mess-mirrored', get_post_format() );
-                endwhile;
+                } /** End while - have posts */
                 get_template_part( 'dmm-navigation' );
-            else :
+            } else {
                 dmm_no_posts_found();
-            endif; ?>
+            } /** End if - have posts */ ?>
+
         </div><!--end main blog-->
+
         <?php get_sidebar(); ?>
+
         <div class="clear"></div>
     </div><!--end content-->
 </div><!--end wrapper-->
-<?php get_footer(); ?>
+
+<?php get_footer();
