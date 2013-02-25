@@ -2,11 +2,11 @@
 Theme Name: Desk Mess Mirrored
 Theme URI: http://buynowshop.com/themes/desk-mess-mirrored/
 Description: Marble desktop covered with a mix of old and new items, such as some vintage papers, a stainless steel pen, and, a hot cup of coffee! Now with more documentation and post-format support for the following types: asides, quotes and status! <strong>Please read the included changelog.txt, readme.txt, and support.txt files for details of the latest changes and important notices.</strong> Please note <strong>WordPress 3.4 is required</strong> for some functionality; also note the latest version of the Multi Child-Theme is available for download at http://buynowshop.com/themes/desk-mess-mirrored/multi too!
-Version: 2.1.1
+Version: 2.2
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
 WordPress Required Version: 3.4
-WordPress Tested Version: 3.5
+WordPress Tested Version: 3.5.1
 Tags: brown, orange, silver, tan, light, two-columns, right-sidebar, fixed-width, threaded-comments, sticky-post, custom-menu, custom-background
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -99,6 +99,39 @@ img.alignright, img.right { display: inline; margin: 0 0 8px 8px; }
 .wp-caption img { margin: 0; padding: 0; border: 0 none; }
 .wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
 /*-- End WordPress Rules --*/
+
+/** === Default Widgets === ------------------------------------------------- */
+/** Calendar */
+table#wp-calendar {
+    margin: 0 auto;
+    width: 98%;
+}
+table#wp-calendar tbody tr { text-align: center; }
+table#wp-calendar tbody tr td#today { outline: 1px solid; }
+table#wp-calendar tbody tr td a { font-weight: bold; }
+table#wp-calendar tfoot tr td#next { text-align: right; }
+/** RSS */
+li.widget_rss ul li cite { font-style: italic; }
+li.widget_rss ul li cite:before { content: '~ '; }
+/** Text Widgets */
+li.widget_text {
+    margin: 0 3px;
+    overflow: hidden;
+}
+li.widget_text div.textwidget div.wp-caption { margin: 0; }
+li.widget_text div.textwidget div.wp-caption a img {
+    height: auto;
+    width: 98%;
+}
+/** Forms */
+.widget form select {
+    left: 0;
+    position: relative;
+    width: 235px;
+}
+/** Tag Cloud */
+div.tagcloud { text-align: center; }
+/** End: Default Widgets ---------------------------------------------------- */
 
 /*-- GLOBAL --*/
 * { margin: 0; padding: 0; }
@@ -1182,7 +1215,7 @@ input.search-submit {
 .widget select {
 	left: 10px;
 	position: relative;
-	width: 230px;
+	width: 235px;
 }
 
 .textwidget {
