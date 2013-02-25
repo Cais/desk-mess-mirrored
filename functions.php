@@ -605,6 +605,30 @@ function dmm_no_posts_found() { ?>
 
 
 /**
+ * DMM Page Link
+ * Displays a shortlink on pages
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   2.2
+ *
+ * @uses    is_page
+ * @uses    the_shortlink
+ *
+ * @param   $text string - Shortlink anchor text
+ */
+function dmm_page_link( $text ) {
+    if ( '' == $text ) {
+        return;
+    } /** End if - show not true */
+
+    if ( is_page() ) {
+        the_shortlink( $text, '', '<div class="page-shortlink">&raquo', '&laquo</div>' );
+    } /** End if - is page */
+
+} /** End function - page link */
+
+
+/**
  * Set `content_width` based on the theme design and stylesheet to keep images,
  * videos, etc. within the confines of the post block.
  *

@@ -79,9 +79,8 @@ $count++; ?>
         <div id="author_link"><?php _e( '... other posts by ', 'desk-mess-mirrored' ); ?><?php the_author_posts_link(); ?></div>
     <?php } /** End if - is single */
 
-    if ( is_page() ) {
-        the_shortlink( __( 'Page Link', 'desk-mess-mirrored' ), '', '<div class="page-shortlink">&raquo', '&laquo</div>' );
-    } /** End if - is page */ ?>
+    /** Show a shortlink on the page */
+    dmm_page_link( $text = __( 'Page Link', 'desk-mess-mirrored' ) ); ?>
 
     <p class="single-meta"><?php the_tags(); ?></p>
 
