@@ -44,19 +44,19 @@
  * @internal Project To-do List - see readme.txt for pre-2.0 PTL
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php', etc.)
  * @todo Review post meta comment text - sort out how to show amount of comments if they exist when comments are closed
-  * @todo Add Post-Format: Link - use infinity symbol
+ * @todo Add Post-Format: Link - use infinity symbol
  * @todo Add 'search.php' template? (see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191)
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
- *
- * @version 2.0.3
- * @date    July 5, 2012
- * see changelog.txt for details of theme updates / modifications
+ * @todo Review requirements for 'searchform.php' and/or 'search.php' templates
  *
  * @version     2.1
  * @date        December 3, 2012
  * Added 'DMM No Posts Found' function to replace repetitive code
+ *
+ * @version     2.2
+ * @date        February 2013
  */
 
 get_header(); ?>
