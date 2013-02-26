@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised December 3, 2012
+* Last revised February 26, 2013
 
 == Contents ==
 * Licensing
@@ -20,8 +20,10 @@ This may not be construed as overriding any item with a previously applied licen
 4. screenshot-4.png - Description: Showcasing the drop-down menu with multiple levels
 
 == Basic FAQ ==
-= Q: Why is there a >>Page Link<< at the bottom of my pages? Can I hide it? =
-The idea is to provide an easy to copy permalink for the article so readers can more easily share the page with others. You can hide this text by adding `div.page-shortlink{ display:none; }` to your stylesheet.
+= Q: Why is there a >>Page Permalink<< at the bottom of my pages? Can I hide it? =
+The idea is to provide an easy to copy permalink for the article so readers can more easily share the page with others.
+You can hide this text by adding `div.page-shortlink{ display:none; }` to your stylesheet.
+If you are using a Child-Theme or a custom Page Template you can also change the $text parameter of the `dmm_page_link` function to an empty string ('').
 
 = Q: Where did my conversation balloons go? =
 The conversation balloons now only show based on the following criteria:

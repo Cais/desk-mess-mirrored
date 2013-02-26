@@ -1,19 +1,22 @@
 === Desk Mess Mirrored ===
-Changelog: February 25, 2013
+Changelog: February 26, 2013
 == Version 2.2 ==
 = Code =
 * Added filtered text messages when comments are open/closed but none exist
 * Added link to author page when comments closed message is displayed
 * Added code block termination comments
+* Change page shortlink text to "Page Permalink"
 * Minor code formatting / refactoring to use "braces" for code blocks
 * Refactor post meta details into a better string output
 
 = CSS =
 * Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image
 * Added CSS relevant to the "Monster" plugin that represents the default WordPress core plugins
+* Modify `page-shortlink` CSS to use `text-align` versus `float`
 
 = Miscellaneous =
 * Updated 'style.css' header block to use labels as noted in core trac ticket #16868
+* Update 'readme' on `page-shortlink` usage
 
 = Current Internet Browsers Reviewed =
 * Apple Safari

@@ -79,8 +79,8 @@ $count++; ?>
         <div id="author_link"><?php _e( '... other posts by ', 'desk-mess-mirrored' ); ?><?php the_author_posts_link(); ?></div>
     <?php } /** End if - is single */
 
-    /** Show a shortlink on the page */
-    dmm_page_link( $text = __( 'Page Link', 'desk-mess-mirrored' ) ); ?>
+    /** Show a shortlink on the page - requires Jetpack be active */
+    dmm_page_link( $text = __( 'Page Permalink', 'desk-mess-mirrored' ) ); ?>
 
     <p class="single-meta"><?php the_tags(); ?></p>
 

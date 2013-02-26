@@ -526,7 +526,7 @@ div#main-blog ul li.page_item, div#main-blog div#contact-us ul li {
 .page div#content div#main-blog ul li ol { padding-left: 20px; }
 .page div#content div#main-blog ul li ul { padding-left: 20px; }
 
-.page-shortlink { float: right; }
+.page-shortlink { text-align: right; }
 
 .postdata {
 	color: #4a4131;
