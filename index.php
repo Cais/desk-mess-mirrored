@@ -17,7 +17,7 @@
  * @internal    REQUIRES WordPress version 3.4
  * @internal    Tested up to WordPress version 3.5.1
  *
- * @version     2.1.1
+ * @version     2.2
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
@@ -45,14 +45,11 @@
  * @todo Review / Update 404.php page
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php', etc.)
  * @todo Review post meta comment text - sort out how to show amount of comments if they exist when comments are closed
- * @todo Review verbiage used for the 'Page Link' on pages (see `the_shortlink`)
- * @todo Add Post-Format: Link - use infinity symbol (2.1-early)
+  * @todo Add Post-Format: Link - use infinity symbol
  * @todo Add 'search.php' template? (see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191)
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
- * @todo Add more i18n support, for example: create and include a current '.pot' file
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
- * @todo Fix call to `the_category` in post meta details display code
  *
  * @version 2.0.3
  * @date    July 5, 2012
