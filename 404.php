@@ -14,12 +14,13 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
- * @version     2.0
- * @date        December 11, 2012
- *
  * @version     2.1
  * @date        December 3, 2012
  * Added 'DMM No Posts Found' function to replace repetitive code
+ *
+ * @version     2.2
+ * @date        February 26, 2013
+ * Added some additional text and relevant i18n support
  */
 
 get_header(); ?>
@@ -30,7 +31,15 @@ get_header(); ?>
     <div id="content">
         <div id="main-blog">
 
-            <h1>You have arrived at the 404 page!!!</h1>
+            <h1><?php _e( 'You have arrived at the 404 page!!!', 'desk-mess-mirrored' ); ?></h1>
+
+            <?php
+            $message_404 = __( 'This is not the page you are looking for ...<br />', 'desk-mess-mirrored' );
+            $message_404 .= __( '... well, that is rather obvious. No one really looks for a 404 page.<br />', 'desk-mess-mirrored' );
+            $message_404 .= '<br />';
+            $message_404 .= __( 'We apologize for the inconvenience, would you care to look for something else?<br />', 'desk-mess-mirrored' );
+
+            echo $message_404; ?>
 
             <?php if ( have_posts() ) {
                 while ( have_posts() ) {

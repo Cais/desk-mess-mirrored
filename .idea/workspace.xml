@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -26,13 +28,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="404.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/404.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.346154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#6#2695#0" expanded="true" />
-              </folding>
+            <state line="43" column="64" selection-start="1718" selection-end="1718" vertical-scroll-proportion="-28.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changelog.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="80" selection-start="269" selection-end="349" vertical-scroll-proportion="0.13869464">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/searchform.php" />
@@ -67,8 +84,9 @@
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/changelog.txt" />
+        <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
   </component>
@@ -440,7 +458,11 @@
       <created>1361890221460</created>
       <updated>1361890221460</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="* Clean up @todo list">
+      <created>1361890537560</created>
+      <updated>1361890537560</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -527,7 +549,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Change page shortlink text to &quot;Page Permalink&quot;&#10;* Modify CSS to use `text-align` versus `float`&#10;* Update 'readme' on page shortlink usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Clean up @todo list" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -540,7 +562,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility" />
     <MESSAGE value="Adjusted #content left margin; Removed `table` element properties; Added conditional check for custom post types" />
     <MESSAGE value="Minor clarification update" />
     <MESSAGE value="Minor padding on menu anchor text" />
@@ -565,6 +586,7 @@
     <MESSAGE value="* Refactor post meta details into a better string output" />
     <MESSAGE value="* Change 'page link' functionality into a function using a parameter of $text that is required if the shortlink is to be displayed." />
     <MESSAGE value="* Change page shortlink text to &quot;Page Permalink&quot;&#10;* Modify CSS to use `text-align` versus `float`&#10;* Update 'readme' on page shortlink usage" />
+    <MESSAGE value="* Clean up @todo list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -600,19 +622,9 @@
         <state line="18" column="0" selection-start="530" selection-end="530" vertical-scroll-proportion="-6.5384617" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/searchform.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="719" selection-end="719" vertical-scroll-proportion="0.5108173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.14674556" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/support.txt">
@@ -650,19 +662,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
+    <entry file="file://$PROJECT_DIR$/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="889" selection-end="889" vertical-scroll-proportion="0.35664335">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.14674556">
+          <folding>
+            <element signature="e#6#635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.346154">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#6#2695#0" expanded="true" />
-          </folding>
+        <state line="43" column="64" selection-start="1718" selection-end="1718" vertical-scroll-proportion="-28.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="80" selection-start="269" selection-end="349" vertical-scroll-proportion="0.13869464">
+          <folding />
         </state>
       </provider>
     </entry>

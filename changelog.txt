@@ -5,6 +5,7 @@ Changelog: February 26, 2013
 * Added filtered text messages when comments are open/closed but none exist
 * Added link to author page when comments closed message is displayed
 * Added code block termination comments
+* Added some additional text to the '404.php' template and relevant i18n support
 * Change page shortlink text to "Page Permalink"
 * Minor code formatting / refactoring to use "braces" for code blocks
 * Refactor post meta details into a better string output

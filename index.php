@@ -42,7 +42,6 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * @internal Project To-do List - see readme.txt for pre-2.0 PTL
- * @todo Review / Update 404.php page
  * @todo Review adding 'category.php' template back into theme files (also consider 'tag.php', 'date.php', etc.)
  * @todo Review post meta comment text - sort out how to show amount of comments if they exist when comments are closed
   * @todo Add Post-Format: Link - use infinity symbol
