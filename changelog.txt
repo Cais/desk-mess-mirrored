@@ -6,9 +6,11 @@ Changelog: February 26, 2013
 * Added link to author page when comments closed message is displayed
 * Added code block termination comments
 * Added some additional text to the '404.php' template and relevant i18n support
+* Added 'search.php' template file
 * Change page shortlink text to "Page Permalink"
 * Minor code formatting / refactoring to use "braces" for code blocks
 * Refactor post meta details into a better string output
+* Removed 'searchform.php'
 
 = CSS =
 * Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image
