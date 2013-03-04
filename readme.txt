@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised February 26, 2013
+* Last revised March 4, 2013
 
 == Contents ==
 * Licensing
@@ -93,3 +93,4 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * http://themes.trac.wordpress.org/ticket/8500 - version 2.0.3
 * http://themes.trac.wordpress.org/ticket/9144 - version 2.0.4
 * http://themes.trac.wordpress.org/ticket/10236 - version 2.1
+* http://themes.trac.wordpress.org/ticket/11492 - version 2.2
