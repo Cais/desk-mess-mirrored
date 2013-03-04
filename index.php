@@ -44,7 +44,6 @@
  * @internal Project To-do List - see readme.txt for pre-2.0 PTL
  * @todo Review post meta comment text - sort out how to show amount of comments if they exist when comments are closed
  * @todo Add Post-Format: Link - use infinity symbol
- * @todo Add 'search.php' template? (see http://wordpress.org/support/topic/theme-desk-mess-mirrored-searchphp-for-theme-version-191)
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
  * @todo Review About box in the 'author.php' template
@@ -54,7 +53,7 @@
  * Added 'DMM No Posts Found' function to replace repetitive code
  *
  * @version     2.2
- * @date        February 2013
+ * @date        March 2013
  */
 
 get_header(); ?>
