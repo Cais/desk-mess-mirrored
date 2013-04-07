@@ -1,25 +1,8 @@
 === Desk Mess Mirrored ===
-Changelog: February 26, 2013
-== Version 2.2 ==
-= Code =
-* Added filtered text messages when comments are open/closed but none exist
-* Added link to author page when comments closed message is displayed
-* Added code block termination comments
-* Added some additional text to the '404.php' template and relevant i18n support
-* Added 'search.php' template file
-* Change page shortlink text to "Page Permalink"
-* Minor code formatting / refactoring to use "braces" for code blocks
-* Refactor post meta details into a better string output
-* Removed 'searchform.php'
-
+Changelog: April 7, 2013
+== Version 2.2.1 ==
 = CSS =
-* Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image
-* Added CSS relevant to the "Monster" plugin that represents the default WordPress core plugins
-* Modify `page-shortlink` CSS to use `text-align` versus `float`
-
-= Miscellaneous =
-* Updated 'style.css' header block to use labels as noted in core trac ticket #16868
-* Update 'readme' on `page-shortlink` usage
+* Adjusted `li.text_widget` margin values
 
 = Current Internet Browsers Reviewed =
 * Apple Safari
@@ -29,6 +12,22 @@ Changelog: February 26, 2013
 * Opera
 
 /** ------------------------------------------------------------------------- */
+== Version 2.2 ==
+= Code =
+* Added filtered text messages when comments are open/closed but none exist
+* Added link to author page when comments closed message is displayed
+* Added code block termination comments
+* Minor code formatting / refactoring to use "braces" for code blocks
+* Refactor post meta details into a better string output
+
+= CSS =
+* Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image
+* Added CSS relevant to the "Monster" plugin that represents the default WordPress core plugins
+
+= Miscellaneous =
+* Updated 'style.css' header block to use labels as noted in core trac ticket #16868
+
+/** ------------------------------------------------------------------------- */
 == Version 2.1 ==
 Changelog: December 3, 2012
 = Code =
@@ -36,13 +35,6 @@ Changelog: December 3, 2012
 * Added 'DMM No Posts Found' function to replace repetitive code
 * Removed backward compatibility checks to bring in line with current WordPress versions (3.4+)
 * Removed DMM_Add_Body_Classes in favor of using BNS Body Classes at http://wordpress.org/extend/plugins/bns-body-classes/
-
-= Current Internet Browsers Reviewed =
-* Apple Safari
-* Firefox
-* Google Chrome
-* Internet Explorer
-* Opera
 
 /** ------------------------------------------------------------------------- */
 == Version 2.0.4 ==
