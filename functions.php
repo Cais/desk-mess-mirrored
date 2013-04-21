@@ -23,10 +23,14 @@
  * @date        December 3, 2012
  * Add DMM_HOME_DOMAIN constant for better future proofing
  * Removed DMM_Add_Body_Classes in favor of using BNS Body Classes
+ *
+ * @version     2.2.1
+ * @date        April 21, 2013
+ * Expanded use of DMM_HOME_DOMAIN constant
  */
 
 /** Define Desk Mess Mirrored "Home" domain */
-define( 'DMM_HOME_DOMAIN', 'http://buynowshop.com/' );
+define( 'DMM_HOME_DOMAIN', 'BuyNowShop.com' );
 
 /**
  * Enqueue Comment Reply Script
@@ -332,7 +336,7 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
             /** @var $parent_theme_data - array object containing the Parent Theme's data */
             $parent_theme_data = $active_theme_data->parent();
             /** @noinspection PhpUndefinedMethodInspection - IDE commentary */
-            printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="' . DMM_HOME_DOMAIN . '" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
+            printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s Child-Theme, v%2$s, on top of<br />the Parent-Theme %3$s, v%4$s, from <a href="http://' . DMM_HOME_DOMAIN . '" title="' . DMM_HOME_DOMAIN . '">' . DMM_HOME_DOMAIN . '</a>.</span>', 'desk-mess-mirrored' ),
                 '<a href="' . $active_theme_data->get( 'ThemeURI' ) . '">' . $active_theme_data->get( 'Name' ) . '</a>',
                 $active_theme_data->get( 'Version' ),
                 $parent_theme_data->get( 'Name' ),
@@ -340,7 +344,7 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
 
         } else {
 
-            printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="' . DMM_HOME_DOMAIN . '" title="BuyNowShop.com">BuyNowShop.com</a>.</span>', 'desk-mess-mirrored' ),
+            printf( __( '<br /><span id="dmm-theme-version">This site is using the %1$s theme, v%2$s, from <a href="http://' . DMM_HOME_DOMAIN . '" title="' . DMM_HOME_DOMAIN . '">' . DMM_HOME_DOMAIN . '</a>.</span>', 'desk-mess-mirrored' ),
                 $active_theme_data->get( 'Name' ),
                 $active_theme_data->get( 'Version' ) );
 

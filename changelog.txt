@@ -1,6 +1,9 @@
 === Desk Mess Mirrored ===
-Changelog: April 7, 2013
+Changelog: April 21, 2013
 == Version 2.2.1 ==
+= Code =
+* Expanded use of DMM_HOME_DOMAIN constant
+
 = CSS =
 * Adjusted `li.text_widget` margin values
 
