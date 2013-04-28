@@ -777,6 +777,10 @@ ul.children li.cat-item { margin-bottom: -10px; }
 .comment-body ol li li { list-style: lower-roman inside none; }
 .comment-body ol li li li { list-style: lower-alpha inside none; }
 
+.page .comment-body ol li { list-style: decimal inside none; }
+.page .comment-body ol li li { list-style: lower-roman inside none; }
+.page .comment-body ol li li li { list-style: lower-alpha inside none; }
+
 .comment-meta, .commentmetadata {
     font-size: 65%;
 	padding-top: 2px;

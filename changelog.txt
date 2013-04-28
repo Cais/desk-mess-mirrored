@@ -1,10 +1,11 @@
 === Desk Mess Mirrored ===
-Changelog: April 21, 2013
+Changelog: April 28, 2013
 == Version 2.2.1 ==
 = Code =
 * Expanded use of DMM_HOME_DOMAIN constant
 
 = CSS =
+* Added ordered list styles for pages with comments
 * Adjusted `li.text_widget` margin values
 
 = Current Internet Browsers Reviewed =
