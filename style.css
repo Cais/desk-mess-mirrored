@@ -700,6 +700,7 @@ p a img { border: none; }
 
 .wp-caption img {
 	border: 0 none;
+    height: auto;
 	margin: 0;
 	padding: 0;
     maw-width: 99%;
