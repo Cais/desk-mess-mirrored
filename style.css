@@ -702,6 +702,7 @@ p a img { border: none; }
 	border: 0 none;
 	margin: 0;
 	padding: 0;
+    maw-width: 99%;
 }
 
 /*-- Gallery --*/
