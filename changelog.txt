@@ -1,20 +1,15 @@
 === Desk Mess Mirrored ===
-Changelog: May 14, 2013
+Changelog: July 14, 2013
 == Version 2.2.1 ==
 = Code =
 * Expanded use of DMM_HOME_DOMAIN constant
+* Change featured image to display full and centered across posts
 
 = CSS =
 * Added ordered list styles for pages with comments
 * Adjusted '.wp-caption img' properties
 * Adjusted 'li.text_widget' margin values
-
-= Current Internet Browsers Reviewed =
-* Apple Safari
-* Firefox
-* Google Chrome
-* Internet Explorer
-* Opera
+* Adjusted various CSS elements and properties to display TUT data more correctly
 
 /** ------------------------------------------------------------------------- */
 == Version 2.2 ==

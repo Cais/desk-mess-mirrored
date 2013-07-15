@@ -89,8 +89,13 @@ div.aligncenter, .aligncenter, .center { margin: 0 auto; }
 img.aligncenter, img.center { clear: both; display: block; }
 img.alignleft, img.left { display: inline; margin: 0 8px 8px 0; }
 img.alignright, img.right { display: inline; margin: 0 0 8px 8px; }
-.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px;
-/* optional rounded corners for browsers that support it */
+.wp-caption {
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding-top: 4px;
+    /* margin: 10px; */
+    /* optional rounded corners for browsers that support it */
 	-moz-border-radius: 3px;
 	-khtml-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -269,7 +274,10 @@ strong, strong em { font-weight: bold; }
 
 sub, sup { font-size: 65%; }
 
-table { /* margin: 0 auto; width: 90%; */ }
+table {
+    margin: 0 auto;
+    width: 100%;
+}
 table caption { text-align: center; }
 tr.even {
 	border: none;
@@ -671,7 +679,7 @@ span.status-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-
 /*-- Images --*/
 .wp-caption img.size-full { max-width: 570px; height: auto; }
 
-p img {
+img {
 	height: auto;
 	max-width: 100%;
 	padding: 0;
@@ -686,7 +694,7 @@ p a img { border: none; }
 	background-color: #f3f3f3;
 	border: 1px solid #59350b;
 	padding-top: 4px;
-	margin: 10px;
+	/* margin: 10px; */
 	max-width: 578px;
 	text-align: center;
 	/* optional rounded corners for browsers that support it */
@@ -705,7 +713,6 @@ p a img { border: none; }
 	padding: 0;
     maw-width: 99%;
 }
-
 /*-- Gallery --*/
 .gallery-caption {}
 dl.gallery-item {
@@ -1307,3 +1314,9 @@ div.post div.sharing { clear: both; }
 /* bns-featured-tag */
 .widget .post { margin: 10px; }
 /* ---- BNS Plugins ---- */
+
+/* ---- Miscellaneous ---- */
+/** Make sure Twitter embeds are not fixed width */
+.post .twitter-tweet-rendered {
+    width: 100% !important;
+}

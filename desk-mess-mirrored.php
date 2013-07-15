@@ -63,7 +63,7 @@ $count++; ?>
     <?php } /** End if - is page */
 
     if ( has_post_thumbnail() && ( $post->post_type == 'post' ) ) {
-        the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
+        the_post_thumbnail( 'full', array( 'class' => 'aligncenter' ) );
     } /** End if - has post thumbnail */
 
     if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {

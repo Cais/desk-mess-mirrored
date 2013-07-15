@@ -17,7 +17,7 @@
  * @internal    REQUIRES WordPress version 3.4
  * @internal    Tested up to WordPress version 3.5.1
  *
- * @version     2.2
+ * @version     2.2.1
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
@@ -56,7 +56,7 @@
  * @date        March 2013
  *
  * @version     2.2.1
- * @date        March 2013
+ * @date        July 2013
  */
 
 get_header(); ?>
