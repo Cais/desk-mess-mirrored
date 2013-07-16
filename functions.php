@@ -14,11 +14,6 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2013, Edward Caissie
  *
- * @version     2.0.3
- * @date        July 5, 2012
- * Address functions deprecated at WordPress 3.4-beta1
- * Miscellaneous code structure updates
- *
  * @version     2.1
  * @date        December 3, 2012
  * Add DMM_HOME_DOMAIN constant for better future proofing
@@ -248,7 +243,9 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
          * Start common copyright notice
          * @example Copyright
          */
-        empty( $args['start'] ) ? $output .= sprintf( __( 'Copyright', 'desk-mess-mirrored' ) ) : $output .= $args['start'];
+        empty( $args['start'] )
+                ? $output .= sprintf( __( 'Copyright', 'desk-mess-mirrored' ) )
+                : $output .= $args['start'];
 
         /**
          * Calculate Copyright Years; and, prefix with Copyright Symbol
@@ -552,8 +549,6 @@ if ( ! function_exists( 'dmm_use_posted' ) ) {
  * @version 2.0.3
  * @date    July 5, 2012
  * If modified author exists link to their archive.
- *
- * @todo Implement in other template files, such as, single and page?
  */
 if ( ! function_exists( 'dmm_modified_post' ) ) {
     function dmm_modified_post(){
