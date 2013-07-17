@@ -12,6 +12,7 @@ Changelog: July 14, 2013
 * Adjusted '.wp-caption img' properties
 * Adjusted 'li.text_widget' margin values
 * Adjusted various CSS elements and properties to display TUT data more correctly
+* Centered searchform box and hid screen reader text
 
 /** ------------------------------------------------------------------------- */
 == Version 2.2 ==

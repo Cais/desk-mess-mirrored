@@ -1118,7 +1118,12 @@ p.form-allowed-tags {
 }
 
 /*-- Search --*/
-label.hidden { display: none; }
+form#searchform { text-align: center; }
+
+label.hidden,
+label.screen-reader-text  {
+    display: none;
+}
 
 li#search.widget { background: url("images/searchbck.png") no-repeat scroll 0 5px transparent; }
 
