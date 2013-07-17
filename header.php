@@ -40,10 +40,10 @@
 			<div id="header"><!-- header -->
 				<div id="headerleft"></div>
 				<div id="logo">
-					<h2>
+					<h2 id="site-title">
                         <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a>
                     </h2>
-					<p><?php bloginfo( 'description' ); ?></p>
+					<p id="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- #logo -->
 				<div id="cup"></div>
 				<div id="top-navigation-menu">
