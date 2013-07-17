@@ -46,7 +46,6 @@
  * @todo Add Post-Format: Link - use infinity symbol
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
  * @todo Review menu issues with bbPress?! see BNS comment: http://buynowshop.com/themes/desk-mess-mirrored/comment-page-3/#comment-12440
- * @todo Review About box in the 'author.php' template
  *
  * @version     2.1
  * @date        December 3, 2012

@@ -4,9 +4,11 @@ Changelog: July 14, 2013
 = Code =
 * Expanded use of DMM_HOME_DOMAIN constant
 * Change featured image to display full and centered across posts
+* Refactored author "About" box to not show empty details
 
 = CSS =
 * Added ordered list styles for pages with comments
+* Added classes to author "About" box details for easier display manipulation
 * Adjusted '.wp-caption img' properties
 * Adjusted 'li.text_widget' margin values
 * Adjusted various CSS elements and properties to display TUT data more correctly

@@ -21,6 +21,11 @@
  * @version     2.1
  * @date        December 3, 2012
  * Added 'DMM No Posts Found' function to replace repetitive code
+ *
+ * @version     2.2.1
+ * @date        July 17, 2013
+ * Refactored author "About" box to not show empty details
+ * Added classes to author about box details for easier display manipulation
  */
 
 get_header();
@@ -58,8 +63,27 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
                     ?>">
                 <h2><?php _e( 'About ', 'desk-mess-mirrored' ); echo $curauth->display_name; ?></h2>
                 <ul>
-                    <li><?php _e( 'Website', 'desk-mess-mirrored' ); ?>: <a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a> <?php _e( 'or', 'desk-mess-mirrored' ); ?> <a href="mailto:<?php echo $curauth->user_email; ?>"><?php _e( 'email', 'desk-mess-mirrored' ); ?></a></li>
-                    <li><?php _e( 'Biography', 'desk-mess-mirrored' ); ?>: <?php echo $curauth->user_description; ?></li>
+
+                    <?php if ( ! empty( $curauth->user_url ) ) { ?>
+                        <li class="user-url">
+                            <?php printf( __( 'Website: %1$s', 'desk-mess-mirrored' ),
+                                    '<a href="' . $curauth->user_url . '">' . $curauth->user_url . '</a>'
+                            ); ?>
+                        </li>
+                    <?php } /** End if - not empty user url */ ?>
+
+                    <li class="user-email">
+                        <?php printf( __( 'Email: %1$s', 'desk-mess-mirrored' ),
+                                '<a href="mailto:' . $curauth->user_email . '">' . __( 'email', 'desk-mess-mirrored' ) . '</a>'
+                        ); ?>
+                    </li class="user-description">
+
+                    <?php if ( ! empty( $curauth->user_description ) ) { ?>
+                        <li>
+                            <?php printf( __( 'Biography: %1$s', 'desk-mess-mirrored' ), $curauth->user_description ); ?>
+                        </li>
+                    <?php } /** End if - not empty user description */ ?>
+
                 </ul>
             </div> <!-- #author -->
 
