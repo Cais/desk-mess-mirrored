@@ -237,11 +237,12 @@ h6 {
 }
 
 .hr, .desk-mess-mirrored {
-	border: none;
     background: url(images/hr-img.png);
+    background-size: 100% auto;
+    border: none;
     height: 40px;
-	width: 560px;
 	margin: 0 auto;
+    width: 100%;
 }
 
 ol li { list-style: decimal inside none; }
