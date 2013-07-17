@@ -4,6 +4,7 @@ Changelog: July 14, 2013
 = Code =
 * Expanded use of DMM_HOME_DOMAIN constant
 * Change featured image to display full and centered across posts
+* Corrected closed comments logic to properly display message
 * Refactored author "About" box to not show empty details
 
 = CSS =

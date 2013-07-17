@@ -20,6 +20,10 @@
  * @date        February 24, 2013
  * Added filtered text messages when comments are open/closed but none exist
  * Added link to author page when comments closed message is displayed
+ *
+ * @version     2.2.1
+ * @date        July 17, 2013
+ * Corrected closed comments logic to properly display message
  */
 
 /** Do not delete these lines */
@@ -105,10 +109,10 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
             <div class="alignright"><?php next_comments_link() ?></div>
         </div><!-- .navigation -->
 
-    <?php } else {
+        <?php
 
         global $post;
-        if ( 'open' == $post->comment_status ) {
+        if ( 'open' == $post->comment_status && ! have_comments() ) {
 
             /** If comments are open, but there are no comments. */
             printf( '<div class="nocomments open">%1$s</div>',
@@ -127,7 +131,7 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
                 );
             } /** End if - not is page */
 
-        } /** End if - comments open */
+        } /** End if - comments open and no comments */
 
     } /** End if - have comments */
 
