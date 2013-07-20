@@ -112,12 +112,14 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
         <?php
 
         global $post;
-        if ( 'open' == $post->comment_status && ! have_comments() ) {
+        if ( 'open' == $post->comment_status ) {
 
             /** If comments are open, but there are no comments. */
-            printf( '<div class="nocomments open">%1$s</div>',
-                apply_filters( 'dmm_nocomments_open', __( 'Want to leave a note? Just fill in the form below.', 'desk-mess-mirrored' ) )
-            );
+            if ( ! have_comments() ) {
+                printf( '<div class="nocomments open">%1$s</div>',
+                    apply_filters( 'dmm_nocomments_open', __( 'Want to leave a note? Just fill in the form below.', 'desk-mess-mirrored' ) )
+                );
+            } /** End if - not have comments */
 
         } else {
 

@@ -1,5 +1,10 @@
 === Desk Mess Mirrored ===
-Changelog: July 14, 2013
+Changelog: July 20, 2013
+== Version 2.2.2 ==
+= Code =
+* Fix comments closed message displaying when comments are open
+
+/** ------------------------------------------------------------------------- */
 == Version 2.2.1 ==
 = Code =
 * Expanded use of DMM_HOME_DOMAIN constant
