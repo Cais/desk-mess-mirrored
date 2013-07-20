@@ -46,15 +46,14 @@
  * @todo Add Post-Format: Link - use infinity symbol
  * @todo Add specific CSS to the placeholders used by the new (comment) author classes
  *
- * @version     2.1
- * @date        December 3, 2012
- * Added 'DMM No Posts Found' function to replace repetitive code
- *
  * @version     2.2
  * @date        March 2013
  *
  * @version     2.2.1
  * @date        July 2013
+ *
+ * @version     2.2.2
+ * @date        July 20, 2013
  */
 
 get_header(); ?>
