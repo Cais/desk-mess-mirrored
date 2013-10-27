@@ -675,6 +675,16 @@ span.quote-glyph a span.no-title { position: relative; top: 10px; }
 .format-status.sticky .glyph { right: 3px; top: 16px; }
 .format-status h1, .format-status .postdata { text-align: right; }
 span.status-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-size: 500%; }
+
+/* Post Format - Link */
+.format-link {}
+.format-link .glyph {
+    float: left;
+    top: 16px;
+}
+.format-link.sticky .glyph { right: 3px; top: 16px; }
+.format-link h1, .format-link .postdata { text-align: right; }
+span.link-glyph { font-family: "Times New Roman", Georgia, Arial, serif; font-size: 500%; }
 /*-- End: Post Formats --*/
 
 /*-- Images --*/

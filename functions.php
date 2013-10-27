@@ -375,7 +375,7 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
     function desk_mess_mirrored_setup(){
-        global $wp_version;
+
         /** This theme uses post thumbnails */
         add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
         /** Add default posts and comments RSS feed links to head */
@@ -469,7 +469,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                 $link_glyph = '<span class="link-glyph">';
                 empty( $dmm_no_title )
                         ? $link_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '&infin;', 'desk-mess-mirrored' ) /** default: infinity symbol */ . '</span></a>'
-                        : $link_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: infinity symbol */
+                        : $link_glyph .= __( '&infin;', 'desk-mess-mirrored' ); /** default: infinity symbol */
                 $link_glyph .= '</span>';
                 echo apply_filters( 'dmm_link_glyph', $link_glyph );
             } /** End function - status glyph */

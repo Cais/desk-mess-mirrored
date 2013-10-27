@@ -2,6 +2,12 @@
 Changelog: October 27, 2013
 
 == Version 2.2.3 ==
+= Code =
+* Added support for Post-Format: Link
+
+= CSS =
+* Added appropriate styling for post-format: link related items
+
 = Miscellaneous =
 * Added Serbo-Croatian translation by Andrijana Nikolic from webhostinggeeks.com
 
