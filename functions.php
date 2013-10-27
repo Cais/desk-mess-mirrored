@@ -368,6 +368,10 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  * @version 2.1
  * @date    December 3, 2012
  * Make 'custom-background' compatible with current WordPress versions (3.4+)
+ *
+ * @version 2.2.3
+ * @date    October 27, 2013
+ * Added support for post format 'link'
  */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
     function desk_mess_mirrored_setup(){
@@ -389,8 +393,8 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
             'default-image' => get_template_directory_uri() . '/images/marble-bg.png'
         ) );
 
-        /** Add post-formats support for aside, quote, and status */
-        add_theme_support( 'post-formats', array( 'aside', 'quote', 'status' ) );
+        /** Add post-formats support for aside, link, quote, and status */
+        add_theme_support( 'post-formats', array( 'aside', 'link', 'quote', 'status' ) );
 
         /**
          * Assign unique aside glyph that can be over-written; also will be
@@ -398,8 +402,6 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
          *
          * @package Desk_Mess_Mirrored
          * @since   2.0
-         *
-         * @param   $aside_glyph    string - constructed
          */
         if ( ! function_exists( 'dmm_aside_glyph' ) ) {
             function dmm_aside_glyph() {
@@ -419,8 +421,6 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
          *
          * @package Desk_Mess_Mirrored
          * @since   2.0
-         *
-         * @param   $quote_glyph    string - constructed
          */
         if ( ! function_exists( 'dmm_quote_glyph' ) ) {
             function dmm_quote_glyph() {
@@ -452,6 +452,26 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
                         : $status_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: at symbol */
                 $status_glyph .= '</span>';
                 echo apply_filters( 'dmm_status_glyph', $status_glyph );
+            } /** End function - status glyph */
+        } /** End if - not function exists */
+
+
+        /**
+         * Assign unique link glyph that can be over-written; also will be
+         * used as the anchor text if no title exists for the post
+         *
+         * @package Desk_Mess_Mirrored
+         * @since   2.2.3
+         */
+        if ( !function_exists( 'dmm_link_glyph' ) ) {
+            function dmm_link_glyph() {
+                $dmm_no_title = get_the_title();
+                $link_glyph = '<span class="link-glyph">';
+                empty( $dmm_no_title )
+                        ? $link_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '&infin;', 'desk-mess-mirrored' ) /** default: infinity symbol */ . '</span></a>'
+                        : $link_glyph .= __( '@', 'desk-mess-mirrored' ); /** default: infinity symbol */
+                $link_glyph .= '</span>';
+                echo apply_filters( 'dmm_link_glyph', $link_glyph );
             } /** End function - status glyph */
         } /** End if - not function exists */
 
