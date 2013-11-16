@@ -4,6 +4,8 @@ Changelog: November 16, 2013
 == Version 2.2.4-alpha ==
 = Code =
 = CSS =
+* Added better list element styles
+
 = Miscellaneous =
 
 /** ------------------------------------------------------------------------- */
