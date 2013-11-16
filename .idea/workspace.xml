@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="* Added DMM_SHOW_PAGE_PERMALINK constant">
+    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -32,7 +30,21 @@
       <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="-12.423077" vertical-offset="136" max-vertical-offset="11390">
+            <state line="101" column="0" selection-start="3101" selection-end="3101" vertical-scroll-proportion="-7.1923075" vertical-offset="1530" max-vertical-offset="11441">
+              <folding>
+                <element signature="e#6#830#0" expanded="true" />
+                <marker date="1384636644302" expanded="true" signature="3249:4386" placeholder="..." />
+                <marker date="1384636644302" expanded="true" signature="4394:5632" placeholder="..." />
+                <marker date="1384636644302" expanded="true" signature="4680:5536" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="31" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -50,7 +62,7 @@
       <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="124" selection-end="238" vertical-scroll-proportion="0.15022092" vertical-offset="0" max-vertical-offset="7905">
+            <state line="8" column="40" selection-start="278" selection-end="278" vertical-scroll-proportion="0.20029455" vertical-offset="0" max-vertical-offset="7922">
               <folding />
             </state>
           </provider>
@@ -72,7 +84,11 @@
         <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="74" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1700">
-              <folding />
+              <folding>
+                <marker date="1384635944072" expanded="true" signature="1127:4209" placeholder="..." />
+                <marker date="1384635944072" expanded="true" signature="1521:1715" placeholder="..." />
+                <marker date="1384635944072" expanded="true" signature="2021:2872" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -474,7 +490,11 @@
       <created>1384634824366</created>
       <updated>1384634824366</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="* Added DMM_SHOW_PAGE_PERMALINK constant&#10;* Made &quot;Page Permalink&quot; link conditionally display with default as false.">
+      <created>1384635965201</created>
+      <updated>1384635965201</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -534,7 +554,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Update version compatibility in main theme block as well as update copyright years" />
     <MESSAGE value="* Added filtered text messages when comments are open/closed but none exist" />
     <MESSAGE value="* Added link to author page when comments closed message is displayed" />
     <MESSAGE value="* Remove var_dump test" />
@@ -559,7 +578,8 @@
     <MESSAGE value="* Added support for Post-Format: Link&#10;* Added appropriate styling for post-format: link related items" />
     <MESSAGE value="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3" />
     <MESSAGE value="* Removed really old browser CSS support ... going with support for current only" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Removed really old browser CSS support ... going with support for current only" />
+    <MESSAGE value="* Added DMM_SHOW_PAGE_PERMALINK constant&#10;* Made &quot;Page Permalink&quot; link conditionally display with default as false." />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added DMM_SHOW_PAGE_PERMALINK constant&#10;* Made &quot;Page Permalink&quot; link conditionally display with default as false." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -569,11 +589,6 @@
     <entry file="file://$PROJECT_DIR$/single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="31" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.47004607" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-status.php">
@@ -629,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="21" selection-start="7737" selection-end="7737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="902" selection-end="902" vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="1819">
@@ -646,23 +654,46 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="21" selection-start="7737" selection-end="7737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="74" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1700">
+          <folding>
+            <marker date="1384635944072" expanded="true" signature="1127:4209" placeholder="..." />
+            <marker date="1384635944072" expanded="true" signature="1521:1715" placeholder="..." />
+            <marker date="1384635944072" expanded="true" signature="2021:2872" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="31" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="-12.423077" vertical-offset="136" max-vertical-offset="11390">
-          <folding />
+        <state line="101" column="0" selection-start="3101" selection-end="3101" vertical-scroll-proportion="-7.1923075" vertical-offset="1530" max-vertical-offset="11441">
+          <folding>
+            <element signature="e#6#830#0" expanded="true" />
+            <marker date="1384636644302" expanded="true" signature="3249:4386" placeholder="..." />
+            <marker date="1384636644302" expanded="true" signature="4394:5632" placeholder="..." />
+            <marker date="1384636644302" expanded="true" signature="4680:5536" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="124" selection-end="238" vertical-scroll-proportion="0.15022092" vertical-offset="0" max-vertical-offset="7905">
+        <state line="8" column="40" selection-start="278" selection-end="278" vertical-scroll-proportion="0.20029455" vertical-offset="0" max-vertical-offset="7922">
           <folding />
         </state>
       </provider>

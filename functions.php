@@ -96,11 +96,15 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
      * @version 2.0.3
      * @date    June 1, 2012
      * Refactor to more correctly use filter while maintaining backward-compatibility
+     *
+     * @version 2.2.3
+     * @date    November 16, 2013
+     * Removed unused $sep_location parameter
      */
     if ( ( ! function_exists( 'wp_get_theme' ) ) || wp_get_theme()->get('Version') < '2.1' ) {
         /**
-         * Test version to maintain backward-compatibility with Child-Themes using `dmm_wp_title` echo
-         * @todo Remove once all (client) Child-Themes have been updated / advised of change
+         * Test version to maintain backward-compatibility with Child-Themes using `dmm_wp_title`
+         * @todo Remove at version 2.3
          */
         function dmm_wp_title() {
             global $page, $paged;
@@ -129,11 +133,10 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
          *
          * @param   string $old_title - default title text
          * @param   string $sep - separator character
-         * @param   string $sep_location - left|right - separator placement in relationship to title
          *
          * @return  string - new title text
          */
-        function dmm_wp_title( $old_title, $sep, $sep_location ) {
+        function dmm_wp_title( $old_title, $sep ) {
             global $page, $paged;
             /** Set initial title text */
             $dmm_title_text = $old_title . get_bloginfo( 'name' );
@@ -155,7 +158,7 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
 
         } /** End function - dmm wp title */
 
-    add_filter( 'wp_title', 'dmm_wp_title', 10, 3 );
+    add_filter( 'wp_title', 'dmm_wp_title', 10, 2 );
 
     } /** End if - function exists */
 

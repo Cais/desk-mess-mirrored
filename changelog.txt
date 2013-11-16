@@ -5,7 +5,8 @@ Changelog: November 16, 2013
 = Code =
 * Added support for Post-Format: Link
 * Added DMM_SHOW_PAGE_PERMALINK constant
-* Made "Page Permalink" link conditionally display with default as false.
+* Made "Page Permalink" link conditionally display with default as false
+* Removed unused $sep_location parameter
 
 = CSS =
 * Added appropriate styling for post-format: link related items
