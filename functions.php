@@ -22,10 +22,17 @@
  * @version     2.2.1
  * @date        April 21, 2013
  * Expanded use of DMM_HOME_DOMAIN constant
+ *
+ * @version     2.2.3
+ * @date        November 16, 2013
+ * Added DMM_SHOW_PAGE_PERMALINK constant
  */
 
 /** Define Desk Mess Mirrored "Home" domain */
 define( 'DMM_HOME_DOMAIN', 'BuyNowShop.com' );
+
+/** Define Show Page Permalink Constant - default: false */
+define( 'DMM_SHOW_PAGE_PERMALINK', false );
 
 /**
  * Enqueue Comment Reply Script

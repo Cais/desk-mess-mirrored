@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
+    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="* Added DMM_SHOW_PAGE_PERMALINK constant">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -27,6 +29,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="-12.423077" vertical-offset="136" max-vertical-offset="11390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,16 +50,28 @@
       <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.25036818" vertical-offset="0" max-vertical-offset="7888">
+            <state line="6" column="0" selection-start="124" selection-end="238" vertical-scroll-proportion="0.15022092" vertical-offset="0" max-vertical-offset="7905">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="902" selection-end="902" vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="1819">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="desk-mess-mirrored.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1666">
+            <state line="30" column="74" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1700">
               <folding />
             </state>
           </provider>
@@ -86,10 +109,10 @@
         <option value="$PROJECT_DIR$/comments.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
-        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
@@ -447,7 +470,11 @@
       <created>1384634732698</created>
       <updated>1384634732698</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="* Removed really old browser CSS support ... going with support for current only">
+      <created>1384634824366</created>
+      <updated>1384634824366</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -507,7 +534,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image" />
     <MESSAGE value="* Update version compatibility in main theme block as well as update copyright years" />
     <MESSAGE value="* Added filtered text messages when comments are open/closed but none exist" />
     <MESSAGE value="* Added link to author page when comments closed message is displayed" />
@@ -532,7 +558,8 @@
     <MESSAGE value="* Added support for post format 'link'" />
     <MESSAGE value="* Added support for Post-Format: Link&#10;* Added appropriate styling for post-format: link related items" />
     <MESSAGE value="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3" />
+    <MESSAGE value="* Removed really old browser CSS support ... going with support for current only" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Removed really old browser CSS support ... going with support for current only" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -574,26 +601,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="28" selection-start="75" selection-end="75" vertical-scroll-proportion="-0.68" vertical-offset="0" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/404.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="0" selection-start="13249" selection-end="13249" vertical-scroll-proportion="8.565084" vertical-offset="0" max-vertical-offset="10880">
           <folding />
         </state>
       </provider>
@@ -619,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="262" column="21" selection-start="7737" selection-end="7737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
@@ -633,9 +636,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="902" selection-end="902" vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="74" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="-12.423077" vertical-offset="136" max-vertical-offset="11390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.25036818" vertical-offset="0" max-vertical-offset="7888">
+        <state line="6" column="0" selection-start="124" selection-end="238" vertical-scroll-proportion="0.15022092" vertical-offset="0" max-vertical-offset="7905">
           <folding />
         </state>
       </provider>

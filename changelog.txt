@@ -4,7 +4,8 @@ Changelog: November 16, 2013
 == Version 2.2.3 ==
 = Code =
 * Added support for Post-Format: Link
-* Commented out the "Page Permalink" link due to it being very unpopular
+* Added DMM_SHOW_PAGE_PERMALINK constant
+* Made "Page Permalink" link conditionally display with default as false.
 
 = CSS =
 * Added appropriate styling for post-format: link related items

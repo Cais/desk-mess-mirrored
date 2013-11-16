@@ -28,7 +28,7 @@
  *
  * @version     2.2.3
  * @date        November 16, 2013
- * Commented out the "Page Permalink" as an unpopular feature
+ * Made "Page Permalink" link conditionally display with default as false.
  */
 
 /** Set count variable for author 'mullet' loop */
@@ -84,7 +84,9 @@ $count++; ?>
     <?php } /** End if - is single */
 
     /** Show a shortlink on the page - requires Jetpack be active */
-    // dmm_page_link( $text = __( 'Page Permalink', 'desk-mess-mirrored' ) ); ?>
+    if ( DMM_SHOW_PAGE_PERMALINK ) {
+        dmm_page_link( $text = __( 'Page Permalink', 'desk-mess-mirrored' ) );
+    } /** End if - Show Page Permalink */ ?>
 
     <p class="single-meta"><?php the_tags(); ?></p>
 
