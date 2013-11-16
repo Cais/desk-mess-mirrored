@@ -1,9 +1,10 @@
 === Desk Mess Mirrored ===
-Changelog: October 27, 2013
+Changelog: November 16, 2013
 
 == Version 2.2.3 ==
 = Code =
 * Added support for Post-Format: Link
+* Commented out the "Page Permalink" link due to it being very unpopular
 
 = CSS =
 * Added appropriate styling for post-format: link related items
