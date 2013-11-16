@@ -189,7 +189,6 @@ code { /* Use for inline code references such as parameters, functions, short on
 	margin: 0;
 	overflow: auto;
 	text-align: left;
-	overflow-x: auto; /* Use horizontal scroll if needed; for Firefox 2, not needed in Firefox 3 */
 	white-space: pre-wrap; /* css-3 */
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
@@ -262,7 +261,6 @@ pre { /* Use for "Code" text styling */
 	overflow: auto;
     padding: 5px;
 	text-align: left;
-	overflow-x: auto; /* Use horizontal scroll if needed; for Firefox 2, not needed in Firefox 3 */
 	white-space: pre-wrap; /* css-3 */
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }

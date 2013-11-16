@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3">
+    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22831">
+            <state line="262" column="21" selection-start="7737" selection-end="7737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changelog.txt" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="22" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7871">
+            <state line="10" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.25036818" vertical-offset="0" max-vertical-offset="7888">
               <folding />
             </state>
           </provider>
@@ -89,9 +88,9 @@
         <option value="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
   </component>
@@ -444,7 +443,11 @@
       <created>1382911860576</created>
       <updated>1382911860576</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3">
+      <created>1384634732698</created>
+      <updated>1384634732698</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -504,7 +507,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Updated 'style.css' header block to use labels as noted in core trac ticket #16868" />
     <MESSAGE value="* Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image" />
     <MESSAGE value="* Update version compatibility in main theme block as well as update copyright years" />
     <MESSAGE value="* Added filtered text messages when comments are open/closed but none exist" />
@@ -529,7 +531,8 @@
     <MESSAGE value="* Added Serbo-Croatian translation by Andrijana Nikolic from webhostinggeeks.com" />
     <MESSAGE value="* Added support for post format 'link'" />
     <MESSAGE value="* Added support for Post-Format: Link&#10;* Added appropriate styling for post-format: link related items" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added support for Post-Format: Link&#10;* Added appropriate styling for post-format: link related items" />
+    <MESSAGE value="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -623,16 +626,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7871">
+        <state line="262" column="21" selection-start="7737" selection-end="7737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22831">
+        <state line="10" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.25036818" vertical-offset="0" max-vertical-offset="7888">
           <folding />
         </state>
       </provider>

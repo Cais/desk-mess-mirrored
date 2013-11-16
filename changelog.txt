@@ -8,6 +8,7 @@ Changelog: November 16, 2013
 
 = CSS =
 * Added appropriate styling for post-format: link related items
+* Removed really old browser CSS support ... going with support for current only
 
 = Miscellaneous =
 * Added Serbo-Croatian translation by Andrijana Nikolic from webhostinggeeks.com
