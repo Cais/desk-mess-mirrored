@@ -1,6 +1,12 @@
 === Desk Mess Mirrored ===
 Changelog: November 16, 2013
 
+== Version 2.2.4-alpha ==
+= Code =
+= CSS =
+= Miscellaneous =
+
+/** ------------------------------------------------------------------------- */
 == Version 2.2.3 ==
 = Code =
 * Added support for Post-Format: Link

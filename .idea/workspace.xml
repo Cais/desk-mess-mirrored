@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -27,51 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="3101" selection-end="3101" vertical-scroll-proportion="-7.1923075" vertical-offset="1530" max-vertical-offset="11441">
-              <folding>
-                <element signature="e#6#830#0" expanded="true" />
-                <marker date="1384636644302" expanded="true" signature="3249:4386" placeholder="..." />
-                <marker date="1384636644302" expanded="true" signature="4394:5632" placeholder="..." />
-                <marker date="1384636644302" expanded="true" signature="4680:5536" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="31" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="612">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="262" column="21" selection-start="7737" selection-end="7737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/changelog.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="40" selection-start="278" selection-end="278" vertical-scroll-proportion="0.20029455" vertical-offset="0" max-vertical-offset="7922">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="902" selection-end="902" vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="1819">
+            <state line="1" column="26" selection-start="73" selection-end="73" vertical-scroll-proportion="0.025993884" vertical-offset="0" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -80,15 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="desk-mess-mirrored.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="74" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1700">
-              <folding>
-                <marker date="1384635944072" expanded="true" signature="1127:4209" placeholder="..." />
-                <marker date="1384635944072" expanded="true" signature="1521:1715" placeholder="..." />
-                <marker date="1384635944072" expanded="true" signature="2021:2872" placeholder="..." />
-              </folding>
+            <state line="4" column="20" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changelog.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changelog.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="80" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8024">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,10 +90,10 @@
         <option value="$PROJECT_DIR$/comments.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
-        <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
@@ -494,7 +459,11 @@
       <created>1384635965201</created>
       <updated>1384635965201</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="* Removed unused $sep_location parameter">
+      <created>1384636651930</created>
+      <updated>1384636651930</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -554,7 +523,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Added filtered text messages when comments are open/closed but none exist" />
     <MESSAGE value="* Added link to author page when comments closed message is displayed" />
     <MESSAGE value="* Remove var_dump test" />
     <MESSAGE value="* Adjusted `li.text_widget` margin values" />
@@ -579,7 +547,8 @@
     <MESSAGE value="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3" />
     <MESSAGE value="* Removed really old browser CSS support ... going with support for current only" />
     <MESSAGE value="* Added DMM_SHOW_PAGE_PERMALINK constant&#10;* Made &quot;Page Permalink&quot; link conditionally display with default as false." />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added DMM_SHOW_PAGE_PERMALINK constant&#10;* Made &quot;Page Permalink&quot; link conditionally display with default as false." />
+    <MESSAGE value="* Removed unused $sep_location parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Removed unused $sep_location parameter" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -644,30 +613,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="902" selection-end="902" vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="1819">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="21" selection-start="7737" selection-end="7737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="74" selection-start="978" selection-end="978" vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1700">
+        <state line="101" column="0" selection-start="3101" selection-end="3101" vertical-scroll-proportion="-7.1923075" vertical-offset="1530" max-vertical-offset="11441">
           <folding>
-            <marker date="1384635944072" expanded="true" signature="1127:4209" placeholder="..." />
-            <marker date="1384635944072" expanded="true" signature="1521:1715" placeholder="..." />
-            <marker date="1384635944072" expanded="true" signature="2021:2872" placeholder="..." />
+            <element signature="e#6#830#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,23 +629,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="3101" selection-end="3101" vertical-scroll-proportion="-7.1923075" vertical-offset="1530" max-vertical-offset="11441">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
           <folding>
-            <element signature="e#6#830#0" expanded="true" />
-            <marker date="1384636644302" expanded="true" signature="3249:4386" placeholder="..." />
-            <marker date="1384636644302" expanded="true" signature="4394:5632" placeholder="..." />
-            <marker date="1384636644302" expanded="true" signature="4680:5536" placeholder="..." />
+            <element signature="e#6#982#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="278" selection-end="278" vertical-scroll-proportion="0.20029455" vertical-offset="0" max-vertical-offset="7922">
+        <state line="8" column="80" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8024">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22797">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="73" selection-end="73" vertical-scroll-proportion="0.025993884" vertical-offset="0" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>
