@@ -1042,6 +1042,14 @@ p a img {
 	margin: 10px auto;
 }
 
+.wp-caption.alignleft, .wp-caption.left {
+	margin-right: 10px;
+}
+
+.wp-caption.alignright, .wp-caption.right {
+	margin-left: 10px;
+}
+
 .wp-caption img {
 	border: 0 none;
 	height: auto;
