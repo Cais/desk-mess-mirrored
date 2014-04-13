@@ -8,6 +8,7 @@ Changelog: April 13, 2014
 
 = CSS =
 * Added better list element styles
+* Fixed typo on `.wp-caption img` max-width property
 * Minor clean-up of old properties
 
 = Miscellaneous =

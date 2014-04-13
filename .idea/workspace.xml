@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-link.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-quote.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-status.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -35,7 +30,16 @@
       <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.111773476" vertical-offset="0" max-vertical-offset="7230">
+            <state line="10" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.22354695" vertical-offset="0" max-vertical-offset="7245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1037" column="24" selection-start="17075" selection-end="17075" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26895">
               <folding />
             </state>
           </provider>
@@ -78,14 +82,14 @@
         <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/support.txt" />
         <option value="$PROJECT_DIR$/sidebar.php" />
-        <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-status.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
   </component>
@@ -455,7 +459,11 @@
       <created>1397430980143</created>
       <updated>1397430980143</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="* Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes">
+      <created>1397432217717</created>
+      <updated>1397432217717</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -520,7 +528,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Added `max-width` property to '.wp-caption img'" />
     <MESSAGE value="* Adjusted '.wp-caption img' properties" />
     <MESSAGE value="* Adjusted various CSS elements and properties to display TUT data more correctly" />
     <MESSAGE value="* Code cleanup" />
@@ -545,7 +552,8 @@
     <MESSAGE value="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years" />
     <MESSAGE value="* Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity" />
     <MESSAGE value="* Added `Textdomain` to theme header block" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added `Textdomain` to theme header block" />
+    <MESSAGE value="* Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -677,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-status.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="21" selection-start="609" selection-end="609" vertical-scroll-proportion="0.45673078" vertical-offset="0" max-vertical-offset="1575">
@@ -736,9 +737,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1037" column="24" selection-start="17075" selection-end="17075" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26895">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.111773476" vertical-offset="0" max-vertical-offset="7230">
+        <state line="10" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.22354695" vertical-offset="0" max-vertical-offset="7245">
           <folding />
         </state>
       </provider>

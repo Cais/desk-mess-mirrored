@@ -1047,7 +1047,7 @@ p a img {
 	height: auto;
 	margin: 0;
 	padding: 0;
-	maw-width: 99%;
+	max-width: 99%;
 }
 
 /*-- Gallery --*/
