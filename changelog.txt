@@ -10,6 +10,7 @@ Changelog: April 13, 2014
 * Minor clean-up of old properties
 
 = Miscellaneous =
+* Added `Textdomain` to theme header block
 * Code reformatted to better meet the WordPress Coding Standards
 * Clean-up `readme.txt` file
 * Updated Copyright Years
