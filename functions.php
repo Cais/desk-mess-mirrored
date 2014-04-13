@@ -25,6 +25,10 @@
  * @version     2.2.3
  * @date        November 16, 2013
  * Added DMM_SHOW_PAGE_PERMALINK constant
+ *
+ * @version	2.2.4
+ * @date	April 13, 2014
+ * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
  */
 
 /** Define Desk Mess Mirrored "Home" domain */
@@ -745,6 +749,25 @@ function dmm_page_link( $text ) {
 }
 
 /** End function - page link */
+
+
+/**
+ * Post Meta Link and Edit Texts
+ *
+ * @package    Desk_Mess_Mirrored
+ * @since      2.2.4
+ *
+ * @uses       __
+ * @uses       apply_filters
+ * @uses       edit_post_link
+ * @uses       the_short_link
+ */
+function dmm_post_meta_link_edit() {
+	the_shortlink( apply_filters( 'dmm_post_permalink_text', __( '&infin;', 'desk-mess-mirrored' ) ), '', ' | ', '' );
+	edit_post_link( apply_filters( 'dmm_post_edit_text', __( 'Edit', 'desk-mess-mirrored' ) ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) );
+}
+
+/** End function - post meta link edit */
 
 
 /**

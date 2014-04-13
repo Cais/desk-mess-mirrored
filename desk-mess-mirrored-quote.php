@@ -16,6 +16,10 @@
  * @version     2.2
  * @date        February 24, 2013
  * Refactor post meta details into a better string output
+ *
+ * @version     2.2.4
+ * @date        April 13, 2014
+ * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
  */
 ?>
 
@@ -52,8 +56,7 @@
 				comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
 			}
 			/** End if - not post password required */
-			the_shortlink( __( '&#8734;', 'desk-mess-mirrored' ), '', ' | ', '' );
-			edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' | ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
+			dmm_post_meta_link_edit(); ?>
 		</div>
 
 		<?php if ( ( is_home() || is_front_page() ) && has_post_thumbnail() ) {

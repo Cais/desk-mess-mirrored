@@ -12,6 +12,10 @@
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2014, Edward Caissie
+ *
+ * @version	2.2.4
+ * @date	April 13, 2014
+ * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
  */
 ?>
 
@@ -59,8 +63,7 @@
 				);
 			}
 			/** End if - is home */
-			the_shortlink( __( '&#8734;', 'desk-mess-mirrored' ), '', ' | ', '' );
-			edit_post_link( __( 'Edit', 'desk-mess-mirrored' ), __( ' &#124; ', 'desk-mess-mirrored' ), __( '', 'desk-mess-mirrored' ) ); ?>
+			dmm_post_meta_link_edit(); ?>
 		</div>
 
 		<?php if ( is_home() || is_front_page() && has_post_thumbnail() ) {
