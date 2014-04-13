@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshot-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshot-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshot-4.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive.php" afterPath="$PROJECT_DIR$/archive.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/author.php" afterPath="$PROJECT_DIR$/author.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comments.php" afterPath="$PROJECT_DIR$/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-link.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-quote.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-status.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dmm-navigation.php" afterPath="$PROJECT_DIR$/dmm-navigation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editor-style.css" afterPath="$PROJECT_DIR$/editor-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page.php" afterPath="$PROJECT_DIR$/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidebar.php" afterPath="$PROJECT_DIR$/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.php" afterPath="$PROJECT_DIR$/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support.txt" afterPath="$PROJECT_DIR$/support.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -54,7 +30,16 @@
       <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="52" selection-end="52" vertical-scroll-proportion="0.022354694" vertical-offset="0" max-vertical-offset="7170">
+            <state line="6" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.13412817" vertical-offset="0" max-vertical-offset="7200">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="1" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1515">
               <folding />
             </state>
           </provider>
@@ -99,12 +84,12 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/search.php" />
-        <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/support.txt" />
+        <option value="$PROJECT_DIR$/sidebar.php" />
+        <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
   </component>
@@ -462,7 +447,11 @@
       <created>1397427845847</created>
       <updated>1397427845847</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years">
+      <created>1397429334649</created>
+      <updated>1397429334649</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -527,7 +516,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Adjusted `li.text_widget` margin values" />
     <MESSAGE value="* Expanded use of DMM_HOME_DOMAIN constant" />
     <MESSAGE value="* Added ordered list styles for pages with comments" />
     <MESSAGE value="* Added `max-width` property to '.wp-caption img'" />
@@ -552,7 +540,8 @@
     <MESSAGE value="* Removed unused $sep_location parameter" />
     <MESSAGE value="* Update `readme.txt` with version 2.2.3 trac ticket #15296&#10;* Update version to 2.2.4-alpha in preparation for future updates&#10;* Updated Changelog to add 2.2.4 headings" />
     <MESSAGE value="* Code reformatted to better meet the WordPress Coding Standards" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Code reformatted to better meet the WordPress Coding Standards" />
+    <MESSAGE value="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -702,15 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="67" selection-start="2906" selection-end="2906" vertical-scroll-proportion="-50.625" vertical-offset="0" max-vertical-offset="1455">
-          <folding>
-            <element signature="e#6#585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="39" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="885">
@@ -735,9 +715,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="1" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="52" selection-end="52" vertical-scroll-proportion="0.022354694" vertical-offset="0" max-vertical-offset="7170">
+        <state line="6" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.13412817" vertical-offset="0" max-vertical-offset="7200">
           <folding />
         </state>
       </provider>

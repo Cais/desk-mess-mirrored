@@ -3,6 +3,8 @@ Changelog: April 13, 2014
 
 == Version 2.2.4 ==
 = Code =
+* Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity
+
 = CSS =
 * Added better list element styles
 * Minor clean-up of old properties

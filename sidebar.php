@@ -18,6 +18,10 @@
  * @version     2.2
  * @date        February 25, 2013
  * Added some semantic classes to the default widget area output
+ *
+ * @version     2.2.4
+ * @date        April 13, 2014
+ * Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity
  */
 ?>
 
@@ -28,7 +32,7 @@
 	<div id="sidebar-content">
 		<div id="subcolumn">
 			<ul>
-				<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 'sidebar-1' ) ) : else : ?>
+				<?php if ( dynamic_sidebar( 'sidebar-1' ) ) : else : ?>
 
 					<li class="widget" id="search">
 						<form id="searchform" method="get" action="<?php echo home_url( '/' ); ?>/">
@@ -79,8 +83,8 @@
 
 				<?php endif; /** End if - Sidebar-1 Widget area */ ?>
 
-				<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 'sidebar-2' ) ) : else : endif; ?>
-				<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 'sidebar-3' ) ) : else : endif; ?>
+				<?php if ( dynamic_sidebar( 'sidebar-2' ) ) : else : endif; ?>
+				<?php if ( dynamic_sidebar( 'sidebar-3' ) ) : else : endif; ?>
 			</ul>
 		</div>
 		<!-- #subcolumn -->
