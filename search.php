@@ -17,31 +17,38 @@
 
 get_header(); ?>
 
-<div id="maintop"></div>
-<div id="wrapper">
-    <div id="content">
+	<div id="maintop"></div>
+	<div id="wrapper">
+		<div id="content">
 
-        <div id="main-blog">
-            <?php
-            if ( have_posts() ) {
-                printf( sprintf( '<div class="search-found-text">%1$s <span class="search-query">%2$s</span></div>',
-                    __( 'We found something! It looks like you searched for ...', 'desk-mess-mirrored'),
-                    get_search_query()
-                    ) );
-                while ( have_posts() ) {
-                    the_post();
-                    get_template_part( 'desk-mess-mirrored', get_post_format() );
-                } /** End while - have posts */
-                get_template_part( 'dmm-navigation' );
-            } else {
-                dmm_no_posts_found();
-            } /** End if - have posts */ ?>
-        </div><!--end main blog-->
+			<div id="main-blog">
+				<?php
+				if ( have_posts() ) {
+					printf(
+						sprintf(
+							'<div class="search-found-text">%1$s <span class="search-query">%2$s</span></div>',
+							__( 'We found something! It looks like you searched for ...', 'desk-mess-mirrored' ),
+							get_search_query()
+						)
+					);
+					while ( have_posts() ) {
+						the_post();
+						get_template_part( 'desk-mess-mirrored', get_post_format() );
+					}
+					/** End while - have posts */
+					get_template_part( 'dmm-navigation' );
+				} else {
+					dmm_no_posts_found();
+				} /** End if - have posts */
+				?>
+			</div>
+			<!--end main blog-->
 
-        <?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 
-        <div class="clear"></div>
+			<div class="clear"></div>
 
-    </div><!--end content-->
-</div><!--end wrapper-->
+		</div>
+		<!--end content-->
+	</div><!--end wrapper-->
 <?php get_footer();

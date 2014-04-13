@@ -25,38 +25,42 @@
 
 get_header(); ?>
 
-<div id="maintop"></div>
+	<div id="maintop"></div>
 
-<div id="wrapper">
-    <div id="content">
-        <div id="main-blog">
+	<div id="wrapper">
+		<div id="content">
+			<div id="main-blog">
 
-            <h1><?php _e( 'You have arrived at the 404 page!!!', 'desk-mess-mirrored' ); ?></h1>
+				<h1><?php _e( 'You have arrived at the 404 page!!!', 'desk-mess-mirrored' ); ?></h1>
 
-            <?php
-            $message_404 = __( 'This is not the page you are looking for ...<br />', 'desk-mess-mirrored' );
-            $message_404 .= __( '... well, that is rather obvious. No one really looks for a 404 page.<br />', 'desk-mess-mirrored' );
-            $message_404 .= '<br />';
-            $message_404 .= __( 'We apologize for the inconvenience, would you care to look for something else?<br />', 'desk-mess-mirrored' );
+				<?php
+				$message_404 = __( 'This is not the page you are looking for ...<br />', 'desk-mess-mirrored' );
+				$message_404 .= __( '... well, that is rather obvious. No one really looks for a 404 page.<br />', 'desk-mess-mirrored' );
+				$message_404 .= '<br />';
+				$message_404 .= __( 'We apologize for the inconvenience, would you care to look for something else?<br />', 'desk-mess-mirrored' );
 
-            echo $message_404; ?>
+				echo $message_404; ?>
 
-            <?php if ( have_posts() ) {
-                while ( have_posts() ) {
-                    the_post();
-                    get_template_part( 'desk-mess-mirrored', get_post_format() );
-                } /** End while - have posts */
-                get_template_part( 'dmm-navigation' );
-            } else {
-                dmm_no_posts_found();
-            } /** End if - have posts */ ?>
+				<?php if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post();
+						get_template_part( 'desk-mess-mirrored', get_post_format() );
+					}
+					/** End while - have posts */
+					get_template_part( 'dmm-navigation' );
+				} else {
+					dmm_no_posts_found();
+				} /** End if - have posts */
+				?>
 
-        </div><!--end main blog-->
+			</div>
+			<!--end main blog-->
 
-        <?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 
-        <div class="clear"></div>
-    </div><!--end content-->
-</div><!--end wrapper-->
+			<div class="clear"></div>
+		</div>
+		<!--end content-->
+	</div><!--end wrapper-->
 
 <?php get_footer();

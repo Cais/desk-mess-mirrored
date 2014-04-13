@@ -39,33 +39,103 @@ Editor-Style CSS for ...
  */
 
 /*-- YUI Reset: Start --*/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
-table { border-collapse: collapse; border-spacing: 0; }
-fieldset,img { border: 0; }
-address,caption,cite,code,dfn,em,strong,th,var { font-style: normal; font-weight: normal; }
-ol,ul { list-style: none; }
-caption,th { text-align: left; }
-h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal; }
-q:before,q:after { content: ''; }
-abbr,acronym { border:0; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before, q:after {
+	content: '';
+}
+
+abbr, acronym {
+	border: 0;
+}
+
 /*-- YUI Reset: End --*/
 
 /*-- WordPress Rules --*/
-div.aligncenter, .aligncenter, .center { margin: 0 auto; }
-.alignleft, .left { float: left; text-align: left; }
-.alignright, .right { float: right; text-align: right; }
-img.aligncenter, img.center { display: block; }
-img.alignleft, img.left { display: inline; margin: 0 8px 8px 0; }
-img.alignright, img.right { display: inline; margin: 0 0 8px 8px; }
-.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px;
-/* optional rounded corners for browsers that support it */
+div.aligncenter, .aligncenter, .center {
+	margin: 0 auto;
+}
+
+.alignleft, .left {
+	float: left;
+	text-align: left;
+}
+
+.alignright, .right {
+	float: right;
+	text-align: right;
+}
+
+img.aligncenter, img.center {
+	display: block;
+}
+
+img.alignleft, img.left {
+	display: inline;
+	margin: 0 8px 8px 0;
+}
+
+img.alignright, img.right {
+	display: inline;
+	margin: 0 0 8px 8px;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	/* optional rounded corners for browsers that support it */
 	-moz-border-radius: 3px;
 	-khtml-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-border-radius: 3px;
 }
-.wp-caption img { margin: 0; padding: 0; border: 0 none; }
-.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
 /*-- End WordPress Rules --*/
 
 /*-- Begin TinyMCE --*/
@@ -78,13 +148,27 @@ html .mceContentBody {
 	line-height: 21px;
 }
 
-a:link, a:visited { color: #d21600; text-decoration: none; }
-a:hover { text-decoration: underline; }
-a:focus, a:active { color: #d21600; text-decoration: none; }
+a:link, a:visited {
+	color: #d21600;
+	text-decoration: none;
+}
 
-a img { border: none; }
+a:hover {
+	text-decoration: underline;
+}
 
-em { font-style: italic; }
+a:focus, a:active {
+	color: #d21600;
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+em {
+	font-style: italic;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -96,26 +180,31 @@ h1 {
 	font-size: 25px;
 	padding-bottom: 2px;
 }
+
 h2 {
 	font-size: 20px;
 	padding-bottom: 11px;
 	padding-top: 15px;
 }
+
 h3 {
 	font-size: 17px;
 	padding-bottom: 10px;
 	padding-top: 14px;
 }
+
 h4 {
 	font-size: 15px;
 	padding-bottom: 10px;
 	padding-top: 12px;
 }
+
 h5 {
 	font-size: 13px;
 	padding-bottom: 10px;
 	padding-top: 11px;
 }
+
 h6 {
 	font-size: 11px;
 	padding-bottom: 10px;
@@ -124,38 +213,64 @@ h6 {
 
 .hr, .desk-mess-mirrored {
 	border: none;
-    background: url(images/hr-img.png);
-    height: 40px;
+	background: url(images/hr-img.png);
+	height: 40px;
 	width: 560px;
 	margin: 0 auto;
 }
 
-ol li { list-style: decimal; }
-ol li li { list-style: lower-roman; }
-ol li li li { list-style: lower-alpha; }
+ol li {
+	list-style: decimal;
+}
 
-strong { font-weight: bold; }
+ol li li {
+	list-style: lower-roman;
+}
 
-sub, sup { font-size: 75%; }
+ol li li li {
+	list-style: lower-alpha;
+}
 
-table { margin: 0 auto; width: 90%; }
-table caption { text-align: center; }
+strong {
+	font-weight: bold;
+}
+
+sub, sup {
+	font-size: 75%;
+}
+
+table {
+	margin: 0 auto;
+	width: 90%;
+}
+
+table caption {
+	text-align: center;
+}
+
 tr.even {
 	border: none;
 	border-bottom: 1px solid #b2b0a4;
 	border-top: 1px solid #b2b0a4;
 }
-th { font-weight: bold; }
-td { padding-left: 5px; }
+
+th {
+	font-weight: bold;
+}
+
+td {
+	padding-left: 5px;
+}
 
 h1 a,
 h1 a:visited,
-h1 a:active{
+h1 a:active {
 	color: #4a4131;
 	text-decoration: none;
 	border-bottom: 1px solid #b2b0a4;
 }
-h1 a:hover{
+
+h1 a:hover {
 	color: #d21600;
 	text-decoration: none;
 	border-bottom: 1px solid #d21600;
@@ -172,17 +287,18 @@ ul li {
 }
 
 ol {
-    list-style: inside none;
-    padding-left: 10px;
+	list-style: inside none;
+	padding-left: 10px;
 }
 
 ul {
-    list-style: inside none;
-    padding-left: 10px;
+	list-style: inside none;
+	padding-left: 10px;
 }
 
-li { padding-left: 10px; }
-
+li {
+	padding-left: 10px;
+}
 
 ol, ul {
 	margin-left: 35px;
@@ -195,8 +311,14 @@ dl {
 	border-right: 1px inset;
 	border-bottom: 1px inset;
 }
-dl dt { font-weight: bold; }
-dl dd { margin-left:10px; }
+
+dl dt {
+	font-weight: bold;
+}
+
+dl dd {
+	margin-left: 10px;
+}
 
 .sticky {
 	border: medium double Black;
@@ -207,10 +329,10 @@ dl dd { margin-left:10px; }
 
 blockquote {
 	clear: both;
-    margin: 10px 35px 0 5px;
-    padding: 10px 0 0 40px;
-    background: url(images/quotes.png) no-repeat left 2px;
-    font-family: "Times New Roman", Times, serif;
+	margin: 10px 35px 0 5px;
+	padding: 10px 0 0 40px;
+	background: url(images/quotes.png) no-repeat left 2px;
+	font-family: "Times New Roman", Times, serif;
 	font-style: italic;
 	font-size: 14px;
 	color: #606060;
@@ -221,16 +343,17 @@ blockquote cite {
 	font-weight: bold;
 }
 
-pre { /* Use for "Code" text styling */
+pre {
+	/* Use for "Code" text styling */
 	margin: 0;
 	padding: 5px;
-	background-image: url(images/pre-bg.png);	
+	background-image: url(images/pre-bg.png);
 	border: 1px inset;
 	font-style: italic;
 	font-size: 14px;
 	text-align: left;
 	overflow: auto;
-	
+
 	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
 	white-space: pre-wrap; /* css-3 */
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
@@ -242,10 +365,17 @@ p img {
 	max-width: 100%;
 }
 
-p a img { border: none; }
+p a img {
+	border: none;
+}
 
-.alignleft, .left { float: left; }
-.alignright, .right { float: right; }
+.alignleft, .left {
+	float: left;
+}
+
+.alignright, .right {
+	float: right;
+}
 
 .wp-caption {
 	border: 1px solid #59350b;
@@ -260,7 +390,9 @@ p a img { border: none; }
 	-border-radius: 3px;
 }
 
-.wp-caption.aligncenter { margin: 10px auto; }
+.wp-caption.aligncenter {
+	margin: 10px auto;
+}
 
 .wp-caption img {
 	margin: 0;

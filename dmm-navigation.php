@@ -16,13 +16,14 @@
  *
  * @uses        get_template_part( 'dmm-navigation' )
  * @internal    used in 404, index, archive, and author
- */ ?>
+ */
+?>
 
 <div id="nav-global" class="navigation">
-    <div class="left">
-        <?php next_posts_link( __( '&laquo; Older posts', 'desk-mess-mirrored' ) ); ?>
-    </div>
-    <div class="right">
-        <?php previous_posts_link( __( 'Newer posts &raquo;', 'desk-mess-mirrored' ) ); ?>
-    </div>
+	<div class="left">
+		<?php next_posts_link( __( '&laquo; Older posts', 'desk-mess-mirrored' ) ); ?>
+	</div>
+	<div class="right">
+		<?php previous_posts_link( __( 'Newer posts &raquo;', 'desk-mess-mirrored' ) ); ?>
+	</div>
 </div>
