@@ -1,7 +1,6 @@
 <?php
 /**
  * Header
- *
  * The document type, etc.; as well as the top graphics and top navigation menu
  *
  * @package     Desk_Mess_Mirrored
@@ -12,7 +11,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
  * @version     2.0.3
  * @date        June 1, 2012
@@ -23,7 +22,6 @@
  * Cleaned up 'head' section
  */
 ?>
-
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

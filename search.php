@@ -1,7 +1,6 @@
 <?php
 /**
  * Search Template
- *
  * Displays search results
  *
  * @package     Desk_Mess_Mirrored
@@ -12,7 +11,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  */
 
 get_header(); ?>

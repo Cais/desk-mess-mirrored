@@ -1,7 +1,6 @@
 <?php
 /**
  * Desk Mess Mirrored loops
- *
  * Displays the default loop content.
  *
  * @package     Desk_Mess_Mirrored
@@ -12,7 +11,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
  * @uses        get_template_part( 'desk-mess-mirrored', get_post_format() )
  *
@@ -87,9 +86,11 @@ $count ++; ?>
 		if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {
 			the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
 			<div class="clear"><!-- For inserted media at the end of the post --></div>
-			<?php wp_link_pages( array( 'before'         => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ',
-										'after'          => '</p>',
-										'next_or_number' => 'number'
+			<?php wp_link_pages(
+				array(
+					'before'         => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ',
+					'after'          => '</p>',
+					'next_or_number' => 'number'
 				)
 			);
 		} else {

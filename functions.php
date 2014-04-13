@@ -1,7 +1,6 @@
 <?php
 /**
  * Functions
- *
  * The secret sauce and other funky flavors
  *
  * @package     Desk_Mess_Mirrored
@@ -12,7 +11,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
  * @version     2.1
  * @date        December 3, 2012

@@ -1,7 +1,6 @@
 <?php
 /**
  * Desk Mess Mirrored
- *
  * Theme Description: Marble desktop covered with a mix of old and new items,
  * such as some vintage papers, a stainless steel pen, and, a hot cup of coffee!
  * Now with more documentation and post-format support for the following types:
@@ -15,11 +14,11 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @internal    REQUIRES WordPress version 3.4
- * @internal    Tested up to WordPress version 3.5.1
+ * @internal    Tested up to WordPress version 3.9
  *
- * @version     2.2.1
+ * @version     2.2.4
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 2, as published by the

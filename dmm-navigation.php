@@ -1,7 +1,6 @@
 <?php
 /**
  * DMM Navigation
- *
  * Generic navigation for common use in list style templates
  *
  * @package     Desk_Mess_Mirrored
@@ -12,7 +11,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
  * @uses        get_template_part( 'dmm-navigation' )
  * @internal    used in 404, index, archive, and author

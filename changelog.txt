@@ -1,13 +1,16 @@
 === Desk Mess Mirrored ===
 Changelog: April 13, 2014
 
-== Version 2.2.4-alpha ==
+== Version 2.2.4 ==
 = Code =
 = CSS =
 * Added better list element styles
+* Minor clean-up of old properties
 
 = Miscellaneous =
 * Code reformatted to better meet the WordPress Coding Standards
+* Clean-up `readme.txt` file
+* Updated Copyright Years
 
 /** ------------------------------------------------------------------------- */
 == Version 2.2.3 ==

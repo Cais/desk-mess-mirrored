@@ -1,23 +1,16 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised November 16, 2013
+* Last revised April 13, 2014
 
 == Contents ==
 * Licensing
-* Screenshots
 * Basic FAQ
 * Notes
-* TODO items
 * Changelog
 * Review Tickets
 
 == Licensing ==
 All theme items are licensed under the GNU General Public License v2; or, as the case may be, individually noted.
 This may not be construed as overriding any item with a previously applied license, stated or not, which will take precedence.
-
-== Screenshots ==
-2. screenshot-2.png - Description: No Menu
-3. screenshot-3.png - Description: Live at BuyNowShop.com
-4. screenshot-4.png - Description: Showcasing the drop-down menu with multiple levels
 
 == Basic FAQ ==
 = Q: Where did the >>Page Permalink<< at the bottom of my pages go? =
@@ -59,21 +52,6 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * Resolved in v2.0.1 - Always use a title in every widget or the push-pin top of the widget box will not resolve correctly, even a single space will work.
 * add_custom_image_header() is not implemented as it will not handle multiple header images; in the case of this theme, there are three (3) being used in the header.
 * It is recommended to not have an excessive quantity of menu items, for example a quantity causing the top menu to exceed two lines, may obscure the post title in some views
-
-== TODO ==
-= Short Term Goals =
-* [x] Ticket 418: meta information generator is handled by wordpress this should be removed in the header.php
-* [x] Address spacing issue for comment from fields (user not logged in)
-* [x] Ticket 418: sticky tab menu bar not handling children or grandchildren
-* [x] Ticket 418: Review and re-work graphics use for menu items to display drop-down or multi-level menus (long-term)
-* [x] Review `editor-style.css` file, address image alignments
-* [x] Clean up new functionality of `dmm_dynamic_copyright`
-* [x] Move supported browsers minimum to LTE IE7 ... NB: Theme is only tested and supported in current browsers as noted in the changelog file.
-
-= Long Term Goals =
-* [x] Corrected widget title empty issue - see `DMM Widget Title` in functions.php
-* [x] Review second "Home" page scenarios for possible solutions
-* [-] Theme Options? Not likely.
 
 == Changelog ==
 * see changelog.txt for additional details

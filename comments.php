@@ -1,7 +1,6 @@
 <?php
 /**
  * Comments Template
- *
  * Displays list of comments
  *
  * @package     Desk_Mess_Mirrored
@@ -12,7 +11,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
  * @internal    called `comment_form()`
  *
@@ -88,7 +87,7 @@ function dmm_add_comment_classes( $classes ) {
 	$c_email = get_comment_author_email();
 	$c_url   = get_comment_author_url();
 	if ( ! empty( $c_email ) && ! empty( $c_url ) ) {
-		$microid = 'microid-mailto+http:sha1:' . sha1( sha1( 'mailto:' . $c_email ) . sha1( $c_url ) );
+		$microid   = 'microid-mailto+http:sha1:' . sha1( sha1( 'mailto:' . $c_email ) . sha1( $c_url ) );
 		$classes[] = $microid;
 	}
 

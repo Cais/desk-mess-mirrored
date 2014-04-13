@@ -1,7 +1,6 @@
 <?php
 /**
  * Desk Mess Mirrored Link loop
- *
  * Displays the post-format => link loop content.
  *
  * @package     Desk_Mess_Mirrored
@@ -12,7 +11,7 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2013, Edward Caissie
+ * @copyright   Copyright (c) 2009-2014, Edward Caissie
  */
 ?>
 
@@ -75,8 +74,8 @@
 		<?php
 		wp_link_pages(
 			array(
-				'before' => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ',
-				'after' => '</p>',
+				'before'         => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ',
+				'after'          => '</p>',
 				'next_or_number' => 'number'
 			)
 		);
