@@ -1,7 +1,7 @@
 === Desk Mess Mirrored ===
 Changelog: April 13, 2014
 
-== Version 2.2.4 ==
+== Version 2.2.4/2.2.4.1 ==
 = Code =
 * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
 * Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity
@@ -14,6 +14,7 @@ Changelog: April 13, 2014
 
 = Miscellaneous =
 * Added `Textdomain` to theme header block
+* Changed `fixed-width` theme tag to `fixed-layout`
 * Code reformatted to better meet the WordPress Coding Standards
 * Clean-up `readme.txt` file
 * Replaced screenshot with new 880 x 660 version (removed secondary screenshots)

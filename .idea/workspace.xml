@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshot.png" afterPath="$PROJECT_DIR$/screenshot.png" />
+    <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="* Changed `fixed-width` theme tag to `fixed-layout`">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -27,19 +29,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="changelog.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.4023845" vertical-offset="0" max-vertical-offset="7275">
+            <state line="16" column="9" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7290">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
+      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1049" column="16" selection-start="17251" selection-end="17251" vertical-scroll-proportion="0.0" vertical-offset="15374" max-vertical-offset="27015">
+            <state line="81" column="66" selection-start="5190" selection-end="5190" vertical-scroll-proportion="0.8835404" vertical-offset="646" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
@@ -75,9 +80,7 @@
         <option value="$PROJECT_DIR$/editor-style.css" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/page.php" />
-        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/support.txt" />
@@ -89,6 +92,8 @@
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
@@ -471,7 +476,11 @@
       <created>1397433288776</created>
       <updated>1397433288776</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)">
+      <created>1397434822545</created>
+      <updated>1397434822545</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -536,7 +545,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Code cleanup" />
     <MESSAGE value="* Refactored author &quot;About&quot; box to not show empty details&#10;* Added classes to author &quot;About&quot; box details for easier display manipulation" />
     <MESSAGE value="* Centered searchform box and hid screen reader text" />
     <MESSAGE value="* Adjusted `hr` class properties" />
@@ -561,7 +569,8 @@
     <MESSAGE value="* Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes" />
     <MESSAGE value="* Fixed typo on `.wp-caption img` max-width property" />
     <MESSAGE value="* Fixed `.wp-caption` left and right alignment issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Fixed `.wp-caption` left and right alignment issues" />
+    <MESSAGE value="* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -638,26 +647,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="50" selection-start="658" selection-end="658" vertical-scroll-proportion="0.36363637" vertical-offset="0" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="39" selection-start="433" selection-end="433" vertical-scroll-proportion="0.29545453" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="124" selection-end="124" vertical-scroll-proportion="0.13975155" vertical-offset="0" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
@@ -704,7 +696,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="3" selection-start="723" selection-end="723" vertical-scroll-proportion="0.35096154" vertical-offset="111" max-vertical-offset="1380">
           <folding>
-            <element signature="e#6#723#0" expanded="true" />
+            <element signature="e#6#723#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -713,7 +705,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="3" selection-start="597" selection-end="597" vertical-scroll-proportion="0.41731066" vertical-offset="0" max-vertical-offset="1515">
           <folding>
-            <element signature="e#6#597#0" expanded="true" />
+            <element signature="e#6#597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -722,7 +714,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="3" selection-start="708" selection-end="708" vertical-scroll-proportion="0.41731066" vertical-offset="60" max-vertical-offset="1425">
           <folding>
-            <element signature="e#6#708#0" expanded="true" />
+            <element signature="e#6#708#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -731,7 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="3" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.32457495" vertical-offset="300" max-vertical-offset="1920">
           <folding>
-            <element signature="e#6#1116#0" expanded="true" />
+            <element signature="e#6#1116#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,21 +732,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="3" selection-start="953" selection-end="953" vertical-scroll-proportion="0.32457495" vertical-offset="255" max-vertical-offset="11790">
           <folding>
-            <element signature="e#6#953#0" expanded="true" />
+            <element signature="e#6#953#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1049" column="16" selection-start="17251" selection-end="17251" vertical-scroll-proportion="0.0" vertical-offset="15374" max-vertical-offset="27015">
+        <state line="4" column="16" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="23" selection-start="685" selection-end="685" vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.4023845" vertical-offset="0" max-vertical-offset="7275">
+        <state line="16" column="9" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="66" selection-start="5190" selection-end="5190" vertical-scroll-proportion="0.8835404" vertical-offset="646" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
