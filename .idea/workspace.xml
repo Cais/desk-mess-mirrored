@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshot.png" afterPath="$PROJECT_DIR$/screenshot.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="53" selection-start="424" selection-end="424" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="7260">
+            <state line="18" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.4023845" vertical-offset="0" max-vertical-offset="7275">
               <folding />
             </state>
           </provider>
@@ -467,7 +467,11 @@
       <created>1397432497673</created>
       <updated>1397432497673</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="* Fixed `.wp-caption` left and right alignment issues">
+      <created>1397433288776</created>
+      <updated>1397433288776</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -532,7 +536,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Adjusted various CSS elements and properties to display TUT data more correctly" />
     <MESSAGE value="* Code cleanup" />
     <MESSAGE value="* Refactored author &quot;About&quot; box to not show empty details&#10;* Added classes to author &quot;About&quot; box details for easier display manipulation" />
     <MESSAGE value="* Centered searchform box and hid screen reader text" />
@@ -557,7 +560,8 @@
     <MESSAGE value="* Added `Textdomain` to theme header block" />
     <MESSAGE value="* Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes" />
     <MESSAGE value="* Fixed typo on `.wp-caption img` max-width property" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Fixed typo on `.wp-caption img` max-width property" />
+    <MESSAGE value="* Fixed `.wp-caption` left and right alignment issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Fixed `.wp-caption` left and right alignment issues" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -750,7 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="53" selection-start="424" selection-end="424" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="7260">
+        <state line="18" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.4023845" vertical-offset="0" max-vertical-offset="7275">
           <folding />
         </state>
       </provider>

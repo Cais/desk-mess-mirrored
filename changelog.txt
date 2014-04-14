@@ -16,6 +16,7 @@ Changelog: April 13, 2014
 * Added `Textdomain` to theme header block
 * Code reformatted to better meet the WordPress Coding Standards
 * Clean-up `readme.txt` file
+* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)
 * Updated Copyright Years
 
 /** ------------------------------------------------------------------------- */
