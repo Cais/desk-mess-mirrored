@@ -13,8 +13,8 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
- * @version	2.2.4
- * @date	April 13, 2014
+ * @version     2.2.4
+ * @date        April 13, 2014
  * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
  */
 ?>

@@ -1,6 +1,14 @@
 === Desk Mess Mirrored ===
-Changelog: April 13, 2014
+Changelog: October 13, 2014
+== Version 2.2.5 ==
+= Code =
 
+= CSS =
+
+= Miscellaneous =
+* Code reformatting to better meet current WordPress Coding Standards
+
+/** ------------------------------------------------------------------------- */
 == Version 2.2.4/2.2.4.1 ==
 = Code =
 * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes

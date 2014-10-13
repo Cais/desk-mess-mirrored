@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-link.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/desk-mess-mirrored.iml" afterPath="$PROJECT_DIR$/.idea/desk-mess-mirrored.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webResources.xml" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
     <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +32,28 @@
     <favorites_list name="desk-mess-mirrored" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="changelog.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changelog.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1734104" vertical-offset="0" max-vertical-offset="7410">
+              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27015">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -65,9 +94,9 @@
         <option value="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
@@ -76,7 +105,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="804" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -92,7 +121,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -128,8 +157,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desk-mess-mirrored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+              <option name="myItemId" value="BNS-Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -138,8 +167,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="BNS-Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="desk-mess-mirrored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BNS-Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desk-mess-mirrored" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BNS-Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="desk-mess-mirrored" />
@@ -161,10 +230,10 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="209" />
-    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="options.lastSelected" value="com.intellij.webcore.resourceRoots.WebIdeProjectStructureWithSourceConfigurable" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ground-floor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="214" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="888" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="883" />
@@ -194,7 +263,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="d0940055-458a-46be-809d-b30fec154f2b" server_name="EAC">
@@ -228,234 +304,349 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="" />
       <created>1322439939982</created>
+      <option name="number" value="Default" />
       <updated>1322439939982</updated>
     </task>
     <task id="LOCAL-00001" summary="Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility">
       <created>1335448214571</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
       <updated>1335448214571</updated>
     </task>
     <task id="LOCAL-00002" summary="Adjusted #content left margin; Removed `table` element properties; Added conditional check for custom post types">
       <created>1337866282389</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
       <updated>1337866282389</updated>
     </task>
     <task id="LOCAL-00003" summary="Minor clarification update">
       <created>1337866531918</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
       <updated>1337866531918</updated>
     </task>
     <task id="LOCAL-00004" summary="Minor padding on menu anchor text">
       <created>1337869486933</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
       <updated>1337869486933</updated>
     </task>
     <task id="LOCAL-00005" summary="Add 'extra.css' file to be used for menu animations">
       <created>1337870891710</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
       <updated>1337870891710</updated>
     </task>
     <task id="LOCAL-00006" summary="Added 'wip' folder for works-in-progress and demonstration code">
       <created>1337871539370</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
       <updated>1337871539370</updated>
     </task>
     <task id="LOCAL-00007" summary="Added `dmm_scripts_and_styles` to enqueue additional scripts and styles">
       <created>1337884419201</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
       <updated>1337884419201</updated>
     </task>
     <task id="LOCAL-00008" summary="IDE update">
       <created>1337885039876</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
       <updated>1337885039876</updated>
     </task>
     <task id="LOCAL-00009" summary="Theme version check conditional corrections">
       <created>1338568703582</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
       <updated>1338568703582</updated>
     </task>
     <task id="LOCAL-00010" summary="Added note about &quot;wip&quot; folder contents">
       <created>1339164246364</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
       <updated>1339164246364</updated>
     </task>
     <task id="LOCAL-00011" summary="Updated `custom-background` parameters to use default image and color">
       <created>1339510511357</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
       <updated>1339510511357</updated>
     </task>
     <task id="LOCAL-00012" summary="Miscellaneous updates and version bump tagged 2.0.3-RC1">
       <created>1341501426853</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
       <updated>1341501426853</updated>
     </task>
     <task id="LOCAL-00013" summary="Release version 2.0.3">
       <created>1341502832372</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
       <updated>1341502832372</updated>
     </task>
     <task id="LOCAL-00014" summary="Update 'readme' with version 2.0.3 trac ticket reference">
       <created>1341503075207</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
       <updated>1341503075207</updated>
     </task>
     <task id="LOCAL-00015" summary="Removed backward compatibility check for wp_nav_menu">
       <created>1341600343228</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
       <updated>1341600343228</updated>
     </task>
     <task id="LOCAL-00016" summary="Reduce z-index of #cup to put under menu">
       <created>1342188577847</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
       <updated>1342188577847</updated>
     </task>
     <task id="LOCAL-00017" summary="Changed enqueued version to be dynamically taken from theme version; Change 'comment-reply' script hook to 'comment_form_before'">
       <created>1345565356651</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
       <updated>1345565356651</updated>
     </task>
     <task id="LOCAL-00018" summary="* Added DMM_HOME_DOMAIN constant for better future proofing&#10;* Added 'DMM No Posts Found' function to replace repetitive code&#10;* Removed backward compatibility checks to bring in line with current WordPress versions (3.4+)&#10;* Removed DMM_Add_Body_Classes in favor of using BNS Body Classes at http://wordpress.org/extend/plugins/bns-body-classes/">
       <created>1354553130208</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
       <updated>1354553130208</updated>
     </task>
     <task id="LOCAL-00019" summary="Tagged as version 2.1; ready for release">
       <created>1354553655514</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
       <updated>1354553655514</updated>
     </task>
     <task id="LOCAL-00020" summary="* Updated 'style.css' header block to use labels as noted in core trac ticket #16868">
       <created>1361669575110</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
       <updated>1361669575110</updated>
     </task>
     <task id="LOCAL-00021" summary="* Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image">
       <created>1361680027963</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
       <updated>1361680027963</updated>
     </task>
     <task id="LOCAL-00022" summary="* Update version compatibility in main theme block as well as update copyright years">
       <created>1361680413925</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
       <updated>1361680413925</updated>
     </task>
     <task id="LOCAL-00023" summary="* Added filtered text messages when comments are open/closed but none exist">
       <created>1361723162368</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
       <updated>1361723162368</updated>
     </task>
     <task id="LOCAL-00024" summary="* Added link to author page when comments closed message is displayed">
       <created>1361724290399</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
       <updated>1361724290399</updated>
     </task>
     <task id="LOCAL-00025" summary="* Remove var_dump test">
       <created>1361724462900</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
       <updated>1361724462900</updated>
     </task>
     <task id="LOCAL-00026" summary="* Adjusted `li.text_widget` margin values">
       <created>1365355917485</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
       <updated>1365355917485</updated>
     </task>
     <task id="LOCAL-00027" summary="* Expanded use of DMM_HOME_DOMAIN constant">
       <created>1366572215642</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
       <updated>1366572215642</updated>
     </task>
     <task id="LOCAL-00028" summary="* Added ordered list styles for pages with comments">
       <created>1367161221993</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
       <updated>1367161221993</updated>
     </task>
     <task id="LOCAL-00029" summary="* Added `max-width` property to '.wp-caption img'">
       <created>1368533107221</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
       <updated>1368533107221</updated>
     </task>
     <task id="LOCAL-00030" summary="* Adjusted various CSS elements and properties to display TUT data more correctly">
       <created>1373848612042</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
       <updated>1373848612042</updated>
     </task>
     <task id="LOCAL-00031" summary="* Code cleanup">
       <created>1373996422651</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
       <updated>1373996422651</updated>
     </task>
     <task id="LOCAL-00032" summary="* Refactored author &quot;About&quot; box to not show empty details&#10;* Added classes to author &quot;About&quot; box details for easier display manipulation">
       <created>1374068963503</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
       <updated>1374068963503</updated>
     </task>
     <task id="LOCAL-00033" summary="* Centered searchform box and hid screen reader text">
       <created>1374069328972</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
       <updated>1374069328972</updated>
     </task>
     <task id="LOCAL-00034" summary="* Adjusted `hr` class properties">
       <created>1374070276913</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
       <updated>1374070276913</updated>
     </task>
     <task id="LOCAL-00035" summary="* Corrected closed comments logic to properly display message">
       <created>1374071827728</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
       <updated>1374071827728</updated>
     </task>
     <task id="LOCAL-00036" summary="* Added site title and description id to appropriate HTML container">
       <created>1374076227266</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
       <updated>1374076227266</updated>
     </task>
     <task id="LOCAL-00037" summary="* Added WordPress ticket reference http://themes.trac.wordpress.org/ticket/13428">
       <created>1374078998858</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
       <updated>1374078998858</updated>
     </task>
     <task id="LOCAL-00038" summary="* Fix comments closed message displaying when comments are open">
       <created>1374329490107</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
       <updated>1374329490108</updated>
     </task>
     <task id="LOCAL-00039" summary="* Version update">
       <created>1374331544048</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
       <updated>1374331544048</updated>
     </task>
     <task id="LOCAL-00040" summary="* Version update; update 'readme.txt' to reference http://themes.trac.wordpress.org/ticket/13479">
       <created>1374335752767</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
       <updated>1374335752767</updated>
     </task>
     <task id="LOCAL-00041" summary="* Added Serbo-Croatian translation by Andrijana Nikolic from webhostinggeeks.com">
       <created>1382910336084</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
       <updated>1382910336084</updated>
     </task>
     <task id="LOCAL-00042" summary="* Added support for post format 'link'">
       <created>1382911224013</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
       <updated>1382911224013</updated>
     </task>
     <task id="LOCAL-00043" summary="* Added support for Post-Format: Link&#10;* Added appropriate styling for post-format: link related items">
       <created>1382911860576</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
       <updated>1382911860576</updated>
     </task>
     <task id="LOCAL-00044" summary="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3">
       <created>1384634732698</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
       <updated>1384634732698</updated>
     </task>
     <task id="LOCAL-00045" summary="* Removed really old browser CSS support ... going with support for current only">
       <created>1384634824366</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
       <updated>1384634824366</updated>
     </task>
     <task id="LOCAL-00046" summary="* Added DMM_SHOW_PAGE_PERMALINK constant&#10;* Made &quot;Page Permalink&quot; link conditionally display with default as false.">
       <created>1384635965201</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
       <updated>1384635965201</updated>
     </task>
     <task id="LOCAL-00047" summary="* Removed unused $sep_location parameter">
       <created>1384636651930</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
       <updated>1384636651930</updated>
     </task>
     <task id="LOCAL-00048" summary="* Update `readme.txt` with version 2.2.3 trac ticket #15296&#10;* Update version to 2.2.4-alpha in preparation for future updates&#10;* Updated Changelog to add 2.2.4 headings">
       <created>1384637006483</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
       <updated>1384637006483</updated>
     </task>
     <task id="LOCAL-00049" summary="* Code reformatted to better meet the WordPress Coding Standards">
       <created>1397427845847</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
       <updated>1397427845847</updated>
     </task>
     <task id="LOCAL-00050" summary="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years">
       <created>1397429334649</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
       <updated>1397429334649</updated>
     </task>
     <task id="LOCAL-00051" summary="* Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity">
       <created>1397430119094</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
       <updated>1397430119094</updated>
     </task>
     <task id="LOCAL-00052" summary="* Added `Textdomain` to theme header block">
       <created>1397430980143</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
       <updated>1397430980143</updated>
     </task>
     <task id="LOCAL-00053" summary="* Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes">
       <created>1397432217717</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
       <updated>1397432217717</updated>
     </task>
     <task id="LOCAL-00054" summary="* Fixed typo on `.wp-caption img` max-width property">
       <created>1397432497673</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
       <updated>1397432497673</updated>
     </task>
     <task id="LOCAL-00055" summary="* Fixed `.wp-caption` left and right alignment issues">
       <created>1397433288776</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
       <updated>1397433288776</updated>
     </task>
     <task id="LOCAL-00056" summary="* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)">
       <created>1397434822545</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
       <updated>1397434822545</updated>
     </task>
     <task id="LOCAL-00057" summary="* Changed `fixed-width` theme tag to `fixed-layout`&#10;* Added trac reference https://themes.trac.wordpress.org/ticket/17976 to `readme.txt`&#10;* Set version as 2.2.4.1">
       <created>1397437263011</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
       <updated>1397437263011</updated>
     </task>
     <option name="localTasksCounter" value="58" />
@@ -482,37 +673,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="804" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1440" height="812" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259053" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22522523" sideWeight="0.28412256" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26824033" sideWeight="0.67409474" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2825465" sideWeight="0.67409474" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22522523" sideWeight="0.28412256" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259053" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39972144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39972144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -551,145 +746,206 @@
     <option name="LAST_COMMIT_MESSAGE" value="* Changed `fixed-width` theme tag to `fixed-layout`&#10;* Added trac reference https://themes.trac.wordpress.org/ticket/17976 to `readme.txt`&#10;* Set version as 2.2.4.1" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="20" selection-start="7381" selection-end="7381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20370">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20370">
+          <caret line="246" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="7110" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="7110">
+          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/404.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="15" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1050" />
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="2" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/archive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="885" />
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="885">
+          <caret line="2" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/author.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="420" selection-end="420" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1905" />
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1905">
+          <caret line="13" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="417" selection-end="417" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="2565" />
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="2565">
+          <caret line="13" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dmm-navigation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="27" selection-end="27" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="495" />
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="495">
+          <caret line="2" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editor-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="355" column="0" selection-start="5642" selection-end="5642" vertical-scroll-proportion="7.741228" vertical-offset="30" max-vertical-offset="6510" />
+        <state vertical-scroll-proportion="7.741228" vertical-offset="30" max-vertical-offset="6510">
+          <caret line="355" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="386" selection-end="386" vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="660" />
+        <state vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="660">
+          <caret line="12" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="2" selection-start="667" selection-end="667" vertical-scroll-proportion="0.11901082" vertical-offset="268" max-vertical-offset="915" />
+        <state vertical-scroll-proportion="0.11901082" vertical-offset="268" max-vertical-offset="915">
+          <caret line="23" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="433" selection-end="433" vertical-scroll-proportion="0.29545453" vertical-offset="0" max-vertical-offset="900" />
+        <state vertical-scroll-proportion="0.29545453" vertical-offset="0" max-vertical-offset="900">
+          <caret line="13" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="28" selection-end="28" vertical-scroll-proportion="7.5" vertical-offset="210" max-vertical-offset="870" />
+        <state vertical-scroll-proportion="7.5" vertical-offset="210" max-vertical-offset="870">
+          <caret line="2" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="885" />
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="885">
+          <caret line="13" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/support.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="309" selection-end="309" vertical-scroll-proportion="0.20547946" vertical-offset="0" max-vertical-offset="657" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
+        <state vertical-scroll-proportion="0.20547946" vertical-offset="0" max-vertical-offset="657">
+          <caret line="9" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="1" selection-start="639" selection-end="639" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1515" />
+        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="23" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-status.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="609" selection-end="609" vertical-scroll-proportion="0.45673078" vertical-offset="0" max-vertical-offset="1575" />
+        <state vertical-scroll-proportion="0.45673078" vertical-offset="0" max-vertical-offset="1575">
+          <caret line="19" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-quote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="3" selection-start="723" selection-end="723" vertical-scroll-proportion="0.35096154" vertical-offset="111" max-vertical-offset="1380" />
+        <state vertical-scroll-proportion="0.35096154" vertical-offset="111" max-vertical-offset="1380">
+          <caret line="22" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-link.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="597" selection-end="597" vertical-scroll-proportion="0.41731066" vertical-offset="0" max-vertical-offset="1515" />
+        <state vertical-scroll-proportion="0.41731066" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="18" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="3" selection-start="708" selection-end="708" vertical-scroll-proportion="0.41731066" vertical-offset="60" max-vertical-offset="1425" />
+        <state vertical-scroll-proportion="0.41731066" vertical-offset="60" max-vertical-offset="1425">
+          <caret line="22" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="3" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.32457495" vertical-offset="300" max-vertical-offset="1920" />
+        <state vertical-scroll-proportion="0.32457495" vertical-offset="300" max-vertical-offset="1920">
+          <caret line="34" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="3" selection-start="953" selection-end="953" vertical-scroll-proportion="0.32457495" vertical-offset="255" max-vertical-offset="11790" />
+        <state vertical-scroll-proportion="0.32457495" vertical-offset="255" max-vertical-offset="11790">
+          <caret line="31" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="685" selection-end="685" vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="1380" />
+        <state vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="1380">
+          <caret line="18" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="66" selection-start="5190" selection-end="5190" vertical-scroll-proportion="0.8835404" vertical-offset="646" max-vertical-offset="1305" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="539" selection-end="539" vertical-scroll-proportion="0.3576751" vertical-offset="0" max-vertical-offset="7290" />
+        <state vertical-scroll-proportion="0.8835404" vertical-offset="646" max-vertical-offset="1305">
+          <caret line="81" column="66" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="730" selection-end="730" vertical-scroll-proportion="0.089153044" vertical-offset="0" max-vertical-offset="27015">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27015">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1734104" vertical-offset="0" max-vertical-offset="7410">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
