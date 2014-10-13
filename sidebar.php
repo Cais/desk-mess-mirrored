@@ -12,16 +12,13 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
- * @version     2.0
- * @date        December 6, 2011
- *
- * @version     2.2
- * @date        February 25, 2013
- * Added some semantic classes to the default widget area output
- *
  * @version     2.2.4
  * @date        April 13, 2014
  * Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity
+ *
+ * @version     2.2.5
+ * @date        October 13, 2014
+ * Removed `wp_list_bookmarks` section
  */
 ?>
 
@@ -50,10 +47,6 @@
 							<?php get_calendar( 0 ); ?>
 						</div>
 					</li><!-- widget calendar -->
-
-					<li class="widget bookmarks">
-						<?php wp_list_bookmarks( 'title_li=&category_before=&category_after=' ); ?>
-					</li><!-- widget bookmarks -->
 
 					<li class="widget categories">
 						<h2 class="widgettitle"><?php _e( 'Categories', 'desk-mess-mirrored' ); ?></h2>

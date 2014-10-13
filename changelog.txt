@@ -2,6 +2,7 @@
 Changelog: October 13, 2014
 == Version 2.2.5 ==
 = Code =
+* Removed `wp_list_bookmarks` section from `sidebar.php` template
 
 = CSS =
 
