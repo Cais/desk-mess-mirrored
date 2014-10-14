@@ -5,6 +5,7 @@ Changelog: October 13, 2014
 * Dropped backward compatibility for `wp_title` with Desk Mess Mirrored Child-Themes based on version 2.1 and earlier
 * Removed `wp_list_bookmarks` section from `sidebar.php` template
 * Wrap `register_sidebar` calls in a function that is used as a callback for the `widgets_init` hook
+* Take into account what happens on the 404 page when returning no posts
 
 = CSS =
 * Aligned previous month text in default calendar widget to left

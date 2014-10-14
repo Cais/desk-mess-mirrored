@@ -682,16 +682,27 @@ if ( ! function_exists( 'dmm_modified_post' ) ) {
  *
  * @internal Used simply for "DRY" efficiency
  *
+ * @uses     __
+ * @uses     _e
+ * @uses     esc_html
  * @uses     get_search_form
  * @uses     get_search_query
+ *
+ * @version  2.3
+ * @date     October 13, 2014
+ * Take into account what happens on the 404 page when returning no posts
  */
 function dmm_no_posts_found() {
-	?>
-	<h2>
-		<?php printf( __( 'Search Results for: %s', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?>
-	</h2>
-	<p class="center"><?php _e( 'Sorry, but you are looking for something that is not here.', 'desk-mess-mirrored' ); ?></p>
-	<?php get_search_form();
+	if ( get_search_query() ) {
+		printf( __( '<h2>Search Results for: "%s"</h2>', 'desk-mess-mirrored' ), '<span>' . esc_html( get_search_query() ) . '</span>' );
+	} else {
+		_e( '<h2>There was no search performed.</h2>', 'desk-mess-mirrored' );
+	}
+
+	if ( get_search_query() ) {
+		_e( 'Would you like to search again?', 'desk-mess-mirrored' );
+	}
+	get_search_form();
 }
 
 /** End function - no posts found */
