@@ -93,7 +93,6 @@ function dmm_scripts_and_styles() {
 if ( ! function_exists( 'dmm_wp_title' ) ) {
 	/**
 	 * DMM WP Title
-	 *
 	 * Utilizes the `wp_title` filter to add text to the default output
 	 *
 	 * @link    http://codex.wordpress.org/Plugin_API/Filter_Reference/wp_title
@@ -101,83 +100,47 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
 	 * @package Desk_Mess_Mirrored
 	 * @since   2.0
 	 *
-	 * @version 2.0.3
-	 * @date    June 1, 2012
-	 * Refactor to more correctly use filter while maintaining backward-compatibility
+	 * @param   string $old_title - default title text
+	 * @param   string $sep       - separator character
+	 *
+	 * @return  string - new title text
 	 *
 	 * @version 2.2.3
 	 * @date    November 16, 2013
 	 * Removed unused $sep_location parameter
+	 *
+	 * @version 2.3
+	 * @date    October 13, 2014
+	 * Drop backward compatibility with Desk Mess Mirrored v2.1 and earlier (due to WPTRT requirements)
 	 */
-	if ( ( ! function_exists( 'wp_get_theme' ) ) || wp_get_theme()->get( 'Version' ) < '2.1' ) {
-		/**
-		 * Test version to maintain backward-compatibility with Child-Themes using `dmm_wp_title`
-		 * @todo Remove at version 2.3
-		 */
-		function dmm_wp_title() {
-			global $page, $paged;
-			/** Default title */
-			$dmm_title_text = wp_title( '|', false, 'right' ) . get_bloginfo( 'name' );
+	function dmm_wp_title( $old_title, $sep ) {
+		global $page, $paged;
+		/** Set initial title text */
+		$dmm_title_text = $old_title . get_bloginfo( 'name' );
+		/** Add wrapping spaces to separator character */
+		$sep = ' ' . $sep . ' ';
 
-			/** Add the blog description (tagline) for the home/front page. */
-			$site_tagline = get_bloginfo( 'description', 'display' );
-			if ( $site_tagline && ( is_home() || is_front_page() ) ) {
-				$dmm_title_text .= " | $site_tagline";
-			}
-			/** End if - site tagline */
-
-			/** Add a page number if necessary: */
-			if ( $paged >= 2 || $page >= 2 ) {
-				$dmm_title_text .= ' | ' . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
-			}
-			/** End if - paged */
-
-			/** @var $dmm_wp_title string - title output */
-			$dmm_wp_title = apply_filters( 'wp_title', $dmm_title_text );
-			echo $dmm_wp_title;
-
+		/** Add the blog description (tagline) for the home/front page */
+		$site_tagline = get_bloginfo( 'description', 'display' );
+		if ( $site_tagline && ( is_home() || is_front_page() ) ) {
+			$dmm_title_text .= "$sep$site_tagline";
 		}
-		/** End function - dmm wp title */
-	} else {
-		/**
-		 * Use as filter input
-		 *
-		 * @param   string $old_title - default title text
-		 * @param   string $sep       - separator character
-		 *
-		 * @return  string - new title text
-		 */
-		function dmm_wp_title( $old_title, $sep ) {
-			global $page, $paged;
-			/** Set initial title text */
-			$dmm_title_text = $old_title . get_bloginfo( 'name' );
-			/** Add wrapping spaces to separator character */
-			$sep = ' ' . $sep . ' ';
+		/** End if - site tagline */
 
-			/** Add the blog description (tagline) for the home/front page */
-			$site_tagline = get_bloginfo( 'description', 'display' );
-			if ( $site_tagline && ( is_home() || is_front_page() ) ) {
-				$dmm_title_text .= "$sep$site_tagline";
-			}
-			/** End if - site tagline */
-
-			/** Add a page number if necessary */
-			if ( $paged >= 2 || $page >= 2 ) {
-				$dmm_title_text .= $sep . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
-			}
-
-			/** End if - paged */
-
-			return $dmm_title_text;
-
+		/** Add a page number if necessary */
+		if ( $paged >= 2 || $page >= 2 ) {
+			$dmm_title_text .= $sep . sprintf( __( 'Page %s', 'desk-mess-mirrored' ), max( $paged, $page ) );
 		}
 
-		/** End function - dmm wp title */
+		/** End if - paged */
 
-		add_filter( 'wp_title', 'dmm_wp_title', 10, 2 );
+		return $dmm_title_text;
 
 	}
-	/** End if - function exists */
+
+	/** End function - dmm wp title */
+
+	add_filter( 'wp_title', 'dmm_wp_title', 10, 2 );
 
 }
 /** End if - function exists */
@@ -189,37 +152,48 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
  * @package Desk_Mess_Mirrored
  * @since   1.0
  *
+ * @uses    __
+ * @uses    register_sidebar
+ *
  * @version 2.0
  * Re-define each widget area separately to allow for descriptions to show end-user more details about each area
+ *
+ * @version 2.3
+ * @date    October 13, 2014
+ * Wrap `register_sidebar` calls in a function that is used as a callback for the `widgets_init` hook
  */
-register_sidebar(
-	array(
-		'description'   => __( 'Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme sidebar content is placed here. If you drag and drop a new widget into this area you will replace *all* of the default sidebar content.', 'desk-mess-mirrored' ),
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget'  => "</li>\n",
-		'before_title'  => '<h2 class="widgettitle">',
-		'after_title'   => "</h2>\n",
-	)
-);
-register_sidebar(
-	array(
-		'description'   => __( 'Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. This area is empty by default', 'desk-mess-mirrored' ),
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget'  => "</li>\n",
-		'before_title'  => '<h2 class="widgettitle">',
-		'after_title'   => "</h2>\n",
-	)
-);
-register_sidebar(
-	array(
-		'description'   => __( 'Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. This are is empty by default', 'desk-mess-mirrored' ),
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget'  => "</li>\n",
-		'before_title'  => '<h2 class="widgettitle">',
-		'after_title'   => "</h2>\n",
-	)
-);
-/** End Register Widget Areas */
+function dmm_register_widget_areas() {
+	register_sidebar(
+		array(
+			'description'   => __( 'Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme sidebar content is placed here. If you drag and drop a new widget into this area you will replace *all* of the default sidebar content.', 'desk-mess-mirrored' ),
+			'before_widget' => '<li id="%1$s" class="widget %2$s">',
+			'after_widget'  => "</li>\n",
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => "</h2>\n",
+		)
+	);
+	register_sidebar(
+		array(
+			'description'   => __( 'Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. This area is empty by default', 'desk-mess-mirrored' ),
+			'before_widget' => '<li id="%1$s" class="widget %2$s">',
+			'after_widget'  => "</li>\n",
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => "</h2>\n",
+		)
+	);
+	register_sidebar(
+		array(
+			'description'   => __( 'Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. This are is empty by default', 'desk-mess-mirrored' ),
+			'before_widget' => '<li id="%1$s" class="widget %2$s">',
+			'after_widget'  => "</li>\n",
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => "</h2>\n",
+		)
+	);
+	/** End Register Widget Areas */
+}
+
+add_action( 'widgets_init', 'dmm_register_widget_areas' );
 
 
 /**

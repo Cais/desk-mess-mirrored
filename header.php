@@ -20,13 +20,17 @@
  * @version     2.2
  * @date        February 25, 2013
  * Cleaned up 'head' section
+ *
+ * @version 2.3
+ * @date    October 13, 2014
+ * Dropped backward compatibility for `wp_title` with Desk Mess Mirrored Child-Themes based on version 2.1 and earlier
  */
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<title><?php ( ( ! function_exists( 'wp_get_theme' ) ) || wp_get_theme()->get( 'Version' ) < '2.1' ) ? dmm_wp_title() : wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
