@@ -191,6 +191,10 @@ table#wp-calendar tbody tr td a {
 	font-weight: bold;
 }
 
+table#wp-calendar tfoot tr td#prev {
+	text-align: left;
+}
+
 table#wp-calendar tfoot tr td#next {
 	text-align: right;
 }

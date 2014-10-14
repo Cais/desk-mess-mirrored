@@ -7,6 +7,7 @@ Changelog: October 13, 2014
 * Wrap `register_sidebar` calls in a function that is used as a callback for the `widgets_init` hook
 
 = CSS =
+* Aligned previous month text in default calendar widget to left
 
 = Miscellaneous =
 * Code reformatting to better meet current WordPress Coding Standards

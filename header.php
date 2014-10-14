@@ -13,16 +13,12 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
- * @version     2.0.3
- * @date        June 1, 2012
- * Updated conditional check for theme version
- *
  * @version     2.2
  * @date        February 25, 2013
  * Cleaned up 'head' section
  *
- * @version 2.3
- * @date    October 13, 2014
+ * @version     2.3
+ * @date        October 13, 2014
  * Dropped backward compatibility for `wp_title` with Desk Mess Mirrored Child-Themes based on version 2.1 and earlier
  */
 ?>
