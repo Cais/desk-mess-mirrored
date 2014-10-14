@@ -8,6 +8,7 @@ Changelog: October 13, 2014
 
 = CSS =
 * Aligned previous month text in default calendar widget to left
+* Stop Gravity Forms reCaptcha iframe from creating a blank area in the footer
 
 = Miscellaneous =
 * Code reformatting to better meet current WordPress Coding Standards

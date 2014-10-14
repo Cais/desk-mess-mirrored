@@ -1766,6 +1766,11 @@ div.post div.sharing {
 	clear: both;
 }
 
+/* Stop Gravity Forms reCaptcha iframe from creating a blank area in the footer */
+body > iframe[src="about:blank"] {
+	display: none;
+}
+
 /* ---- BNS Plugins ---- */
 /* bns-login plugin */
 .bns-login {
