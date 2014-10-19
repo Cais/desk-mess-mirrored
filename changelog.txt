@@ -1,7 +1,8 @@
 === Desk Mess Mirrored ===
-Changelog: October 13, 2014
+Changelog: October 19, 2014
 == Version 2.3 ==
 = Code =
+* Added BNS Login "Compatibility Code" to use dashicons instead of text
 * Dropped backward compatibility for `wp_title` with Desk Mess Mirrored Child-Themes based on version 2.1 and earlier
 * Removed `wp_list_bookmarks` section from `sidebar.php` template
 * Wrap `register_sidebar` calls in a function that is used as a callback for the `widgets_init` hook

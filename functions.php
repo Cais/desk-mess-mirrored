@@ -13,11 +13,6 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
- * @version     2.1
- * @date        December 3, 2012
- * Add DMM_HOME_DOMAIN constant for better future proofing
- * Removed DMM_Add_Body_Classes in favor of using BNS Body Classes
- *
  * @version     2.2.1
  * @date        April 21, 2013
  * Expanded use of DMM_HOME_DOMAIN constant
@@ -29,6 +24,10 @@
  * @version     2.2.4
  * @date        April 13, 2014
  * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
+ *
+ * @version     2.3
+ * @date        October 19, 2014
+ * Added BNS Login "Compatibility Code" to use dashicons instead of text
  */
 
 /** Define Desk Mess Mirrored "Home" domain */
@@ -763,4 +762,15 @@ function dmm_post_meta_link_edit() {
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 580;
-} /** End if - not isset content width */
+}
+/** End if - not isset content width */
+
+/** Compatibility Code ------------------------------------------------------ */
+
+/** Call the wp-admin plugin code */
+require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+
+if ( is_plugin_active( 'bns-login/bns-login.php' ) ) {
+	add_filter( 'bns_login_dashed_set', '__return_true' );
+}
+/** End if - is plugin (BNS Login) active */
