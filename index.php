@@ -14,9 +14,9 @@
  * @link        http://wordpress.org/extend/themes/desk-mess-mirrored/
  *
  * @internal    REQUIRES WordPress version 3.4
- * @internal    Tested up to WordPress version 3.9
+ * @internal    Tested up to WordPress version 4.0
  *
- * @version     2.2.4.1
+ * @version     2.3
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2014, Edward Caissie
  *
@@ -39,20 +39,6 @@
  *
  * The license for this software can also likely be found here:
  * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * @internal    Project To-do List - see readme.txt for pre-2.0 PTL
- * @todo        Review post meta comment text - sort out how to show amount of comments if they exist when comments are closed
- * @todo        Add Post-Format: Link - use infinity symbol
- * @todo        Add specific CSS to the placeholders used by the new (comment) author classes
- *
- * @version     2.2
- * @date        March 2013
- *
- * @version     2.2.1
- * @date        July 2013
- *
- * @version     2.2.2
- * @date        July 20, 2013
  */
 
 get_header(); ?>
