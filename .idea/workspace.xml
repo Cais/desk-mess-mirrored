@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshot.png" afterPath="$PROJECT_DIR$/screenshot.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -29,21 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="changelog.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="changelog.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7545">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.0285306" vertical-offset="0" max-vertical-offset="27105">
-              <caret line="235" column="17" selection-start-line="235" selection-start-column="17" selection-end-line="235" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.38516405" vertical-offset="0" max-vertical-offset="7560">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -682,7 +672,13 @@
       <option name="project" value="LOCAL" />
       <updated>1413756380656</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="* Minor layout adjustments for widget items">
+      <created>1413756785978</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1413756785979</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -751,7 +747,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Added Serbo-Croatian translation by Andrijana Nikolic from webhostinggeeks.com" />
     <MESSAGE value="* Added support for post format 'link'" />
     <MESSAGE value="* Added support for Post-Format: Link&#10;* Added appropriate styling for post-format: link related items" />
     <MESSAGE value="* Commented out the &quot;Page Permalink&quot; as an unpopular feature&#10;* Updated version number to 2.2.3" />
@@ -776,7 +771,8 @@
     <MESSAGE value="* Take into account what happens on the 404 page when returning no posts" />
     <MESSAGE value="* Fixed mixed list bullets" />
     <MESSAGE value="* Added BNS Login &quot;Compatibility Code&quot; to use dashicons instead of text" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added BNS Login &quot;Compatibility Code&quot; to use dashicons instead of text" />
+    <MESSAGE value="* Minor layout adjustments for widget items" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Minor layout adjustments for widget items" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -1010,18 +1006,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7545">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.8987161" vertical-offset="2895" max-vertical-offset="27105">
+          <caret line="235" column="17" selection-start-line="235" selection-start-column="17" selection-end-line="235" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/screenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.0285306" vertical-offset="0" max-vertical-offset="27105">
-          <caret line="235" column="17" selection-start-line="235" selection-start-column="17" selection-end-line="235" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.38516405" vertical-offset="0" max-vertical-offset="7560">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding />
         </state>
       </provider>

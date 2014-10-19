@@ -16,6 +16,7 @@ Changelog: October 19, 2014
 
 = Miscellaneous =
 * Code reformatting to better meet current WordPress Coding Standards
+* Adjusted screenshot size to be 880x660 pixels
 
 /** ------------------------------------------------------------------------- */
 == Version 2.2.4/2.2.4.1 ==
