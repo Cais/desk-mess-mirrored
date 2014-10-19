@@ -233,6 +233,7 @@ li.widget_text div.textwidget div.wp-caption a img {
 /** Tag Cloud */
 div.tagcloud {
 	text-align: center;
+	padding: 0 15px;
 }
 
 /** End: Default Widgets ---------------------------------------------------- */
@@ -1618,6 +1619,7 @@ input.search-submit {
 
 .widget ul li {
 	background: url(images/listseparator.png) no-repeat 25% 100%;
+	list-style: none inside;
 	margin: 0;
 	padding: 5px 15px 10px 15px;
 }
