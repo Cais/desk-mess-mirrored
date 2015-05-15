@@ -405,7 +405,8 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  *
  * @version  2.4
  * @date     May 15, 2015
- * Add support for the `title` tag
+ * Added support for the `title` tag
+ * Added `dmm-post-formats` filter to extend which post-formats support
  */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 	function desk_mess_mirrored_setup() {
@@ -434,12 +435,12 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 
 		/** Add post-formats support for aside, link, quote, and status */
 		add_theme_support(
-			'post-formats', array(
+			'post-formats', apply_filters( 'dmm-post-formats', array(
 				'aside',
 				'link',
 				'quote',
 				'status'
-			)
+			) )
 		);
 
 		/**
