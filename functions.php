@@ -402,6 +402,10 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  * @version  2.2.3
  * @date     October 27, 2013
  * Added support for post format 'link'
+ *
+ * @version  2.4
+ * @date     May 15, 2015
+ * Add support for the `title` tag
  */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 	function desk_mess_mirrored_setup() {
@@ -424,6 +428,9 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 				'default-image' => get_template_directory_uri() . '/images/marble-bg.png'
 			)
 		);
+
+		/** Add support for the `<title />` tag */
+		add_theme_support( 'title-tag' );
 
 		/** Add post-formats support for aside, link, quote, and status */
 		add_theme_support(

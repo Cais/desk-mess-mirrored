@@ -56,6 +56,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 == Changelog ==
 == Version 2.4 ==
 = Code =
+* Add support for the `title` tag
 
 = CSS =
 
