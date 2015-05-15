@@ -157,34 +157,32 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
  * @version 2.3
  * @date    October 13, 2014
  * Wrap `register_sidebar` calls in a function that is used as a callback for the `widgets_init` hook
+ *
+ * @version 2.4
+ * @date    May 15, 2015
+ * Refactored sidebar parameters to use already defined WordPress defaults
  */
 function dmm_register_widget_areas() {
 
 	register_sidebar(
 		array(
-			'description'   => __( 'Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme sidebar content is placed here. If you drag and drop a new widget into this area you will replace *all* of the default sidebar content.', 'desk-mess-mirrored' ),
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget'  => "</li>\n",
-			'before_title'  => '<h2 class="widgettitle">',
-			'after_title'   => "</h2>\n",
+			'name'        => __( 'Widget Area 1', 'desk-mess-mirrored' ),
+			'id'          => 'sidebar-1',
+			'description' => __( 'Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme sidebar content is placed here. If you drag and drop a new widget into this area you will replace *all* of the default sidebar content.', 'desk-mess-mirrored' ),
 		)
 	);
 	register_sidebar(
 		array(
-			'description'   => __( 'Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. This area is empty by default', 'desk-mess-mirrored' ),
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget'  => "</li>\n",
-			'before_title'  => '<h2 class="widgettitle">',
-			'after_title'   => "</h2>\n",
+			'name'        => __( 'Widget Area 2', 'desk-mess-mirrored' ),
+			'id'          => 'sidebar-2',
+			'description' => __( 'Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. This area is empty by default', 'desk-mess-mirrored' ),
 		)
 	);
 	register_sidebar(
 		array(
-			'description'   => __( 'Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. This are is empty by default', 'desk-mess-mirrored' ),
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget'  => "</li>\n",
-			'before_title'  => '<h2 class="widgettitle">',
-			'after_title'   => "</h2>\n",
+			'name'        => __( 'Widget Area 3', 'desk-mess-mirrored' ),
+			'id'          => 'sidebar-3',
+			'description' => __( 'Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. This are is empty by default', 'desk-mess-mirrored' ),
 		)
 	);
 

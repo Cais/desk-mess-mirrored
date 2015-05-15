@@ -35,8 +35,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4470939" vertical-offset="570" max-vertical-offset="8910">
-              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8925">
+              <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -45,11 +45,21 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5" vertical-offset="5925" max-vertical-offset="12285">
-              <caret line="407" column="8" selection-start-line="407" selection-start-column="8" selection-end-line="407" selection-end-column="8" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="2145" max-vertical-offset="12255">
+              <caret line="162" column="74" selection-start-line="162" selection-start-column="74" selection-end-line="162" selection-end-column="74" />
               <folding>
                 <element signature="e#6#905#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="widgets.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../wp-includes/widgets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.958333" vertical-offset="11587" max-vertical-offset="25710">
+              <caret line="802" column="0" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,8 +106,8 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/support.txt" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
   </component>
@@ -299,12 +309,6 @@
       <created>1322439939982</created>
       <option name="number" value="Default" />
       <updated>1322439939982</updated>
-    </task>
-    <task id="LOCAL-00022" summary="* Update version compatibility in main theme block as well as update copyright years">
-      <created>1361680413925</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1361680413925</updated>
     </task>
     <task id="LOCAL-00023" summary="* Added filtered text messages when comments are open/closed but none exist">
       <created>1361723162368</created>
@@ -594,7 +598,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431703286732</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="* Added `dmm-post-formats` filter to extend which post-formats support">
+      <created>1431704177300</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1431704177300</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -663,7 +673,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Added DMM_SHOW_PAGE_PERMALINK constant&#10;* Made &quot;Page Permalink&quot; link conditionally display with default as false." />
     <MESSAGE value="* Removed unused $sep_location parameter" />
     <MESSAGE value="* Update `readme.txt` with version 2.2.3 trac ticket #15296&#10;* Update version to 2.2.4-alpha in preparation for future updates&#10;* Updated Changelog to add 2.2.4 headings" />
     <MESSAGE value="* Code reformatted to better meet the WordPress Coding Standards" />
@@ -688,7 +697,8 @@
     <MESSAGE value="* i18n updates to better enable translations&#10;* Minor code clean-up&#10;* Update copyright year and tested up to version" />
     <MESSAGE value="* Update copyright years and miscellaneous comment cleanup&#10;- removed old language files" />
     <MESSAGE value="* Add support for the `title` tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Add support for the `title` tag" />
+    <MESSAGE value="* Added `dmm-post-formats` filter to extend which post-formats support" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added `dmm-post-formats` filter to extend which post-formats support" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -986,16 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="5925" max-vertical-offset="12285">
-          <caret line="407" column="8" selection-start-line="407" selection-start-column="8" selection-end-line="407" selection-end-column="8" />
-          <folding>
-            <element signature="e#6#905#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5317578" vertical-offset="15" max-vertical-offset="1050">
@@ -1004,13 +1004,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../wp-includes/widgets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.958333" vertical-offset="11587" max-vertical-offset="25710">
+          <caret line="802" column="0" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="2145" max-vertical-offset="12255">
+          <caret line="162" column="74" selection-start-line="162" selection-start-column="74" selection-end-line="162" selection-end-column="74" />
+          <folding>
+            <element signature="e#6#905#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4470939" vertical-offset="570" max-vertical-offset="8910">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8925">
+          <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
           <folding />
         </state>
       </provider>
