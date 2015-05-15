@@ -35,8 +35,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8925">
-              <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8940">
+              <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -45,21 +45,11 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875" vertical-offset="2145" max-vertical-offset="12255">
-              <caret line="162" column="74" selection-start-line="162" selection-start-column="74" selection-end-line="162" selection-end-column="74" />
+            <state vertical-scroll-proportion="-13.125" vertical-offset="3285" max-vertical-offset="12510">
+              <caret line="240" column="70" selection-start-line="240" selection-start-column="70" selection-end-line="240" selection-end-column="70" />
               <folding>
                 <element signature="e#6#905#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="widgets.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../wp-includes/widgets.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.958333" vertical-offset="11587" max-vertical-offset="25710">
-              <caret line="802" column="0" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -309,12 +299,6 @@
       <created>1322439939982</created>
       <option name="number" value="Default" />
       <updated>1322439939982</updated>
-    </task>
-    <task id="LOCAL-00023" summary="* Added filtered text messages when comments are open/closed but none exist">
-      <created>1361723162368</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1361723162368</updated>
     </task>
     <task id="LOCAL-00024" summary="* Added link to author page when comments closed message is displayed">
       <created>1361724290399</created>
@@ -604,7 +588,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431704177300</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="* Refactored sidebar parameters to use already defined WordPress defaults">
+      <created>1431705063909</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1431705063909</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -673,7 +663,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Removed unused $sep_location parameter" />
     <MESSAGE value="* Update `readme.txt` with version 2.2.3 trac ticket #15296&#10;* Update version to 2.2.4-alpha in preparation for future updates&#10;* Updated Changelog to add 2.2.4 headings" />
     <MESSAGE value="* Code reformatted to better meet the WordPress Coding Standards" />
     <MESSAGE value="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years" />
@@ -698,7 +687,8 @@
     <MESSAGE value="* Update copyright years and miscellaneous comment cleanup&#10;- removed old language files" />
     <MESSAGE value="* Add support for the `title` tag" />
     <MESSAGE value="* Added `dmm-post-formats` filter to extend which post-formats support" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added `dmm-post-formats` filter to extend which post-formats support" />
+    <MESSAGE value="* Refactored sidebar parameters to use already defined WordPress defaults" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Refactored sidebar parameters to use already defined WordPress defaults" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -1006,7 +996,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../wp-includes/widgets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.958333" vertical-offset="11587" max-vertical-offset="25710">
+        <state vertical-scroll-proportion="0.38847858" vertical-offset="11587" max-vertical-offset="25710">
           <caret line="802" column="0" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
           <folding />
         </state>
@@ -1014,8 +1004,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="2145" max-vertical-offset="12255">
-          <caret line="162" column="74" selection-start-line="162" selection-start-column="74" selection-end-line="162" selection-end-column="74" />
+        <state vertical-scroll-proportion="-13.125" vertical-offset="3285" max-vertical-offset="12510">
+          <caret line="240" column="70" selection-start-line="240" selection-start-column="70" selection-end-line="240" selection-end-column="70" />
           <folding>
             <element signature="e#6#905#0#PHP" expanded="true" />
           </folding>
@@ -1027,8 +1017,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8925">
-          <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8940">
+          <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
           <folding />
         </state>
       </provider>

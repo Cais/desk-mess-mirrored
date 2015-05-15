@@ -58,6 +58,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 = Code =
 * Added support for the `title` tag
 * Added `dmm-post-formats` filter to extend which post-formats support
+* Added transient to only check first post approximately once a month
 * Refactored sidebar parameters to use already defined WordPress defaults
 
 = CSS =

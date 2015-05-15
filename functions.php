@@ -222,32 +222,38 @@ add_filter( 'widget_title', 'dmm_widget_title', 10, 1 );
  * Displays a generic copyright statement in the theme footer area with
  * parameters usable for customization.
  *
- * @package             Desk_Mess_Mirrored
- * @since               1.4.6
+ * @package     Desk_Mess_Mirrored
+ * @since       1.4.6
  *
- * @param               string $args - start|copy_years|url|end
+ * @param  $args ['start']       => default: Copyright
+ * @param  $args ['copy_years']  => default: from the first publicly viewable post year to the most current publicly viewable post year
+ * @param  $args ['url']         => default: value associated with the `home_url` function
+ * @param  $args ['end']         => default: All rights reserved.
+ * @param  $args ['transient_refresh'] => time in seconds before first post is checked again
  *
- * @internal            @param  start       => default: Copyright
- * @internal            @param  copy_years  => default: from the first publicly viewable post year to the most current publicly viewable post year
- * @internal            @param  url         => default: value associated with the `home_url` function
- * @internal            @param  end         => default: All rights reserved.
- *
- * Last revised December 6, 2011
- * @version             2.0
+ * @version     2.0
+ * @date        December 6, 2011
  * Updated documentation to clarify function parameters
  * Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright`
+ *
+ * @version 2.4
+ * @date    May 15, 2015
+ * Added transient to only check first post approximately once a month
  */
 if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
 
 	function dmm_dynamic_copyright( $args = '' ) {
 
 		$initialize_values = array(
-			'start'      => '',
-			'copy_years' => '',
-			'url'        => '',
-			'end'        => ''
+			'start'             => '',
+			'copy_years'        => '',
+			'url'               => '',
+			'end'               => '',
+			'transient_refresh' => 2592000
 		);
-		$args              = wp_parse_args( $args, $initialize_values );
+
+		/** @var array $args - function parameters */
+		$args = wp_parse_args( $args, $initialize_values );
 
 		/* Initialize the output variable to empty */
 		$output = '';
@@ -266,12 +272,23 @@ if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
 		 */
 		if ( empty( $args['copy_years'] ) ) {
 
-			/** Get all posts */
-			$all_posts = get_posts( 'post_status=publish&order=ASC' );
-			/** Get first post */
-			$first_post = $all_posts[0];
-			/** Get date of first post */
-			$first_date = $first_post->post_date_gmt;
+
+			/** Take some of the load off with a transient of the first post */
+			if ( ! get_transient( 'dmm_copyright_first_post' ) ) {
+
+				/** @var $all_posts - retrieve all published posts in ascending order */
+				$all_posts = get_posts( 'post_status=publish&order=ASC' );
+
+				/** @var $first_post - get the first post */
+				$first_post = $all_posts[0];
+
+				/** Set the transient (default: one month) */
+				set_transient( 'dmm_copyright_first_post', $first_post, $args['transient_refresh'] );
+
+			}
+
+			/** @var $first_date - get the date in a standardized format */
+			$first_date = get_transient( 'dmm_copyright_first_post' )->post_date_gmt;
 
 			/** First post year versus current year */
 			$first_year = substr( $first_date, 0, 4 );
