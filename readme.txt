@@ -1,5 +1,5 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised April 13, 2014
+* Last revised May 15, 2015
 
 == Contents ==
 * Licensing
@@ -54,7 +54,512 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * It is recommended to not have an excessive quantity of menu items, for example a quantity causing the top menu to exceed two lines, may obscure the post title in some views
 
 == Changelog ==
-* see changelog.txt for additional details
+== Version 2.4 ==
+= Code =
+
+= CSS =
+
+= Miscellaneous =
+* Update copyright years and miscellaneous comment cleanup
+
+/** ------------------------------------------------------------------------- */
+== Version 2.3 ==
+= Code =
+* Added BNS Login "Compatibility Code" to use dashicons instead of text
+* Dropped backward compatibility for `wp_title` with Desk Mess Mirrored Child-Themes based on version 2.1 and earlier
+* Removed `wp_list_bookmarks` section from `sidebar.php` template
+* Wrap `register_sidebar` calls in a function that is used as a callback for the `widgets_init` hook
+* Take into account what happens on the 404 page when returning no posts
+
+= CSS =
+* Aligned previous month text in default calendar widget to left
+* Stop Gravity Forms reCaptcha iframe from creating a blank area in the footer
+* Fixed mixed list bullets
+* Minor layout adjustments for widget items
+
+= Miscellaneous =
+* Code reformatting to better meet current WordPress Coding Standards
+* Adjusted screenshot size to be 880x660 pixels
+
+/** ------------------------------------------------------------------------- */
+== Version 2.2.4/2.2.4.1 ==
+= Code =
+* Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
+* Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity
+
+= CSS =
+* Added better list element styles
+* Fixed typo on `.wp-caption img` max-width property
+* Fixed `.wp-caption` left and right alignment issues
+* Minor clean-up of old properties
+
+= Miscellaneous =
+* Added `Textdomain` to theme header block
+* Changed `fixed-width` theme tag to `fixed-layout`
+* Code reformatted to better meet the WordPress Coding Standards
+* Clean-up `readme.txt` file
+* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)
+* Updated Copyright Years
+
+/** ------------------------------------------------------------------------- */
+== Version 2.2.3 ==
+= Code =
+* Added support for Post-Format: Link
+* Added DMM_SHOW_PAGE_PERMALINK constant
+* Made "Page Permalink" link conditionally display with default as false
+* Removed unused $sep_location parameter
+
+= CSS =
+* Added appropriate styling for post-format: link related items
+* Removed really old browser CSS support ... going with support for current only
+
+= Miscellaneous =
+* Added Serbo-Croatian translation by Andrijana Nikolic from webhostinggeeks.com
+
+/** ------------------------------------------------------------------------- */
+== Version 2.2.2 ==
+= Code =
+* Fix comments closed message displaying when comments are open
+
+/** ------------------------------------------------------------------------- */
+== Version 2.2.1 ==
+= Code =
+* Expanded use of DMM_HOME_DOMAIN constant
+* Change featured image to display full and centered across posts
+* Corrected closed comments logic to properly display message
+* Refactored author "About" box to not show empty details
+
+= CSS =
+* Added ordered list styles for pages with comments
+* Added classes to author "About" box details for easier display manipulation
+* Added site title and description id to appropriate HTML container
+* Adjusted '.wp-caption img' properties
+* Adjusted 'li.text_widget' margin values
+* Adjusted various CSS elements and properties to display TUT data more correctly
+* Adjusted `hr` class properties
+* Centered searchform box and hid screen reader text
+
+/** ------------------------------------------------------------------------- */
+== Version 2.2 ==
+= Code =
+* Added filtered text messages when comments are open/closed but none exist
+* Added link to author page when comments closed message is displayed
+* Added code block termination comments
+* Minor code formatting / refactoring to use "braces" for code blocks
+* Refactor post meta details into a better string output
+
+= CSS =
+* Add `clear: both` to 'img.aligncenter, img.center' to fix Firefox issue with large images placed close to the featured image
+* Added CSS relevant to the "Monster" plugin that represents the default WordPress core plugins
+
+= Miscellaneous =
+* Updated 'style.css' header block to use labels as noted in core trac ticket #16868
+
+/** ------------------------------------------------------------------------- */
+== Version 2.1 ==
+Changelog: December 3, 2012
+= Code =
+* Added DMM_HOME_DOMAIN constant for better future proofing
+* Added 'DMM No Posts Found' function to replace repetitive code
+* Removed backward compatibility checks to bring in line with current WordPress versions (3.4+)
+* Removed DMM_Add_Body_Classes in favor of using BNS Body Classes at http://wordpress.org/extend/plugins/bns-body-classes/
+
+/** ------------------------------------------------------------------------- */
+== Version 2.0.4 ==
+Changelog: August 21, 2012
+= Code =
+* Corrected use of `get_template_directory` in `load_theme_textdomain` parameters
+* Removed backward compatibility check for wp_nav_menu
+* Changed enqueued version to be dynamically taken from theme version
+* Change 'comment-reply' script hook to 'comment_form_before'
+
+= CSS =
+* Reduce z-index of #cup to put under menu
+
+= Miscellaneous =
+* Removed German and Spanish translation files as too old.
+* Added French translation files, courtesy of Samy Rahib at http://lahaut.info
+* Minor typos in 'readme.txt'
+
+/** ------------------------------------------------------------------------- */
+== Version 2.0.3 ==
+Changelog: July 5, 2012
+= Code =
+* Added conditional check for custom post types
+* Added `dmm_scripts_and_styles` to enqueue additional scripts and styles such as menu animation
+* Refactor `dmm_modified_post` to add link to modified author posts if they exist
+* Refactor `dmm_wp_title` to more correctly use filter while maintaining backward-compatibility
+* Updated `custom-background` parameters to use default image and color
+
+= CSS =
+* Added 'extra.css' for menu animation (`add_action` call to enqueue this file has been commented out)
+* Add jetpack class to HTML body tag if plugin is active
+* Adjusted #content left margin
+* Adjusted menu link padding
+* Corrected issue with comments meta showing list bullet
+* Removed `table` element properties
+* Replaced deprecated `get_theme_data`
+* Replaced deprecated `add_custom_background`
+
+/** ------------------------------------------------------------------------- */
+== Version 2.0.2 ==
+Changelog: March 1, 2012
+= Code =
+* Un-wrapped the `register_nav_menu` call
+
+= Miscellaneous =
+* Added additional screenshots
+* Updated 'readme.txt' with a Screenshot section and relevant descriptions
+
+/** ------------------------------------------------------------------------- */
+
+== Version 2.0.1 ==
+Changelog: February 15, 2012
+= Code =
+* Fixed display issue when widget title was empty - see `dmm_widget_title`
+
+= CSS =
+* Added z-index to "cup" to keep it on top of "sticky notes"
+* Adjusted `#logo h2` element text position higher for better cross-browser compatibility
+
+= Miscellaneous =
+* Updated 'readme.txt' with a "Licensing" section
+* Updated 'readme.txt' explaining the relevance and possible usage of the 'Page Link' shortlink found on pages.
+
+/** ------------------------------------------------------------------------- */
+
+== Version 2.0 ==
+Changelog: January 9, 2012
+= Code =
+* Added additional PHPDoc style documentation
+* Added `DMM WP Title` - utilizes the `wp_title` filter to add text to the default title output
+* Added `DMM Use Posted` function for posts without titles
+* Added minimal doc-block to each template file as relevant
+* Added 'desk-mess-mirrored' loop template
+* Added 'dmm-navigation' and implemented in 404, index, archive, and author template files
+* Added post-formats: aside, quote, and status
+* Added clearing `div` at top of 'author' and 'page' templates
+* Added project TODO section to 'index.php'
+* Added `DMM Add Body Classes` - Adds additional classes to the core `body_class` function
+* Changed `BNS Theme Version` to `DMM Theme Version` with extensive re-writes to text displayed
+* Changed `my_theme_data` to `active_theme_data` in `DMM Theme Version`
+* Changed post navigation test to 'Older posts' and 'Newer posts' replacing 'Previous entries' and 'Next entries' respectively
+* Implemented 'desk-mess-mirrored' loop in 404, archive, author, index (home, front-page), page, single templates
+* Re-defined each widget area separately to allow for descriptions to show end-user more details about each area
+* Removed 'Home" link code from `dmm_list_pages`
+* Removed unused images (from IE6 support)
+* Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright` (refactored changelog)
+* Renamed `BNS Modified Post` to `DMM Modified Post` (refactored changelog)
+* Replaced TEMPLATEPATH constant with `get_template_directory_uri`
+* Rewrote class used in 'author' template to add author role as a class element
+* Updated documentation to clarify `DMM Dynamic Copyright` parameters
+* Updated 'readme.txt' information - NB: All open and new TODO items will be found in their appropriate file going forward from this version
+
+= CSS =
+* Added 'Order of Contents' reference to the stylesheet with minor re-organization
+* Added id `wp-link-pages` wrapper to `wp_link_pages` output
+* Added CSS placeholder elements (.administrator, .editor, .contributor, .subscriber, and .guest) for new comment author classes
+* Changed bottom of post to have smaller separating margin and added a bottom border to better delineate posts
+* Changed base font-size to 100% and adjusted typography as needed/required
+* Removed the right and bottom borders from the gallery images; and added additional elements to handle galleries up to 10 columns wide
+* Removed (using comments) `background property` from `code` element
+* Removed margins from a blockquote if it is within another blockquote
+* Reorganized stylesheet and added 'Order of Contents' section for reference
+* Updated forms and search widget styles
+
+/** ------------------------------------------------------------------------- */
+
+== Version 1.9.1 ==
+* added CSS optimizations
+* added PHPDoc style documentation
+* combined added comment classes `user-ID` and `microid` creation into one function `Add Comment Classes` in 'comments.php'
+* corrected comment reply style
+* drop direct support for Internet Explorer 6 or order
+* modified `.widget h2` CSS to better allow for long titles in the sidebar
+* moved "You must be logged in to post a comment." to be more clearly readable
+* moved enqueued `comment-reply` call from 'header.php' to 'functions.php'
+* removed `get_page_number` function as no longer needed
+* removed 'category.php' template file as not used
+* reviewed and corrected old changelog entries for spelling and other minor typos
+* updated 'readme.txt' (minor changes)
+
+----
+-- Version 1.9
+  - corrects issues with custom menus and brings forward all other changes added at 1.8.7
+
+-- Version 1.8.7.1
+  - reversion to 1.8.6.1
+
+-- Version 1.8.7
+  - tested compatible up to WordPress 3.2.1
+  - removed inline styles affecting `the_tags()` in index, single, category, author, and 404 templates
+  - chronologically arranged the 'Basic FAQ' in the readme file (most recent addition first).
+  - hide comment "balloon" if post is password protected
+  - miscellaneous clean-up in the style.css file
+  - re-worked dropdown menu CSS to better handle multiple child menu items from one parent menu item
+  - re-worked "sticky note" image to handle longer menu item names before repeating the image
+
+-- Version 1.8.6.1
+  - corrected readme.txt file FAQ re: `dmm_dynamic_copyright`
+
+-- Version 1.8.6
+  - released June 19, 2011
+  - tested compatible up to WordPress 3.2-RC1
+  - re-worked `dmm_dynamic_copyright` to be more easily defined by the end-user
+  - re-worked `desk_mess_mirrored_setup` to add additional `if ( ! function_exists() )` checks
+  - re-worked `bns_theme_version` and `dmm_modified_post` to better handle internationalization
+
+-- Version 1.8.5
+  - added function_exists check for `dmm_get_page_number`, `dmm_dynamic_copyright` and `bns_theme_version`
+  - added function_exists check for `dmm_modified_post` (still not implemented fully in theme)
+
+-- Version 1.8.4
+  - released May 30, 2011
+  - add 'WordPress Required Version: 3.0' and 'Tested Up To: 3.2' - see http://core.trac.wordpress.org/ticket/16868
+  - added (temporary) Jetpack plugin CSS to resolve clearing issue; see http://tinyurl.com/jetpack-clear-issue
+  - modify `dmm_dynamic_copyright` to include link to home page
+  - modify `dmm_dynamic_copyright` and `bns_theme_version` to have unique `span` wrappers for styling
+  - adjust comment styles: `p`
+
+-- Version 1.8.3
+  - released: March 6, 2011
+  - published: March 7, 2011
+  - Mostly style changes to reflect the new Theme Unit Test data (abbr, acronym, address, lists in comments)
+  - updated author archive template to respect posts without titles
+
+-- Version 1.8.2
+  - released: see Version 1.8.3
+  - minor corrections
+  - minor CSS list related additions
+  - added 'dmm_' to the functions in comments.php
+  - additional plugin specific CSS (Twitter Tools, CommentLuv)
+  - added updated German translation provided by Jasper Golze (jasper@golze.net)
+
+-- Version 1.8.1
+  - released: November 8, 2010
+  - published: November 8, 2010
+  - Extra line corrections.
+
+-- Version 1.8
+  - released: November 7, 2010
+  - published: November 8, 2010
+  - added drop down menu functionality, finally!
+  - moved all default sidebar content into widget area 'Sidebar 1'
+  - removed text from printing in comment balloon when password is required
+  - changed to using get_search_form()
+  - added '.gallery-caption' and '.bypostauthor' style classes (as empty elements)
+  - updated editor-style.css
+  - update readme.txt file
+
+-- Version 1.7.2
+  - released: Sept 3, 2010
+  - correct issue created by the use of home_url() replacing bloginfo( 'url' ) per Theme Review codex page last edited Aug 31, 2010.
+
+-- Version 1.7.1
+  - released: Sept 2, 2010
+  - corrected issue with `searchform.php` template file
+  - changed `ul id="menu"` to `ul class="menu"`
+  - meta information generator handled by WordPress removed from `header.php`
+  - CSS: for use with the default 'Search' widget
+  - CSS: address spacing issue for comment form fields (user not logged in)
+
+-- Version 1.7
+  - released: July 20, 2010
+  - published: Aug 5, 2010
+  - add License URI to style.css title block
+  - minor change to `the_content` "more" text
+  - css form fine-tuning
+  - code clean up to meet WP Standards
+  - moved default search into `sidebar-1` (a popular end-user feedback request)
+  - add `custom menu` support
+  - add `custom background` support
+  - add `post-thumbnail` support to posts and pages
+  - add `editor-style` support
+
+-- Version 1.6
+  - released: June 12, 2010
+  - published: June 29, 2010
+  - added Belorussian language files by Patricia Clausnitzer at http://pc.de
+  - WP: general code clean up to meet WP Standards
+  - WP: updated comments.php to use comment_form() function; old comment form will be removed with next theme revision (post WordPress v3.0)
+  - CSS: increased default font size to 14px
+  - CSS: minor adjustment for BNS Plugin styles and 'ul.children li' property
+  - CSS: add "YUI Reset" and "WordPress Rules" (and necessary adjustments)
+  - Removed unused graphics: comh2.png; flickr.png; footer-mozilla.png; footer-wp.png; socialbck.png; and, twitter.png. This will not affect existing installations as updating will not remove any existing files.
+
+-- Version 1.5.1
+  - released: Apr 23, 2010
+  - published: Apr 28, 2010
+  - each file noted with its last updated version starting at version 1.5
+  - WP: correction to widget definition in functions.php and sidebar.php
+
+-- Version 1.5
+  - released: April 18, 2010
+  - removed `show_avatar` function (not used)
+  - reviewed for compatibility with WordPress 3.0
+  - using `add_theme_support` added: `post-thumbnails`, `nav-menus`, and `automatic-feed-links`
+  - added BNS Modified Post function (requires WordPress 3.0)
+  - WP: added third widget area to sidebar
+  - WP: adopted default widget code as standard
+  - CSS: removed 'text-align:center' property from 'widget' class
+
+  - additional modifications to meet current guidelines as found at: http://codex.wordpress.org/Theme_Development_Checklist.
+
+-- Version 1.4.7
+  - CSS: added '*:focus' element
+
+-- Version 1.4.6
+  - added "GPL2" license statement to style.css
+  - CSS: added 'p a img' element to remove linked image borders
+  - WP: added dmm_dynamic_copyright() function to footer.php
+  - WP: Modified navigation links at bottom of pages
+
+-- Version 1.4.5
+  - corrected positioning of 'cancel-comment-reply-link'
+  - corrected positioning of 'logged-in' message for comments
+  - added query reset to correct for possible is_home() issue?!
+  - corrected deprecated parameter 'siteurl' to 'url' in header.php
+  - edited footer.php template file to better handle possible lengthy text fields
+  - CSS: cleaned out empty elements
+  - CSS: added #bottom-container within #bottom-extended
+  - CSS: reviewed IE6 conditional style sheet -> reduced theme elements being displayed; please upgrade!
+  - CSS: added better styling of page list elements
+  - moved theme version display to functions.php
+  - minor updates to Multi child theme included
+  - Multi version number should reflect Desk Mess Mirrored version
+  - NB: The image files twitter.png and flickr.png will remain but are not used in the theme.
+  - NB: Multi will no longer be included with Desk Mess Mirrored to reduce theme size after version 1.4.5
+  - NB: Multi will be available to download at http://buynowshop.com/themes/desk-mess-mirrored
+
+-- Version 1.4.4.1
+  - corrected page list style that was affecting sidebar layout
+
+-- Version 1.4.4
+  - added body_class() function
+  - added clearing div at the end of the_Loop
+  - German language translation by Hno2 hno2@gmx.net added
+
+-- Version 1.4.3.1
+  - corrected child theme file structures
+
+-- Version 1.4.3
+  - Updated Multi child theme to use correct comments.php template for threaded/nested functionality.
+  - CSS (new): added '.wp-caption.aligncenter {margin: 10px auto;}'
+  - CSS (new): added 'sup' and 'sub' elements
+  - added the signature HR image (finally) ... just use an 'hr' or 'desk-mess-mirrored' class
+
+-- Version 1.4.2
+	- CSS (new): added 'dl.gallery-item {margin: 0;}' as pointed out by Andy Fragen of http://troop262ps.org/
+	- CSS (edit): #comments -> 'padding: 24px 0 0 40px;' to 'padding: 30px 0 0 30px;'
+	- CSS (new): added '.page ol', '.page ul', and '.page li' elements
+	- comments.php (line 40) -> changed 'One Comment' to '1 Comment'
+
+-- Version 1.4.1
+	- minor code clean-up and formatting for easier reading
+	- changes to template files (index, archive, author, category, page, single): post="class" to post_class() function
+	- CSS (new): added 'sticky' elements
+	- CSS (edit): comment-body -> added 'padding-right: 10px;'
+	- CSS (edit): uncommented class 'user-id-2' style properties
+
+-- Version 1.4
+	- Added Threaded Comments!
+	- CSS: several changes to allow for the addition of Threaded Comments
+
+-- Version 1.3.1
+	- updated Theme URL (to its own page)
+	- CSS (new): added a:focus
+	- CSS (edit): .widget #wp-calendar -> changed 'margin: 0' to 'margin: 0 auto;'
+	- CSS (edit): updated BNS Plugins section
+	- CSS (edit): input:focus, textarea:focus -> changed 'padding-bottom: 30px' to 'padding: 1px 0;'
+
+-- Version 1.3
+	- added wp_link_pages() into single.php
+	- re-coded footer.php to correct for issues with fopen() errors
+	- re-coded the searchform.php and sidebar search box
+	- CSS (new): added addition #main-blog elements in the === Forms === section
+	- CSS (new): added BNS Plugins section
+
+NB: Version 1.2 will be the last version to maintain the legacy files:
+      * home.php
+      * header-home.php
+    To use the most current and up-to-date version of the Desk Mess Mirrored
+    theme, please delete and re-install. If you have any questions regarding
+    how to do this, please feel free to contact me directly. Thank you.
+      ~~ cais (email: aid@buynowshop.com)
+
+-- Version 1.2
+  - added "edit" link to page.php
+  - added "comments" to page.php
+  - added child theme: Multi in folder "desk-mess-mirrored-multi"
+  - added "child-theme-readme.txt" to help with installation
+  - edited "footer.php" to wrap wp_footer call in its own `div id="bottom-extended"`
+  - CSS: added styles for #bottom-extended
+
+-- Version 1.1.1
+  - corrected header-home.php and home.php to details of version 1.0.9
+  - corrected CSS: changed "#akismetwrap" to "#akismetstats"
+
+-- Version 1.1.0
+  - removed the files ~header-home.php and ~home.php from the theme package
+
+-- Version 1.0.9
+  - deprecated the header-home.php and home.php files by adding a tilde (~) character to the beginning of the file name. The functionality was merged into the index.php file with additional PHP code, specifically an IF statement to test for the displayed page being the "home page", or the "front page". This will reduce maintenance and potential errors that cropped up due to the extra files.
+  -- copies of header-home.php and home.php from version 1.0.8 are still included (prefixed with the tilde character) but will be removed in 1.1.0
+  - re-coded footer to programmatically write the theme name in the credit line, including recognition of child themes.
+  - added additional internationalization code
+  - CSS: corrected "administrator" background-image issue
+  - CSS: adjust 'padding' in ".post-comments" elements to better align number of comments
+  - CSS: added ".left" and ".right" alignment elements
+  - CSS: "#akismetwrap" added to align Akismet blue graphic in widget block
+  - CSS: ".commentlist pre" added
+  - CSS: removed 'border: 1px inset;' from "#com p code"
+  - IE6 CSS: additional adjustments made to the IE6 CSS to show menu >> unfinished
+
+-- Version 1.0.8
+  - the name of the theme in the credits line (footer) is now displayed programmatically from the (parent) stylesheet "Theme Name" details
+  - added more internationalization (I18n) code specified at this page: http://codex.wordpress.org/I18n_for_WordPress_Developers
+  - summarized h1-h6 style elements; and, added h4, h5, h6 styles
+  - style element "#menu li" and "#content" amended to handle long page names; corrections for menu overflow on longer names
+  - added "overflow:hidden" to #bottom as suggested by Florin Arjuco (@gmail.com) -> with many thanks for other inputs as well
+
+-- Version 1.0.7
+  -> .po file to be used for translations can be generated at http://www.icanlocalize.com/tools/php_scanner
+  - added theme version number in credit line
+  - removed category.php placeholder file
+
+-- Version 1.0.6
+  - Removed unused CSS (legacy from original theme)
+  - added minimal Form element styles
+  - added email link to author.php
+  - removed list "dot" beside calendar via '#subcolumn ul' element
+  - added '.post dl' and related CSS elements
+
+-- Version 1.0.5 (Jun 9, 2009)
+  - Corrected RSS feed URL in single.php (correction as noted by Bill Girimonti pipeline_intl@orcon.net.nz - Thank You!)
+  - Added comment `code` styles
+  - Added author template page
+  - Author posts displayed with "Mullet Loop" as inspired by http://perishablepress.com/
+  - Added link to author page in single.php at end of post
+  - Added styles for author related items
+
+-- Version 1.0.4
+  - additional localization added
+  - slight theme detail changes
+  - added Ordered List `ol` styles
+
+-- Version 1.0.3
+  - removed jbLogo.php from theme and all references
+
+-- Version 1.0.2
+  - Added sample second administrator (user_id=2) code in comments.php (see above)
+  - Added background image to CSS pre element
+  - corrected comment on img#wpstats element; and, changed style to recommended from ../extend/plugins/stats/faq/
+  - moved jbLogo required CSS to inline see file contents of jbLogo.php
+  - commented out sample link in jbLogo.php; and, referenced sample image size
+  - original jbLogo CSS commented out, left for reference purposes
+
+-- Version 1.0.1
+  - Reduced credit links in footer to one (1) for submission purposes
 
 == Review Tickets ==
 * http://themes.trac.wordpress.org/ticket/418

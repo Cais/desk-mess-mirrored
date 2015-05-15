@@ -26,7 +26,9 @@ get_header(); ?>
 	<div id="maintop"></div>
 
 	<div id="wrapper">
+
 		<div id="content">
+
 			<div id="main-blog">
 
 				<h1><?php _e( 'You have arrived at the 404 page!!!', 'desk-mess-mirrored' ); ?></h1>
@@ -63,6 +65,7 @@ get_header(); ?>
 
 		</div>
 		<!--end content-->
+
 	</div><!--end wrapper-->
 
 <?php get_footer();

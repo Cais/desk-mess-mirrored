@@ -1,12 +1,6 @@
 === Desk Mess Mirrored ===
-Changelog: April 15, 2015
-== Version 2.4 ==
-= Code =
-* i18n updates to better enable translations
-* Minor code clean-up
-
-= Miscellaneous =
-* Update copyright year and tested up to version
+Last revised: May 15, 2015
+- moved back to `readme.txt` file
 
 /** ------------------------------------------------------------------------- */
 == Version 2.3 ==
