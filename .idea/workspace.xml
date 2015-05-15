@@ -35,9 +35,21 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8940">
-              <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.55886734" vertical-offset="540" max-vertical-offset="8955">
+              <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desk-mess-mirrored.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.458333" vertical-offset="808" max-vertical-offset="1920">
+              <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+              <folding>
+                <element signature="e#6#1110#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,8 +57,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125" vertical-offset="3285" max-vertical-offset="12510">
-              <caret line="240" column="70" selection-start-line="240" selection-start-column="70" selection-end-line="240" selection-end-column="70" />
+            <state vertical-scroll-proportion="-12.583333" vertical-offset="6058" max-vertical-offset="12510">
+              <caret line="424" column="62" selection-start-line="424" selection-start-column="62" selection-end-line="424" selection-end-column="62" />
               <folding>
                 <element signature="e#6#905#0#PHP" expanded="true" />
               </folding>
@@ -299,12 +311,6 @@
       <created>1322439939982</created>
       <option name="number" value="Default" />
       <updated>1322439939982</updated>
-    </task>
-    <task id="LOCAL-00024" summary="* Added link to author page when comments closed message is displayed">
-      <created>1361724290399</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1361724290399</updated>
     </task>
     <task id="LOCAL-00025" summary="* Remove var_dump test">
       <created>1361724462900</created>
@@ -594,7 +600,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431705063909</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="* Added transient to only check first post approximately once a month">
+      <created>1431706066386</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1431706066386</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -663,7 +675,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Update `readme.txt` with version 2.2.3 trac ticket #15296&#10;* Update version to 2.2.4-alpha in preparation for future updates&#10;* Updated Changelog to add 2.2.4 headings" />
     <MESSAGE value="* Code reformatted to better meet the WordPress Coding Standards" />
     <MESSAGE value="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years" />
     <MESSAGE value="* Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity" />
@@ -688,7 +699,8 @@
     <MESSAGE value="* Add support for the `title` tag" />
     <MESSAGE value="* Added `dmm-post-formats` filter to extend which post-formats support" />
     <MESSAGE value="* Refactored sidebar parameters to use already defined WordPress defaults" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Refactored sidebar parameters to use already defined WordPress defaults" />
+    <MESSAGE value="* Added transient to only check first post approximately once a month" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added transient to only check first post approximately once a month" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -863,14 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1920">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1425">
@@ -1002,10 +1006,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.458333" vertical-offset="808" max-vertical-offset="1920">
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+          <folding>
+            <element signature="e#6#1110#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="3285" max-vertical-offset="12510">
-          <caret line="240" column="70" selection-start-line="240" selection-start-column="70" selection-end-line="240" selection-end-column="70" />
+        <state vertical-scroll-proportion="-12.583333" vertical-offset="6058" max-vertical-offset="12510">
+          <caret line="424" column="62" selection-start-line="424" selection-start-column="62" selection-end-line="424" selection-end-column="62" />
           <folding>
             <element signature="e#6#905#0#PHP" expanded="true" />
           </folding>
@@ -1017,8 +1031,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5365127" vertical-offset="540" max-vertical-offset="8940">
-          <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.55886734" vertical-offset="540" max-vertical-offset="8955">
+          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
           <folding />
         </state>
       </provider>

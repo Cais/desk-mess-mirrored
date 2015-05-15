@@ -422,6 +422,7 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
  * @date     May 15, 2015
  * Added support for the `title` tag
  * Added `dmm-post-formats` filter to extend which post-formats support
+ * Moved `$content_width` definition into theme setup function
  */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 	function desk_mess_mirrored_setup() {
@@ -623,6 +624,17 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 			require_once( $locale_file );
 		}
 
+		/**
+		 * Set `content_width` based on the theme design and stylesheet to keep images,
+		 * videos, etc. within the confines of the post block.
+		 *
+		 * @internal see #main-blog element in style.css
+		 */
+		global $content_width;
+		if ( ! isset( $content_width ) ) {
+			$content_width = 580;
+		}
+
 	}
 
 }
@@ -796,7 +808,7 @@ if ( function_exists( 'dmm_page_link' ) ) {
  *
  * @internal    Separators do not need to be translated as they are design elements
  */
-if ( function_exists( 'dmm_post_meta_link_edit' ) ) {
+if ( ! function_exists( 'dmm_post_meta_link_edit' ) ) {
 
 	function dmm_post_meta_link_edit() {
 
@@ -806,18 +818,6 @@ if ( function_exists( 'dmm_post_meta_link_edit' ) ) {
 	}
 
 }
-
-
-/**
- * Set `content_width` based on the theme design and stylesheet to keep images,
- * videos, etc. within the confines of the post block.
- *
- * @internal see #main-blog element in style.css
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 580;
-}
-
 
 /** Compatibility Code ------------------------------------------------------ */
 
