@@ -65,6 +65,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 = CSS =
 
 = Miscellaneous =
+* Added default `.po` and English (Canada) translation files
 * Update copyright years and miscellaneous comment cleanup
 
 /** ------------------------------------------------------------------------- */

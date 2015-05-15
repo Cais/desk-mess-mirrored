@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.mo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored.po" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,8 +37,30 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55886734" vertical-offset="540" max-vertical-offset="8955">
-              <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.4918033" vertical-offset="675" max-vertical-offset="8970">
+              <caret line="67" column="60" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-92.583336" vertical-offset="8983" max-vertical-offset="12510">
+              <caret line="747" column="3" selection-start-line="747" selection-start-column="3" selection-end-line="747" selection-end-column="3" />
+              <folding>
+                <element signature="e#6#905#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="9.291667" vertical-offset="493" max-vertical-offset="1170">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -45,22 +69,10 @@
       <file leaf-file-name="desk-mess-mirrored.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.458333" vertical-offset="808" max-vertical-offset="1920">
-              <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+            <state vertical-scroll-proportion="-13.208333" vertical-offset="928" max-vertical-offset="1920">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
               <folding>
                 <element signature="e#6#1110#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.583333" vertical-offset="6058" max-vertical-offset="12510">
-              <caret line="424" column="62" selection-start-line="424" selection-start-column="62" selection-end-line="424" selection-end-column="62" />
-              <folding>
-                <element signature="e#6#905#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,7 +104,6 @@
         <option value="$PROJECT_DIR$/author.php" />
         <option value="$PROJECT_DIR$/archive.php" />
         <option value="$PROJECT_DIR$/comments.php" />
-        <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
@@ -108,6 +119,7 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/support.txt" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
       </list>
@@ -311,12 +323,6 @@
       <created>1322439939982</created>
       <option name="number" value="Default" />
       <updated>1322439939982</updated>
-    </task>
-    <task id="LOCAL-00025" summary="* Remove var_dump test">
-      <created>1361724462900</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1361724462900</updated>
     </task>
     <task id="LOCAL-00026" summary="* Adjusted `li.text_widget` margin values">
       <created>1365355917485</created>
@@ -606,7 +612,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431706066386</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="* Moved `$content_width` definition into theme setup function">
+      <created>1431706522859</created>
+      <option name="number" value="00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1431706522859</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -675,7 +687,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Code reformatted to better meet the WordPress Coding Standards" />
     <MESSAGE value="* Minor clean-up of old properties&#10;* Code reformatted to better meet the WordPress Coding Standards&#10;* Clean-up `readme.txt` file&#10;* Updated Copyright Years" />
     <MESSAGE value="* Removed call to `function_exists( 'dynamic_sidebar' )` as required WordPress version precludes its necessity" />
     <MESSAGE value="* Added `Textdomain` to theme header block" />
@@ -700,7 +711,8 @@
     <MESSAGE value="* Added `dmm-post-formats` filter to extend which post-formats support" />
     <MESSAGE value="* Refactored sidebar parameters to use already defined WordPress defaults" />
     <MESSAGE value="* Added transient to only check first post approximately once a month" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added transient to only check first post approximately once a month" />
+    <MESSAGE value="* Moved `$content_width` definition into theme setup function" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Moved `$content_width` definition into theme setup function" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -931,14 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1170">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="900">
@@ -1006,10 +1010,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.291667" vertical-offset="493" max-vertical-offset="1170">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.458333" vertical-offset="808" max-vertical-offset="1920">
-          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+        <state vertical-scroll-proportion="-13.208333" vertical-offset="928" max-vertical-offset="1920">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
           <folding>
             <element signature="e#6#1110#0#PHP" expanded="true" />
           </folding>
@@ -1018,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.583333" vertical-offset="6058" max-vertical-offset="12510">
-          <caret line="424" column="62" selection-start-line="424" selection-start-column="62" selection-end-line="424" selection-end-column="62" />
+        <state vertical-scroll-proportion="-92.583336" vertical-offset="8983" max-vertical-offset="12510">
+          <caret line="747" column="3" selection-start-line="747" selection-start-column="3" selection-end-line="747" selection-end-column="3" />
           <folding>
             <element signature="e#6#905#0#PHP" expanded="true" />
           </folding>
@@ -1031,8 +1043,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55886734" vertical-offset="540" max-vertical-offset="8955">
-          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.4918033" vertical-offset="675" max-vertical-offset="8970">
+          <caret line="67" column="60" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
           <folding />
         </state>
       </provider>
