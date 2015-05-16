@@ -62,6 +62,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * Improved i18n implementation
 * Moved `$content_width` definition into theme setup function
 * Refactored sidebar parameters to use already defined WordPress defaults
+* Updated author archive link in single views
 
 = CSS =
 

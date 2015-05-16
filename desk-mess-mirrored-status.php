@@ -21,8 +21,8 @@
  * @date        April 13, 2014
  * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
  *
- * @version 2.4
- * @date    May 16, 2015
+ * @version     2.4
+ * @date        May 16, 2015
  * Improved i18n implementation
  */
 ?>
@@ -99,15 +99,16 @@
 			)
 		);
 
-		if ( is_single() ) { ?>
+		if ( is_single() ) {
+
+			$dmm_author_link_url = get_author_posts_url( get_the_author_meta( 'ID' ) );
+			$dmm_author_link     = '<a href="' . $dmm_author_link_url . '">' . get_the_author_meta( 'nickname' ) . '</a>'; ?>
 
 			<div id="author_link">
-				<?php printf( '%1$s %2$s', __( '... other posts by', 'desk-mess-mirrored' ), the_author_posts_link() ); ?>
+				<?php printf( '%1$s %2$s', __( '... other posts by', 'desk-mess-mirrored' ), $dmm_author_link ); ?>
 			</div>
 
-			<?php dmm_modified_post();
-
-		} ?>
+		<?php } ?>
 
 		<p class="single-meta"><?php the_tags(); ?></p>
 

@@ -39,6 +39,7 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
 
 				<div class="clear">&nbsp;</div>
 				<!-- Hack: the non-breaking space keeps the content below the menu when menus contain many top-level items -->
+
 				<div id="author" class="<?php
 				/**
 				 * Add class as related to the user role (see 'Role:' drop-down in User options)
@@ -54,39 +55,43 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
 				} else {
 					echo 'guest';
 				}
-				/** End if - user can */
+
 				if ( ( $curauth->ID ) == '1' ) {
 					echo ' administrator-prime';
 				}
-				/** End if - current author ID */
+
 				/** elseif ( ( $curauth->ID ) == '2' ) { echo ' jellybeen'; } /** sample */
-				/** add user classes by ID following the above samples */
-				?>">
-					<h2><?php _e( 'About ', 'desk-mess-mirrored' );
-						echo $curauth->display_name; ?></h2>
+				/** add user classes by ID following the above samples */?>">
+
+					<h2><?php printf( '%1$s %2$s', __( 'About ', 'desk-mess-mirrored' ), $curauth->display_name ); ?></h2>
+
 					<ul>
 
 						<?php if ( ! empty( $curauth->user_url ) ) { ?>
+
 							<li class="user-url">
 								<?php printf(
 									__( 'Website: %1$s', 'desk-mess-mirrored' ),
 									'<a href="' . $curauth->user_url . '">' . $curauth->user_url . '</a>'
 								); ?>
 							</li>
-						<?php } /** End if - not empty user url */ ?>
+
+						<?php } ?>
 
 						<li class="user-email">
 							<?php printf(
 								__( 'Email: %1$s', 'desk-mess-mirrored' ),
 								'<a href="mailto:' . $curauth->user_email . '">' . __( 'email', 'desk-mess-mirrored' ) . '</a>'
 							); ?>
-						</li class="user-description">
+						</li>
 
 						<?php if ( ! empty( $curauth->user_description ) ) { ?>
-							<li>
+
+							<li  class="user-description">
 								<?php printf( __( 'Biography: %1$s', 'desk-mess-mirrored' ), $curauth->user_description ); ?>
 							</li>
-						<?php } /** End if - not empty user description */ ?>
+
+						<?php } ?>
 
 					</ul>
 				</div>
@@ -97,18 +102,22 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
 
 				<!-- start the Loop -->
 				<?php if ( have_posts() ) {
+
 					global $count;
 					$count = 0;
+
 					while ( have_posts() ) {
 						the_post();
 						get_template_part( 'desk-mess-mirrored', get_post_format() );
 					}
-					/** End while - have posts */
+
 					get_template_part( 'dmm-navigation' );
+
 				} else {
+
 					dmm_no_posts_found();
-				} /** End if - have posts */
-				?>
+
+				} ?>
 				<!-- end the Loop -->
 
 			</div>
@@ -117,6 +126,7 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
 			<?php get_sidebar(); ?>
 
 			<div class="clear"></div>
+
 		</div>
 		<!--end content-->
 	</div><!--end wrapper-->
