@@ -236,8 +236,8 @@ add_filter( 'widget_title', 'dmm_widget_title', 10, 1 );
  * Updated documentation to clarify function parameters
  * Renamed `BNS Dynamic Copyright` to `DMM Dynamic Copyright`
  *
- * @version 2.4
- * @date    May 15, 2015
+ * @version     2.4
+ * @date        May 15, 2015
  * Added transient to only check first post approximately once a month
  */
 if ( ! function_exists( 'dmm_dynamic_copyright' ) ) {
@@ -814,6 +814,36 @@ if ( ! function_exists( 'dmm_post_meta_link_edit' ) ) {
 
 		the_shortlink( apply_filters( 'dmm_post_permalink_text', '&infin;' ), '', ' | ', '' );
 		edit_post_link( apply_filters( 'dmm_post_edit_text', __( 'Edit', 'desk-mess-mirrored' ) ), ' | ', '' );
+
+	}
+
+}
+
+/**
+ * Single View Author Link
+ *
+ * @package Desk_Mess_Mirrored
+ * @since   2.4
+ *
+ * @uses    __
+ * @uses    get_author_posts_url
+ * @uses    get_the_author_meta
+ * @uses    is_single
+ */
+if ( ! function_exists( 'dmm_single_view_author_link' ) ) {
+
+	function dmm_single_view_author_link() {
+
+		if ( is_single() ) {
+
+			$dmm_author_link_url = get_author_posts_url( get_the_author_meta( 'ID' ) );
+			$dmm_author_link     = '<a href="' . $dmm_author_link_url . '">' . get_the_author_meta( 'nickname' ) . '</a>'; ?>
+
+			<div id="author_link">
+				<?php printf( '%1$s %2$s', __( '... other posts by', 'desk-mess-mirrored' ), $dmm_author_link ); ?>
+			</div>
+
+		<?php }
 
 	}
 
