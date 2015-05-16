@@ -59,6 +59,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * Added support for the `title` tag
 * Added `dmm-post-formats` filter to extend which post-formats support
 * Added transient to only check first post approximately once a month
+* Improved i18n implementation
 * Moved `$content_width` definition into theme setup function
 * Refactored sidebar parameters to use already defined WordPress defaults
 

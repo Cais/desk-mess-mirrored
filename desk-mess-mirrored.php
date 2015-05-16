@@ -32,6 +32,10 @@
  * @version     2.2.4
  * @date        April 13, 2014
  * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
+ *
+ * @version     2.4
+ * @date        May 16, 2015
+ * Improved i18n implementation
  */
 
 /** Set count variable for author 'mullet' loop */
@@ -41,54 +45,60 @@ $count ++; ?>
 	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 		<?php if ( is_page() ) { ?>
+
 			<h1><?php the_title(); ?></h1>
-			<?php edit_post_link( __( 'Edit This Page', 'desk-mess-mirrored' ), __( '&raquo;', 'desk-mess-mirrored' ), __( '&laquo;', 'desk-mess-mirrored' ) );
-		}
-		/** End if - is page */
+			<?php edit_post_link( __( 'Edit This Page', 'desk-mess-mirrored' ), '&raquo;', '&laquo;' );
 
-		if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) {
-			?>
+		}
+
+		if ( ! post_password_required() && ( comments_open() || ( get_comments_number() > 0 ) ) ) { ?>
+
 			<div class="post-comments">
-				<?php comments_popup_link( __( '0', 'desk-mess-mirrored' ), __( '1', 'desk-mess-mirrored' ), __( '%', 'desk-mess-mirrored' ), '', __( '-', 'desk-mess-mirrored' ) ); ?>
+				<?php comments_popup_link( __( '0', 'desk-mess-mirrored' ), __( '1', 'desk-mess-mirrored' ), '%', '', '-' ); ?>
 			</div>
-		<?php
-		}
-		/** End if - not post password required */
 
-		if ( ! is_page() ) {
-			?>
+		<?php }
+
+		if ( ! is_page() ) { ?>
+
 			<h1>
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'desk-mess-mirrored' ); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 			</h1>
+
 			<div class="postdata">
-				<?php
-				printf(
+
+				<?php printf(
 					__( '%1$s by %2$s on %3$s in %4$s', 'desk-mess-mirrored' ),
 					dmm_use_posted(),
 					get_the_author(),
 					get_the_time( get_option( 'date_format' ) ),
 					get_the_category_list( ', ' )
 				);
+
 				if ( ! post_password_required() && ! comments_open() && ( is_home() || is_front_page() ) ) {
+
 					/** Only displays when comments are closed */
 					echo ' ';
 					comments_popup_link( '', '', '', '', __( 'with Comments closed', 'desk-mess-mirrored' ) );
+
 				}
-				/** End if - not post password required */
+
 				dmm_post_meta_link_edit(); ?>
+
 			</div><!-- .postdata -->
-		<?php
-		}
-		/** End if - is page */
+
+		<?php }
 
 		if ( has_post_thumbnail() && ( $post->post_type == 'post' ) ) {
 			the_post_thumbnail( 'full', array( 'class' => 'aligncenter' ) );
 		}
-		/** End if - has post thumbnail */
 
 		if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {
-			the_content( __( 'Read more... ', 'desk-mess-mirrored' ) ); ?>
+
+			the_content( __( 'Read more...', 'desk-mess-mirrored' ) ); ?>
+
 			<div class="clear"><!-- For inserted media at the end of the post --></div>
+
 			<?php wp_link_pages(
 				array(
 					'before'         => '<p id="wp-link-pages"><strong>' . __( 'Pages:', 'desk-mess-mirrored' ) . '</strong> ',
@@ -96,25 +106,27 @@ $count ++; ?>
 					'next_or_number' => 'number'
 				)
 			);
-		} else {
-			the_excerpt(); ?>
-			<div class="clear"><!-- For inserted media at the end of the post --></div>
-		<?php
-		}
-		/** End if - is home */
 
-		if ( is_single() ) {
-			?>
-			<div id="author_link"><?php _e( '... other posts by ', 'desk-mess-mirrored' ); ?><?php the_author_posts_link(); ?></div>
-		<?php
-		}
-		/** End if - is single */
+		} else {
+
+			the_excerpt(); ?>
+
+			<div class="clear"><!-- For inserted media at the end of the post --></div>
+
+		<?php }
+
+		if ( is_single() ) { ?>
+
+			<div id="author_link">
+				<?php printf( '%1$s %2$s', __( '... other posts by', 'desk-mess-mirrored' ), the_author_posts_link() ); ?>
+			</div>
+
+		<?php }
 
 		/** Show a shortlink on the page - requires Jetpack be active */
 		if ( DMM_SHOW_PAGE_PERMALINK ) {
 			dmm_page_link( $text = __( 'Page Permalink', 'desk-mess-mirrored' ) );
-		} /** End if - Show Page Permalink */
-		?>
+		} ?>
 
 		<p class="single-meta"><?php the_tags(); ?></p>
 
