@@ -74,7 +74,7 @@
 						</ul>
 					</li><!-- widget meta -->
 
-				<?php endif; /** End if - Sidebar-1 Widget area */ ?>
+				<?php endif; ?>
 
 				<?php if ( dynamic_sidebar( 'sidebar-2' ) ) : else : endif; ?>
 				<?php if ( dynamic_sidebar( 'sidebar-3' ) ) : else : endif; ?>

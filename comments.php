@@ -56,7 +56,9 @@ if ( post_password_required() ) {
  * Add class as related to the user role (see 'Role:' drop-down in User options)
  */
 function dmm_add_comment_classes( $classes ) {
+
 	global $comment;
+
 	/** Add classes based on user role */
 	if ( user_can( $comment->user_id, 'administrator' ) ) {
 		$classes[] = 'administrator';
@@ -69,7 +71,6 @@ function dmm_add_comment_classes( $classes ) {
 	} else {
 		$classes[] = 'guest';
 	}
-	/** End if - user can */
 
 	/** Add user ID based classes */
 	if ( $comment->user_id == 1 ) {
@@ -79,19 +80,19 @@ function dmm_add_comment_classes( $classes ) {
 		/** All other users - NB: user-id-0 -> non-registered user */
 		$userid = "user-id-" . ( $comment->user_id );
 	}
-	/** End if - current user id */
 
 	$classes[] = $userid;
 
 	/** Add microid */
 	$c_email = get_comment_author_email();
 	$c_url   = get_comment_author_url();
+
 	if ( ! empty( $c_email ) && ! empty( $c_url ) ) {
+
 		$microid   = 'microid-mailto+http:sha1:' . sha1( sha1( 'mailto:' . $c_email ) . sha1( $c_url ) );
 		$classes[] = $microid;
-	}
 
-	/** End if - not empty */
+	}
 
 	return $classes;
 
@@ -101,6 +102,7 @@ function dmm_add_comment_classes( $classes ) {
 add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
 
 <div id="comments-main">
+
 	<?php
 	/** Show comments */
 	if ( have_comments() ) {
@@ -114,7 +116,7 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
 			<?php wp_list_comments(
 				array(
 					'avatar_size' => 60,
-					'reply_text'  => __( '&raquo; Reply to this Comment &laquo;', 'desk-mess-mirrored' )
+					'reply_text'  => '&raquo; ' . __( 'Reply to this Comment', 'desk-mess-mirrored' ) . '  &laquo;'
 				)
 			); ?>
 		</ul><!-- #comments -->
@@ -127,6 +129,7 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
 		<?php
 
 		global $post;
+
 		if ( 'open' == $post->comment_status ) {
 
 			/** If comments are open, but there are no comments. */
@@ -136,7 +139,6 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
 					apply_filters( 'dmm_nocomments_open', __( 'Want to leave a note? Just fill in the form below.', 'desk-mess-mirrored' ) )
 				);
 			}
-			/** End if - not have comments */
 
 		} else {
 
@@ -153,13 +155,10 @@ add_filter( 'comment_class', 'dmm_add_comment_classes' ); ?>
 					)
 				);
 			}
-			/** End if - not is page */
 
 		}
-		/** End if - comments open and no comments */
 
 	}
-	/** End if - have comments */
 
 	comment_form(); ?>
 
