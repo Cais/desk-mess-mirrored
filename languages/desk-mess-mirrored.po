@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Desk Mess Mirrored\n"
-"POT-Creation-Date: 2015-05-15 14:32-0500\n"
-"PO-Revision-Date: 2015-05-15 14:32-0500\n"
+"POT-Creation-Date: 2015-05-16 18:04-0500\n"
+"PO-Revision-Date: 2015-05-16 18:04-0500\n"
 "Last-Translator: Edward Caissie <edward.caissie@gmail.com>\n"
 "Language-Team: Edward Caissie <edward.caissie@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -35,30 +35,30 @@ msgid ""
 "else?"
 msgstr ""
 
-#: author.php:65
+#: author.php:66
 msgid "About "
 msgstr ""
 
-#: author.php:72
+#: author.php:74
 #, php-format
 msgid "Website: %1$s"
 msgstr ""
 
-#: author.php:80
+#: author.php:83
 #, php-format
 msgid "Email: %1$s"
 msgstr ""
 
-#: author.php:81
+#: author.php:84
 msgid "email"
 msgstr ""
 
-#: author.php:87
+#: author.php:91
 #, php-format
 msgid "Biography: %1$s"
 msgstr ""
 
-#: author.php:95
+#: author.php:100
 msgid "Posts by "
 msgstr ""
 
@@ -70,241 +70,203 @@ msgstr ""
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: comments.php:110
+#: comments.php:112
 msgid "No Comments"
 msgstr ""
 
-#: comments.php:110
+#: comments.php:112
 msgid "1 Comment"
 msgstr ""
 
-#: comments.php:110
+#: comments.php:112
 msgid "% Comments"
 msgstr ""
 
-#: comments.php:117
-msgid "&raquo; Reply to this Comment &laquo;"
+#: comments.php:119
+msgid "Reply to this Comment"
 msgstr ""
 
-#: comments.php:136
+#: comments.php:139
 msgid "Want to leave a note? Just fill in the form below."
 msgstr ""
 
-#: comments.php:150
+#: comments.php:152
 #, php-format
 msgid "Comments are closed. Would you like to contact the %1$s directly?"
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:33 desk-mess-mirrored-link.php:28
-#: desk-mess-mirrored-quote.php:32 desk-mess-mirrored-status.php:32
-#: desk-mess-mirrored.php:52
+#: desk-mess-mirrored-aside.php:38 desk-mess-mirrored-link.php:34
+#: desk-mess-mirrored-quote.php:38 desk-mess-mirrored-status.php:38
+#: desk-mess-mirrored.php:58
 msgid "0"
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:33 desk-mess-mirrored-link.php:28
-#: desk-mess-mirrored-quote.php:32 desk-mess-mirrored-status.php:32
-#: desk-mess-mirrored.php:52
+#: desk-mess-mirrored-aside.php:38 desk-mess-mirrored-link.php:34
+#: desk-mess-mirrored-quote.php:38 desk-mess-mirrored-status.php:38
+#: desk-mess-mirrored.php:58
 msgid "1"
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:33 desk-mess-mirrored-link.php:28
-#: desk-mess-mirrored-quote.php:32 desk-mess-mirrored-status.php:32
-#: desk-mess-mirrored.php:52
-msgid "%"
-msgstr ""
-
-#: desk-mess-mirrored-aside.php:33 desk-mess-mirrored-link.php:28
-#: desk-mess-mirrored-quote.php:32 desk-mess-mirrored-status.php:32
-#: desk-mess-mirrored.php:52
-msgid "-"
-msgstr ""
-
-#: desk-mess-mirrored-aside.php:41 desk-mess-mirrored-link.php:35
-#: desk-mess-mirrored-quote.php:39 desk-mess-mirrored-status.php:39
+#: desk-mess-mirrored-aside.php:46 desk-mess-mirrored-link.php:42
+#: desk-mess-mirrored-quote.php:46 desk-mess-mirrored-status.php:46
 msgid "Permalink to: "
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:50 desk-mess-mirrored-link.php:45
-#: desk-mess-mirrored-quote.php:48 desk-mess-mirrored-status.php:49
+#: desk-mess-mirrored-aside.php:55 desk-mess-mirrored-link.php:53
+#: desk-mess-mirrored-quote.php:54 desk-mess-mirrored-status.php:57
 #, php-format
 msgid "Posted by %1$s on %2$s in %3$s"
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:58 desk-mess-mirrored-link.php:53
-#: desk-mess-mirrored-quote.php:56 desk-mess-mirrored-status.php:57
-#: desk-mess-mirrored.php:75
+#: desk-mess-mirrored-aside.php:65 desk-mess-mirrored-link.php:63
+#: desk-mess-mirrored-quote.php:64 desk-mess-mirrored-status.php:67
+#: desk-mess-mirrored.php:83
 msgid "with Comments closed"
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:69 desk-mess-mirrored-link.php:73
-#: desk-mess-mirrored-quote.php:66 desk-mess-mirrored-status.php:77
-#: desk-mess-mirrored.php:90
-msgid "Read more... "
+#: desk-mess-mirrored-aside.php:77 desk-mess-mirrored-link.php:87
+#: desk-mess-mirrored-quote.php:76 desk-mess-mirrored-status.php:91
+#: desk-mess-mirrored.php:99
+msgid "Read more..."
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:76 desk-mess-mirrored-link.php:80
-#: desk-mess-mirrored-quote.php:73 desk-mess-mirrored-status.php:84
-#: desk-mess-mirrored.php:94
+#: desk-mess-mirrored-aside.php:83 desk-mess-mirrored-link.php:93
+#: desk-mess-mirrored-quote.php:82 desk-mess-mirrored-status.php:97
+#: desk-mess-mirrored.php:105
 msgid "Pages:"
 msgstr ""
 
-#: desk-mess-mirrored-aside.php:83 desk-mess-mirrored-link.php:87
-#: desk-mess-mirrored-quote.php:80 desk-mess-mirrored-status.php:91
-#: desk-mess-mirrored.php:108
-msgid "... other posts by "
-msgstr ""
-
-#: desk-mess-mirrored-link.php:58 desk-mess-mirrored-status.php:62
+#: desk-mess-mirrored-link.php:70 desk-mess-mirrored-status.php:74
 #, php-format
 msgid "Posted by %1$s on %2$s @ %3$s<br />in %4$s"
 msgstr ""
 
-#: desk-mess-mirrored.php:45
+#: desk-mess-mirrored.php:51
 msgid "Edit This Page"
 msgstr ""
 
-#: desk-mess-mirrored.php:45
-msgid "&raquo;"
-msgstr ""
-
-#: desk-mess-mirrored.php:45
-msgid "&laquo;"
-msgstr ""
-
-#: desk-mess-mirrored.php:61
+#: desk-mess-mirrored.php:66
 msgid "Permanent Link to"
 msgstr ""
 
-#: desk-mess-mirrored.php:66
+#: desk-mess-mirrored.php:72
 #, php-format
 msgid "%1$s by %2$s on %3$s in %4$s"
 msgstr ""
 
-#: desk-mess-mirrored.php:115
+#: desk-mess-mirrored.php:123
 msgid "Page Permalink"
 msgstr ""
 
 #: dmm-navigation.php:23
-msgid "&laquo; Older posts"
+msgid "Older posts"
 msgstr ""
 
 #: dmm-navigation.php:26
-msgid "Newer posts &raquo;"
+msgid "Newer posts"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:137
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: functions.php:169
+#: functions.php:173
 msgid "Widget Area 1"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:175
 msgid ""
 "Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme "
 "sidebar content is placed here. If you drag and drop a new widget into this "
 "area you will replace *all* of the default sidebar content."
 msgstr ""
 
-#: functions.php:176
+#: functions.php:180
 msgid "Widget Area 2"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:182
 msgid ""
 "Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. "
 "This area is empty by default"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:187
 msgid "Widget Area 3"
 msgstr ""
 
-#: functions.php:185
+#: functions.php:189
 msgid ""
 "Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. "
 "This are is empty by default"
 msgstr ""
 
-#: functions.php:266
+#: functions.php:270
 msgid "Copyright"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:330
 msgid "All rights reserved."
 msgstr ""
 
-#: functions.php:330
+#: functions.php:334
 #, php-format
 msgid ""
 "<span id=\"dmm-dynamic-copyright\"> %1$s </span><!-- #bns-dynamic-copyright "
 "-->"
 msgstr ""
 
-#: functions.php:371
+#: functions.php:375
 #, php-format
 msgid "This site is using the %1$s Child-Theme, v%2$s, on top of"
 msgstr ""
 
-#: functions.php:371
+#: functions.php:375
 #, php-format
 msgid "the Parent-Theme %3$s, v%4$s, from %5$s"
 msgstr ""
 
-#: functions.php:384
+#: functions.php:388
 #, php-format
 msgid "This site is using the %1$s theme, v%2$s, from %3$s"
 msgstr ""
 
-#: functions.php:478
-msgid "*"
-msgstr ""
-
-#: functions.php:506
-msgid "\""
-msgstr ""
-
-#: functions.php:536
-msgid "@"
-msgstr ""
-
-#: functions.php:564
-msgid "&infin;"
-msgstr ""
-
-#: functions.php:607
+#: functions.php:611
 msgid "Top Menu"
 msgstr ""
 
-#: functions.php:663 functions.php:664
+#: functions.php:667 functions.php:668
 msgid "Posted"
 msgstr ""
 
-#: functions.php:710
+#: functions.php:714
 #, php-format
 msgid "Last modified by %1$s %2$s on %3$s at %4$s."
 msgstr ""
 
-#: functions.php:754
+#: functions.php:758
 #, php-format
 msgid "Search Results for: \"%s\""
 msgstr ""
 
-#: functions.php:756
+#: functions.php:760
 msgid "There was no search performed."
 msgstr ""
 
-#: functions.php:760
+#: functions.php:764
 msgid "Would you like to search again?"
 msgstr ""
 
-#: functions.php:816
+#: functions.php:820
 msgid "Edit"
 msgstr ""
 
-#: search.php:29
+#: functions.php:847
+msgid "... other posts by"
+msgstr ""
+
+#: search.php:30
 msgid "We found something! It looks like you searched for ..."
 msgstr ""
 

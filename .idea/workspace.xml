@@ -4,8 +4,7 @@
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.mo" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.mo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.po" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/desk-mess-mirrored.po" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored.po" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="desk-mess-mirrored.iws" />
@@ -39,16 +38,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7153502" vertical-offset="585" max-vertical-offset="9045">
               <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5" vertical-offset="195" max-vertical-offset="13020">
-              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -299,12 +288,6 @@
       <created>1322439939982</created>
       <option name="number" value="Default" />
       <updated>1322439939982</updated>
-    </task>
-    <task id="LOCAL-00032" summary="* Refactored author &quot;About&quot; box to not show empty details&#10;* Added classes to author &quot;About&quot; box details for easier display manipulation">
-      <created>1374068963503</created>
-      <option name="number" value="00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1374068963503</updated>
     </task>
     <task id="LOCAL-00033" summary="* Centered searchform box and hid screen reader text">
       <created>1374069328972</created>
@@ -594,7 +577,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431812764607</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="* Cleaned up i18n implementation - &quot;symbol&quot; characters are a design choice">
+      <created>1431813586165</created>
+      <option name="number" value="00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1431813586165</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -663,7 +652,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)" />
     <MESSAGE value="* Changed `fixed-width` theme tag to `fixed-layout`&#10;* Added trac reference https://themes.trac.wordpress.org/ticket/17976 to `readme.txt`&#10;* Set version as 2.2.4.1" />
     <MESSAGE value="* Code reformatting to better meet current WordPress Coding Standards" />
     <MESSAGE value="* Removed `wp_list_bookmarks` section from `sidebar.php` template" />
@@ -688,7 +676,8 @@
     <MESSAGE value="* Updated author archive link in single views" />
     <MESSAGE value="- miscellaneous extraneous comment reductions" />
     <MESSAGE value="* Extracted out code for `dmm_single_view_author_link` function for all post-formats templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Extracted out code for `dmm_single_view_author_link` function for all post-formats templates" />
+    <MESSAGE value="* Cleaned up i18n implementation - &quot;symbol&quot; characters are a design choice" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Cleaned up i18n implementation - &quot;symbol&quot; characters are a design choice" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -1049,7 +1038,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="195" max-vertical-offset="13020">
+        <state vertical-scroll-proportion="-12.474151" vertical-offset="8940" max-vertical-offset="13020">
           <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
           <folding />
         </state>
