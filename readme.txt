@@ -596,3 +596,4 @@ NB: Version 1.2 will be the last version to maintain the legacy files:
 * http://themes.trac.wordpress.org/ticket/13479 - version 2.2.2
 * http://themes.trac.wordpress.org/ticket/15296 - version 2.2.3
 * https://themes.trac.wordpress.org/ticket/17976 - version 2.2.4.1
+* https://themes.trac.wordpress.org/ticket/24930 - version 2.4

@@ -34,8 +34,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.022354694" vertical-offset="0" max-vertical-offset="9045">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.8882265" vertical-offset="8374" max-vertical-offset="9060">
+              <caret line="598" column="62" selection-start-line="598" selection-start-column="62" selection-end-line="598" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -286,12 +286,6 @@
       <created>1322439939982</created>
       <option name="number" value="Default" />
       <updated>1322439939982</updated>
-    </task>
-    <task id="LOCAL-00034" summary="* Adjusted `hr` class properties">
-      <created>1374070276913</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1374070276913</updated>
     </task>
     <task id="LOCAL-00035" summary="* Corrected closed comments logic to properly display message">
       <created>1374071827728</created>
@@ -581,7 +575,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431813945750</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="- minor update">
+      <created>1431813999779</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1431813999779</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -606,7 +606,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1440" height="821" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -616,7 +616,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22522523" sideWeight="0.28412256" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32474965" sideWeight="0.67409474" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32474965" sideWeight="0.67409474" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22522523" sideWeight="0.28412256" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
@@ -650,7 +650,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Code reformatting to better meet current WordPress Coding Standards" />
     <MESSAGE value="* Removed `wp_list_bookmarks` section from `sidebar.php` template" />
     <MESSAGE value="* Dropped backward compatibility for `wp_title` with Desk Mess Mirrored Child-Themes based on version 2.1 and earlier" />
     <MESSAGE value="* Aligned previous month text in default calendar widget to left&#10;- minor documentation updates" />
@@ -675,7 +674,8 @@
     <MESSAGE value="* Extracted out code for `dmm_single_view_author_link` function for all post-formats templates" />
     <MESSAGE value="* Cleaned up i18n implementation - &quot;symbol&quot; characters are a design choice" />
     <MESSAGE value="- updated `.pomo` files" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updated `.pomo` files" />
+    <MESSAGE value="- minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="- minor update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -1047,8 +1047,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.022354694" vertical-offset="0" max-vertical-offset="9045">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.8882265" vertical-offset="8374" max-vertical-offset="9060">
+          <caret line="598" column="62" selection-start-line="598" selection-start-column="62" selection-end-line="598" selection-end-column="62" />
           <folding />
         </state>
       </provider>
