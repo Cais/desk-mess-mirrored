@@ -28,6 +28,10 @@
  * @version     2.3
  * @date        October 19, 2014
  * Added BNS Login "Compatibility Code" to use dashicons instead of text
+ *
+ * @version 2.4
+ * @date    May 16, 2015
+ * Cleaned up i18n implementation - "symbol" characters are a design choice
  */
 
 /** Define Desk Mess Mirrored "Home" domain */
@@ -475,7 +479,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 				$aside_glyph = '<span class="aside-glyph">';
 
 				empty( $dmm_no_title )
-					? $aside_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '*', 'desk-mess-mirrored' ) /** default: asterisk */ . '</span></a>'
+					? $aside_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . '*' /** default: asterisk */ . '</span></a>'
 					: $aside_glyph .= '*';
 
 				$aside_glyph .= '</span>';
@@ -503,7 +507,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 				$quote_glyph = '<span class="quote-glyph">';
 
 				empty( $dmm_no_title )
-					? $quote_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '"', 'desk-mess-mirrored' ) /** default: double-quote */ . '</span></a>'
+					? $quote_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . '"' /** default: double-quote */ . '</span></a>'
 					: $quote_glyph .= '"';
 
 				$quote_glyph .= '</span>';
@@ -533,7 +537,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 				$status_glyph = '<span class="status-glyph">';
 
 				empty( $dmm_no_title )
-					? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '@', 'desk-mess-mirrored' ) /** default: at symbol */ . '</span></a>'
+					? $status_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . '@' /** default: at symbol */ . '</span></a>'
 					: $status_glyph .= '@';
 
 				$status_glyph .= '</span>';
@@ -561,7 +565,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 				$link_glyph = '<span class="link-glyph">';
 
 				empty( $dmm_no_title )
-					? $link_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . __( '&infin;', 'desk-mess-mirrored' ) /** default: infinity symbol */ . '</span></a>'
+					? $link_glyph .= '<a href="' . get_permalink() . '" title="' . get_the_excerpt() . '"><span class="no-title">' . '&infin;' /** default: infinity symbol */ . '</span></a>'
 					: $link_glyph .= '&infin;';
 
 				$link_glyph .= '</span>';

@@ -69,6 +69,8 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 
 = Miscellaneous =
 * Added default `.po` and English (Canada) translation files
+* Cleaned up i18n implementation - "symbol" characters are a design choice
+* Moved `changlelog` back into 'readme.txt' file ('changelog.txt' remains as reference)
 * Update copyright years and miscellaneous comment cleanup
 
 /** ------------------------------------------------------------------------- */

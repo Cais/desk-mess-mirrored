@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d593d7-4db7-4223-a0d1-7326e99a5cd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-link.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-quote.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored-status.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored-status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desk-mess-mirrored.php" afterPath="$PROJECT_DIR$/desk-mess-mirrored.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.mo" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.po" afterPath="$PROJECT_DIR$/languages/desk-mess-mirrored-en_CA.po" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -34,64 +31,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0" vertical-offset="675" max-vertical-offset="9015">
-              <caret line="61" column="94" selection-start-line="61" selection-start-column="94" selection-end-line="61" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="desk-mess-mirrored.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.708333" vertical-offset="241" max-vertical-offset="2025">
-              <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="desk-mess-mirrored-aside.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="1500">
-              <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="desk-mess-mirrored-link.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-link.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1650">
-              <caret line="22" column="95" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="desk-mess-mirrored-quote.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-quote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.166666" vertical-offset="2" max-vertical-offset="1485">
-              <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="desk-mess-mirrored-status.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-status.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5745938" vertical-offset="1" max-vertical-offset="1710">
-              <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.7153502" vertical-offset="585" max-vertical-offset="9045">
+              <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -100,11 +47,9 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.083333" vertical-offset="12253" max-vertical-offset="12960">
-              <caret line="833" column="0" selection-start-line="833" selection-start-column="0" selection-end-line="833" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#905#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-12.5" vertical-offset="195" max-vertical-offset="13020">
+              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,13 +91,13 @@
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/single.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored.php" />
-        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-aside.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-link.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-quote.php" />
         <option value="$PROJECT_DIR$/desk-mess-mirrored-status.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
   </component>
@@ -354,12 +299,6 @@
       <created>1322439939982</created>
       <option name="number" value="Default" />
       <updated>1322439939982</updated>
-    </task>
-    <task id="LOCAL-00031" summary="* Code cleanup">
-      <created>1373996422651</created>
-      <option name="number" value="00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1373996422651</updated>
     </task>
     <task id="LOCAL-00032" summary="* Refactored author &quot;About&quot; box to not show empty details&#10;* Added classes to author &quot;About&quot; box details for easier display manipulation">
       <created>1374068963503</created>
@@ -649,7 +588,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431812306117</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="* Extracted out code for `dmm_single_view_author_link` function for all post-formats templates">
+      <created>1431812764607</created>
+      <option name="number" value="00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1431812764607</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -718,7 +663,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* Fixed `.wp-caption` left and right alignment issues" />
     <MESSAGE value="* Replaced screenshot with new 880 x 660 version (removed secondary screenshots)" />
     <MESSAGE value="* Changed `fixed-width` theme tag to `fixed-layout`&#10;* Added trac reference https://themes.trac.wordpress.org/ticket/17976 to `readme.txt`&#10;* Set version as 2.2.4.1" />
     <MESSAGE value="* Code reformatting to better meet current WordPress Coding Standards" />
@@ -743,7 +687,8 @@
     <MESSAGE value="* Improved i18n implementation" />
     <MESSAGE value="* Updated author archive link in single views" />
     <MESSAGE value="- miscellaneous extraneous comment reductions" />
-    <option name="LAST_COMMIT_MESSAGE" value="- miscellaneous extraneous comment reductions" />
+    <MESSAGE value="* Extracted out code for `dmm_single_view_author_link` function for all post-formats templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Extracted out code for `dmm_single_view_author_link` function for all post-formats templates" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
@@ -1062,20 +1007,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.083333" vertical-offset="12253" max-vertical-offset="12960">
-          <caret line="833" column="0" selection-start-line="833" selection-start-column="0" selection-end-line="833" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#905#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.48596752" vertical-offset="241" max-vertical-offset="2025">
+          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored.php">
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.708333" vertical-offset="241" max-vertical-offset="2025">
-          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.5760709" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4874446" vertical-offset="0" max-vertical-offset="1650">
+          <caret line="22" column="95" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-quote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5731167" vertical-offset="2" max-vertical-offset="1485">
+          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04283604" vertical-offset="361" max-vertical-offset="1710">
+          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="195" max-vertical-offset="13020">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
           <folding />
         </state>
       </provider>
@@ -1085,40 +1060,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="675" max-vertical-offset="9015">
-          <caret line="61" column="94" selection-start-line="61" selection-start-column="94" selection-end-line="61" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-aside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="1500">
-          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-link.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1650">
-          <caret line="22" column="95" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-quote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.166666" vertical-offset="2" max-vertical-offset="1485">
-          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desk-mess-mirrored-status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5745938" vertical-offset="1" max-vertical-offset="1710">
-          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.7153502" vertical-offset="585" max-vertical-offset="9045">
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
           <folding />
         </state>
       </provider>
