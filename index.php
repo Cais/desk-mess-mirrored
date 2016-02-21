@@ -14,11 +14,11 @@
  * @link        https://wordpress.org/themes/desk-mess-mirrored/
  *
  * @internal    REQUIRES WordPress version 3.4
- * @internal    Tested up to WordPress version 4.2.2
+ * @internal    Tested up to WordPress version 4.5
  *
- * @version     2.4
+ * @version     2.5
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2015, Edward Caissie
+ * @copyright   Copyright (c) 2009-2016, Edward Caissie
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 2, as published by the

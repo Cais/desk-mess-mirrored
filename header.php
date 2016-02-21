@@ -11,11 +11,7 @@
  * @link        https://wordpress.org/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2015, Edward Caissie
- *
- * @version     2.2
- * @date        February 25, 2013
- * Cleaned up 'head' section
+ * @copyright   Copyright (c) 2009-2016, Edward Caissie
  *
  * @version     2.3
  * @date        October 13, 2014

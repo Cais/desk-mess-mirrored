@@ -11,7 +11,7 @@
  * @link        https://wordpress.org/themes/desk-mess-mirrored/
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2009-2015, Edward Caissie
+ * @copyright   Copyright (c) 2009-2016, Edward Caissie
  *
  * @uses        get_template_part( 'dmm-navigation' )
  * @internal    used in 404, index, archive, and author
