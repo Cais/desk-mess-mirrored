@@ -58,7 +58,9 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * Released ...
 = Code =
 * Added `dmm_featured_image_view` function to display vertical aspect ratio featured images more aesthetically
+* Added sanity check for 'DMM_SHOW_PAGE_PERMALINK' being defined
 * Removed `wp_title()` call reference, theme requires WordPress 4.1+ (no sanity checks)
+* Removed `wip` folder and reference to `extra.css` file
 
 = CSS =
 * Added custom CSS for BNS Support plugin shortcode displays

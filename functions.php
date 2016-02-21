@@ -13,20 +13,23 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2016, Edward Caissie
  *
- * @version     2.3
- * @date        October 19, 2014
- * Added BNS Login "Compatibility Code" to use dashicons instead of text
- *
  * @version     2.4
  * @date        May 16, 2015
  * Cleaned up i18n implementation - "symbol" characters are a design choice
+ *
+ * @version     2.5
+ * @date        February 21, 2016
+ * Added sanity check for 'DMM_SHOW_PAGE_PERMALINK' being defined
+ * Removed reference to `wip` folder and `extra.css` file
  */
 
 /** Define Desk Mess Mirrored "Home" domain */
 define( 'DMM_HOME_DOMAIN', 'BuyNowShop.com' );
 
 /** Define Show Page Permalink Constant - default: false */
-define( 'DMM_SHOW_PAGE_PERMALINK', false );
+if ( ! defined( 'DMM_SHOW_PAGE_PERMALINK' ) ) {
+	define( 'DMM_SHOW_PAGE_PERMALINK', false );
+}
 
 /**
  * Enqueue Comment Reply Script
@@ -56,30 +59,6 @@ if ( ! function_exists( 'dmm_enqueue_comment_reply' ) ) {
 
 }
 add_action( 'comment_form_before', 'dmm_enqueue_comment_reply' );
-
-
-/**
- * DMM Scripts and Styles
- * Add extra style sheet (to animate menu notes)
- *
- * @package Desk_Mess_Mirrored
- * @since   2.0.3
- *
- * @uses    get_template_directory
- * @uses    wp_get_theme
- * @uses    wp_enqueue_style
- *
- * @version 2.0.4
- * @date    August 21, 2012
- * Changed enqueued version to be dynamically taken from theme version
- */
-function dmm_scripts_and_styles() {
-	wp_enqueue_style( 'DMM-Extra-Style', get_template_directory_uri() . '/wip/extra.css', array(), wp_get_theme()->get( 'Version' ), 'screen' );
-}
-
-/** End function - scripts and styles */
-/** To enable the menu animation uncomment the `add_action` call below. */
-/** add_action( 'wp_enqueue_scripts', 'dmm_scripts_and_styles' ); */
 
 
 if ( ! function_exists( 'dmm_wp_title' ) ) {
