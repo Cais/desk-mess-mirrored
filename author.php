@@ -61,7 +61,7 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
 				}
 
 				/** elseif ( ( $curauth->ID ) == '2' ) { echo ' jellybeen'; } /** sample */
-				/** add user classes by ID following the above samples */?>">
+				/** add user classes by ID following the above samples */ ?>">
 
 					<h2><?php printf( '%1$s %2$s', __( 'About ', 'desk-mess-mirrored' ), $curauth->display_name ); ?></h2>
 
@@ -87,7 +87,7 @@ $curauth = ( get_query_var( 'author_name ' ) ) ? get_user_by( 'id', get_query_va
 
 						<?php if ( ! empty( $curauth->user_description ) ) { ?>
 
-							<li  class="user-description">
+							<li class="user-description">
 								<?php printf( __( 'Biography: %1$s', 'desk-mess-mirrored' ), $curauth->user_description ); ?>
 							</li>
 

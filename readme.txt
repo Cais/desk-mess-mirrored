@@ -58,6 +58,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * Released ...
 = Code =
 * Added `dmm_featured_image_view` function to display vertical aspect ratio featured images more aesthetically
+* Removed `wp_title()` call reference, theme requires WordPress 4.1+ (no sanity checks)
 
 = CSS =
 * Added custom CSS for BNS Support plugin shortcode displays

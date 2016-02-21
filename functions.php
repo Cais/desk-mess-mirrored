@@ -13,18 +13,6 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2016, Edward Caissie
  *
- * @version     2.2.1
- * @date        April 21, 2013
- * Expanded use of DMM_HOME_DOMAIN constant
- *
- * @version     2.2.3
- * @date        November 16, 2013
- * Added DMM_SHOW_PAGE_PERMALINK constant
- *
- * @version     2.2.4
- * @date        April 13, 2014
- * Added `dmm_post_meta_link_edit()` function with filter hooks for DRY purposes
- *
  * @version     2.3
  * @date        October 19, 2014
  * Added BNS Login "Compatibility Code" to use dashicons instead of text
@@ -154,9 +142,6 @@ if ( ! function_exists( 'dmm_wp_title' ) ) {
  *
  * @uses    __
  * @uses    register_sidebar
- *
- * @version 2.0
- * Re-define each widget area separately to allow for descriptions to show end-user more details about each area
  *
  * @version 2.3
  * @date    October 13, 2014
@@ -399,36 +384,28 @@ if ( ! function_exists( 'dmm_theme_version' ) ) {
 }
 
 
-/**
- * Desk Mess Mirrored Setup
- *
- * Tell WordPress to run desk_mess_mirrored_setup() when the 'after_setup_theme'
- * hook is run.
- *
- * @package  Desk_Mess_Mirrored
- * @since    1.5
- *
- * @internal "glyphs" do not need to be translated as they are design elements
- *
- * @version  2.0.3
- * @date     July, 5, 2012
- * See additional documentation within function for specific changes
- *
- * @version  2.1
- * @date     December 3, 2012
- * Make 'custom-background' compatible with current WordPress versions (3.4+)
- *
- * @version  2.2.3
- * @date     October 27, 2013
- * Added support for post format 'link'
- *
- * @version  2.4
- * @date     May 15, 2015
- * Added support for the `title` tag
- * Added `dmm-post-formats` filter to extend which post-formats support
- * Moved `$content_width` definition into theme setup function
- */
 if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
+	/**
+	 * Desk Mess Mirrored Setup
+	 *
+	 * Tell WordPress to run desk_mess_mirrored_setup() when the 'after_setup_theme'
+	 * hook is run.
+	 *
+	 * @package  Desk_Mess_Mirrored
+	 * @since    1.5
+	 *
+	 * @internal "glyphs" do not need to be translated as they are design elements
+	 *
+	 * @version  2.2.3
+	 * @date     October 27, 2013
+	 * Added support for post format 'link'
+	 *
+	 * @version  2.4
+	 * @date     May 15, 2015
+	 * Added support for the `title` tag
+	 * Added `dmm-post-formats` filter to extend which post-formats support
+	 * Moved `$content_width` definition into theme setup function
+	 */
 	function desk_mess_mirrored_setup() {
 
 		/** This theme uses post thumbnails */
@@ -627,6 +604,7 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 		$locale      = get_locale();
 		$locale_file = get_template_directory() . "/languages/$locale.php";
 		if ( is_readable( $locale_file ) ) {
+			/** @noinspection PhpIncludeInspection */
 			require_once( $locale_file );
 		}
 

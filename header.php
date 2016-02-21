@@ -13,49 +13,43 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2016, Edward Caissie
  *
- * @version     2.3
- * @date        October 13, 2014
- * Dropped backward compatibility for `wp_title` with Desk Mess Mirrored Child-Themes based on version 2.1 and earlier
- *
  * @version     2.4
  * @date        May 15, 2015
  * Add support for the `title` tag
+ *
+ * @version     2.5
+ * @date        February 21, 2016
+ * Removed `wp_title()` call reference, theme requires WordPress 4.1+ (no sanity checks)
  */
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<?php wp_head(); ?>
+	</head>
 
-	<?php /** Check for WordPress 4.1.x compatibility */
-	if ( ! function_exists( '_wp_render_title_tag' ) ) { ?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<?php } ?>
+	<body <?php body_class(); ?>>
+		<div id="mainwrap">
+			<div id="header-container">
+				<div id="header"><!-- header -->
+					<div id="headerleft"></div>
+					<div id="logo">
+						<h2 id="site-title">
+							<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a>
+						</h2>
 
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-<div id="mainwrap">
-	<div id="header-container">
-		<div id="header"><!-- header -->
-			<div id="headerleft"></div>
-			<div id="logo">
-				<h2 id="site-title">
-					<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a>
-				</h2>
-
-				<p id="site-description"><?php bloginfo( 'description' ); ?></p>
+						<p id="site-description"><?php bloginfo( 'description' ); ?></p>
+					</div>
+					<!-- #logo -->
+					<div id="cup"></div>
+					<div id="top-navigation-menu">
+						<?php dmm_nav_menu(); ?>
+					</div>
+				</div>
+				<!-- #header -->
 			</div>
-			<!-- #logo -->
-			<div id="cup"></div>
-			<div id="top-navigation-menu">
-				<?php dmm_nav_menu(); ?>
-			</div>
-		</div>
-		<!-- #header -->
-	</div>
-	<!-- #header-container -->
+			<!-- #header-container -->
