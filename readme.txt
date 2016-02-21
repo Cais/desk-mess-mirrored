@@ -1,11 +1,11 @@
 === Desk Mess Mirrored Readme (readme.txt) ===
-* Last revised May 16, 2015
+* Last revised February 21, 2016
 
 == Contents ==
 * Licensing
 * Basic FAQ
 * Notes
-* Changelog
+* Recent Changelog
 * Review Tickets
 
 == Licensing ==
@@ -53,9 +53,12 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 * add_custom_image_header() is not implemented as it will not handle multiple header images; in the case of this theme, there are three (3) being used in the header.
 * It is recommended to not have an excessive quantity of menu items, for example a quantity causing the top menu to exceed two lines, may obscure the post title in some views
 
-== Changelog ==
+== Recent Changelog ==
 == Version 2.5 ==
 * Released ...
+
+= CSS =
+* Added custom CSS for BNS Support plugin shortcode displays
 
 = Miscellaneous =
 * Updated copyright year in all files

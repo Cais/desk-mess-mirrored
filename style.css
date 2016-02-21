@@ -1793,6 +1793,19 @@ body > iframe[src="about:blank"] {
 	margin: 10px;
 }
 
+/* bns-support plugin */
+.bns-support-shortcode .widget.bns-support h2.widgettitle {
+	background: none;
+}
+.bns-support-shortcode .widget.bns-support {
+	background: none;
+	width: 100%;
+}
+.bns-support-shortcode ul li ul {
+	margin-bottom: 0;
+	padding: 0;
+}
+
 /* ---- BNS Plugins ---- */
 
 /* ---- Miscellaneous ---- */
