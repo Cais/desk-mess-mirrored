@@ -1,21 +1,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Desk Mess Mirrored\n"
-"POT-Creation-Date: 2015-05-16 18:03-0500\n"
-"PO-Revision-Date: 2015-05-16 18:03-0500\n"
+"POT-Creation-Date: 2016-02-21 15:21-0500\n"
+"PO-Revision-Date: 2016-02-21 15:21-0500\n"
 "Last-Translator: Edward Caissie <edward.caissie@gmail.com>\n"
 "Language-Team: Edward Caissie <edward.caissie@gmail.com>\n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -25,12 +26,12 @@ msgstr "You have arrived at the 404 page!!!"
 
 #: 404.php:37
 msgid "This is not the page you are looking for ..."
-msgstr "This is not the page you are looking for..."
+msgstr "This is not the page you are looking for…"
 
 #: 404.php:38
 msgid "... well, that is rather obvious. No one really looks for a 404 page."
 msgstr ""
-"... well, that is rather obvious. No one really looks for a clueless page."
+"… well, that is rather obvious. No one really looks for a clueless page."
 
 #: 404.php:40
 msgid ""
@@ -40,30 +41,30 @@ msgstr ""
 "We apologize for the inconvenience, would you care to look for something "
 "else?"
 
-#: author.php:66
+#: author.php:62
 msgid "About "
 msgstr "About "
 
-#: author.php:74
+#: author.php:70
 #, php-format
 msgid "Website: %1$s"
 msgstr "Website: %1$s"
 
-#: author.php:83
+#: author.php:79
 #, php-format
 msgid "Email: %1$s"
 msgstr "Email: %1$s"
 
-#: author.php:84
+#: author.php:80
 msgid "email"
 msgstr "email"
 
-#: author.php:91
+#: author.php:87
 #, php-format
 msgid "Biography: %1$s"
 msgstr "Biography: %1$s"
 
-#: author.php:100
+#: author.php:96
 msgid "Posts by "
 msgstr "Posts by "
 
@@ -131,13 +132,13 @@ msgstr "with Comments closed"
 
 #: desk-mess-mirrored-aside.php:77 desk-mess-mirrored-link.php:87
 #: desk-mess-mirrored-quote.php:76 desk-mess-mirrored-status.php:91
-#: desk-mess-mirrored.php:99
+#: desk-mess-mirrored.php:97
 msgid "Read more..."
-msgstr "Read more..."
+msgstr "Read more…"
 
 #: desk-mess-mirrored-aside.php:83 desk-mess-mirrored-link.php:93
 #: desk-mess-mirrored-quote.php:82 desk-mess-mirrored-status.php:97
-#: desk-mess-mirrored.php:105
+#: desk-mess-mirrored.php:103
 msgid "Pages:"
 msgstr "Pages:"
 
@@ -159,7 +160,7 @@ msgstr "Permanent Link to"
 msgid "%1$s by %2$s on %3$s in %4$s"
 msgstr "%1$s by %2$s on %3$s in %4$s"
 
-#: desk-mess-mirrored.php:123
+#: desk-mess-mirrored.php:121
 msgid "Page Permalink"
 msgstr "Page Permalink"
 
@@ -171,16 +172,16 @@ msgstr "Older posts"
 msgid "Newer posts"
 msgstr "Newer posts"
 
-#: functions.php:137
+#: functions.php:104
 #, php-format
 msgid "Page %s"
 msgstr "Page %s"
 
-#: functions.php:173
+#: functions.php:137
 msgid "Widget Area 1"
 msgstr "Widget Area 1"
 
-#: functions.php:175
+#: functions.php:139
 msgid ""
 "Widget area 1 located in right sidebar. All default Desk Mess Mirrored theme "
 "sidebar content is placed here. If you drag and drop a new widget into this "
@@ -190,11 +191,11 @@ msgstr ""
 "sidebar content is placed here. If you drag and drop a new widget into this "
 "area you will replace * all * of the default sidebar content."
 
-#: functions.php:180
+#: functions.php:144
 msgid "Widget Area 2"
 msgstr "Widget Area 2"
 
-#: functions.php:182
+#: functions.php:146
 msgid ""
 "Widget area 2 located in the middle of the right sidebar beneath Sidebar 1. "
 "This area is empty by default"
@@ -202,11 +203,11 @@ msgstr ""
 "Widget area too located in the middle of the right sidebar beneath Sidebar "
 "1. This area is empty by default"
 
-#: functions.php:187
+#: functions.php:151
 msgid "Widget Area 3"
 msgstr "Widget Area 3"
 
-#: functions.php:189
+#: functions.php:153
 msgid ""
 "Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. "
 "This are is empty by default"
@@ -214,75 +215,74 @@ msgstr ""
 "Widget area 3 located at the bottom of the right sidebar beneath Sidebar 2. "
 "This are is empty by default"
 
-#: functions.php:270
+#: functions.php:234
 msgid "Copyright"
 msgstr "Copyright"
 
-#: functions.php:330
+#: functions.php:294
 msgid "All rights reserved."
-msgstr "All Rights Reserved."
+msgstr "All rights reserved."
 
-#: functions.php:334
+#: functions.php:298
 #, php-format
 msgid ""
 "<span id=\"dmm-dynamic-copyright\"> %1$s </span><!-- #bns-dynamic-copyright "
 "-->"
 msgstr ""
-"<span id=\"dmm-dynamic-copyright\"> %1$s </span><!-- #bns-dynamic-copyright "
-"-->"
+"<span id=“dmm-dynamic-copyright”> %1$s </span><!— #bns-dynamic-copyright —>"
 
-#: functions.php:375
+#: functions.php:339
 #, php-format
 msgid "This site is using the %1$s Child-Theme, v%2$s, on top of"
 msgstr "This site is using the %1$s Child-Theme, v%2$s, on top of"
 
-#: functions.php:375
+#: functions.php:339
 #, php-format
 msgid "the Parent-Theme %3$s, v%4$s, from %5$s"
 msgstr "the Parent-Theme %3$s, v%4$s, from %5$s"
 
-#: functions.php:388
+#: functions.php:352
 #, php-format
 msgid "This site is using the %1$s theme, v%2$s, from %3$s"
 msgstr "This site is using the %1$s theme, v%2$s, from %3$s"
 
-#: functions.php:611
+#: functions.php:569
 msgid "Top Menu"
 msgstr "Top Menu"
 
-#: functions.php:667 functions.php:668
+#: functions.php:626 functions.php:627
 msgid "Posted"
 msgstr "Posted"
 
-#: functions.php:714
+#: functions.php:673
 #, php-format
 msgid "Last modified by %1$s %2$s on %3$s at %4$s."
 msgstr "Last modified by %1$s %2$s on%3$s at %4$s."
 
-#: functions.php:758
+#: functions.php:717
 #, php-format
 msgid "Search Results for: \"%s\""
-msgstr "Search Results for: \"%s\""
+msgstr "Search Results for: “%s”"
 
-#: functions.php:760
+#: functions.php:719
 msgid "There was no search performed."
 msgstr "There was no search performed."
 
-#: functions.php:764
+#: functions.php:723
 msgid "Would you like to search again?"
 msgstr "Would you like to search again?"
 
-#: functions.php:820
+#: functions.php:779
 msgid "Edit"
 msgstr "Edit"
 
-#: functions.php:847
+#: functions.php:806
 msgid "... other posts by"
-msgstr "... other posts by"
+msgstr "… other posts by"
 
 #: search.php:30
 msgid "We found something! It looks like you searched for ..."
-msgstr "We found something! It looks like you searched for..."
+msgstr "We found something! It looks like you searched for…"
 
 #: sidebar.php:37
 msgid "Enter keyword(s) and hit enter"
@@ -308,41 +308,36 @@ msgstr "Archives"
 msgid "Meta"
 msgstr "Meta"
 
-#~ msgid "*"
-#~ msgstr "*"
+#. Theme Name of the plugin/theme
+msgid "Desk Mess Mirrored"
+msgstr "Desk Mess Mirrored"
 
-#~ msgid "\""
-#~ msgstr "\""
+#. Theme URI of the plugin/theme
+msgid "http://buynowshop.com/themes/desk-mess-mirrored/"
+msgstr "http://buynowshop.com/themes/desk-mess-mirrored/"
 
-#~ msgid "@"
-#~ msgstr "@"
+#. Description of the plugin/theme
+msgid ""
+"Marble desktop covered with a mix of old and new items, such as some vintage "
+"papers, a stainless steel pen, and, a hot cup of coffee! Now with more "
+"documentation and post-format support for the following types: asides, "
+"quotes and status! <strong>Please read the included changelog.txt, readme."
+"txt, and support.txt files for details of the latest changes and important "
+"notices.</strong> Please note <strong>WordPress 4.1 or greater is required</"
+"strong>."
+msgstr ""
+"Marble desktop covered with a mix of old and new items, such as some vintage "
+"papers, a stainless steel pen, and, a hot cup of coffee! Now with more "
+"documentation and post-format support for the following types: asides, "
+"quotes and status! <strong>Please read the included changelog.txt, readme."
+"txt, and support.txt files for details of the latest changes and important "
+"notices.</strong> Please note <strong>WordPress 4.1 or greater is required</"
+"strong>."
 
-#~ msgid "&infin;"
-#~ msgstr "&infin;"
+#. Author of the plugin/theme
+msgid "Edward Caissie"
+msgstr "Edward Caissie"
 
-#~ msgid "&raquo; Reply to this Comment &laquo;"
-#~ msgstr "&raquo; Reply to this Comment &laquo;"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "-"
-#~ msgstr "-"
-
-#~ msgid "Read more... "
-#~ msgstr "Read more... "
-
-#~ msgid "... other posts by "
-#~ msgstr "... other posts by "
-
-#~ msgid "&raquo;"
-#~ msgstr "&raquo;"
-
-#~ msgid "&laquo;"
-#~ msgstr "&laquo;"
-
-#~ msgid "&laquo; Older posts"
-#~ msgstr "&laquo; Older posts"
-
-#~ msgid "Newer posts &raquo;"
-#~ msgstr "Newer posts &raquo;"
+#. Author URI of the plugin/theme
+msgid "http://edwardcaissie.com/"
+msgstr "http://edwardcaissie.com/"

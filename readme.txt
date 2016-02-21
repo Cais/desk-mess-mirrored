@@ -54,7 +54,7 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 
 == Recent Changelog ==
 == Version 2.5 ==
-* Released ...
+* Released February 2016
 = Code =
 * Added `dmm_featured_image_view` function to display vertical aspect ratio featured images more aesthetically
 * Added sanity check for 'DMM_SHOW_PAGE_PERMALINK' being defined
