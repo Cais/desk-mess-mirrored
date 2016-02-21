@@ -29,8 +29,8 @@
  * @date        October 19, 2014
  * Added BNS Login "Compatibility Code" to use dashicons instead of text
  *
- * @version 2.4
- * @date    May 16, 2015
+ * @version     2.4
+ * @date        May 16, 2015
  * Cleaned up i18n implementation - "symbol" characters are a design choice
  */
 
@@ -455,12 +455,14 @@ if ( ! function_exists( 'desk_mess_mirrored_setup' ) ) {
 
 		/** Add post-formats support for aside, link, quote, and status */
 		add_theme_support(
-			'post-formats', apply_filters( 'dmm-post-formats', array(
-				'aside',
-				'link',
-				'quote',
-				'status'
-			) )
+			'post-formats', apply_filters(
+				'dmm-post-formats', array(
+					'aside',
+					'link',
+					'quote',
+					'status'
+				)
+			)
 		);
 
 		/**
@@ -852,6 +854,48 @@ if ( ! function_exists( 'dmm_single_view_author_link' ) ) {
 	}
 
 }
+
+
+/**
+ * Featured Image View
+ *
+ * Displays the featured image based on if it has a portrait or landscape aspect
+ * ratio. If in portrait, the image is aligned to the right of the post while in
+ * lanscape the image is centered above the post.
+ *
+ * @package    Desk_Mess_Mirrored
+ * @since      2.5
+ * @date       February 21, 2016
+ *
+ * @uses       (GLOBAL) $post
+ * @uses       get_post_thumbnail_id
+ * @uses       has_post_thumbnail
+ * @uses       the_post_thumbnail
+ * @uses       wp_get_attachment_metadata
+ */
+if ( ! function_exists( 'dmm_featured_image_view' ) ) {
+	function dmm_featured_image_view() {
+
+		global $post;
+
+		if ( has_post_thumbnail() && ( $post->post_type == 'post' ) ) {
+
+			$featured_image_metadata = wp_get_attachment_metadata( get_post_thumbnail_id() );
+
+			if ( isset( $featured_image_metadata['height'] ) && isset( $featured_image_metadata['width'] ) ) {
+
+				if ( $featured_image_metadata['height'] > $featured_image_metadata['width'] ) {
+					the_post_thumbnail( 'full', array( 'class' => 'alignright' ) );
+				} else {
+					the_post_thumbnail( 'full', array( 'class' => 'aligncenter' ) );
+				}
+
+			}
+
+		}
+	}
+}
+
 
 /** Compatibility Code ------------------------------------------------------ */
 

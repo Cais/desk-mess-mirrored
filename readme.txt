@@ -56,6 +56,8 @@ It is also recommended to use this functionality in a Child-Theme versus modifyi
 == Recent Changelog ==
 == Version 2.5 ==
 * Released ...
+= Code =
+* Added `dmm_featured_image_view` function to display vertical aspect ratio featured images more aesthetically
 
 = CSS =
 * Added custom CSS for BNS Support plugin shortcode displays

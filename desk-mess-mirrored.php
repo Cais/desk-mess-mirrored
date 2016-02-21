@@ -90,9 +90,7 @@ $count ++; ?>
 
 		<?php }
 
-		if ( has_post_thumbnail() && ( $post->post_type == 'post' ) ) {
-			the_post_thumbnail( 'full', array( 'class' => 'aligncenter' ) );
-		}
+		dmm_featured_image_view();
 
 		if ( is_home() || is_front_page() || is_single() || is_page() || ( is_author() && ( $count == 1 ) ) ) {
 
