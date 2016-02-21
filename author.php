@@ -13,10 +13,6 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2009-2016, Edward Caissie
  *
- * @version     2.0
- * @date        December 11, 2012
- * Rewrote the class assigned to the #author box by adding the author role as a class name.
- *
  * @version     2.1
  * @date        December 3, 2012
  * Added 'DMM No Posts Found' function to replace repetitive code
